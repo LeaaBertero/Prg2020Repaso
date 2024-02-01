@@ -14,17 +14,25 @@ namespace operadores
         private void btsumar_Click(object sender, EventArgs e)
         {
 
-            numero1 = Convert.ToInt32(txnum1.Text);
-            numero2 = Convert.ToInt32(txnum2.Text);
+            try
+            {
+                numero1 = Convert.ToInt32(txnum1.Text);
+                numero2 = Convert.ToInt32(txnum2.Text);
 
 
-            resultado = numero1 + numero2;
+                resultado = numero1 + numero2;
 
-            lbresultado.Text = resultado.ToString();
+                lbresultado.Text = resultado.ToString();
 
-            //lbresultado.ToString(); 
+                //lbresultado.ToString(); 
 
-            lbresultado.Visible = true;
+                lbresultado.Visible = true;
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("No puede sumar datos vacios");
+            }
         }
 
         private void btlimpiar_Click(object sender, EventArgs e)
