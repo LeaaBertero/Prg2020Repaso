@@ -99,7 +99,7 @@ namespace calculadora
             }
         }
 
-        
+
         private void btdiv_Click(object sender, EventArgs e)
         {
             //variables para división
@@ -146,5 +146,6 @@ namespace calculadora
 
         }
 
+       
     }
 }

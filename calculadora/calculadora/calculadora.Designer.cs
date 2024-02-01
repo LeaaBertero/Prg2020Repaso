@@ -350,6 +350,7 @@
             Name = "Calculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "calculadora";
+            
             ResumeLayout(false);
             PerformLayout();
         }
