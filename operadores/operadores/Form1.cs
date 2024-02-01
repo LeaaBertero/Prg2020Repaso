@@ -23,6 +23,21 @@ namespace operadores
             lbresultado.Text = resultado.ToString();
 
             //lbresultado.ToString(); 
+
+            lbresultado.Visible = true;
+        }
+
+        private void btlimpiar_Click(object sender, EventArgs e)
+        {
+            lbresultado.Text = null;
+            txnum1.Text = null;
+            txnum2.Text = null;
+
+        }
+
+        private void btsalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
