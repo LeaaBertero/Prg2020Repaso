@@ -68,6 +68,7 @@
             // 
             // btreestablecer
             // 
+            btreestablecer.Cursor = Cursors.Hand;
             btreestablecer.Location = new Point(296, 325);
             btreestablecer.Name = "btreestablecer";
             btreestablecer.Size = new Size(227, 40);
