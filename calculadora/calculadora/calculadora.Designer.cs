@@ -55,6 +55,7 @@
             label11 = new Label();
             label12 = new Label();
             label13 = new Label();
+            btlimpiar = new Button();
             SuspendLayout();
             // 
             // btsalir
@@ -72,7 +73,7 @@
             // 
             lbresultado.AutoSize = true;
             lbresultado.Font = new Font("Segoe UI", 20F);
-            lbresultado.Location = new Point(457, 588);
+            lbresultado.Location = new Point(343, 588);
             lbresultado.Name = "lbresultado";
             lbresultado.Size = new Size(109, 46);
             lbresultado.TabIndex = 1;
@@ -87,6 +88,7 @@
             btsuma.TabIndex = 2;
             btsuma.Text = "resultado suma";
             btsuma.UseVisualStyleBackColor = true;
+            btsuma.Click += btsuma_Click;
             // 
             // btresta
             // 
@@ -97,6 +99,7 @@
             btresta.TabIndex = 3;
             btresta.Text = "resultado resta";
             btresta.UseVisualStyleBackColor = true;
+            btresta.Click += btresta_Click;
             // 
             // btmultip
             // 
@@ -296,12 +299,24 @@
             label13.TabIndex = 26;
             label13.Text = "División";
             // 
+            // btlimpiar
+            // 
+            btlimpiar.Cursor = Cursors.Hand;
+            btlimpiar.Location = new Point(300, 658);
+            btlimpiar.Name = "btlimpiar";
+            btlimpiar.Size = new Size(399, 45);
+            btlimpiar.TabIndex = 27;
+            btlimpiar.Text = "Limpiar datos";
+            btlimpiar.UseVisualStyleBackColor = true;
+            btlimpiar.Click += btlimpiar_Click;
+            // 
             // calculadora
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Turquoise;
-            ClientSize = new Size(1145, 670);
+            ClientSize = new Size(1145, 715);
+            Controls.Add(btlimpiar);
             Controls.Add(label13);
             Controls.Add(label12);
             Controls.Add(label11);
@@ -365,5 +380,6 @@
         private Label label11;
         private Label label12;
         private Label label13;
+        private Button btlimpiar;
     }
 }
