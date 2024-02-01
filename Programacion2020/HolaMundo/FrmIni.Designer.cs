@@ -31,6 +31,7 @@
             btsalir = new Button();
             btini = new Button();
             lbnombre = new Label();
+            btreestablecer = new Button();
             SuspendLayout();
             // 
             // btsalir
@@ -65,12 +66,23 @@
             lbnombre.TabIndex = 2;
             lbnombre.Text = ">>> Click en comenzar <<<";
             // 
+            // btreestablecer
+            // 
+            btreestablecer.Location = new Point(296, 325);
+            btreestablecer.Name = "btreestablecer";
+            btreestablecer.Size = new Size(227, 40);
+            btreestablecer.TabIndex = 3;
+            btreestablecer.Text = "Reestablecer";
+            btreestablecer.UseVisualStyleBackColor = true;
+            btreestablecer.Click += btreestablecer_Click;
+            // 
             // FrmIni
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PaleGreen;
             ClientSize = new Size(800, 450);
+            Controls.Add(btreestablecer);
             Controls.Add(lbnombre);
             Controls.Add(btini);
             Controls.Add(btsalir);
@@ -85,5 +97,6 @@
         private Button btsalir;
         private Button btini;
         private Label lbnombre;
+        private Button btreestablecer;
     }
 }

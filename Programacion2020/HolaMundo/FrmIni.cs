@@ -26,5 +26,10 @@ namespace HolaMundo
         {
             lbnombre.Text = "Hola Leann, cómo estas hoy?";
         }
+
+        private void btreestablecer_Click(object sender, EventArgs e)
+        {
+            lbnombre.Text = ">>> Click en comenzar <<<";
+        }
     }
 }
