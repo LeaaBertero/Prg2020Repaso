@@ -73,7 +73,7 @@
             // 
             lbresultado.AutoSize = true;
             lbresultado.Font = new Font("Segoe UI", 20F);
-            lbresultado.Location = new Point(343, 588);
+            lbresultado.Location = new Point(218, 574);
             lbresultado.Name = "lbresultado";
             lbresultado.Size = new Size(109, 46);
             lbresultado.TabIndex = 1;
@@ -313,7 +313,7 @@
             btlimpiar.UseVisualStyleBackColor = true;
             btlimpiar.Click += btlimpiar_Click;
             // 
-            // calculadora
+            // Calculadora
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -347,7 +347,7 @@
             Controls.Add(btsuma);
             Controls.Add(lbresultado);
             Controls.Add(btsalir);
-            Name = "calculadora";
+            Name = "Calculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "calculadora";
             ResumeLayout(false);

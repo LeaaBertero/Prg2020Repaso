@@ -18,8 +18,9 @@ namespace calculadora
             InitializeComponent();
         }
 
-        private void btsalir_Click(object sender, EventArgs e)
+        private void btsalir_Click(object sender, EventArgs e) //evento click
         {
+            //método // acción
             Close();
         }
 
@@ -49,27 +50,6 @@ namespace calculadora
 
         }
 
-        private void btlimpiar_Click(object sender, EventArgs e)
-        {
-            //txtbox suma
-            txsuma1.Text = null;
-            txsuma2.Text = null;
-
-            //texbox resta
-            txresta1.Text = null;
-            txresta2.Text = null;
-
-            //txboxmultiplicacion
-            txmult1.Text = null;
-            txmult2.Text = null;
-
-            //txdivision
-            txdiv1.Text = null;
-            txdiv2.Text = null;
-
-            //label de resultado
-            lbresultado.Text = null;
-        }
 
         private void btresta_Click(object sender, EventArgs e)
         {
@@ -119,6 +99,7 @@ namespace calculadora
             }
         }
 
+        
         private void btdiv_Click(object sender, EventArgs e)
         {
             //variables para división
@@ -141,5 +122,29 @@ namespace calculadora
                 MessageBox.Show("Imposible dividir datos vacios");
             }
         }
+
+        private void btlimpiar_Click(object sender, EventArgs e)
+        {
+            //txtbox suma
+            txsuma1.Text = null;
+            txsuma2.Text = null;
+
+            //texbox resta
+            txresta1.Text = null;
+            txresta2.Text = null;
+
+            //txboxmultiplicacion
+            txmult1.Text = null;
+            txmult2.Text = null;
+
+            //txdivision
+            txdiv1.Text = null;
+            txdiv2.Text = null;
+
+            //label de resultado
+            lbresultado.Text = null;
+
+        }
+
     }
 }
