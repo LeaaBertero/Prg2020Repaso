@@ -12,26 +12,7 @@ namespace calculadora
 {
     public partial class Calculadora : Form
     {
-        //variables para suma
-        int numSuma1;
-        int numSuma2;
-        int resSuma;
-
-        //variables para resta
-        int numResta1;
-        int numResta2;
-        int resResta;
-
-        //variables para multiplicación
-        int numMult1;
-        int numMult2;
-        int resMult;
-
-        //variables para división
-        int numDiv1;
-        int numDiv2;
-        int resDiv;
-
+        //constructor
         public Calculadora()
         {
             InitializeComponent();
@@ -44,10 +25,15 @@ namespace calculadora
 
         private void btsuma_Click(object sender, EventArgs e)
         {
+            //variables para suma
+            decimal numSuma1;
+            decimal numSuma2;
+            decimal resSuma;
+
             try
             {
-                numSuma1 = Convert.ToInt32(txsuma1.Text);
-                numSuma2 = Convert.ToInt32(txsuma2.Text);
+                numSuma1 = Convert.ToDecimal(txsuma1.Text);
+                numSuma2 = Convert.ToDecimal(txsuma2.Text);
 
                 resSuma = numSuma1 + numSuma2;
 
@@ -87,10 +73,15 @@ namespace calculadora
 
         private void btresta_Click(object sender, EventArgs e)
         {
+            //variables para resta
+            decimal numResta1;
+            decimal numResta2;
+            decimal resResta;
+
             try
             {
-                numResta1 = Convert.ToInt32(txresta1.Text);
-                numResta2 = Convert.ToInt32(txresta2.Text);
+                numResta1 = Convert.ToDecimal(txresta1.Text);
+                numResta2 = Convert.ToDecimal(txresta2.Text);
 
                 resResta = numResta1 - numResta2;
 
@@ -106,10 +97,15 @@ namespace calculadora
 
         private void btmultip_Click(object sender, EventArgs e)
         {
+            //variables para multiplicación
+            decimal numMult1;
+            decimal numMult2;
+            decimal resMult;
+
             try
             {
-                numMult1 = Convert.ToInt32(txmult1.Text);
-                numMult2 = Convert.ToInt32(txmult2.Text);
+                numMult1 = Convert.ToDecimal(txmult1.Text);
+                numMult2 = Convert.ToDecimal(txmult2.Text);
 
                 resMult = numMult1 * numMult2;
 
@@ -125,10 +121,15 @@ namespace calculadora
 
         private void btdiv_Click(object sender, EventArgs e)
         {
+            //variables para división
+            decimal numDiv1;
+            decimal numDiv2;
+            decimal resDiv;
+
             try
             {
-                numDiv1 = Convert.ToInt32(txdiv1.Text);
-                numDiv2 = Convert.ToInt32(txdiv2.Text);
+                numDiv1 = Convert.ToDecimal(txdiv1.Text);
+                numDiv2 = Convert.ToDecimal(txdiv2.Text);
 
                 resDiv = numDiv1 / numDiv2;
 
@@ -137,7 +138,6 @@ namespace calculadora
             }
             catch (Exception)
             {
-
                 MessageBox.Show("Imposible dividir datos vacios");
             }
         }
