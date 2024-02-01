@@ -110,6 +110,7 @@
             btmultip.TabIndex = 4;
             btmultip.Text = "resultado multiplicacion";
             btmultip.UseVisualStyleBackColor = true;
+            btmultip.Click += btmultip_Click;
             // 
             // btdiv
             // 
@@ -120,6 +121,7 @@
             btdiv.TabIndex = 5;
             btdiv.Text = "resultado division";
             btdiv.UseVisualStyleBackColor = true;
+            btdiv.Click += btdiv_Click;
             // 
             // txsuma1
             // 

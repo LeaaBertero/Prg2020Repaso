@@ -22,6 +22,16 @@ namespace calculadora
         int numResta2;
         int resResta;
 
+        //variables para multiplicación
+        int numMult1;
+        int numMult2;
+        int resMult;
+
+        //variables para división
+        int numDiv1;
+        int numDiv2;
+        int resDiv;
+
         public calculadora()
         {
             InitializeComponent();
@@ -69,6 +79,9 @@ namespace calculadora
             //txdivision
             txdiv1.Text = null;
             txdiv2.Text = null;
+
+            //label de resultado
+            lbresultado.Text = null;
         }
 
         private void btresta_Click(object sender, EventArgs e)
@@ -86,6 +99,42 @@ namespace calculadora
             {
 
                 MessageBox.Show("Imposible restar datos vacios");
+            }
+        }
+
+        private void btmultip_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                numMult1 = Convert.ToInt32(txmult1.Text);
+                numMult2 = Convert.ToInt32(txmult2.Text);
+
+                resMult = numMult1 * numMult2;
+
+                lbresultado.Text = "El resultado de la suma es = " + " " + resMult.ToString();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Imposible multiplicar datos vacios");
+            }
+        }
+
+        private void btdiv_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                numDiv1 = Convert.ToInt32(txdiv1.Text);
+                numDiv2 = Convert.ToInt32(txdiv2.Text);
+
+                resDiv = numDiv1 / numDiv2;
+
+                lbresultado.Text = "El resultado de la suma es = " + " " + resDiv.ToString();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Imposible dividir datos vacios");
             }
         }
     }
