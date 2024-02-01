@@ -1,4 +1,4 @@
-namespace variables
+namespace operadores
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace variables
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new variables());
+            Application.Run(new Form1());
         }
     }
 }
