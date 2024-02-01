@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace calculadora
 {
-    public partial class calculadora : Form
+    public partial class Calculadora : Form
     {
         //variables para suma
         int numSuma1;
@@ -32,7 +32,7 @@ namespace calculadora
         int numDiv2;
         int resDiv;
 
-        public calculadora()
+        public Calculadora()
         {
             InitializeComponent();
         }

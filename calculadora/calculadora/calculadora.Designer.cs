@@ -1,6 +1,6 @@
 ﻿namespace calculadora
 {
-    partial class calculadora
+    partial class Calculadora
     {
         /// <summary>
         /// Required designer variable.
