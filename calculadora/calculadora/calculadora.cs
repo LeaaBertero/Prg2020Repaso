@@ -52,6 +52,7 @@ namespace calculadora
                 resSuma = numSuma1 + numSuma2;
 
                 lbresultado.Text = "El resultado de la suma es = " + " " + resSuma.ToString();
+                lbresultado.Visible = true;
             }
             catch (Exception)
             {
@@ -93,7 +94,8 @@ namespace calculadora
 
                 resResta = numResta1 - numResta2;
 
-                lbresultado.Text = "El resultado de la suma es = " + " " + resResta.ToString();
+                lbresultado.Text = "El resultado de la resta es = " + " " + resResta.ToString();
+                lbresultado.Visible = true;
             }
             catch (Exception)
             {
@@ -111,7 +113,8 @@ namespace calculadora
 
                 resMult = numMult1 * numMult2;
 
-                lbresultado.Text = "El resultado de la suma es = " + " " + resMult.ToString();
+                lbresultado.Text = "El resultado de la multiplicación es = " + " " + resMult.ToString();
+                lbresultado.Visible = true;
             }
             catch (Exception)
             {
@@ -129,7 +132,8 @@ namespace calculadora
 
                 resDiv = numDiv1 / numDiv2;
 
-                lbresultado.Text = "El resultado de la suma es = " + " " + resDiv.ToString();
+                lbresultado.Text = "El resultado de la división es = " + " " + resDiv.ToString();
+                lbresultado.Visible = true;
             }
             catch (Exception)
             {

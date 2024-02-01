@@ -78,6 +78,7 @@
             lbresultado.Size = new Size(109, 46);
             lbresultado.TabIndex = 1;
             lbresultado.Text = "label1";
+            lbresultado.Visible = false;
             // 
             // btsuma
             // 
