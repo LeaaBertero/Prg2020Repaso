@@ -88,6 +88,7 @@
             Controls.Add(btini);
             Controls.Add(btsalir);
             Name = "FrmIni";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Primer formulario - HolaMundo";
             ResumeLayout(false);
             PerformLayout();
