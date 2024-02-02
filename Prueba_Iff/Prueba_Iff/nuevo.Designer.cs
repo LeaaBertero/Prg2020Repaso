@@ -34,7 +34,7 @@
             // 
             // btnuevo
             // 
-            btnuevo.Location = new Point(392, 137);
+            btnuevo.Location = new Point(12, 12);
             btnuevo.Name = "btnuevo";
             btnuevo.Size = new Size(166, 64);
             btnuevo.TabIndex = 0;
