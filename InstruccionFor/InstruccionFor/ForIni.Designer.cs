@@ -134,7 +134,7 @@
             // 
             LbResultado.AutoSize = true;
             LbResultado.Font = new Font("Segoe UI", 18F);
-            LbResultado.Location = new Point(204, 308);
+            LbResultado.Location = new Point(212, 308);
             LbResultado.Name = "LbResultado";
             LbResultado.Size = new Size(97, 41);
             LbResultado.TabIndex = 10;
