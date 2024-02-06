@@ -21,5 +21,18 @@ namespace While
         {
             Close();
         }
+
+        private void BtIniciar_Click(object sender, EventArgs e)
+        {
+            BtIniciar.BackColor = Color.Indigo;
+
+            int anchoFormulario;
+            int anchoLabel;
+            int anchBorde;
+            int x = 0;
+            int paso = 1;
+
+
+        }
     }
 }

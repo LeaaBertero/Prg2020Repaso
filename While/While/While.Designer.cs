@@ -30,13 +30,16 @@
         {
             btejecutar = new Button();
             btsalir = new Button();
+            lblRojo = new Label();
+            btiniciar = new Button();
             SuspendLayout();
             // 
             // btejecutar
             // 
-            btejecutar.Location = new Point(581, 35);
+            btejecutar.Cursor = Cursors.Hand;
+            btejecutar.Location = new Point(266, 12);
             btejecutar.Name = "btejecutar";
-            btejecutar.Size = new Size(177, 44);
+            btejecutar.Size = new Size(345, 44);
             btejecutar.TabIndex = 0;
             btejecutar.Text = "Ejemplo DoWhile";
             btejecutar.UseVisualStyleBackColor = true;
@@ -44,22 +47,46 @@
             // 
             // btsalir
             // 
-            btsalir.Location = new Point(12, 12);
+            btsalir.Cursor = Cursors.Hand;
+            btsalir.Location = new Point(670, 400);
             btsalir.Name = "btsalir";
-            btsalir.Size = new Size(128, 44);
+            btsalir.Size = new Size(118, 38);
             btsalir.TabIndex = 1;
             btsalir.Text = "salir";
             btsalir.UseVisualStyleBackColor = true;
             btsalir.Click += btsalir_Click;
             // 
+            // lblRojo
+            // 
+            lblRojo.BackColor = Color.Red;
+            lblRojo.Cursor = Cursors.Hand;
+            lblRojo.Location = new Point(-1, 109);
+            lblRojo.Name = "lblRojo";
+            lblRojo.Size = new Size(101, 43);
+            lblRojo.TabIndex = 2;
+            // 
+            // btiniciar
+            // 
+            btiniciar.Cursor = Cursors.Hand;
+            btiniciar.Location = new Point(12, 183);
+            btiniciar.Name = "btiniciar";
+            btiniciar.Size = new Size(177, 44);
+            btiniciar.TabIndex = 3;
+            btiniciar.Text = "Mover rectangulo rojo";
+            btiniciar.UseVisualStyleBackColor = true;
+            btiniciar.Click += btiniciar_Click;
+            // 
             // While
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(816, 450);
+            Controls.Add(btiniciar);
             Controls.Add(btsalir);
             Controls.Add(btejecutar);
+            Controls.Add(lblRojo);
             Name = "While";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "While";
             ResumeLayout(false);
         }
@@ -68,5 +95,7 @@
 
         private Button btejecutar;
         private Button btsalir;
+        private Label lblRojo;
+        private Button btiniciar;
     }
 }

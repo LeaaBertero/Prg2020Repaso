@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             btSalir = new Button();
+            BtIniciar = new Button();
             SuspendLayout();
             // 
             // btSalir
             // 
-            btSalir.Location = new Point(12, 12);
+            btSalir.Location = new Point(658, 12);
             btSalir.Name = "btSalir";
             btSalir.Size = new Size(130, 48);
             btSalir.TabIndex = 0;
@@ -41,13 +42,25 @@
             btSalir.UseVisualStyleBackColor = true;
             btSalir.Click += btSalir_Click;
             // 
+            // BtIniciar
+            // 
+            BtIniciar.Location = new Point(658, 77);
+            BtIniciar.Name = "BtIniciar";
+            BtIniciar.Size = new Size(130, 43);
+            BtIniciar.TabIndex = 1;
+            BtIniciar.Text = "Iniciar";
+            BtIniciar.UseVisualStyleBackColor = true;
+            BtIniciar.Click += BtIniciar_Click;
+            // 
             // DoWhile
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(BtIniciar);
             Controls.Add(btSalir);
             Name = "DoWhile";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "DoWhile";
             ResumeLayout(false);
         }
@@ -55,5 +68,6 @@
         #endregion
 
         private Button btSalir;
+        private Button BtIniciar;
     }
 }
