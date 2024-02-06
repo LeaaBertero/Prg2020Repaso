@@ -33,6 +33,7 @@
             txingresar = new TextBox();
             lblrespuesta = new Label();
             label1 = new Label();
+            btNuevo = new Button();
             SuspendLayout();
             // 
             // btSalir
@@ -82,11 +83,23 @@
             label1.TabIndex = 4;
             label1.Text = "Ingrese su edad";
             // 
+            // btNuevo
+            // 
+            btNuevo.Cursor = Cursors.Hand;
+            btNuevo.Location = new Point(491, 231);
+            btNuevo.Name = "btNuevo";
+            btNuevo.Size = new Size(94, 29);
+            btNuevo.TabIndex = 5;
+            btNuevo.Text = "Switch-2";
+            btNuevo.UseVisualStyleBackColor = true;
+            btNuevo.Click += btNuevo_Click;
+            // 
             // SwitchPrueba
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(355, 286);
+            ClientSize = new Size(669, 286);
+            Controls.Add(btNuevo);
             Controls.Add(label1);
             Controls.Add(lblrespuesta);
             Controls.Add(txingresar);
@@ -105,5 +118,6 @@
         private TextBox txingresar;
         private Label lblrespuesta;
         private Label label1;
+        private Button btNuevo;
     }
 }

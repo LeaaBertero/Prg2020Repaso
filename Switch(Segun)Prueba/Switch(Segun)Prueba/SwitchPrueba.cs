@@ -36,16 +36,16 @@ namespace Switch_Segun_Prueba
                     break;
 
                 case 16:
-                lblrespuesta.Text = "Adolescente";
-                break;
+                    lblrespuesta.Text = "Adolescente";
+                    break;
 
                 case 18:
-                lblrespuesta.Text = "Mayor de edad";
-                break;
+                    lblrespuesta.Text = "Mayor de edad";
+                    break;
 
                 case 21:
-                lblrespuesta.Text = "Mayor de 21, ya casi viejo";
-                break;
+                    lblrespuesta.Text = "Mayor de 21, ya casi viejo";
+                    break;
 
                 case 40:
                     lblrespuesta.Text = "Viejo ";
@@ -53,11 +53,17 @@ namespace Switch_Segun_Prueba
 
                 default:
                     lblrespuesta.Text = "dato no valido";
-                break;
+                    break;
             }
-                  
+
             lblrespuesta.Visible = true;
- 
+
+        }
+
+        private void btNuevo_Click(object sender, EventArgs e)
+        {
+            Form Switch2 = new Switch_2();
+            Switch2.ShowDialog();
         }
     }
 }
