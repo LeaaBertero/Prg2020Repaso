@@ -31,19 +31,23 @@ namespace Switch_Segun_Prueba
             switch (nota)
             {
                 case "uno":
-                    label1.Text = "No aprobado";
+                    lblResultado.Text = "No aprobado";
+                    lblResultado.Visible = true;
                     break;
                 case "cuatro":
-                    label1.Text = "Regular";
+                    lblResultado.Text = "Regular";
+                    lblResultado.Visible = true;
                     break;
                 case "siete":
-                    label1.Text = "Promocionado";
+                    lblResultado.Text = "Promocionado";
+                    lblResultado.Visible = true;
                     break;
                 case "diez":
-                    label1.Text = "Aprobado";
+                    lblResultado.Text = "Aprobado";
+                    lblResultado.Visible = true;
                     break;
                 default:
-                    label1.Text = "Nota no valida";
+                    lblResultado.Text = "Nota no valida";
                     break;                   
             }
         }

@@ -32,6 +32,7 @@
             BtAceptar = new Button();
             TXIngresar = new TextBox();
             label1 = new Label();
+            lblResultado = new Label();
             SuspendLayout();
             // 
             // btsalir
@@ -71,17 +72,29 @@
             label1.TabIndex = 3;
             label1.Text = "Ingrese su edad con letras";
             // 
+            // lblResultado
+            // 
+            lblResultado.AutoSize = true;
+            lblResultado.Location = new Point(330, 252);
+            lblResultado.Name = "lblResultado";
+            lblResultado.Size = new Size(50, 20);
+            lblResultado.TabIndex = 4;
+            lblResultado.Text = "label2";
+            lblResultado.Visible = false;
+            // 
             // Switch_2
             // 
             AcceptButton = BtAceptar;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblResultado);
             Controls.Add(label1);
             Controls.Add(TXIngresar);
             Controls.Add(BtAceptar);
             Controls.Add(btsalir);
             Name = "Switch_2";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Switch_2";
             ResumeLayout(false);
             PerformLayout();
@@ -93,5 +106,6 @@
         private Button BtAceptar;
         private TextBox TXIngresar;
         private Label label1;
+        private Label lblResultado;
     }
 }
