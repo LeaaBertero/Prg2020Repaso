@@ -37,12 +37,14 @@
             label3 = new Label();
             label4 = new Label();
             BtCerrar = new Button();
+            btLimpiar = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // BtIniciar
             // 
             BtIniciar.Cursor = Cursors.Hand;
-            BtIniciar.Location = new Point(646, 155);
+            BtIniciar.Location = new Point(594, 179);
             BtIniciar.Name = "BtIniciar";
             BtIniciar.Size = new Size(94, 29);
             BtIniciar.TabIndex = 0;
@@ -52,21 +54,21 @@
             // 
             // TxDesde
             // 
-            TxDesde.Location = new Point(176, 155);
+            TxDesde.Location = new Point(124, 179);
             TxDesde.Name = "TxDesde";
             TxDesde.Size = new Size(125, 27);
             TxDesde.TabIndex = 1;
             // 
             // TxHasta
             // 
-            TxHasta.Location = new Point(333, 155);
+            TxHasta.Location = new Point(281, 179);
             TxHasta.Name = "TxHasta";
             TxHasta.Size = new Size(125, 27);
             TxHasta.TabIndex = 2;
             // 
             // TxPaso
             // 
-            TxPaso.Location = new Point(491, 155);
+            TxPaso.Location = new Point(439, 179);
             TxPaso.Name = "TxPaso";
             TxPaso.Size = new Size(125, 27);
             TxPaso.TabIndex = 3;
@@ -74,7 +76,7 @@
             // LblRes
             // 
             LblRes.AutoSize = true;
-            LblRes.Location = new Point(176, 237);
+            LblRes.Location = new Point(124, 261);
             LblRes.Name = "LblRes";
             LblRes.Size = new Size(28, 20);
             LblRes.TabIndex = 4;
@@ -84,7 +86,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(176, 103);
+            label2.Location = new Point(124, 127);
             label2.Name = "label2";
             label2.Size = new Size(51, 20);
             label2.TabIndex = 5;
@@ -93,7 +95,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(333, 103);
+            label3.Location = new Point(281, 127);
             label3.Name = "label3";
             label3.Size = new Size(47, 20);
             label3.TabIndex = 6;
@@ -102,7 +104,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(491, 103);
+            label4.Location = new Point(439, 127);
             label4.Name = "label4";
             label4.Size = new Size(39, 20);
             label4.TabIndex = 7;
@@ -111,7 +113,7 @@
             // BtCerrar
             // 
             BtCerrar.Cursor = Cursors.Hand;
-            BtCerrar.Location = new Point(694, 12);
+            BtCerrar.Location = new Point(784, 409);
             BtCerrar.Name = "BtCerrar";
             BtCerrar.Size = new Size(94, 29);
             BtCerrar.TabIndex = 8;
@@ -119,12 +121,35 @@
             BtCerrar.UseVisualStyleBackColor = true;
             BtCerrar.Click += BtCerrar_Click;
             // 
+            // btLimpiar
+            // 
+            btLimpiar.Location = new Point(694, 179);
+            btLimpiar.Name = "btLimpiar";
+            btLimpiar.Size = new Size(143, 29);
+            btLimpiar.TabIndex = 9;
+            btLimpiar.Text = "Limpiar campos";
+            btLimpiar.UseVisualStyleBackColor = true;
+            btLimpiar.Click += btLimpiar_Click;
+            // 
+            // label1
+            // 
+            label1.BackColor = Color.Orange;
+            label1.Font = new Font("Courier New", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(12, 27);
+            label1.Name = "label1";
+            label1.Size = new Size(887, 66);
+            label1.TabIndex = 10;
+            label1.Text = "Proyecto estructura de ciclo For";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // For
             // 
             AcceptButton = BtIniciar;
             AutoScaleMode = AutoScaleMode.None;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(911, 450);
+            Controls.Add(label1);
+            Controls.Add(btLimpiar);
             Controls.Add(BtCerrar);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -152,5 +177,7 @@
         private Label label3;
         private Label label4;
         private Button BtCerrar;
+        private Button btLimpiar;
+        private Label label1;
     }
 }
