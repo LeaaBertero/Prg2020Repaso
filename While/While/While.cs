@@ -11,19 +11,14 @@ using System.Windows.Forms;
 namespace While
 {
     public partial class While : Form
-    {   
+    {
         //constructor
         public While()
         {
             InitializeComponent();
         }
 
-        private void btejecutar_Click(object sender, EventArgs e)
-        {
-            Form DoWhile = new DoWhile();
-            DoWhile.ShowDialog();
-            btejecutar.BackColor = Color.Green;
-        }
+
 
         private void btsalir_Click(object sender, EventArgs e)
         {
@@ -31,14 +26,22 @@ namespace While
         }
 
 
-        private void btiniciar_Click(object sender, EventArgs e)
+
+
+        private void btejecutar_Click(object sender, EventArgs e)
+        {
+            Form frmDoWhile = new DoWhile();
+            frmDoWhile.ShowDialog();
+        }
+
+        private void btnRojo_Click(object sender, EventArgs e)
         {
             //declaración de variables 
             //Rectangulo Rojo
-            int anchoFormulario;
-            int ancholabel;
-            int anchoBorde = 50;
-            int X;
+            int anchoFormulario = 0;
+            int ancholabel = 0;
+            int anchoBorde = 20;
+            int X = 0;
             int paso = 2;
 
             //variables inicializadas
@@ -47,7 +50,7 @@ namespace While
             X = 0;
 
             //evento click de botón
-            btiniciar.BackColor = Color.HotPink;
+            btnRojo.BackColor = Color.HotPink;
 
             //for (int incremento = 0; incremento < anchoFormulario - ancholabel - anchoBorde; incremento++)
             //{
@@ -60,6 +63,27 @@ namespace While
             {
                 lblRojo.Left = X;
                 X = X + paso;
+                this.Refresh();
+            }
+        }
+
+        private void btnAzul_Click(object sender, EventArgs e)
+        {
+            //declaracion e inicializacion de variables
+            int anchoForm = 0;
+            int anchoLbl = 0;
+            int anchoBrd = 30;
+            int Eje_x = 0;
+            int paso = 2;
+
+            anchoForm = this.Width;
+            anchoLbl = lbAzul.Width;
+            Eje_x = 0;
+
+            while (Eje_x < anchoForm - anchoLbl - anchoBrd)
+            {
+                lbAzul.Left = Eje_x;
+                Eje_x = Eje_x + paso;
                 this.Refresh();
             }
         }

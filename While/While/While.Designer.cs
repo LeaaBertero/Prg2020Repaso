@@ -31,15 +31,17 @@
             btejecutar = new Button();
             btsalir = new Button();
             lblRojo = new Label();
-            btiniciar = new Button();
+            btnRojo = new Button();
+            btnAzul = new Button();
+            lbAzul = new Label();
             SuspendLayout();
             // 
             // btejecutar
             // 
             btejecutar.Cursor = Cursors.Hand;
-            btejecutar.Location = new Point(266, 12);
+            btejecutar.Location = new Point(637, 12);
             btejecutar.Name = "btejecutar";
-            btejecutar.Size = new Size(345, 44);
+            btejecutar.Size = new Size(167, 44);
             btejecutar.TabIndex = 0;
             btejecutar.Text = "Ejemplo DoWhile";
             btejecutar.UseVisualStyleBackColor = true;
@@ -62,26 +64,47 @@
             lblRojo.Cursor = Cursors.Hand;
             lblRojo.Location = new Point(-1, 109);
             lblRojo.Name = "lblRojo";
-            lblRojo.Size = new Size(101, 43);
+            lblRojo.Size = new Size(101, 97);
             lblRojo.TabIndex = 2;
             // 
-            // btiniciar
+            // btnRojo
             // 
-            btiniciar.Cursor = Cursors.Hand;
-            btiniciar.Location = new Point(12, 183);
-            btiniciar.Name = "btiniciar";
-            btiniciar.Size = new Size(177, 44);
-            btiniciar.TabIndex = 3;
-            btiniciar.Text = "Mover rectangulo rojo";
-            btiniciar.UseVisualStyleBackColor = true;
-            btiniciar.Click += btiniciar_Click;
+            btnRojo.Location = new Point(205, 248);
+            btnRojo.Name = "btnRojo";
+            btnRojo.Size = new Size(170, 42);
+            btnRojo.TabIndex = 3;
+            btnRojo.Text = "Cuadrado rojo";
+            btnRojo.UseVisualStyleBackColor = true;
+            btnRojo.Click += btnRojo_Click;
+            // 
+            // btnAzul
+            // 
+            btnAzul.Location = new Point(481, 248);
+            btnAzul.Name = "btnAzul";
+            btnAzul.Size = new Size(170, 42);
+            btnAzul.TabIndex = 4;
+            btnAzul.Text = "Cuadrado azul";
+            btnAzul.UseVisualStyleBackColor = true;
+            btnAzul.Click += btnAzul_Click;
+            // 
+            // lbAzul
+            // 
+            lbAzul.BackColor = Color.Blue;
+            lbAzul.Cursor = Cursors.Hand;
+            lbAzul.Location = new Point(703, 109);
+            lbAzul.Name = "lbAzul";
+            lbAzul.Size = new Size(101, 97);
+            lbAzul.TabIndex = 5;
             // 
             // While
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.MediumSeaGreen;
             ClientSize = new Size(816, 450);
-            Controls.Add(btiniciar);
+            Controls.Add(lbAzul);
+            Controls.Add(btnAzul);
+            Controls.Add(btnRojo);
             Controls.Add(btsalir);
             Controls.Add(btejecutar);
             Controls.Add(lblRojo);
@@ -96,6 +119,8 @@
         private Button btejecutar;
         private Button btsalir;
         private Label lblRojo;
-        private Button btiniciar;
+        private Button btnRojo;
+        private Button btnAzul;
+        private Label lbAzul;
     }
 }

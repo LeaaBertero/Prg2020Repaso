@@ -17,22 +17,9 @@ namespace While
             InitializeComponent();
         }
 
-        private void btSalir_Click(object sender, EventArgs e)
+        private void Btsalir_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void BtIniciar_Click(object sender, EventArgs e)
-        {
-            BtIniciar.BackColor = Color.Indigo;
-
-            int anchoFormulario;
-            int anchoLabel;
-            int anchBorde;
-            int x = 0;
-            int paso = 1;
-
-
         }
     }
 }

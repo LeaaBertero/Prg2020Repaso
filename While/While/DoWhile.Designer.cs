@@ -28,46 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btSalir = new Button();
-            BtIniciar = new Button();
+            Btsalir = new Button();
             SuspendLayout();
             // 
-            // btSalir
+            // Btsalir
             // 
-            btSalir.Location = new Point(658, 12);
-            btSalir.Name = "btSalir";
-            btSalir.Size = new Size(130, 48);
-            btSalir.TabIndex = 0;
-            btSalir.Text = "salir";
-            btSalir.UseVisualStyleBackColor = true;
-            btSalir.Click += btSalir_Click;
-            // 
-            // BtIniciar
-            // 
-            BtIniciar.Location = new Point(658, 77);
-            BtIniciar.Name = "BtIniciar";
-            BtIniciar.Size = new Size(130, 43);
-            BtIniciar.TabIndex = 1;
-            BtIniciar.Text = "Iniciar";
-            BtIniciar.UseVisualStyleBackColor = true;
-            BtIniciar.Click += BtIniciar_Click;
+            Btsalir.Cursor = Cursors.Hand;
+            Btsalir.Location = new Point(658, 402);
+            Btsalir.Name = "Btsalir";
+            Btsalir.Size = new Size(130, 36);
+            Btsalir.TabIndex = 0;
+            Btsalir.Text = "Salir";
+            Btsalir.UseVisualStyleBackColor = true;
+            Btsalir.Click += Btsalir_Click;
             // 
             // DoWhile
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Turquoise;
             ClientSize = new Size(800, 450);
-            Controls.Add(BtIniciar);
-            Controls.Add(btSalir);
+            Controls.Add(Btsalir);
             Name = "DoWhile";
-            StartPosition = FormStartPosition.CenterScreen;
             Text = "DoWhile";
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button btSalir;
-        private Button BtIniciar;
+        private Button Btsalir;
     }
 }
