@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             Btsalir = new Button();
+            btMover = new Button();
+            lbBlue = new Label();
             SuspendLayout();
             // 
             // Btsalir
@@ -42,12 +44,34 @@
             Btsalir.UseVisualStyleBackColor = true;
             Btsalir.Click += Btsalir_Click;
             // 
+            // btMover
+            // 
+            btMover.Cursor = Cursors.Hand;
+            btMover.Location = new Point(12, 302);
+            btMover.Name = "btMover";
+            btMover.Size = new Size(128, 33);
+            btMover.TabIndex = 1;
+            btMover.Text = "Mover";
+            btMover.UseVisualStyleBackColor = true;
+            btMover.Click += btMover_Click;
+            // 
+            // lbBlue
+            // 
+            lbBlue.BackColor = Color.Navy;
+            lbBlue.Location = new Point(12, 140);
+            lbBlue.Name = "lbBlue";
+            lbBlue.Size = new Size(83, 83);
+            lbBlue.TabIndex = 2;
+            lbBlue.Text = "label1";
+            // 
             // DoWhile
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Turquoise;
             ClientSize = new Size(800, 450);
+            Controls.Add(lbBlue);
+            Controls.Add(btMover);
             Controls.Add(Btsalir);
             Name = "DoWhile";
             Text = "DoWhile";
@@ -57,5 +81,7 @@
         #endregion
 
         private Button Btsalir;
+        private Button btMover;
+        private Label lbBlue;
     }
 }

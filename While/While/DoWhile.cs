@@ -21,5 +21,10 @@ namespace While
         {
             Close();
         }
+
+        private void btMover_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
