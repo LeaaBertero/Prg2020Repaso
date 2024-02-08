@@ -75,6 +75,7 @@
             Controls.Add(Btsalir);
             Name = "DoWhile";
             Text = "DoWhile";
+            Click += DoWhile_Click;
             ResumeLayout(false);
         }
 

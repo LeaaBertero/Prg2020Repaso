@@ -67,6 +67,7 @@
             lblRojo.Name = "lblRojo";
             lblRojo.Size = new Size(101, 97);
             lblRojo.TabIndex = 2;
+            lblRojo.Click += lblRojo_Click;
             // 
             // btnRojo
             // 
@@ -102,6 +103,7 @@
             lbAzul.Name = "lbAzul";
             lbAzul.Size = new Size(101, 97);
             lbAzul.TabIndex = 5;
+            lbAzul.Click += lbAzul_Click;
             // 
             // label1
             // 

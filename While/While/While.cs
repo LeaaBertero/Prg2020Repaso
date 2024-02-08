@@ -20,11 +20,14 @@ namespace While
         private void btsalir_Click(object sender, EventArgs e)
         {
             Close();
+            //MessageBox.Show("Estas seguro de salir?");
         }
         private void btejecutar_Click(object sender, EventArgs e)
         {
             Form frmDoWhile = new DoWhile();
             frmDoWhile.ShowDialog();
+
+            MessageBox.Show("Cerraste el formulario y no terminaste tu tarea !!");
         }
         private void btnRojo_Click(object sender, EventArgs e)
         {
@@ -57,9 +60,12 @@ namespace While
                 X = X + paso;
                 this.Refresh();
             }
+
+            MessageBox.Show("Soy un cuadrado rojo y he llegado bien..");
         }
         private void btnAzul_Click(object sender, EventArgs e)
         {
+
             //declaracion e inicializacion de variables
             int anchoForm = 0;
             int anchoLbl = 0;
@@ -71,6 +77,7 @@ namespace While
             anchoLbl = lbAzul.Width;
             Eje_x = 0;
 
+
             btnAzul.BackColor = Color.Red;
 
             while (Eje_x < anchoForm - anchoLbl - anchoBrd)
@@ -78,7 +85,21 @@ namespace While
                 lbAzul.Left = Eje_x;
                 Eje_x = Eje_x + paso;
                 this.Refresh();
+
             }
+
+            MessageBox.Show("Soy un cuadrado azul y he llegado bien..");
+
+        }
+
+        private void lblRojo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("No me toques");
+        }
+
+        private void lbAzul_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("A mi.. tampoco me toques !!");
         }
     }
 }

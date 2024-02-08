@@ -26,5 +26,10 @@ namespace While
         {
 
         }
+
+        private void DoWhile_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bienvenido, puede hacer aquí todo lo que quieras..");
+        }
     }
 }
