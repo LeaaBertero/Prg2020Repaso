@@ -22,6 +22,8 @@ namespace Proyectofor
                     this.Refresh();
                     LblRes.Visible = true;
                 }
+
+                MessageBox.Show("Contador ha llegado al final");
             }
             catch (Exception)
             {
