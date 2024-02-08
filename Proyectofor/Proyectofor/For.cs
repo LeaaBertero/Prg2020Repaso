@@ -9,15 +9,16 @@ namespace Proyectofor
 
         private void BtIniciar_Click(object sender, EventArgs e)
         {
+            int contador;
 
             try
             {
-                for (int contador = Convert.ToInt32(TxDesde.Text); //Desde
+                for (contador = Convert.ToInt32(TxDesde.Text); //Desde
                contador <= Convert.ToInt32(TxHasta.Text); //Hasta
                contador = contador + Convert.ToInt32(TxPaso.Text)) //Paso
                 {
                     //convertir el label del resultado en string
-                    LblRes.Text = contador.ToString();
+                    LblRes.Text = "Contando.." + " " + contador.ToString();
                     this.Refresh();
                     LblRes.Visible = true;
                 }
@@ -40,6 +41,7 @@ namespace Proyectofor
             TxDesde.Text = null;
             TxHasta.Text = null;
             TxPaso.Text = null;
+            LblRes.Text = null;
         }
     }
 }

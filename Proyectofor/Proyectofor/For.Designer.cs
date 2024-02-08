@@ -76,9 +76,10 @@
             // LblRes
             // 
             LblRes.AutoSize = true;
+            LblRes.Font = new Font("Kristen ITC", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LblRes.Location = new Point(124, 261);
             LblRes.Name = "LblRes";
-            LblRes.Size = new Size(28, 20);
+            LblRes.Size = new Size(59, 39);
             LblRes.TabIndex = 4;
             LblRes.Text = "res";
             LblRes.Visible = false;
@@ -86,27 +87,30 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(124, 127);
+            label2.Font = new Font("Kristen ITC", 13.8F);
+            label2.Location = new Point(141, 127);
             label2.Name = "label2";
-            label2.Size = new Size(51, 20);
+            label2.Size = new Size(85, 30);
             label2.TabIndex = 5;
             label2.Text = "Desde";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(281, 127);
+            label3.Font = new Font("Kristen ITC", 13.8F);
+            label3.Location = new Point(305, 127);
             label3.Name = "label3";
-            label3.Size = new Size(47, 20);
+            label3.Size = new Size(80, 30);
             label3.TabIndex = 6;
             label3.Text = "Hasta";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(439, 127);
+            label4.Font = new Font("Kristen ITC", 13.8F);
+            label4.Location = new Point(466, 127);
             label4.Name = "label4";
-            label4.Size = new Size(39, 20);
+            label4.Size = new Size(66, 30);
             label4.TabIndex = 7;
             label4.Text = "Paso";
             // 
@@ -147,6 +151,7 @@
             AcceptButton = BtIniciar;
             AutoScaleMode = AutoScaleMode.None;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(911, 450);
             Controls.Add(label1);
             Controls.Add(btLimpiar);
