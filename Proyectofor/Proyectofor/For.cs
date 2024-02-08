@@ -9,10 +9,12 @@ namespace Proyectofor
 
         private void BtIniciar_Click(object sender, EventArgs e)
         {
+            //definir la variable
             int contador;
 
             try
             {
+                //ciclo for
                 for (contador = Convert.ToInt32(TxDesde.Text); //Desde
                contador <= Convert.ToInt32(TxHasta.Text); //Hasta
                contador = contador + Convert.ToInt32(TxPaso.Text)) //Paso
