@@ -75,9 +75,8 @@
             lblista.Font = new Font("Segoe UI", 16F);
             lblista.Location = new Point(592, 53);
             lblista.Name = "lblista";
-            lblista.Size = new Size(71, 37);
+            lblista.Size = new Size(0, 37);
             lblista.TabIndex = 2;
-            lblista.Text = "Lista";
             lblista.TextAlign = ContentAlignment.MiddleCenter;
             lblista.Visible = false;
             // 
