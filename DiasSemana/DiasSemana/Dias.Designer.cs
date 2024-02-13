@@ -237,6 +237,7 @@
             Controls.Add(lblunes);
             Controls.Add(btcomenzar);
             Name = "Dias";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Dias";
             ResumeLayout(false);
             PerformLayout();
