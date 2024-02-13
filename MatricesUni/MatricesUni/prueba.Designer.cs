@@ -100,6 +100,7 @@
             labeRes.Size = new Size(28, 20);
             labeRes.TabIndex = 3;
             labeRes.Text = "res";
+            labeRes.Visible = false;
             // 
             // txsuma2
             // 
@@ -186,6 +187,7 @@
             labelresta.Size = new Size(28, 20);
             labelresta.TabIndex = 11;
             labelresta.Text = "res";
+            labelresta.Visible = false;
             // 
             // txresta1
             // 
@@ -265,6 +267,7 @@
             labelMult.Size = new Size(28, 20);
             labelMult.TabIndex = 19;
             labelMult.Text = "res";
+            labelMult.Visible = false;
             // 
             // txmult1
             // 
@@ -335,6 +338,7 @@
             labelresdiv.Size = new Size(28, 20);
             labelresdiv.TabIndex = 27;
             labelresdiv.Text = "res";
+            labelresdiv.Visible = false;
             // 
             // txdiv1
             // 

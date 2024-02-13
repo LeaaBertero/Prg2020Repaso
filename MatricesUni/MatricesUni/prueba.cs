@@ -37,6 +37,7 @@ namespace MatricesUni
                 res = numero1 + numero2;
 
                 labeRes.Text = Convert.ToString(res);
+                labeRes.Visible = true;
             }
             catch (Exception)
             {
@@ -60,6 +61,7 @@ namespace MatricesUni
                 resRes = numres1 - numres2;
 
                 labelresta.Text = Convert.ToString(resRes);
+                labelresta.Visible = true;
             }
             catch (Exception)
             {
@@ -83,6 +85,7 @@ namespace MatricesUni
                 resMult = numMul1 * numMult2;
 
                 labelMult.Text = Convert.ToString(resMult);
+                labelMult.Visible = true;
             }
             catch (Exception)
             {
@@ -107,6 +110,7 @@ namespace MatricesUni
                 resdiv = numdiv1 / numdiv2;
 
                 labelresdiv.Text = Convert.ToString(resdiv);
+                labelresdiv.Visible = true;
             }
             catch (Exception)
             {
