@@ -55,7 +55,7 @@ namespace MatricesUni
         private void btDimensionar_Click(object sender, EventArgs e)
         {
             lista = new string[Convert.ToUInt32(TxCantidad.Text)];
-
+            posicion = 0;
             btiniciar.Enabled = true;
             btlistar.Enabled = true;
         }
