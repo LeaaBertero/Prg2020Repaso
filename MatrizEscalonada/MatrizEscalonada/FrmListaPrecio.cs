@@ -13,12 +13,14 @@ namespace MatrizEscalonada
     public partial class FrmListaPrecio : Form
     {
         //[,] = quiere decir que tiene dos dimensiones
-        private string[,]Producto = new string[3, 2];
-        private decimal[]Precio = new decimal[3];
+        //tres filas, dos columnas -- filas (precio // producto)
+                                
+        private string[,] Producto = new string[3, 2];
+        private decimal[] Precio = new decimal[3];
 
         private int fila;
 
-        
+
 
         public FrmListaPrecio()
         {
@@ -46,7 +48,20 @@ namespace MatrizEscalonada
                 fila = fila + 1;
             }
 
-            
+
+        }
+
+        private void btlistar_Click(object sender, EventArgs e)
+        {
+
+            lblListaPrecio.Text = "lista de precios \r\n";
+
+            for (int incremento = 0; incremento < Producto.Length; incremento++)
+            {
+                lblListaPrecio.Text = lblListaPrecio.Text +
+                    Producto[incremento, 0] + " " + Producto[incremento, 1] +
+                    " - " + Convert.ToString(Precio[incremento]) + "\r\n";
+            }
         }
     }
 }

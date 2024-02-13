@@ -60,6 +60,7 @@
             btlistar.TabIndex = 6;
             btlistar.Text = "Listar";
             btlistar.UseVisualStyleBackColor = true;
+            btlistar.Click += btlistar_Click;
             // 
             // txproducto
             // 
