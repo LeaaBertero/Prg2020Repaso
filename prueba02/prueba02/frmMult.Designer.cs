@@ -30,12 +30,12 @@
         {
             btsalir = new Button();
             btCalcularMult = new Button();
-            label1 = new Label();
-            label2 = new Label();
             txnumMult1 = new TextBox();
             txnumMult2 = new TextBox();
             lbResultMult = new Label();
             label3 = new Label();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // btsalir
@@ -59,24 +59,6 @@
             btCalcularMult.Text = "Calcular";
             btCalcularMult.UseVisualStyleBackColor = true;
             btCalcularMult.Click += btCalcularMult_Click;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(128, 90);
-            label1.Name = "label1";
-            label1.Size = new Size(75, 20);
-            label1.TabIndex = 2;
-            label1.Text = "Número 1";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(334, 91);
-            label2.Name = "label2";
-            label2.Size = new Size(75, 20);
-            label2.TabIndex = 3;
-            label2.Text = "Número 2";
             // 
             // txnumMult1
             // 
@@ -110,17 +92,37 @@
             label3.TabIndex = 7;
             label3.Text = "*";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Kristen ITC", 12F);
+            label1.Location = new Point(336, 89);
+            label1.Name = "label1";
+            label1.Size = new Size(107, 28);
+            label1.TabIndex = 9;
+            label1.Text = "Número 2";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Kristen ITC", 12F);
+            label2.Location = new Point(137, 89);
+            label2.Name = "label2";
+            label2.Size = new Size(106, 28);
+            label2.TabIndex = 8;
+            label2.Text = "Número 1";
+            // 
             // frmMult
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 256);
+            Controls.Add(label1);
+            Controls.Add(label2);
             Controls.Add(label3);
             Controls.Add(lbResultMult);
             Controls.Add(txnumMult2);
             Controls.Add(txnumMult1);
-            Controls.Add(label2);
-            Controls.Add(label1);
             Controls.Add(btCalcularMult);
             Controls.Add(btsalir);
             Name = "frmMult";
@@ -134,11 +136,11 @@
 
         private Button btsalir;
         private Button btCalcularMult;
-        private Label label1;
-        private Label label2;
         private TextBox txnumMult1;
         private TextBox txnumMult2;
         private Label lbResultMult;
         private Label label3;
+        private Label label1;
+        private Label label2;
     }
 }

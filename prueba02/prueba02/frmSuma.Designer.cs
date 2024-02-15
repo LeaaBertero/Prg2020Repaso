@@ -86,18 +86,20 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(152, 93);
+            label2.Font = new Font("Kristen ITC", 12F);
+            label2.Location = new Point(141, 85);
             label2.Name = "label2";
-            label2.Size = new Size(75, 20);
+            label2.Size = new Size(106, 28);
             label2.TabIndex = 5;
             label2.Text = "Número 1";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(351, 93);
+            label3.Font = new Font("Kristen ITC", 12F);
+            label3.Location = new Point(340, 85);
             label3.Name = "label3";
-            label3.Size = new Size(75, 20);
+            label3.Size = new Size(107, 28);
             label3.TabIndex = 6;
             label3.Text = "Número 2";
             // 

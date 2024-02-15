@@ -33,9 +33,9 @@
             lbresultDiv = new Label();
             txnumMult1 = new TextBox();
             txnumMult2 = new TextBox();
+            label3 = new Label();
             label1 = new Label();
             label2 = new Label();
-            label3 = new Label();
             SuspendLayout();
             // 
             // btsalir
@@ -83,24 +83,6 @@
             txnumMult2.Size = new Size(125, 27);
             txnumMult2.TabIndex = 4;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(77, 89);
-            label1.Name = "label1";
-            label1.Size = new Size(75, 20);
-            label1.TabIndex = 5;
-            label1.Text = "Número 1";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(308, 90);
-            label2.Name = "label2";
-            label2.Size = new Size(75, 20);
-            label2.TabIndex = 6;
-            label2.Text = "Número 2";
-            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -110,14 +92,34 @@
             label3.TabIndex = 7;
             label3.Text = "/";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Kristen ITC", 12F);
+            label1.Location = new Point(313, 75);
+            label1.Name = "label1";
+            label1.Size = new Size(107, 28);
+            label1.TabIndex = 9;
+            label1.Text = "Número 2";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Kristen ITC", 12F);
+            label2.Location = new Point(86, 75);
+            label2.Name = "label2";
+            label2.Size = new Size(106, 28);
+            label2.TabIndex = 8;
+            label2.Text = "Número 1";
+            // 
             // frmDiv
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 270);
-            Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
+            Controls.Add(label2);
+            Controls.Add(label3);
             Controls.Add(txnumMult2);
             Controls.Add(txnumMult1);
             Controls.Add(lbresultDiv);
@@ -137,8 +139,8 @@
         private Label lbresultDiv;
         private TextBox txnumMult1;
         private TextBox txnumMult2;
+        private Label label3;
         private Label label1;
         private Label label2;
-        private Label label3;
     }
 }
