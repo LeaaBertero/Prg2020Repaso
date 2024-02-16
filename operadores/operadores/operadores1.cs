@@ -35,7 +35,7 @@ namespace operadores
 
             //resultado = numero1 + numero2;
 
-            laresultado.Text = Convert.ToString(Suma());
+            laresultado.Text = "El resultado es:" + " " + Convert.ToString(Suma());
             laresultado.Visible = true;
         }
 
@@ -73,11 +73,16 @@ namespace operadores
             else if ( numero > 20 )
             {
                 BackColor = Color.Black;
-                lbincremento.BackColor = Color.Yellow;
-                lbincremento.ForeColor = Color.White;
+                lbincremento.BackColor = Color.HotPink;
+                //lbincremento.ForeColor = Color.White;
                 lbincremento.Size = new Size(200, 200);
-                lbincremento.ForeColor = Color.Black;
-                
+                lbincremento.ForeColor = Color.White;
+                label3.ForeColor = Color.White; 
+                label4.ForeColor = Color.White;
+                label5.ForeColor = Color.White;
+                laresultado.ForeColor = Color.White;
+
+
             }
             
 

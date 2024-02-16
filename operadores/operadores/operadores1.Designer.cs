@@ -39,12 +39,13 @@
             label1 = new Label();
             btincremento = new Button();
             lbincremento = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // btcalcular
             // 
             btcalcular.Cursor = Cursors.Hand;
-            btcalcular.Location = new Point(520, 177);
+            btcalcular.Location = new Point(571, 190);
             btcalcular.Name = "btcalcular";
             btcalcular.Size = new Size(94, 29);
             btcalcular.TabIndex = 3;
@@ -55,7 +56,7 @@
             // laresultado
             // 
             laresultado.AutoSize = true;
-            laresultado.Location = new Point(676, 181);
+            laresultado.Location = new Point(727, 194);
             laresultado.Name = "laresultado";
             laresultado.Size = new Size(50, 20);
             laresultado.TabIndex = 1;
@@ -64,14 +65,14 @@
             // 
             // txnum1
             // 
-            txnum1.Location = new Point(151, 175);
+            txnum1.Location = new Point(202, 188);
             txnum1.Name = "txnum1";
             txnum1.Size = new Size(125, 27);
             txnum1.TabIndex = 1;
             // 
             // txnum2
             // 
-            txnum2.Location = new Point(343, 175);
+            txnum2.Location = new Point(394, 188);
             txnum2.Name = "txnum2";
             txnum2.Size = new Size(125, 27);
             txnum2.TabIndex = 2;
@@ -80,7 +81,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label2.Location = new Point(294, 172);
+            label2.Location = new Point(345, 185);
             label2.Name = "label2";
             label2.Size = new Size(31, 32);
             label2.TabIndex = 4;
@@ -90,7 +91,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label3.Location = new Point(151, 123);
+            label3.Location = new Point(202, 136);
             label3.Name = "label3";
             label3.Size = new Size(125, 32);
             label3.TabIndex = 5;
@@ -100,7 +101,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label4.Location = new Point(343, 123);
+            label4.Location = new Point(394, 136);
             label4.Name = "label4";
             label4.Size = new Size(125, 32);
             label4.TabIndex = 6;
@@ -109,7 +110,7 @@
             // btsalir
             // 
             btsalir.Cursor = Cursors.Hand;
-            btsalir.Location = new Point(758, 12);
+            btsalir.Location = new Point(868, 12);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(94, 29);
             btsalir.TabIndex = 7;
@@ -121,7 +122,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label1.Location = new Point(12, 44);
+            label1.Location = new Point(79, 64);
             label1.Name = "label1";
             label1.Size = new Size(790, 32);
             label1.TabIndex = 8;
@@ -129,7 +130,7 @@
             // 
             // btincremento
             // 
-            btincremento.Location = new Point(151, 332);
+            btincremento.Location = new Point(312, 400);
             btincremento.Name = "btincremento";
             btincremento.Size = new Size(106, 29);
             btincremento.TabIndex = 9;
@@ -140,19 +141,32 @@
             // lbincremento
             // 
             lbincremento.Font = new Font("Segoe UI", 10F);
-            lbincremento.Location = new Point(331, 336);
+            lbincremento.ForeColor = Color.Black;
+            lbincremento.Location = new Point(540, 402);
             lbincremento.Name = "lbincremento";
             lbincremento.Size = new Size(55, 23);
             lbincremento.TabIndex = 10;
             lbincremento.Text = "label5";
             lbincremento.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label5.Location = new Point(312, 289);
+            label5.Name = "label5";
+            label5.Size = new Size(283, 32);
+            label5.TabIndex = 11;
+            label5.Text = "Ejercicio de incremento";
+            // 
             // operadores1
             // 
             AcceptButton = btcalcular;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Chartreuse;
             ClientSize = new Size(974, 608);
+            Controls.Add(label5);
             Controls.Add(lbincremento);
             Controls.Add(btincremento);
             Controls.Add(label1);
@@ -184,5 +198,6 @@
         private Label label1;
         private Button btincremento;
         private Label lbincremento;
+        private Label label5;
     }
 }
