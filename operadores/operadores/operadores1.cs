@@ -23,6 +23,8 @@ namespace operadores
             Close();
         }
 
+
+        //suma de dos numeros
         private void btcalcular_Click(object sender, EventArgs e)
         {
             //int numero1;
@@ -55,6 +57,8 @@ namespace operadores
 
         }
 
+
+        //contador
         private void btincremento_Click(object sender, EventArgs e)
         {
             
