@@ -41,6 +41,7 @@
             // 
             // btcalcular
             // 
+            btcalcular.Cursor = Cursors.Hand;
             btcalcular.Location = new Point(520, 177);
             btcalcular.Name = "btcalcular";
             btcalcular.Size = new Size(94, 29);
@@ -52,11 +53,12 @@
             // laresultado
             // 
             laresultado.AutoSize = true;
-            laresultado.Location = new Point(679, 186);
+            laresultado.Location = new Point(676, 181);
             laresultado.Name = "laresultado";
             laresultado.Size = new Size(50, 20);
             laresultado.TabIndex = 1;
             laresultado.Text = "label1";
+            laresultado.Visible = false;
             // 
             // txnum1
             // 
@@ -104,6 +106,7 @@
             // 
             // btsalir
             // 
+            btsalir.Cursor = Cursors.Hand;
             btsalir.Location = new Point(758, 12);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(94, 29);
@@ -122,7 +125,7 @@
             label1.TabIndex = 8;
             label1.Text = "Ejercicio de prueba de conversion de variables con método incluido";
             // 
-            // operadores
+            // operadores1
             // 
             AcceptButton = btcalcular;
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -137,7 +140,7 @@
             Controls.Add(txnum1);
             Controls.Add(laresultado);
             Controls.Add(btcalcular);
-            Name = "operadores";
+            Name = "operadores1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "operadores";
             ResumeLayout(false);

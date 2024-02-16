@@ -35,6 +35,7 @@ namespace operadores
             //resultado = numero1 + numero2;
 
             laresultado.Text = Convert.ToString(Suma());
+            laresultado.Visible = true;
         }
 
         private int Suma()
@@ -50,6 +51,7 @@ namespace operadores
             resultado = numero1 + numero2;
 
             return resultado;
+
         }
     }
 }
