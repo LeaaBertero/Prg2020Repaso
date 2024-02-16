@@ -12,6 +12,7 @@ namespace operadores
 {
     public partial class operadores1 : Form
     {
+        int numero = 0;
         public operadores1()
         {
             InitializeComponent();
@@ -52,6 +53,35 @@ namespace operadores
 
             return resultado;
 
+        }
+
+        private void btincremento_Click(object sender, EventArgs e)
+        {
+            
+
+            numero = ++numero;
+
+            if (numero == 10)
+            {
+                MessageBox.Show("Ha llegado al limite de 10");
+            }
+            else if (numero == 20)
+            {
+                BackColor = Color.Red;
+                
+            }
+            else if ( numero > 20 )
+            {
+                BackColor = Color.Black;
+                lbincremento.BackColor = Color.Yellow;
+                lbincremento.ForeColor = Color.White;
+                lbincremento.Size = new Size(200, 200);
+                lbincremento.ForeColor = Color.Black;
+                
+            }
+            
+
+            lbincremento.Text = Convert.ToString(numero);
         }
     }
 }

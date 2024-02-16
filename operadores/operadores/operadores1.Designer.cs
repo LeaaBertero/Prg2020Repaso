@@ -37,6 +37,8 @@
             label4 = new Label();
             btsalir = new Button();
             label1 = new Label();
+            btincremento = new Button();
+            lbincremento = new Label();
             SuspendLayout();
             // 
             // btcalcular
@@ -125,12 +127,34 @@
             label1.TabIndex = 8;
             label1.Text = "Ejercicio de prueba de conversion de variables con método incluido";
             // 
+            // btincremento
+            // 
+            btincremento.Location = new Point(151, 332);
+            btincremento.Name = "btincremento";
+            btincremento.Size = new Size(106, 29);
+            btincremento.TabIndex = 9;
+            btincremento.Text = "incrementar";
+            btincremento.UseVisualStyleBackColor = true;
+            btincremento.Click += btincremento_Click;
+            // 
+            // lbincremento
+            // 
+            lbincremento.Font = new Font("Segoe UI", 10F);
+            lbincremento.Location = new Point(331, 336);
+            lbincremento.Name = "lbincremento";
+            lbincremento.Size = new Size(55, 23);
+            lbincremento.TabIndex = 10;
+            lbincremento.Text = "label5";
+            lbincremento.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // operadores1
             // 
             AcceptButton = btcalcular;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(864, 450);
+            ClientSize = new Size(974, 608);
+            Controls.Add(lbincremento);
+            Controls.Add(btincremento);
             Controls.Add(label1);
             Controls.Add(btsalir);
             Controls.Add(label4);
@@ -158,5 +182,7 @@
         private Label label4;
         private Button btsalir;
         private Label label1;
+        private Button btincremento;
+        private Label lbincremento;
     }
 }
