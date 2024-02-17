@@ -52,6 +52,34 @@ namespace If
 
                 lbresultado.Text = resultado.ToString();
             }
+            else if(txoper.Text == "*") 
+            {
+                int numero1;
+                int numero2;
+
+                int resultado;
+
+                numero1 = Convert.ToInt32(txnum1.Text);
+                numero2 = Convert.ToInt32(txnum2.Text);
+
+                resultado = numero1 * numero2;
+
+                lbresultado.Text = resultado.ToString();
+            }
+            else if(txoper.Text == "/")
+            {
+                int numero1;
+                int numero2;
+
+                int resultado;
+
+                numero1 = Convert.ToInt32(txnum1.Text);
+                numero2 = Convert.ToInt32(txnum2.Text);
+
+                resultado = numero1 / numero2;
+
+                lbresultado.Text = resultado.ToString();
+            }
 
         }
     }
