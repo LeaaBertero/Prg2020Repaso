@@ -37,14 +37,15 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            btswitch = new Button();
             SuspendLayout();
             // 
             // btsalir2
             // 
             btsalir2.Cursor = Cursors.Hand;
-            btsalir2.Location = new Point(342, 400);
+            btsalir2.Location = new Point(211, 358);
             btsalir2.Name = "btsalir2";
-            btsalir2.Size = new Size(94, 29);
+            btsalir2.Size = new Size(115, 29);
             btsalir2.TabIndex = 5;
             btsalir2.Text = "salir";
             btsalir2.UseVisualStyleBackColor = true;
@@ -52,11 +53,11 @@
             // 
             // btsumar2
             // 
-            btsumar2.Location = new Point(450, 175);
+            btsumar2.Location = new Point(470, 173);
             btsumar2.Name = "btsumar2";
             btsumar2.Size = new Size(115, 33);
             btsumar2.TabIndex = 4;
-            btsumar2.Text = "sumar";
+            btsumar2.Text = "Calcular";
             btsumar2.UseVisualStyleBackColor = true;
             btsumar2.Click += btsumar2_Click;
             // 
@@ -64,7 +65,7 @@
             // 
             lbresultado.AutoSize = true;
             lbresultado.Font = new Font("Segoe UI", 12F);
-            lbresultado.Location = new Point(638, 177);
+            lbresultado.Location = new Point(658, 175);
             lbresultado.Name = "lbresultado";
             lbresultado.Size = new Size(65, 28);
             lbresultado.TabIndex = 2;
@@ -72,14 +73,14 @@
             // 
             // txnum1
             // 
-            txnum1.Location = new Point(104, 178);
+            txnum1.Location = new Point(124, 176);
             txnum1.Name = "txnum1";
             txnum1.Size = new Size(80, 27);
             txnum1.TabIndex = 1;
             // 
             // txoper
             // 
-            txoper.Location = new Point(207, 178);
+            txoper.Location = new Point(227, 176);
             txoper.Name = "txoper";
             txoper.Size = new Size(80, 27);
             txoper.TabIndex = 2;
@@ -87,7 +88,7 @@
             // 
             // txnum2
             // 
-            txnum2.Location = new Point(310, 178);
+            txnum2.Location = new Point(330, 176);
             txnum2.Name = "txnum2";
             txnum2.Size = new Size(80, 27);
             txnum2.TabIndex = 3;
@@ -95,7 +96,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(104, 126);
+            label1.Location = new Point(124, 124);
             label1.Name = "label1";
             label1.Size = new Size(75, 20);
             label1.TabIndex = 6;
@@ -104,7 +105,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(310, 126);
+            label2.Location = new Point(330, 124);
             label2.Name = "label2";
             label2.Size = new Size(75, 20);
             label2.TabIndex = 7;
@@ -113,11 +114,21 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(207, 126);
+            label3.Location = new Point(227, 124);
             label3.Name = "label3";
             label3.Size = new Size(71, 20);
             label3.TabIndex = 8;
             label3.Text = "operador";
+            // 
+            // btswitch
+            // 
+            btswitch.Location = new Point(470, 358);
+            btswitch.Name = "btswitch";
+            btswitch.Size = new Size(115, 29);
+            btswitch.TabIndex = 9;
+            btswitch.Text = "swich";
+            btswitch.UseVisualStyleBackColor = true;
+            btswitch.Click += btswitch_Click;
             // 
             // pruebaIff_2
             // 
@@ -125,6 +136,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(800, 450);
+            Controls.Add(btswitch);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -152,5 +164,6 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private Button btswitch;
     }
 }

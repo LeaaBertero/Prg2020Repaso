@@ -45,7 +45,7 @@
             btcomenzar.Name = "btcomenzar";
             btcomenzar.Size = new Size(117, 29);
             btcomenzar.TabIndex = 0;
-            btcomenzar.Text = "comenzar";
+            btcomenzar.Text = "Ejecutar";
             btcomenzar.UseVisualStyleBackColor = true;
             btcomenzar.Click += btcomenzar_Click;
             // 

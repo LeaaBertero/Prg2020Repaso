@@ -52,7 +52,7 @@ namespace If
 
                 lbresultado.Text = resultado.ToString();
             }
-            else if(txoper.Text == "*") 
+            else if (txoper.Text == "*")
             {
                 int numero1;
                 int numero2;
@@ -66,7 +66,7 @@ namespace If
 
                 lbresultado.Text = resultado.ToString();
             }
-            else if(txoper.Text == "/")
+            else if (txoper.Text == "/")
             {
                 int numero1;
                 int numero2;
@@ -81,6 +81,12 @@ namespace If
                 lbresultado.Text = resultado.ToString();
             }
 
+        }
+
+        private void btswitch_Click(object sender, EventArgs e)
+        {
+            Form pruebaSwitch = new pruebaSwitch();
+            pruebaSwitch.ShowDialog();
         }
     }
 }
