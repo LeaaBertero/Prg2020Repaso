@@ -24,6 +24,7 @@ namespace If
 
         private void biiniciarSwitch_Click(object sender, EventArgs e)
         {
+
             switch (txoperador.Text)
             {
                 case "+":
