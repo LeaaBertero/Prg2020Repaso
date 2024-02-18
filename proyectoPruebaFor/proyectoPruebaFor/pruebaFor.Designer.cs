@@ -117,7 +117,7 @@
             // label2
             // 
             label2.BackColor = Color.White;
-            label2.Location = new Point(1059, 102);
+            label2.Location = new Point(1056, 102);
             label2.Name = "label2";
             label2.Size = new Size(24, 238);
             label2.TabIndex = 7;
