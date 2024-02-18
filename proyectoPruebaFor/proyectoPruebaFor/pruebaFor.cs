@@ -25,7 +25,7 @@ namespace proyectoPruebaFor
                 lbVerde.Text = contador.ToString();
                 this.Refresh();
 
-                lbVerde.BackColor = Color.Orange;
+                lbVerde.BackColor = Color.Pink;
             }
         }
         private void btsalir_Click(object sender, EventArgs e)
