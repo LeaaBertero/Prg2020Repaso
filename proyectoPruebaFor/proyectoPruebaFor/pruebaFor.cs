@@ -39,6 +39,7 @@ namespace proyectoPruebaFor
             {
                 lbVerde.Left = movimiento;
                 lbVerde.BackColor= Color.Blue;
+                lbVerde.ForeColor = Color.White;
                 this.Refresh();
             }
         }
@@ -49,6 +50,7 @@ namespace proyectoPruebaFor
             {
                 lbVerde.Left = movimiento;
                 lbVerde.BackColor = Color.Gold;
+                lbVerde.ForeColor = Color.Black;
                 this.Refresh();
             }
         }
