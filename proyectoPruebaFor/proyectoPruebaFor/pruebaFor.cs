@@ -46,7 +46,7 @@ namespace proyectoPruebaFor
 
         private void btvolver_Click(object sender, EventArgs e)
         {
-            for (int movimiento = 1084; movimiento > 261; movimiento--)
+            for (int movimiento = 1084; movimiento > 260; movimiento--)
             {
                 lbVerde.Left = movimiento;
                 lbVerde.BackColor = Color.Gold;
