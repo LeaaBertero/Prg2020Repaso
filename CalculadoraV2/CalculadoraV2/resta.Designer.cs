@@ -1,6 +1,6 @@
 ﻿namespace CalculadoraV2
 {
-    partial class resta
+    partial class Resta
     {
         /// <summary>
         /// Required designer variable.

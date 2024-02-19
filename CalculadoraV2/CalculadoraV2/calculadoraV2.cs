@@ -30,7 +30,7 @@ namespace CalculadoraV2
 
         private void btresta_Click(object sender, EventArgs e)
         {
-            Form resta = new resta();
+            Form resta = new Resta();
             resta.Show();
         }
 

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CalculadoraV2
 {
-    public partial class resta : Form
+    public partial class Resta : Form
     {
-        public resta()
+        public Resta()
         {
             InitializeComponent();
         }
