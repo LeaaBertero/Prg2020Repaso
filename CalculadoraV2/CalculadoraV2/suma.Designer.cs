@@ -1,6 +1,6 @@
 ﻿namespace CalculadoraV2
 {
-    partial class suma
+    partial class Suma
     {
         /// <summary>
         /// Required designer variable.

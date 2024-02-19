@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CalculadoraV2
 {
-    public partial class suma : Form
+    public partial class Suma : Form
     {
-        public suma()
+        public Suma()
         {
             InitializeComponent();
         }

@@ -24,7 +24,7 @@ namespace CalculadoraV2
 
         private void btsuma_Click(object sender, EventArgs e)
         {
-            Form suma = new suma();
+            Form suma = new Suma();
             suma.Show();
         }
 
