@@ -17,7 +17,7 @@ namespace proyectoPruebaFor
             InitializeComponent();
         }
 
-       
+
         private void btarranque_Click(object sender, EventArgs e)
         {
             //botón arraque que cuenta de 1 hasta 10 a velocidad  
@@ -26,10 +26,10 @@ namespace proyectoPruebaFor
                 lbVerde.Text = contador.ToString();
                 this.Refresh();
                 lbVerde.BackColor = Color.Pink;
-            }          
+            }
         }
 
-        
+
         private void btiniciar_Click(object sender, EventArgs e)
         {
             //primera vuelta izquierda a derecha
@@ -48,6 +48,7 @@ namespace proyectoPruebaFor
                 lbVerde.BackColor = Color.Pink;
                 lbVerde.ForeColor = Color.White;
                 this.Refresh();
+                picBox1.Visible = true;
             }
         }
 
@@ -73,7 +74,14 @@ namespace proyectoPruebaFor
                 lbVerde.BackColor = Color.Turquoise;
                 lbVerde.ForeColor = Color.Black;
                 this.Refresh();
+                picBox2.Visible = true;
             }
+        }
+
+        private void btRestablecer_Click(object sender, EventArgs e)
+        {
+            picBox1.Visible=false;
+            picBox2.Visible=false;
         }
     }
 }

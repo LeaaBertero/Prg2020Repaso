@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(pruebaFor));
             btarranque = new Button();
             lbVerde = new Label();
             btsalir = new Button();
@@ -59,6 +60,11 @@
             label24 = new Label();
             label25 = new Label();
             label26 = new Label();
+            picBox1 = new PictureBox();
+            picBox2 = new PictureBox();
+            btRestablecer = new Button();
+            ((System.ComponentModel.ISupportInitialize)picBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picBox2).BeginInit();
             SuspendLayout();
             // 
             // btarranque
@@ -71,7 +77,7 @@
             btarranque.Name = "btarranque";
             btarranque.Size = new Size(166, 55);
             btarranque.TabIndex = 0;
-            btarranque.Text = "arrancar";
+            btarranque.Text = "Contar";
             btarranque.UseVisualStyleBackColor = false;
             btarranque.Click += btarranque_Click;
             // 
@@ -363,6 +369,41 @@
             label26.TabIndex = 29;
             label26.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // picBox1
+            // 
+            picBox1.Image = (Image)resources.GetObject("picBox1.Image");
+            picBox1.Location = new Point(237, 476);
+            picBox1.Name = "picBox1";
+            picBox1.Size = new Size(284, 177);
+            picBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            picBox1.TabIndex = 32;
+            picBox1.TabStop = false;
+            picBox1.Visible = false;
+            // 
+            // picBox2
+            // 
+            picBox2.Image = (Image)resources.GetObject("picBox2.Image");
+            picBox2.Location = new Point(936, 476);
+            picBox2.Name = "picBox2";
+            picBox2.Size = new Size(284, 177);
+            picBox2.TabIndex = 33;
+            picBox2.TabStop = false;
+            picBox2.Visible = false;
+            // 
+            // btRestablecer
+            // 
+            btRestablecer.BackColor = Color.Black;
+            btRestablecer.Cursor = Cursors.Hand;
+            btRestablecer.Font = new Font("Jokerman", 12F, FontStyle.Bold);
+            btRestablecer.ForeColor = SystemColors.Control;
+            btRestablecer.Location = new Point(576, 10);
+            btRestablecer.Name = "btRestablecer";
+            btRestablecer.Size = new Size(293, 55);
+            btRestablecer.TabIndex = 34;
+            btRestablecer.Text = "Restablecer imagenes";
+            btRestablecer.UseVisualStyleBackColor = false;
+            btRestablecer.Click += btRestablecer_Click;
+            // 
             // pruebaFor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -370,6 +411,9 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.Black;
             ClientSize = new Size(1453, 665);
+            Controls.Add(btRestablecer);
+            Controls.Add(picBox2);
+            Controls.Add(picBox1);
             Controls.Add(label24);
             Controls.Add(label25);
             Controls.Add(label26);
@@ -405,7 +449,10 @@
             Name = "pruebaFor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "pruebaFor";
+            ((System.ComponentModel.ISupportInitialize)picBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picBox2).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -441,5 +488,8 @@
         private Label label24;
         private Label label25;
         private Label label26;
+        private PictureBox picBox1;
+        private PictureBox picBox2;
+        private Button btRestablecer;
     }
 }
