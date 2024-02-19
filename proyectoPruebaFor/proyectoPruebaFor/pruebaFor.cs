@@ -39,6 +39,7 @@ namespace proyectoPruebaFor
                 lbVerde.BackColor = Color.Blue;
                 lbVerde.ForeColor = Color.White;
                 this.Refresh();
+                lbVerde.Visible = true;
             }
 
             //segunda vuelta izquierda a centro
@@ -49,6 +50,7 @@ namespace proyectoPruebaFor
                 lbVerde.ForeColor = Color.White;
                 this.Refresh();
                 picBox1.Visible = true;
+                lbVerde.Visible = true;
             }
         }
 
@@ -66,6 +68,7 @@ namespace proyectoPruebaFor
                 lbVerde.BackColor = Color.Gold;
                 lbVerde.ForeColor = Color.Black;
                 this.Refresh();
+                lbVerde.Visible = true;
             }
             //segunda vuelta derecha a centro
             for (int movimiento = 1084; movimiento > 678; movimiento--)
@@ -75,6 +78,7 @@ namespace proyectoPruebaFor
                 lbVerde.ForeColor = Color.Black;
                 this.Refresh();
                 picBox2.Visible = true;
+                lbVerde.Visible = true;
             }
         }
 
@@ -82,6 +86,9 @@ namespace proyectoPruebaFor
         {
             picBox1.Visible=false;
             picBox2.Visible=false;
+
+            lbVerde.Visible = false;
+
         }
     }
 }

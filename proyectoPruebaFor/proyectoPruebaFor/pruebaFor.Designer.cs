@@ -92,6 +92,7 @@
             lbVerde.TabIndex = 2;
             lbVerde.Text = "Lean";
             lbVerde.TextAlign = ContentAlignment.MiddleCenter;
+            lbVerde.Visible = false;
             // 
             // btsalir
             // 
@@ -396,11 +397,11 @@
             btRestablecer.Cursor = Cursors.Hand;
             btRestablecer.Font = new Font("Jokerman", 12F, FontStyle.Bold);
             btRestablecer.ForeColor = SystemColors.Control;
-            btRestablecer.Location = new Point(576, 10);
+            btRestablecer.Location = new Point(652, 10);
             btRestablecer.Name = "btRestablecer";
-            btRestablecer.Size = new Size(293, 55);
+            btRestablecer.Size = new Size(166, 55);
             btRestablecer.TabIndex = 34;
-            btRestablecer.Text = "Restablecer imagenes";
+            btRestablecer.Text = "Reiniciar";
             btRestablecer.UseVisualStyleBackColor = false;
             btRestablecer.Click += btRestablecer_Click;
             // 
