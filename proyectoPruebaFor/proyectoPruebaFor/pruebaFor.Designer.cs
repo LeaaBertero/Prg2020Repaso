@@ -50,8 +50,15 @@
             label15 = new Label();
             label16 = new Label();
             label17 = new Label();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            label18 = new Label();
+            label19 = new Label();
+            label20 = new Label();
+            label21 = new Label();
+            label22 = new Label();
+            label23 = new Label();
+            label24 = new Label();
+            label25 = new Label();
+            label26 = new Label();
             SuspendLayout();
             // 
             // btarranque
@@ -60,7 +67,7 @@
             btarranque.Cursor = Cursors.Hand;
             btarranque.Font = new Font("Jokerman", 12F, FontStyle.Bold);
             btarranque.ForeColor = SystemColors.Control;
-            btarranque.Location = new Point(12, 496);
+            btarranque.Location = new Point(652, 496);
             btarranque.Name = "btarranque";
             btarranque.Size = new Size(166, 55);
             btarranque.TabIndex = 0;
@@ -100,7 +107,7 @@
             btiniciar.Cursor = Cursors.Hand;
             btiniciar.Font = new Font("Jokerman", 12F, FontStyle.Bold);
             btiniciar.ForeColor = SystemColors.Control;
-            btiniciar.Location = new Point(654, 496);
+            btiniciar.Location = new Point(12, 496);
             btiniciar.Name = "btiniciar";
             btiniciar.Size = new Size(166, 55);
             btiniciar.TabIndex = 4;
@@ -269,27 +276,109 @@
             // label17
             // 
             label17.BackColor = Color.Red;
-            label17.Location = new Point(978, 496);
+            label17.Location = new Point(79, 68);
             label17.Name = "label17";
-            label17.Size = new Size(113, 115);
+            label17.Size = new Size(60, 58);
             label17.TabIndex = 22;
             label17.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // pictureBox1
+            // label18
             // 
-            pictureBox1.Location = new Point(666, 192);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(135, 141);
-            pictureBox1.TabIndex = 23;
-            pictureBox1.TabStop = false;
+            label18.BackColor = Color.Red;
+            label18.Location = new Point(79, 404);
+            label18.Name = "label18";
+            label18.Size = new Size(60, 58);
+            label18.TabIndex = 23;
+            label18.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            label19.BackColor = Color.Red;
+            label19.Location = new Point(1319, 404);
+            label19.Name = "label19";
+            label19.Size = new Size(60, 58);
+            label19.TabIndex = 25;
+            label19.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label20
+            // 
+            label20.BackColor = Color.Red;
+            label20.Location = new Point(1319, 68);
+            label20.Name = "label20";
+            label20.Size = new Size(60, 58);
+            label20.TabIndex = 24;
+            label20.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label21
+            // 
+            label21.BackColor = Color.Blue;
+            label21.Location = new Point(79, 147);
+            label21.Name = "label21";
+            label21.Size = new Size(60, 58);
+            label21.TabIndex = 26;
+            label21.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label22
+            // 
+            label22.BackColor = Color.Blue;
+            label22.Location = new Point(79, 327);
+            label22.Name = "label22";
+            label22.Size = new Size(60, 58);
+            label22.TabIndex = 27;
+            label22.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label23
+            // 
+            label23.BackColor = Color.Red;
+            label23.Location = new Point(79, 237);
+            label23.Name = "label23";
+            label23.Size = new Size(60, 58);
+            label23.TabIndex = 28;
+            label23.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label24
+            // 
+            label24.BackColor = Color.Red;
+            label24.Location = new Point(1319, 237);
+            label24.Name = "label24";
+            label24.Size = new Size(60, 58);
+            label24.TabIndex = 31;
+            label24.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label25
+            // 
+            label25.BackColor = Color.Blue;
+            label25.Location = new Point(1319, 327);
+            label25.Name = "label25";
+            label25.Size = new Size(60, 58);
+            label25.TabIndex = 30;
+            label25.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // label26
+            // 
+            label26.BackColor = Color.Blue;
+            label26.Location = new Point(1319, 147);
+            label26.Name = "label26";
+            label26.Size = new Size(60, 58);
+            label26.TabIndex = 29;
+            label26.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pruebaFor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.Black;
             ClientSize = new Size(1453, 665);
-            Controls.Add(pictureBox1);
+            Controls.Add(label24);
+            Controls.Add(label25);
+            Controls.Add(label26);
+            Controls.Add(label23);
+            Controls.Add(label22);
+            Controls.Add(label21);
+            Controls.Add(label19);
+            Controls.Add(label20);
+            Controls.Add(label18);
             Controls.Add(label17);
             Controls.Add(lbVerde);
             Controls.Add(label16);
@@ -312,10 +401,10 @@
             Controls.Add(btsalir);
             Controls.Add(btarranque);
             Controls.Add(label7);
+            MaximizeBox = false;
             Name = "pruebaFor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "pruebaFor";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -343,6 +432,14 @@
         private Label label15;
         private Label label16;
         private Label label17;
-        private PictureBox pictureBox1;
+        private Label label18;
+        private Label label19;
+        private Label label20;
+        private Label label21;
+        private Label label22;
+        private Label label23;
+        private Label label24;
+        private Label label25;
+        private Label label26;
     }
 }
