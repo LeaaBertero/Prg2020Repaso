@@ -1,6 +1,6 @@
 ﻿namespace CalculadoraV2
 {
-    partial class multiplicacion
+    partial class Multiplicacion
     {
         /// <summary>
         /// Required designer variable.

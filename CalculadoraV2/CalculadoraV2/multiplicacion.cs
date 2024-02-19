@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CalculadoraV2
 {
-    public partial class multiplicacion : Form
+    public partial class Multiplicacion : Form
     {
-        public multiplicacion()
+        public Multiplicacion()
         {
             InitializeComponent();
         }

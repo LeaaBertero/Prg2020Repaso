@@ -36,7 +36,7 @@ namespace CalculadoraV2
 
         private void btmult_Click(object sender, EventArgs e)
         {
-            Form multiplicacion = new multiplicacion();
+            Form multiplicacion = new Multiplicacion();
             multiplicacion.Show();
         }
 
