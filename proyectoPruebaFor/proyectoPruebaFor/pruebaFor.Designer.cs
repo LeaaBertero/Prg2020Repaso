@@ -49,6 +49,9 @@
             label14 = new Label();
             label15 = new Label();
             label16 = new Label();
+            label17 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btarranque
@@ -263,12 +266,31 @@
             label16.TabIndex = 21;
             label16.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // label17
+            // 
+            label17.BackColor = Color.Red;
+            label17.Location = new Point(978, 496);
+            label17.Name = "label17";
+            label17.Size = new Size(113, 115);
+            label17.TabIndex = 22;
+            label17.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(666, 192);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(135, 141);
+            pictureBox1.TabIndex = 23;
+            pictureBox1.TabStop = false;
+            // 
             // pruebaFor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(1453, 665);
+            Controls.Add(pictureBox1);
+            Controls.Add(label17);
             Controls.Add(lbVerde);
             Controls.Add(label16);
             Controls.Add(label15);
@@ -293,6 +315,7 @@
             Name = "pruebaFor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "pruebaFor";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -319,5 +342,7 @@
         private Label label14;
         private Label label15;
         private Label label16;
+        private Label label17;
+        private PictureBox pictureBox1;
     }
 }

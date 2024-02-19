@@ -38,7 +38,15 @@ namespace proyectoPruebaFor
             for (int movimiento = 261; movimiento < 1084; movimiento++)
             {
                 lbVerde.Left = movimiento;
-                lbVerde.BackColor= Color.Blue;
+                lbVerde.BackColor = Color.Blue;
+                lbVerde.ForeColor = Color.White;
+                this.Refresh();
+            }
+
+            for (int movimiento = 261; movimiento < 678; movimiento++)
+            {
+                lbVerde.Left = movimiento;
+                lbVerde.BackColor = Color.Pink;
                 lbVerde.ForeColor = Color.White;
                 this.Refresh();
             }
@@ -50,6 +58,14 @@ namespace proyectoPruebaFor
             {
                 lbVerde.Left = movimiento;
                 lbVerde.BackColor = Color.Gold;
+                lbVerde.ForeColor = Color.Black;
+                this.Refresh();
+            }
+
+            for (int movimiento = 1084; movimiento > 678; movimiento--)
+            {
+                lbVerde.Left = movimiento;
+                lbVerde.BackColor = Color.Turquoise;
                 lbVerde.ForeColor = Color.Black;
                 this.Refresh();
             }
