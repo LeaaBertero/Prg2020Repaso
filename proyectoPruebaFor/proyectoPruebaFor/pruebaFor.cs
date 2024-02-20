@@ -70,6 +70,7 @@ namespace proyectoPruebaFor
                 this.Refresh();
                 lbVerde.Visible = true;
             }
+
             //segunda vuelta derecha a centro
             for (int movimiento = 1084; movimiento > 678; movimiento--)
             {
@@ -84,10 +85,18 @@ namespace proyectoPruebaFor
 
         private void btRestablecer_Click(object sender, EventArgs e)
         {
-            picBox1.Visible=false;
-            picBox2.Visible=false;
+            picBox1.Visible = false;
+            picBox2.Visible = false;
 
             lbVerde.Visible = false;
+
+            //for (int contador = 10; contador >= 0; contador--)
+            //{
+               
+
+            //    lbVerde.ToString();
+            //    this.Refresh();
+            //}
 
         }
     }
