@@ -33,13 +33,14 @@
             btacomodar = new Button();
             lbazul = new Label();
             lbrojo = new Label();
+            btMover = new Button();
             SuspendLayout();
             // 
             // BtDoWhile
             // 
-            BtDoWhile.Location = new Point(297, 356);
+            BtDoWhile.Location = new Point(337, 29);
             BtDoWhile.Name = "BtDoWhile";
-            BtDoWhile.Size = new Size(233, 29);
+            BtDoWhile.Size = new Size(117, 35);
             BtDoWhile.TabIndex = 0;
             BtDoWhile.Text = "DoWhile";
             BtDoWhile.UseVisualStyleBackColor = true;
@@ -57,7 +58,7 @@
             // 
             // btacomodar
             // 
-            btacomodar.Location = new Point(92, 77);
+            btacomodar.Location = new Point(202, 32);
             btacomodar.Name = "btacomodar";
             btacomodar.Size = new Size(94, 29);
             btacomodar.TabIndex = 2;
@@ -68,32 +69,44 @@
             // lbazul
             // 
             lbazul.BackColor = Color.Blue;
-            lbazul.Location = new Point(113, 175);
+            lbazul.Location = new Point(739, 62);
             lbazul.Name = "lbazul";
-            lbazul.Size = new Size(49, 74);
+            lbazul.Size = new Size(49, 81);
             lbazul.TabIndex = 3;
             lbazul.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lbrojo
             // 
             lbrojo.BackColor = Color.Red;
-            lbrojo.Location = new Point(591, 125);
+            lbrojo.Location = new Point(61, 156);
             lbrojo.Name = "lbrojo";
-            lbrojo.Size = new Size(91, 30);
+            lbrojo.Size = new Size(121, 41);
             lbrojo.TabIndex = 4;
             lbrojo.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btMover
+            // 
+            btMover.Location = new Point(476, 32);
+            btMover.Name = "btMover";
+            btMover.Size = new Size(94, 29);
+            btMover.TabIndex = 5;
+            btMover.Text = "Mover";
+            btMover.UseVisualStyleBackColor = true;
+            btMover.Click += btMover_Click;
             // 
             // While_Mientras_
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 262);
+            Controls.Add(btMover);
             Controls.Add(lbrojo);
             Controls.Add(lbazul);
             Controls.Add(btacomodar);
             Controls.Add(btSalir);
             Controls.Add(BtDoWhile);
             Name = "While_Mientras_";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "While_Mientras_";
             ResumeLayout(false);
         }
@@ -105,5 +118,6 @@
         private Button btacomodar;
         private Label lbazul;
         private Label lbrojo;
+        private Button btMover;
     }
 }

@@ -30,20 +30,26 @@ namespace While_mientras_
 
         private void btacomodar_Click(object sender, EventArgs e)
         {
-           while (true)
+            lbazul.Left = 70;
+            lbrojo.Left = 70;
+        }
+        private void btMover_Click(object sender, EventArgs e)
+        {
+           while(true)
            {
-
                 lbazul.Left = lbazul.Left + 1;
                 lbrojo.Left = lbrojo.Left - 1;
 
                 this.Refresh();
 
-                if ((lbazul.Left + lbrojo.Width) == lbrojo.Left)
+                if ((lbazul.Left + lbrojo.Width) == lbazul.Left)
                 {
                     break;
                 }
-
            }
         }
     }
 }
+
+
+
