@@ -34,5 +34,15 @@ namespace proyectoEventosClick
         {
             Close();
         }
+
+        private void btsubir_MouseMove(object sender, MouseEventArgs e)
+        {
+            btsubir.Top = btsubir.Top - 5;
+        }
+
+        private void btizquierda_MouseMove(object sender, MouseEventArgs e)
+        {
+            btizquierda.Left = btizquierda.Left - 5;
+        }
     }
 }

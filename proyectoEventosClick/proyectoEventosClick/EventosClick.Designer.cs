@@ -31,11 +31,13 @@
             btIniciar = new Button();
             btbajar = new Button();
             btsalir = new Button();
+            btsubir = new Button();
+            btizquierda = new Button();
             SuspendLayout();
             // 
             // btIniciar
             // 
-            btIniciar.Location = new Point(12, 71);
+            btIniciar.Location = new Point(12, 170);
             btIniciar.Name = "btIniciar";
             btIniciar.Size = new Size(207, 46);
             btIniciar.TabIndex = 0;
@@ -45,7 +47,7 @@
             // 
             // btbajar
             // 
-            btbajar.Location = new Point(256, 71);
+            btbajar.Location = new Point(326, 82);
             btbajar.Name = "btbajar";
             btbajar.Size = new Size(207, 46);
             btbajar.TabIndex = 1;
@@ -63,12 +65,35 @@
             btsalir.UseVisualStyleBackColor = true;
             btsalir.Click += btsalir_Click;
             // 
+            // btsubir
+            // 
+            btsubir.Location = new Point(326, 278);
+            btsubir.Name = "btsubir";
+            btsubir.Size = new Size(207, 46);
+            btsubir.TabIndex = 3;
+            btsubir.Text = "Hacia arriba";
+            btsubir.UseVisualStyleBackColor = true;
+            btsubir.MouseMove += btsubir_MouseMove;
+            // 
+            // btizquierda
+            // 
+            btizquierda.Cursor = Cursors.Hand;
+            btizquierda.Location = new Point(581, 170);
+            btizquierda.Name = "btizquierda";
+            btizquierda.Size = new Size(207, 46);
+            btizquierda.TabIndex = 4;
+            btizquierda.Text = "Izquierda";
+            btizquierda.UseVisualStyleBackColor = true;
+            btizquierda.MouseMove += btizquierda_MouseMove;
+            // 
             // EventosClick
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(800, 450);
+            Controls.Add(btizquierda);
+            Controls.Add(btsubir);
             Controls.Add(btsalir);
             Controls.Add(btbajar);
             Controls.Add(btIniciar);
@@ -83,5 +108,7 @@
         private Button btIniciar;
         private Button btbajar;
         private Button btsalir;
+        private Button btsubir;
+        private Button btizquierda;
     }
 }
