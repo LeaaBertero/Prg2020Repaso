@@ -37,29 +37,38 @@
             // 
             // btIniciar
             // 
-            btIniciar.Location = new Point(12, 170);
+            btIniciar.BackColor = Color.LawnGreen;
+            btIniciar.Cursor = Cursors.Hand;
+            btIniciar.Font = new Font("Kristen ITC", 13.8F, FontStyle.Bold);
+            btIniciar.ForeColor = Color.White;
+            btIniciar.Location = new Point(12, 279);
             btIniciar.Name = "btIniciar";
-            btIniciar.Size = new Size(207, 46);
+            btIniciar.Size = new Size(284, 51);
             btIniciar.TabIndex = 0;
-            btIniciar.Text = "haca la derecha --->";
-            btIniciar.UseVisualStyleBackColor = true;
+            btIniciar.Text = "Izquierda - Derecha";
+            btIniciar.UseVisualStyleBackColor = false;
             btIniciar.MouseMove += btIniciar_MouseMove;
             // 
             // btbajar
             // 
-            btbajar.Location = new Point(326, 82);
+            btbajar.BackColor = Color.LawnGreen;
+            btbajar.Cursor = Cursors.Hand;
+            btbajar.Font = new Font("Kristen ITC", 13.8F, FontStyle.Bold);
+            btbajar.ForeColor = Color.White;
+            btbajar.Location = new Point(675, 12);
             btbajar.Name = "btbajar";
-            btbajar.Size = new Size(207, 46);
+            btbajar.Size = new Size(206, 51);
             btbajar.TabIndex = 1;
-            btbajar.Text = "Hacia abajo";
-            btbajar.UseVisualStyleBackColor = true;
+            btbajar.Text = "Arriba - Abajo";
+            btbajar.UseVisualStyleBackColor = false;
             btbajar.MouseMove += button1_MouseMove;
             // 
             // btsalir
             // 
-            btsalir.Location = new Point(581, 392);
+            btsalir.Cursor = Cursors.Hand;
+            btsalir.Location = new Point(1196, 531);
             btsalir.Name = "btsalir";
-            btsalir.Size = new Size(207, 46);
+            btsalir.Size = new Size(80, 32);
             btsalir.TabIndex = 2;
             btsalir.Text = "salir";
             btsalir.UseVisualStyleBackColor = true;
@@ -67,23 +76,30 @@
             // 
             // btsubir
             // 
-            btsubir.Location = new Point(326, 278);
+            btsubir.BackColor = Color.LawnGreen;
+            btsubir.Cursor = Cursors.Hand;
+            btsubir.Font = new Font("Kristen ITC", 13.8F, FontStyle.Bold);
+            btsubir.ForeColor = Color.White;
+            btsubir.Location = new Point(378, 512);
             btsubir.Name = "btsubir";
-            btsubir.Size = new Size(207, 46);
+            btsubir.Size = new Size(206, 51);
             btsubir.TabIndex = 3;
-            btsubir.Text = "Hacia arriba";
-            btsubir.UseVisualStyleBackColor = true;
+            btsubir.Text = "Abajo - Arriba";
+            btsubir.UseVisualStyleBackColor = false;
             btsubir.MouseMove += btsubir_MouseMove;
             // 
             // btizquierda
             // 
+            btizquierda.BackColor = Color.LawnGreen;
             btizquierda.Cursor = Cursors.Hand;
-            btizquierda.Location = new Point(581, 170);
+            btizquierda.Font = new Font("Kristen ITC", 13.8F, FontStyle.Bold);
+            btizquierda.ForeColor = Color.White;
+            btizquierda.Location = new Point(992, 195);
             btizquierda.Name = "btizquierda";
-            btizquierda.Size = new Size(207, 46);
+            btizquierda.Size = new Size(284, 51);
             btizquierda.TabIndex = 4;
-            btizquierda.Text = "Izquierda";
-            btizquierda.UseVisualStyleBackColor = true;
+            btizquierda.Text = "Derecha - Izquierda";
+            btizquierda.UseVisualStyleBackColor = false;
             btizquierda.MouseMove += btizquierda_MouseMove;
             // 
             // EventosClick
@@ -91,7 +107,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1288, 575);
             Controls.Add(btizquierda);
             Controls.Add(btsubir);
             Controls.Add(btsalir);
