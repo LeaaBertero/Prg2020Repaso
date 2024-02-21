@@ -33,6 +33,7 @@
             lbverde = new Label();
             btrojo = new Button();
             btverde = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // btcerrar
@@ -49,7 +50,7 @@
             // lbrojo
             // 
             lbrojo.BackColor = Color.Red;
-            lbrojo.Location = new Point(-1, 72);
+            lbrojo.Location = new Point(0, 144);
             lbrojo.Name = "lbrojo";
             lbrojo.Size = new Size(70, 66);
             lbrojo.TabIndex = 1;
@@ -57,7 +58,7 @@
             // lbverde
             // 
             lbverde.BackColor = Color.Green;
-            lbverde.Location = new Point(687, 72);
+            lbverde.Location = new Point(686, 144);
             lbverde.Name = "lbverde";
             lbverde.Size = new Size(70, 66);
             lbverde.TabIndex = 2;
@@ -65,7 +66,7 @@
             // btrojo
             // 
             btrojo.Cursor = Cursors.Hand;
-            btrojo.Location = new Point(184, 198);
+            btrojo.Location = new Point(201, 293);
             btrojo.Name = "btrojo";
             btrojo.Size = new Size(135, 29);
             btrojo.TabIndex = 3;
@@ -76,7 +77,7 @@
             // btverde
             // 
             btverde.Cursor = Cursors.Hand;
-            btverde.Location = new Point(450, 198);
+            btverde.Location = new Point(451, 293);
             btverde.Name = "btverde";
             btverde.Size = new Size(135, 29);
             btverde.TabIndex = 4;
@@ -84,11 +85,23 @@
             btverde.UseVisualStyleBackColor = true;
             btverde.Click += btverde_Click;
             // 
+            // label1
+            // 
+            label1.BackColor = Color.DarkOrange;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label1.Location = new Point(201, 64);
+            label1.Name = "label1";
+            label1.Size = new Size(385, 53);
+            label1.TabIndex = 5;
+            label1.Text = "Desplazamiento de label  limitados";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // pruebaLblRun
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(758, 249);
+            ClientSize = new Size(758, 334);
+            Controls.Add(label1);
             Controls.Add(btverde);
             Controls.Add(btrojo);
             Controls.Add(lbverde);
@@ -107,5 +120,6 @@
         private Label lbverde;
         private Button btrojo;
         private Button btverde;
+        private Label label1;
     }
 }

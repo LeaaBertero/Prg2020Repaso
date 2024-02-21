@@ -24,11 +24,14 @@ namespace Timer_prueba
 
         private void btrojo_Click(object sender, EventArgs e)
         {
-           if (lbrojo.Left <= 249) 
-           {
+            if (lbrojo.Left <= 249) 
+            {    
                 lbrojo.Left = lbrojo.Left + 10;
                 this.Refresh();
-           }
+                lbrojo.BackColor = Color.Cyan;
+            }
+
+           
            
         }
 
@@ -38,6 +41,8 @@ namespace Timer_prueba
             {
                 lbverde.Left = lbverde.Left - 10;
                 this.Refresh();
+                lbverde.BackColor = Color.DeepPink;
+
             }
 
         }
