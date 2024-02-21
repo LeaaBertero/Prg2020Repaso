@@ -36,5 +36,11 @@ namespace Timer_prueba
         {
             Close();
         }
+
+        private void btmovimiento_Click(object sender, EventArgs e)
+        {
+            Form formulariolabelMov = new pruebaLblRun();
+            formulariolabelMov.ShowDialog();
+        }
     }
 }

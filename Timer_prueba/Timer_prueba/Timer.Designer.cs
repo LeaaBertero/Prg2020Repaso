@@ -32,6 +32,7 @@
             timer1 = new System.Windows.Forms.Timer(components);
             lbTimer = new Label();
             btcerrar = new Button();
+            btmovimiento = new Button();
             SuspendLayout();
             // 
             // timer1
@@ -64,12 +65,26 @@
             btcerrar.UseVisualStyleBackColor = true;
             btcerrar.Click += btcerrar_Click;
             // 
+            // btmovimiento
+            // 
+            btmovimiento.Cursor = Cursors.Hand;
+            btmovimiento.Font = new Font("Segoe UI", 14F);
+            btmovimiento.ForeColor = Color.Black;
+            btmovimiento.Location = new Point(26, 142);
+            btmovimiento.Name = "btmovimiento";
+            btmovimiento.Size = new Size(428, 44);
+            btmovimiento.TabIndex = 2;
+            btmovimiento.Text = "formulario de label en movimiento";
+            btmovimiento.UseVisualStyleBackColor = true;
+            btmovimiento.Click += btmovimiento_Click;
+            // 
             // Timer
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
             ClientSize = new Size(740, 218);
+            Controls.Add(btmovimiento);
             Controls.Add(btcerrar);
             Controls.Add(lbTimer);
             ForeColor = Color.White;
@@ -85,5 +100,6 @@
         private System.Windows.Forms.Timer timer1;
         private Label lbTimer;
         private Button btcerrar;
+        private Button btmovimiento;
     }
 }
