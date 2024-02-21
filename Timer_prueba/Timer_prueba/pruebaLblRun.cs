@@ -24,29 +24,21 @@ namespace Timer_prueba
 
         private void btrojo_Click(object sender, EventArgs e)
         {
-
-            for (int incrementoRojo = 12; incrementoRojo < 36; incrementoRojo++)
-            {
-               
+           if (lbrojo.Left <= 249) 
+           {
                 lbrojo.Left = lbrojo.Left + 10;
                 this.Refresh();
-            }
-
-            MessageBox.Show("Hasta acá llega Rojo");
-
-
+           }
+           
         }
 
         private void btverde_Click(object sender, EventArgs e)
         {
-
-            for (int incrementoVerde = 105; incrementoVerde > 72; incrementoVerde--)
+            if (lbverde.Left >= 450)
             {
                 lbverde.Left = lbverde.Left - 10;
                 this.Refresh();
             }
-
-            MessageBox.Show("Hasta acá llega Verde");
 
         }
     }

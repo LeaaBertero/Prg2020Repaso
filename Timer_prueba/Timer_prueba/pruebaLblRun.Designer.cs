@@ -49,7 +49,7 @@
             // lbrojo
             // 
             lbrojo.BackColor = Color.Red;
-            lbrojo.Location = new Point(12, 72);
+            lbrojo.Location = new Point(-1, 72);
             lbrojo.Name = "lbrojo";
             lbrojo.Size = new Size(70, 66);
             lbrojo.TabIndex = 1;
@@ -57,7 +57,7 @@
             // lbverde
             // 
             lbverde.BackColor = Color.Green;
-            lbverde.Location = new Point(676, 72);
+            lbverde.Location = new Point(687, 72);
             lbverde.Name = "lbverde";
             lbverde.Size = new Size(70, 66);
             lbverde.TabIndex = 2;
