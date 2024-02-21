@@ -127,6 +127,7 @@
             AcceptButton = btsumar;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.LemonChiffon;
             ClientSize = new Size(800, 269);
             Controls.Add(btsalir);
             Controls.Add(label2);
