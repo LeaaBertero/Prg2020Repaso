@@ -90,6 +90,8 @@ namespace proyectoPruebaFor
 
             lbVerde.Visible = false;
 
+            lbVerde.Text = string.Empty;
+
             //for (int contador = 10; contador >= 0; contador--)
             //{
                
