@@ -11,9 +11,17 @@ namespace ProyectoPOO
         public string Nombre { get; set; }
         public string Apellido { get; set; }
 
+        //llamando a la clase materia por ser una propiedad de la persona
+        public Materia MateriaCursando { get; set; }
+
         public string NombreCompleto()
         {
             return Nombre + " " + Apellido;
+        }
+
+        public void Inscribir (Materia materia)
+        {
+            MateriaCursando = materia;
         }
     }
 }

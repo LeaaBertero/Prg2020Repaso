@@ -12,6 +12,7 @@ namespace ProyectoPOO
 {
     public partial class ProyectoPOO : Form
     {
+        Persona PersonaMostrar = new Persona();
         public ProyectoPOO()
         {
             InitializeComponent();
@@ -19,12 +20,6 @@ namespace ProyectoPOO
 
         private void btcargar_Click(object sender, EventArgs e)
         {
-            //form(clase) //variable
-            Persona PersonaMostrar;
-            //variable        //Clase
-            PersonaMostrar = new Persona();
-
-            //PersonaMostrar = new Persona();
 
             //variable PersonaMostrar es igual a lo que el usuario ingrese en los texbox
             PersonaMostrar.Nombre = TxNombre.Text;
@@ -34,12 +29,30 @@ namespace ProyectoPOO
 
             lbMostrar.Text = PersonaMostrar.NombreCompleto();
 
+            //PersonaMostrar = null;
+            PersonaMostrar = new Persona();
+
             TxNombre.Focus();
         }
 
         private void btsalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btInscribir_Click(object sender, EventArgs e)
+        {
+            //instanciar el objeto
+            Materia MateriaInscripta = new Materia();
+            
+            MateriaInscripta.NombreMateria = txnombreMateria.Text;
+            MateriaInscripta.añoMateria = Convert.ToInt32(txañoMateria.Text);
+
+            PersonaMostrar.MateriaCursando = MateriaInscripta;
+
+            lbInscipcionMateria.Text = PersonaMostrar.MateriaCursando.NombreMateria +
+                " " + "Año" + " " + PersonaMostrar.MateriaCursando.añoMateria.ToString();
+            
         }
     }
 }
