@@ -58,7 +58,7 @@
             // lbverde
             // 
             lbverde.BackColor = Color.Green;
-            lbverde.Location = new Point(686, 144);
+            lbverde.Location = new Point(688, 144);
             lbverde.Name = "lbverde";
             lbverde.Size = new Size(70, 66);
             lbverde.TabIndex = 2;
