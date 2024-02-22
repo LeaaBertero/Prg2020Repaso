@@ -48,10 +48,13 @@ namespace ProyectoPOO
             MateriaInscripta.NombreMateria = txnombreMateria.Text;
             MateriaInscripta.añoMateria = Convert.ToInt32(txañoMateria.Text);
 
-            PersonaMostrar.MateriaCursando = MateriaInscripta;
+            //PersonaMostrar.MateriaCursando = MateriaInscripta;
+            PersonaMostrar.Inscribir(MateriaInscripta);
 
-            lbInscipcionMateria.Text = PersonaMostrar.MateriaCursando.NombreMateria +
-                " " + "Año" + " " + PersonaMostrar.MateriaCursando.añoMateria.ToString();
+            //lbInscipcionMateria.Text = PersonaMostrar.MateriaCursando.NombreMateria +
+            //    " " + "Año" + " " + PersonaMostrar.MateriaCursando.añoMateria.ToString();
+
+            lbInscipcionMateria.Text = PersonaMostrar.nombreCompletoConMateria();
             
         }
     }

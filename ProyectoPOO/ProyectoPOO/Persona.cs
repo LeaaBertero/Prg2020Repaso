@@ -23,5 +23,13 @@ namespace ProyectoPOO
         {
             MateriaCursando = materia;
         }
+
+        public string nombreCompletoConMateria()
+        {
+            string NCCM = "";
+            NCCM = NombreCompleto() +"\r\n" + MateriaCursando.NombreMateria +
+                " - " + MateriaCursando.añoMateria.ToString();
+            return NCCM;
+        }
     }
 }
