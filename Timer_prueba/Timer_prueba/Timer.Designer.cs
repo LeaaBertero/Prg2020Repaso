@@ -51,7 +51,7 @@
             lbTimer.TabIndex = 0;
             lbTimer.Text = "label1";
             lbTimer.Visible = false;
-            lbTimer.Click += lbTimer_Click;
+            
             // 
             // btcerrar
             // 

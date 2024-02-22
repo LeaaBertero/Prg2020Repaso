@@ -34,6 +34,8 @@
             btrojo = new Button();
             btverde = new Button();
             label1 = new Label();
+            btcomenzar = new Button();
+            lbblack = new Label();
             SuspendLayout();
             // 
             // btcerrar
@@ -96,11 +98,32 @@
             label1.Text = "Desplazamiento de label  limitados";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // btcomenzar
+            // 
+            btcomenzar.Location = new Point(0, 377);
+            btcomenzar.Name = "btcomenzar";
+            btcomenzar.Size = new Size(94, 29);
+            btcomenzar.TabIndex = 6;
+            btcomenzar.Text = "Comenzar";
+            btcomenzar.UseVisualStyleBackColor = true;
+            btcomenzar.Click += btcomenzar_Click;
+            // 
+            // lbblack
+            // 
+            lbblack.BackColor = Color.Black;
+            lbblack.Location = new Point(0, 430);
+            lbblack.Name = "lbblack";
+            lbblack.Size = new Size(70, 66);
+            lbblack.TabIndex = 7;
+            lbblack.MouseMove += lbblack_MouseMove;
+            // 
             // pruebaLblRun
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(758, 334);
+            ClientSize = new Size(758, 524);
+            Controls.Add(lbblack);
+            Controls.Add(btcomenzar);
             Controls.Add(label1);
             Controls.Add(btverde);
             Controls.Add(btrojo);
@@ -121,5 +144,7 @@
         private Button btrojo;
         private Button btverde;
         private Label label1;
+        private Button btcomenzar;
+        private Label lbblack;
     }
 }

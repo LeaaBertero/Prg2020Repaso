@@ -16,7 +16,7 @@ namespace Timer_prueba
         public Timer()
         {
             InitializeComponent();
-            timer1.Start();
+            timer1.Start(); //inicializa el temporizador del reloj
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -27,10 +27,7 @@ namespace Timer_prueba
             lbTimer.Visible = true;
         }
 
-        private void lbTimer_Click(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void btcerrar_Click(object sender, EventArgs e)
         {
