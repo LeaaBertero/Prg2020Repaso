@@ -17,7 +17,10 @@ namespace pruebaClasesFrontBack
         //método (por que tiene paréntesis)
         public string NombreCompleto()
         {
-            return "Nombre completo: " + " " + NombreApellido + "\r\n" + "Documento:" + " " + Documento + "\r\n" + "Dirección:" + " " + Direccion + " " + "\r\n";
+            return "Nombre completo: " + " " + NombreApellido 
+                + "\r\n" + "Documento:" + " " 
+                + Documento + "\r\n" + "Dirección:" 
+                + " " + Direccion + " " + "\r\n";
         }
 
     }
