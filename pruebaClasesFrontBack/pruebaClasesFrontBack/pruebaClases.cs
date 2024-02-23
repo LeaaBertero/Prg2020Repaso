@@ -19,17 +19,25 @@ namespace pruebaClasesFrontBack
 
         private void btejecutar_Click(object sender, EventArgs e)
         {
-            //inicializar el objeto
+            //inicializar el objeto de la CLASE persona
             Persona PersonaMostrar = new Persona();
 
-            
-            PersonaMostrar.Nombre = txNombre.Text;
-            PersonaMostrar.Apellido = txApellido.Text;
-            PersonaMostrar.Documento = Convert.ToInt32(txDocumento.Text);   
+
+            PersonaMostrar.NombreApellido = txNombre.Text;
+            //PersonaMostrar.Apellido = txApellido.Text;
+            PersonaMostrar.Documento = Convert.ToInt32(txDocumento.Text);
             PersonaMostrar.Direccion = txDireccion.Text;
 
-            
-            
+            labelLista.Text = PersonaMostrar.Documento + "\r\n" + " " 
+                + PersonaMostrar.Direccion.ToString();
+
+            labelLista.Text = PersonaMostrar.NombreCompleto();
+
+        }
+
+        private void btsalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
