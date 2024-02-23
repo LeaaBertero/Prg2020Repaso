@@ -38,11 +38,13 @@
             label5 = new Label();
             txDireccion = new TextBox();
             btsalir = new Button();
+            label3 = new Label();
+            txTelefono = new TextBox();
             SuspendLayout();
             // 
             // btejecutar
             // 
-            btejecutar.Location = new Point(66, 293);
+            btejecutar.Location = new Point(66, 216);
             btejecutar.Name = "btejecutar";
             btejecutar.Size = new Size(119, 29);
             btejecutar.TabIndex = 5;
@@ -54,14 +56,14 @@
             // 
             txNombre.Location = new Point(66, 131);
             txNombre.Name = "txNombre";
-            txNombre.Size = new Size(208, 27);
+            txNombre.Size = new Size(148, 27);
             txNombre.TabIndex = 1;
             txNombre.TextAlign = HorizontalAlignment.Center;
             // 
             // labelLista
             // 
             labelLista.AutoSize = true;
-            labelLista.Location = new Point(303, 297);
+            labelLista.Location = new Point(397, 216);
             labelLista.Name = "labelLista";
             labelLista.Size = new Size(50, 20);
             labelLista.TabIndex = 2;
@@ -88,16 +90,16 @@
             // 
             // txDocumento
             // 
-            txDocumento.Location = new Point(303, 131);
+            txDocumento.Location = new Point(232, 131);
             txDocumento.Name = "txDocumento";
-            txDocumento.Size = new Size(208, 27);
+            txDocumento.Size = new Size(148, 27);
             txDocumento.TabIndex = 3;
             txDocumento.TextAlign = HorizontalAlignment.Center;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(303, 100);
+            label4.Location = new Point(232, 100);
             label4.Name = "label4";
             label4.Size = new Size(87, 20);
             label4.TabIndex = 8;
@@ -106,7 +108,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(536, 100);
+            label5.Location = new Point(397, 100);
             label5.Name = "label5";
             label5.Size = new Size(72, 20);
             label5.TabIndex = 10;
@@ -114,10 +116,10 @@
             // 
             // txDireccion
             // 
-            txDireccion.Location = new Point(536, 131);
+            txDireccion.Location = new Point(397, 131);
             txDireccion.Name = "txDireccion";
-            txDireccion.Size = new Size(208, 27);
-            txDireccion.TabIndex = 4;
+            txDireccion.Size = new Size(148, 27);
+            txDireccion.TabIndex = 3;
             txDireccion.TextAlign = HorizontalAlignment.Center;
             // 
             // btsalir
@@ -130,6 +132,23 @@
             btsalir.UseVisualStyleBackColor = true;
             btsalir.Click += btsalir_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(561, 100);
+            label3.Name = "label3";
+            label3.Size = new Size(67, 20);
+            label3.TabIndex = 12;
+            label3.Text = "Teléfono";
+            // 
+            // txTelefono
+            // 
+            txTelefono.Location = new Point(561, 131);
+            txTelefono.Name = "txTelefono";
+            txTelefono.Size = new Size(148, 27);
+            txTelefono.TabIndex = 4;
+            txTelefono.TextAlign = HorizontalAlignment.Center;
+            // 
             // pruebaClases
             // 
             AcceptButton = btejecutar;
@@ -137,6 +156,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkKhaki;
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
+            Controls.Add(txTelefono);
             Controls.Add(btsalir);
             Controls.Add(label5);
             Controls.Add(txDireccion);
@@ -166,5 +187,7 @@
         private Label label5;
         private TextBox txDireccion;
         private Button btsalir;
+        private Label label3;
+        private TextBox txTelefono;
     }
 }

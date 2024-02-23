@@ -13,6 +13,8 @@ namespace pruebaClasesFrontBack
         //public string? Apellido { get; set; }
         public int? Documento { get; set; }
         public string? Direccion { get; set; }
+        public int? Telefono { get; set; }
+
 
         //método (por que tiene paréntesis)
         public string NombreCompleto()
@@ -20,7 +22,8 @@ namespace pruebaClasesFrontBack
             return "Nombre completo: " + " " + NombreApellido 
                 + "\r\n" + "Documento:" + " " 
                 + Documento + "\r\n" + "Dirección:" 
-                + " " + Direccion + " " + "\r\n";
+                + " " + Direccion + " " + "\r\n" + "Teléfono: " 
+                + " " + Telefono + "\r\n";
         }
 
     }

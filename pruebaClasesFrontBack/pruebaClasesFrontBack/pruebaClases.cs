@@ -27,9 +27,10 @@ namespace pruebaClasesFrontBack
             //PersonaMostrar.Apellido = txApellido.Text;
             PersonaMostrar.Documento = Convert.ToInt32(txDocumento.Text);
             PersonaMostrar.Direccion = txDireccion.Text;
+            PersonaMostrar.Telefono = Convert.ToInt32(txTelefono.Text);
 
-            labelLista.Text = PersonaMostrar.Documento + "\r\n" + " " 
-                + PersonaMostrar.Direccion.ToString();
+            labelLista.Text = PersonaMostrar.Documento + PersonaMostrar.NombreApellido
+                + PersonaMostrar.Direccion + PersonaMostrar.Telefono.ToString();
 
             labelLista.Text = PersonaMostrar.NombreCompleto();
 
