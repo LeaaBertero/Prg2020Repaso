@@ -20,7 +20,7 @@ namespace pruebaClasesFrontBack
         private void btejecutar_Click(object sender, EventArgs e)
         {
             //inicializar el objeto de la CLASE persona
-            Persona PersonaMostrar = new Persona();
+            Persona? PersonaMostrar = new Persona();
 
 
             PersonaMostrar.NombreApellido = txNombre.Text;
@@ -33,6 +33,9 @@ namespace pruebaClasesFrontBack
             //    + PersonaMostrar.Direccion + PersonaMostrar.Telefono.ToString();
 
             labelLista.Text = PersonaMostrar.NombreCompleto();
+
+            PersonaMostrar = null;
+            PersonaMostrar = new Persona();
 
         }
 
