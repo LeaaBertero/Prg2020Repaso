@@ -93,7 +93,7 @@
             txDocumento.Location = new Point(232, 131);
             txDocumento.Name = "txDocumento";
             txDocumento.Size = new Size(148, 27);
-            txDocumento.TabIndex = 3;
+            txDocumento.TabIndex = 2;
             txDocumento.TextAlign = HorizontalAlignment.Center;
             // 
             // label4
