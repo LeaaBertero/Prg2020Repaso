@@ -44,6 +44,7 @@
             // 
             // btejecutar
             // 
+            btejecutar.Cursor = Cursors.Hand;
             btejecutar.Location = new Point(66, 220);
             btejecutar.Name = "btejecutar";
             btejecutar.Size = new Size(119, 29);
@@ -124,7 +125,8 @@
             // 
             // btsalir
             // 
-            btsalir.Location = new Point(694, 17);
+            btsalir.Cursor = Cursors.Hand;
+            btsalir.Location = new Point(694, 409);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(94, 29);
             btsalir.TabIndex = 6;
