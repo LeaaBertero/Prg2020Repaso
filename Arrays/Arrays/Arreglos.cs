@@ -24,7 +24,7 @@ namespace Arrays
 
         private void btcargar_Click(object sender, EventArgs e)
         {
-            string[] Dias = new string[7];
+            string[]Dias = new string[7];
 
             Dias[0] = "Lunes";
             Dias[1] = "Martes";

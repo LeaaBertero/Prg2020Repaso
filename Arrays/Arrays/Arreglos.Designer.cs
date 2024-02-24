@@ -67,9 +67,8 @@
             lbLunes.AutoSize = true;
             lbLunes.Location = new Point(95, 120);
             lbLunes.Name = "lbLunes";
-            lbLunes.Size = new Size(50, 20);
+            lbLunes.Size = new Size(0, 20);
             lbLunes.TabIndex = 4;
-            lbLunes.Text = "label2";
             lbLunes.Visible = false;
             // 
             // lbMartes
@@ -77,9 +76,9 @@
             lbMartes.AutoSize = true;
             lbMartes.Location = new Point(182, 120);
             lbMartes.Name = "lbMartes";
-            lbMartes.Size = new Size(50, 20);
+            lbMartes.Size = new Size(0, 20);
             lbMartes.TabIndex = 5;
-            lbMartes.Text = "label2";
+            lbMartes.TextAlign = ContentAlignment.MiddleCenter;
             lbMartes.Visible = false;
             // 
             // lbMiercoles
@@ -87,9 +86,8 @@
             lbMiercoles.AutoSize = true;
             lbMiercoles.Location = new Point(281, 120);
             lbMiercoles.Name = "lbMiercoles";
-            lbMiercoles.Size = new Size(50, 20);
+            lbMiercoles.Size = new Size(0, 20);
             lbMiercoles.TabIndex = 6;
-            lbMiercoles.Text = "label2";
             lbMiercoles.Visible = false;
             // 
             // lbJueves
@@ -97,9 +95,8 @@
             lbJueves.AutoSize = true;
             lbJueves.Location = new Point(374, 120);
             lbJueves.Name = "lbJueves";
-            lbJueves.Size = new Size(50, 20);
+            lbJueves.Size = new Size(0, 20);
             lbJueves.TabIndex = 7;
-            lbJueves.Text = "label2";
             lbJueves.Visible = false;
             // 
             // lbViernes
@@ -107,9 +104,8 @@
             lbViernes.AutoSize = true;
             lbViernes.Location = new Point(467, 120);
             lbViernes.Name = "lbViernes";
-            lbViernes.Size = new Size(50, 20);
+            lbViernes.Size = new Size(0, 20);
             lbViernes.TabIndex = 8;
-            lbViernes.Text = "label2";
             lbViernes.Visible = false;
             // 
             // lbsabado
@@ -117,9 +113,8 @@
             lbsabado.AutoSize = true;
             lbsabado.Location = new Point(561, 120);
             lbsabado.Name = "lbsabado";
-            lbsabado.Size = new Size(50, 20);
+            lbsabado.Size = new Size(0, 20);
             lbsabado.TabIndex = 9;
-            lbsabado.Text = "label2";
             lbsabado.Visible = false;
             // 
             // lbDomingo
@@ -127,9 +122,8 @@
             lbDomingo.AutoSize = true;
             lbDomingo.Location = new Point(652, 120);
             lbDomingo.Name = "lbDomingo";
-            lbDomingo.Size = new Size(50, 20);
+            lbDomingo.Size = new Size(0, 20);
             lbDomingo.TabIndex = 10;
-            lbDomingo.Text = "label2";
             lbDomingo.Visible = false;
             // 
             // Arreglos
