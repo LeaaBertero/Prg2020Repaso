@@ -56,6 +56,11 @@ namespace Arrays
                 lbLunes.Text = lbLunes.Text + " " + Dias[incremento] + " " + "\r\n";
             }
 
+            //foreach (string incremento in Dias)
+            //{
+            //    lbLunes.Text = lbLunes.Text + " " + incremento + " " + "\r\n";
+            //}
+
         }
     }
 }
