@@ -12,6 +12,9 @@ namespace pruebaClasesFrontBack
 {
     public partial class pruebaClases : Form
     {
+        //inicializar el objeto de la CLASE persona
+        Persona PersonaMostrar = new Persona();
+
         public pruebaClases()
         {
             InitializeComponent();
@@ -19,10 +22,7 @@ namespace pruebaClasesFrontBack
 
         private void btejecutar_Click(object sender, EventArgs e)
         {
-            //inicializar el objeto de la CLASE persona
-            Persona? PersonaMostrar = new Persona();
-
-
+            
             PersonaMostrar.NombreApellido = txNombre.Text;
             //PersonaMostrar.Apellido = txApellido.Text;
             PersonaMostrar.Documento = Convert.ToInt32(txDocumento.Text);
@@ -34,14 +34,13 @@ namespace pruebaClasesFrontBack
 
             labelLista.Text = PersonaMostrar.NombreCompleto();
 
-            PersonaMostrar = null;
-            PersonaMostrar = new Persona();
-
         }
 
         private void btsalir_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+       
     }
 }

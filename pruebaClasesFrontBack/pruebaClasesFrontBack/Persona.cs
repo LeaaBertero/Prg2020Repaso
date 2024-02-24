@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace pruebaClasesFrontBack
 {
-    internal class Persona
+    public class Persona
     {
         //propiedades de la clase persona
         public string? NombreApellido { get; set; }
@@ -14,6 +14,7 @@ namespace pruebaClasesFrontBack
         public int? Documento { get; set; }
         public string? Direccion { get; set; }
         public int? Telefono { get; set; }
+       
 
 
         //método (por que tiene paréntesis)
@@ -25,6 +26,8 @@ namespace pruebaClasesFrontBack
                 + " " + Direccion + " " + "\r\n" + "Teléfono: " 
                 + " " + Telefono + "\r\n";
         }
+
+       
 
     }
 }

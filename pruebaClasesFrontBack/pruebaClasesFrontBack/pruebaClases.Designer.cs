@@ -44,11 +44,11 @@
             // 
             // btejecutar
             // 
-            btejecutar.Location = new Point(66, 216);
+            btejecutar.Location = new Point(66, 220);
             btejecutar.Name = "btejecutar";
             btejecutar.Size = new Size(119, 29);
             btejecutar.TabIndex = 5;
-            btejecutar.Text = "Ejecutar";
+            btejecutar.Text = "Aceptar";
             btejecutar.UseVisualStyleBackColor = true;
             btejecutar.Click += btejecutar_Click;
             // 
@@ -63,7 +63,7 @@
             // labelLista
             // 
             labelLista.AutoSize = true;
-            labelLista.Location = new Point(397, 216);
+            labelLista.Location = new Point(397, 220);
             labelLista.Name = "labelLista";
             labelLista.Size = new Size(50, 20);
             labelLista.TabIndex = 2;
