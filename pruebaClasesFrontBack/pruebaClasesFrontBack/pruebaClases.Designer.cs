@@ -69,6 +69,7 @@
             labelLista.Size = new Size(50, 20);
             labelLista.TabIndex = 2;
             labelLista.Text = "label1";
+            labelLista.Visible = false;
             // 
             // label2
             // 

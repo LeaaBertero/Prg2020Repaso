@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace pruebaClasesFrontBack
 {
+    //objeto persona
     public class Persona
     {
         //propiedades de la clase persona
@@ -17,10 +18,10 @@ namespace pruebaClasesFrontBack
        
 
 
-        //método (por que tiene paréntesis)
+        //método (son acciones que determinan la cualidad del objeto)
         public string NombreCompleto()
         {
-            return "Nombre completo: " + " " + NombreApellido 
+            return "DATOS PERSONALES" + "\r\n" + "\r\n" + "Nombre completo: " + " " + NombreApellido 
                 + "\r\n" + "Documento:" + " " 
                 + Documento + "\r\n" + "Dirección:" 
                 + " " + Direccion + " " + "\r\n" + "Teléfono: " 

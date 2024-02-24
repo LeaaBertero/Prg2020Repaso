@@ -13,6 +13,7 @@ namespace pruebaClasesFrontBack
     public partial class pruebaClases : Form
     {
         //inicializar el objeto de la CLASE persona
+
         Persona PersonaMostrar = new Persona();
 
         public pruebaClases()
@@ -22,7 +23,6 @@ namespace pruebaClasesFrontBack
 
         private void btejecutar_Click(object sender, EventArgs e)
         {
-            
             PersonaMostrar.NombreApellido = txNombre.Text;
             //PersonaMostrar.Apellido = txApellido.Text;
             PersonaMostrar.Documento = Convert.ToInt32(txDocumento.Text);
@@ -33,6 +33,7 @@ namespace pruebaClasesFrontBack
             //    + PersonaMostrar.Direccion + PersonaMostrar.Telefono.ToString();
 
             labelLista.Text = PersonaMostrar.NombreCompleto();
+            labelLista.Visible = true;
 
         }
 
