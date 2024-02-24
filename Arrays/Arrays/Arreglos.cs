@@ -36,20 +36,25 @@ namespace Arrays
 
 
             lbLunes.Visible = true;
-            lbMartes.Visible = true;
-            lbMiercoles.Visible = true;
-            lbJueves.Visible = true;
-            lbViernes.Visible = true;
-            lbsabado.Visible = true;
-            lbDomingo.Visible = true;
+            //lbMartes.Visible = true;
+            //lbMiercoles.Visible = true;
+            //lbJueves.Visible = true;
+            //lbViernes.Visible = true;
+            //lbsabado.Visible = true;
+            //lbDomingo.Visible = true;
 
-            lbLunes.Text = Dias[0];
-            lbMartes.Text = Dias[1];
-            lbMiercoles.Text = Dias[2];
-            lbJueves.Text = Dias[3];
-            lbViernes.Text = Dias[4];
-            lbsabado.Text = Dias[5];
-            lbDomingo.Text = Dias[6];
+            //lbLunes.Text = Dias[0];
+            //lbMartes.Text = Dias[1];
+            //lbMiercoles.Text = Dias[2];
+            //lbJueves.Text = Dias[3];
+            //lbViernes.Text = Dias[4];
+            //lbsabado.Text = Dias[5];
+            //lbDomingo.Text = Dias[6];
+
+            for (int incremento = 0; incremento < Dias.Length; incremento++)
+            {
+                lbLunes.Text = lbLunes.Text + " " + Dias[incremento] + " " + "\r\n";
+            }
 
         }
     }
