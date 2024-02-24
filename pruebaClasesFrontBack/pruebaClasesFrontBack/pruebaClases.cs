@@ -13,7 +13,6 @@ namespace pruebaClasesFrontBack
     public partial class pruebaClases : Form
     {
         //inicializar el objeto de la CLASE persona
-
         Persona PersonaMostrar = new Persona();
 
         public pruebaClases()
