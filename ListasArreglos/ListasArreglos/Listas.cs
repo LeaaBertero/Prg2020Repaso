@@ -15,8 +15,8 @@ namespace ListasArreglos
     {
         //{ get; set; } <-. (Puede estar o no en la instancia de un objeto)
         //no genera error si no está
-        public PersonaCls.Persona[] Personas { get; set; } = new PersonaCls.Persona[2];
-        int posicion = -1;
+        public PersonaCls.Persona[] Personas { get; set; }
+        //int posicion = -1;
 
 
         public Listas()
@@ -37,9 +37,10 @@ namespace ListasArreglos
             //la sintaxis es lo mismo que llamar a un formulario
             //desde otro formulario.
             Persona persona = new PersonaCls.Persona();
-            posicion = posicion + 1;
+            //posicion = posicion + 1;
+            Redimensionar();
             persona.Nombre = txNombre.Text;
-            Personas[posicion] = persona;  
+            Personas[Personas.Length -1] = persona;  
             
         }
 
@@ -53,6 +54,25 @@ namespace ListasArreglos
             }
         }
 
+        private void Redimensionar()
+        {
+            if (Personas == null)
+            {
+                Personas = new PersonaCls.Persona[1];
+            }
+            else
+            {
+                PersonaCls.Persona[] Arraux = new PersonaCls.Persona[Personas.Length + 1];
+            
+                for (int incremento = 0; incremento < Personas.Length; incremento++)
+                {
+                    Arraux[incremento] = Personas[incremento];
+                }
+
+                Personas = Arraux;
+            }
+        }
+                    
         //método para salir del formulario
         private void btsalir_Click(object sender, EventArgs e)
         {
