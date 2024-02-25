@@ -37,11 +37,14 @@ namespace ListasArreglos
             //la sintaxis es lo mismo que llamar a un formulario
             //desde otro formulario.
             Persona persona = new PersonaCls.Persona();
+            
             //posicion = posicion + 1;
             Redimensionar();
             persona.Nombre = txNombre.Text;
-            Personas[Personas.Length -1] = persona;  
-            
+            Personas[Personas.Length - 1] = persona;
+            persona.añoNacimiento = Convert.ToInt32(txAñoNacimiento.Text);
+            persona.Documento = Convert.ToInt32(txDocumento.Text);
+
         }
 
 
@@ -50,7 +53,13 @@ namespace ListasArreglos
             lbLista.Text = "Nombres cargados: \r\n" + "\r\n";
             foreach (Persona incremento in Personas)
             {
-                lbLista.Text = lbLista.Text + incremento.Nombre + " " + "\r\n";
+                lbLista.Text = lbLista.Text + "Nombre:" + " " 
+                    + incremento.Nombre + " " + "\r\n" 
+                    + "Año de nacimiento:" + " " 
+                    + incremento.añoNacimiento + " " + "\r\n" 
+                    + "Documento:" + " "
+                    + incremento.Documento + " " + "\r\n";
+
             }
         }
 
@@ -63,7 +72,7 @@ namespace ListasArreglos
             else
             {
                 PersonaCls.Persona[] Arraux = new PersonaCls.Persona[Personas.Length + 1];
-            
+
                 for (int incremento = 0; incremento < Personas.Length; incremento++)
                 {
                     Arraux[incremento] = Personas[incremento];
@@ -72,12 +81,14 @@ namespace ListasArreglos
                 Personas = Arraux;
             }
         }
-                    
+
         //método para salir del formulario
         private void btsalir_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+      
     }
 
 
