@@ -50,7 +50,7 @@ namespace ListasArreglos
 
         private void btMostrar_Click(object sender, EventArgs e)
         {
-            lbLista.Text = "Nombres cargados: \r\n" + "\r\n";
+            lbLista.Text = "Personas cargadas: \r\n" + "\r\n";
             foreach (Persona incremento in Personas)
             {
                 lbLista.Text = lbLista.Text + "Nombre:" + " " 
