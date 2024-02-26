@@ -8,7 +8,7 @@ namespace ListasArreglos.PersonaCls
 {
     public class Persona
     { 
-        public string Nombre { get; set; }
+        public string? Nombre { get; set; }
         public int añoNacimiento { get; set; }
 
         public int Documento { get; set; }
