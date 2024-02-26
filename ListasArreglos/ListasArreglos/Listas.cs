@@ -67,6 +67,8 @@ namespace ListasArreglos
             //        + "Documento:" + " "
             //        + incremento.Documento + " " + "\r\n";
             //}
+
+            lbLista.Text = Lista.ToString();
         }
 
         private void btsalir_Click(object sender, EventArgs e)
