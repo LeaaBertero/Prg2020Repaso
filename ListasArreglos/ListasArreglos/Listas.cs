@@ -50,21 +50,23 @@ namespace ListasArreglos
             //persona.añoNacimiento = Convert.ToInt32(txAñoNacimiento.Text);
             //persona.Documento = Convert.ToInt32(txDocumento.Text);
 
+            Lista.AddPersona(txNombre.Text, txAñoNacimiento.Text, txDocumento.Text);
+
         }
 
 
         private void btMostrar_Click(object sender, EventArgs e)
         {
-            lbLista.Text = "Personas cargadas: \r\n" + "\r\n";
-            foreach (Persona incremento in Lista.Personas)
-            {
-                lbLista.Text = lbLista.Text + "Nombre:" + " "
-                    + incremento.Nombre + " " + "\r\n"
-                    + "Año de nacimiento:" + " "
-                    + incremento.añoNacimiento + " " + "\r\n"
-                    + "Documento:" + " "
-                    + incremento.Documento + " " + "\r\n";
-            }
+            //lbLista.Text = "Personas cargadas: \r\n" + "\r\n";
+            //foreach (Persona incremento in Lista.Personas)
+            //{
+            //    lbLista.Text = lbLista.Text + "Nombre:" + " "
+            //        + incremento.Nombre + " " + "\r\n"
+            //        + "Año de nacimiento:" + " "
+            //        + incremento.añoNacimiento + " " + "\r\n"
+            //        + "Documento:" + " "
+            //        + incremento.Documento + " " + "\r\n";
+            //}
         }
 
         private void btsalir_Click(object sender, EventArgs e)

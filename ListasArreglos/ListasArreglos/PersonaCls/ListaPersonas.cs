@@ -44,10 +44,28 @@ namespace ListasArreglos.PersonaCls
             Persona persona = new PersonaCls.Persona();
             Redimensionar();
             persona.Nombre = nombre;
-            //Personas[Personas.Length - 1] = persona;
             Personas[Personas.Length - 1] = persona;
             persona.añoNacimiento = Convert.ToInt32(año);
             persona.Documento = Convert.ToInt32(documento);
+        }
+
+        public override string ToString()
+        {
+
+            string Resp = "";
+
+            Resp = "Personas cargadas: \r\n" + "\r\n";
+            foreach (Persona incremento in Personas)
+            {
+                Resp = Resp + "Nombre:" + " "
+                    + incremento.Nombre + " " + "\r\n"
+                    + "Año de nacimiento:" + " "
+                    + incremento.añoNacimiento + " " + "\r\n"
+                    + "Documento:" + " "
+                    + incremento.Documento + " " + "\r\n";
+            }
+
+            return Resp;
         }
     
     }
