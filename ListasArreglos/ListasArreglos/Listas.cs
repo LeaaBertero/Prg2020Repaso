@@ -9,14 +9,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace ListasArreglos
 {
     public partial class Listas : Form
     {
         //{ get; set; } <-. (Puede estar o no en la instancia de un objeto)
         //no genera error si no está
-        public PersonaCls.Persona[] Personas { get; set; }
+
+        //public PersonaCls.Persona[] Personas { get; set; } 
+        public PersonaCls.ListaPersonas Lista { get; set; } = new PersonaCls.ListaPersonas();
         //int posicion = -1;
+
 
 
         public Listas()
@@ -31,17 +35,19 @@ namespace ListasArreglos
         }
 
         //método para cargar una lista de nombres
-        private void btcargar_Click(object sender, EventArgs e)
+        public void btcargar_Click(object sender, EventArgs e)
         {
             //clase - variable --Instancia(Hace nacer un objeto)
             //la sintaxis es lo mismo que llamar a un formulario
             //desde otro formulario.
             Persona persona = new PersonaCls.Persona();
-            
+
             //posicion = posicion + 1;
-            Redimensionar();
+            //Lista.Redimensionar();
+            Lista.Redimensionar();
             persona.Nombre = txNombre.Text;
-            Personas[Personas.Length - 1] = persona;
+            //Personas[Personas.Length - 1] = persona;
+            Lista.Personas[Lista.Personas.Length - 1] = persona;
             persona.añoNacimiento = Convert.ToInt32(txAñoNacimiento.Text);
             persona.Documento = Convert.ToInt32(txDocumento.Text);
 
@@ -51,45 +57,39 @@ namespace ListasArreglos
         private void btMostrar_Click(object sender, EventArgs e)
         {
             lbLista.Text = "Personas cargadas: \r\n" + "\r\n";
-            foreach (Persona incremento in Personas)
+            foreach (Persona incremento in Lista.Personas)
             {
-                lbLista.Text = lbLista.Text + "Nombre:" + " " 
-                    + incremento.Nombre + " " + "\r\n" 
-                    + "Año de nacimiento:" + " " 
-                    + incremento.añoNacimiento + " " + "\r\n" 
+                lbLista.Text = lbLista.Text + "Nombre:" + " "
+                    + incremento.Nombre + " " + "\r\n"
+                    + "Año de nacimiento:" + " "
+                    + incremento.añoNacimiento + " " + "\r\n"
                     + "Documento:" + " "
                     + incremento.Documento + " " + "\r\n";
-
             }
         }
 
-        private void Redimensionar()
-        {
-            if (Personas == null)
-            {
-                Personas = new PersonaCls.Persona[1];
-            }
-            else
-            {
-                PersonaCls.Persona[] Arraux = new PersonaCls.Persona[Personas.Length + 1];
-
-                for (int incremento = 0; incremento < Personas.Length; incremento++)
-                {
-                    Arraux[incremento] = Personas[incremento];
-                }
-
-                Personas = Arraux;
-            }
-        }
-
-        //método para salir del formulario
         private void btsalir_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-      
+        //public void redimensionar()
+        //{
+        //    if (personas == null)
+        //    {
+        //        personas = new personacls.persona[1];
+        //    }
+        //    else
+        //    {
+        //        personacls.persona[] arraux = new personacls.persona[personas.length + 1];
+
+        //        for (int incremento = 0; incremento < personas.length; incremento++)
+        //        {
+        //            arraux[incremento] = personas[incremento];
+        //        }
+
+        //        personas = arraux;
+        //    }
+        //}
     }
-
-
 }
