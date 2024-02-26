@@ -18,7 +18,7 @@ namespace ListasArreglos
         //no genera error si no está
 
         //public PersonaCls.Persona[] Personas { get; set; } 
-        public PersonaCls.ListaPersonas Lista { get; set; } = new PersonaCls.ListaPersonas();
+        private PersonaCls.ListaPersonas Lista { get; set; } = new PersonaCls.ListaPersonas();
         //int posicion = -1;
 
 
@@ -37,19 +37,18 @@ namespace ListasArreglos
         //método para cargar una lista de nombres
         public void btcargar_Click(object sender, EventArgs e)
         {
-            //clase - variable --Instancia(Hace nacer un objeto)
-            //la sintaxis es lo mismo que llamar a un formulario
-            //desde otro formulario.
-            Persona persona = new PersonaCls.Persona();
+            ////clase - variable --Instancia(Hace nacer un objeto)
+            ////la sintaxis es lo mismo que llamar a un formulario
+            ////desde otro formulario.
+            //Persona persona = new PersonaCls.Persona();
 
-            //posicion = posicion + 1;
+            ////posicion = posicion + 1;
             //Lista.Redimensionar();
-            Lista.Redimensionar();
-            persona.Nombre = txNombre.Text;
-            //Personas[Personas.Length - 1] = persona;
-            Lista.Personas[Lista.Personas.Length - 1] = persona;
-            persona.añoNacimiento = Convert.ToInt32(txAñoNacimiento.Text);
-            persona.Documento = Convert.ToInt32(txDocumento.Text);
+            //persona.Nombre = txNombre.Text;
+            ////Personas[Personas.Length - 1] = persona;
+            //Lista.Personas[Lista.Personas.Length - 1] = persona;
+            //persona.añoNacimiento = Convert.ToInt32(txAñoNacimiento.Text);
+            //persona.Documento = Convert.ToInt32(txDocumento.Text);
 
         }
 

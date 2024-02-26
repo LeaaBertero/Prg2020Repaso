@@ -1,13 +1,17 @@
-﻿using System;
+﻿using ListasArreglos.PersonaCls;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ListasArreglos.PersonaCls
 {
-   public class ListaPersonas
-   {
+    public class ListaPersonas
+    {
         //propiedad traida de front(comunicación con el formulario), hacia el backend(regela de negicios
         //(como comunmente se llama..)), por que justamente tiene relacion con las propiedades de la persona en la clase
         //Persona , creada inicialmente.
@@ -29,9 +33,25 @@ namespace ListasArreglos.PersonaCls
                 }
 
                 Personas = Arraux;
-
-        }   }
-}  }
+            }
+        }
+    
+        public void AddPersona(string nombre, string año, string documento)
+        {
+            //clase - variable --Instancia(Hace nacer un objeto)
+            //la sintaxis es lo mismo que llamar a un formulario
+            //desde otro formulario.
+            Persona persona = new PersonaCls.Persona();
+            Redimensionar();
+            persona.Nombre = nombre;
+            //Personas[Personas.Length - 1] = persona;
+            Personas[Personas.Length - 1] = persona;
+            persona.añoNacimiento = Convert.ToInt32(año);
+            persona.Documento = Convert.ToInt32(documento);
+        }
+    
+    }
+}  
 
 
 
