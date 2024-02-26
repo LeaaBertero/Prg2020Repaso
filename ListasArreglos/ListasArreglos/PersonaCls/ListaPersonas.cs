@@ -52,12 +52,12 @@ namespace ListasArreglos.PersonaCls
         public override string ToString()
         {
 
-            string Resp = "";
+            string Respuesta = "";
 
-            Resp = "Personas cargadas: \r\n" + "\r\n";
+            Respuesta = "Personas cargadas: \r\n" + "\r\n";
             foreach (Persona incremento in Personas)
             {
-                Resp = Resp + "Nombre:" + " "
+                Respuesta = Respuesta + "Nombre:" + " "
                     + incremento.Nombre + " " + "\r\n"
                     + "Año de nacimiento:" + " "
                     + incremento.añoNacimiento + " " + "\r\n"
@@ -65,7 +65,7 @@ namespace ListasArreglos.PersonaCls
                     + incremento.Documento + " " + "\r\n";
             }
 
-            return Resp;
+            return Respuesta;
         }
     
     }
