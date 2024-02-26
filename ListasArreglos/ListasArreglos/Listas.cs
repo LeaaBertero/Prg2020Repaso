@@ -50,10 +50,10 @@ namespace ListasArreglos
             //persona.añoNacimiento = Convert.ToInt32(txAñoNacimiento.Text);
             //persona.Documento = Convert.ToInt32(txDocumento.Text);
 
-
+            lbLista.Text = "";
             if (!Lista.AddPersona(txNombre.Text, txAñoNacimiento.Text, txDocumento.Text)) 
             {
-                MessageBox.Show("Persona no válida");
+                lbLista.Text = "Persona no válida";
             }
             
 
