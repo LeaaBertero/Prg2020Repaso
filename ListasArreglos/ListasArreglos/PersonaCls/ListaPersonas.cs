@@ -36,22 +36,30 @@ namespace ListasArreglos.PersonaCls
             }
         }
     
-        public void AddPersona(string nombre, string año, string documento)
+        public bool AddPersona(string nombre, string año, string documento)
         {
             //clase - variable --Instancia(Hace nacer un objeto)
             //la sintaxis es lo mismo que llamar a un formulario
             //desde otro formulario.
             Persona persona = new PersonaCls.Persona();
-            Redimensionar();
             persona.Nombre = nombre;
-            Personas[Personas.Length - 1] = persona;
+
             persona.añoNacimiento = Convert.ToInt32(año);
             persona.Documento = Convert.ToInt32(documento);
+
+
+            bool respuesta = persona.Validar();
+            if (respuesta)
+            {
+                Redimensionar();
+                Personas[Personas.Length - 1] = persona;
+            }
+
+            return respuesta;
         }
 
         public override string ToString()
         {
-
             string Respuesta = "";
 
             Respuesta = "Personas cargadas: \r\n" + "\r\n";
