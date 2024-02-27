@@ -30,8 +30,12 @@ namespace Timer_prueba
                 this.Refresh();
                 lbrojo.BackColor = Color.Cyan;
             }
+            else
+            {
+                MessageBox.Show("Éste es el limite Rojo");
+            }
 
-
+            
 
         }
 
@@ -42,8 +46,14 @@ namespace Timer_prueba
                 lbverde.Left = lbverde.Left - 10;
                 this.Refresh();
                 lbverde.BackColor = Color.DeepPink;
-
+               
             }
+            else
+            {
+                MessageBox.Show("Éste es el limite Verde");
+            }
+            
+
 
         }
 
