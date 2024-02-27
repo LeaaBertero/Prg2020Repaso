@@ -61,7 +61,7 @@ namespace operadores
         //contador
         private void btincremento_Click(object sender, EventArgs e)
         {
-            
+
 
             numero = ++numero;
 
@@ -72,23 +72,55 @@ namespace operadores
             else if (numero == 20)
             {
                 BackColor = Color.Red;
-                
+
             }
-            else if ( numero > 20 )
+            else if (numero > 20)
             {
                 BackColor = Color.Black;
                 lbincremento.BackColor = Color.HotPink;
                 //lbincremento.ForeColor = Color.White;
                 lbincremento.Size = new Size(200, 200);
                 lbincremento.ForeColor = Color.White;
-                label3.ForeColor = Color.White; 
+                label3.ForeColor = Color.White;
                 label4.ForeColor = Color.White;
                 label5.ForeColor = Color.White;
                 laresultado.ForeColor = Color.White;
 
 
             }
-            
+
+
+            lbincremento.Text = Convert.ToString(numero);
+        }
+
+        private void btDecrementar_Click(object sender, EventArgs e)
+        {
+            numero = --numero;
+
+            if (numero == 1)
+            {
+                MessageBox.Show("Ha llegado al limite de 1");
+            }
+            else if (numero == 2)
+            {
+                BackColor = Color.Yellow;
+
+            }
+            else if (numero <= 7)
+            {
+                BackColor = Color.Turquoise;
+                lbincremento.BackColor = Color.Pink;
+                //lbincremento.ForeColor = Color.White;
+                lbincremento.Size = new Size(75, 200);
+                lbincremento.ForeColor = Color.White;
+                label3.ForeColor = Color.Black;
+                label4.ForeColor = Color.Black;
+                label5.ForeColor = Color.Black;
+                laresultado.ForeColor = Color.Black;
+
+
+            }
+
 
             lbincremento.Text = Convert.ToString(numero);
         }

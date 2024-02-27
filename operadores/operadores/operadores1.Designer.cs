@@ -40,6 +40,7 @@
             btincremento = new Button();
             lbincremento = new Label();
             label5 = new Label();
+            btDecrementar = new Button();
             SuspendLayout();
             // 
             // btcalcular
@@ -159,6 +160,16 @@
             label5.TabIndex = 11;
             label5.Text = "Ejercicio de incremento";
             // 
+            // btDecrementar
+            // 
+            btDecrementar.Location = new Point(312, 473);
+            btDecrementar.Name = "btDecrementar";
+            btDecrementar.Size = new Size(106, 29);
+            btDecrementar.TabIndex = 12;
+            btDecrementar.Text = "Decrementar";
+            btDecrementar.UseVisualStyleBackColor = true;
+            btDecrementar.Click += btDecrementar_Click;
+            // 
             // operadores1
             // 
             AcceptButton = btcalcular;
@@ -166,6 +177,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Chartreuse;
             ClientSize = new Size(974, 608);
+            Controls.Add(btDecrementar);
             Controls.Add(label5);
             Controls.Add(lbincremento);
             Controls.Add(btincremento);
@@ -199,5 +211,6 @@
         private Button btincremento;
         private Label lbincremento;
         private Label label5;
+        private Button btDecrementar;
     }
 }
