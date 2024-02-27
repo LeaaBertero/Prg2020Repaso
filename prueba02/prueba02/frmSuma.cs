@@ -26,7 +26,7 @@ namespace prueba02
         {
             lbresultadoSuma.Text = Convert.ToString(sumar());
         }
-        
+
         //método privado que devuelve resultado
         //de la operación de la suma en este caso
         private int sumar()
@@ -51,8 +51,14 @@ namespace prueba02
                 MessageBox.Show("No se admten espacios vacios");
                 throw;
             }
-            
-           
+
+
+        }
+
+        private void btLimpiarSuma_Click(object sender, EventArgs e)
+        {
+            txnumSuma1.Text = "";
+            txnumSuma2.Text = "";
         }
     }
 }

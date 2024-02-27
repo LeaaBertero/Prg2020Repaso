@@ -25,7 +25,7 @@ namespace prueba02
         private void btcalcularRes_Click(object sender, EventArgs e)
         {
             lbresultResta.Text = Convert.ToString(Resta());
-            
+
         }
 
         //método
@@ -50,6 +50,12 @@ namespace prueba02
                 MessageBox.Show("No se admiten espacios vacios");
                 throw;
             }
+        }
+
+        private void BtLimpiarResta_Click(object sender, EventArgs e)
+        {
+            txnumRes1.Text = "";
+            txnumRes2.Text = "";
         }
     }
 }

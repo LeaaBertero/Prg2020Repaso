@@ -25,7 +25,7 @@ namespace prueba02
         private void btdivCalcular_Click(object sender, EventArgs e)
         {
 
-          
+
 
             lbresultDiv.Text = Convert.ToString(Dividir());
 
@@ -44,6 +44,12 @@ namespace prueba02
             resultDiv = numDiv1 / numDiv2;
 
             return resultDiv;
+        }
+
+        private void BtLimpiarDiv_Click(object sender, EventArgs e)
+        {
+            txnumMult1.Text = "";
+            txnumMult2.Text = "";
         }
     }
 }

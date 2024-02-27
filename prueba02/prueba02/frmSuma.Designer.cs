@@ -36,6 +36,7 @@
             label2 = new Label();
             label3 = new Label();
             label1 = new Label();
+            btLimpiarSuma = new Button();
             SuspendLayout();
             // 
             // btsalir
@@ -112,11 +113,22 @@
             label1.TabIndex = 7;
             label1.Text = "+";
             // 
+            // btLimpiarSuma
+            // 
+            btLimpiarSuma.Location = new Point(126, 201);
+            btLimpiarSuma.Name = "btLimpiarSuma";
+            btLimpiarSuma.Size = new Size(330, 29);
+            btLimpiarSuma.TabIndex = 8;
+            btLimpiarSuma.Text = "Limpiar campos";
+            btLimpiarSuma.UseVisualStyleBackColor = true;
+            btLimpiarSuma.Click += btLimpiarSuma_Click;
+            // 
             // frmSuma
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 256);
+            Controls.Add(btLimpiarSuma);
             Controls.Add(label1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -142,5 +154,6 @@
         private Label label2;
         private Label label3;
         private Label label1;
+        private Button btLimpiarSuma;
     }
 }

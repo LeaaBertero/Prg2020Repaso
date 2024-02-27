@@ -25,7 +25,7 @@ namespace prueba02
         private void btCalcularMult_Click(object sender, EventArgs e)
         {
             lbResultMult.Text = Convert.ToString(Restar());
-        } 
+        }
 
 
         private int Restar()
@@ -41,6 +41,12 @@ namespace prueba02
             resultMult = numMult1 * numMult2;
 
             return resultMult;
+        }
+
+        private void btLimpiarMult_Click(object sender, EventArgs e)
+        {
+            txnumMult1.Text = "";
+            txnumMult2.Text = "";
         }
     }
 }

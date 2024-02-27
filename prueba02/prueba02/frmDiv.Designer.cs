@@ -36,6 +36,7 @@
             label3 = new Label();
             label1 = new Label();
             label2 = new Label();
+            BtLimpiarDiv = new Button();
             SuspendLayout();
             // 
             // btsalir
@@ -112,11 +113,23 @@
             label2.TabIndex = 8;
             label2.Text = "Número 1";
             // 
+            // BtLimpiarDiv
+            // 
+            BtLimpiarDiv.Cursor = Cursors.Hand;
+            BtLimpiarDiv.Location = new Point(77, 193);
+            BtLimpiarDiv.Name = "BtLimpiarDiv";
+            BtLimpiarDiv.Size = new Size(356, 29);
+            BtLimpiarDiv.TabIndex = 10;
+            BtLimpiarDiv.Text = "Limpiar Campos";
+            BtLimpiarDiv.UseVisualStyleBackColor = true;
+            BtLimpiarDiv.Click += BtLimpiarDiv_Click;
+            // 
             // frmDiv
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 270);
+            Controls.Add(BtLimpiarDiv);
             Controls.Add(label1);
             Controls.Add(label2);
             Controls.Add(label3);
@@ -142,5 +155,6 @@
         private Label label3;
         private Label label1;
         private Label label2;
+        private Button BtLimpiarDiv;
     }
 }
