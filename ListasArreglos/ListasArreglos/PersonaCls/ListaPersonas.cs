@@ -42,13 +42,14 @@ namespace ListasArreglos.PersonaCls
             //la sintaxis es lo mismo que llamar a un formulario
             //desde otro formulario.
             Persona persona = new PersonaCls.Persona();
-            persona.Nombre = nombre;
 
+            persona.Nombre = nombre;
             persona.añoNacimiento = Convert.ToInt32(año);
             persona.Documento = Convert.ToInt32(documento);
 
 
             bool respuesta = persona.Validar();
+
             if (respuesta)
             {
                 Redimensionar();

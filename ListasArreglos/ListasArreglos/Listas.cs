@@ -76,10 +76,7 @@ namespace ListasArreglos
             lbLista.Text = Lista.ToString();
         }
 
-        private void btsalir_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
+
 
         //public void redimensionar()
         //{
@@ -99,5 +96,10 @@ namespace ListasArreglos
         //        personas = arraux;
         //    }
         //}
+
+        private void btsalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
