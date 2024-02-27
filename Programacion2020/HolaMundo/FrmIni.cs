@@ -31,5 +31,20 @@ namespace HolaMundo
         {
             lbnombre.Text = ">>> Click en comenzar <<<";
         }
+
+        private void btClick_Click(object sender, EventArgs e)
+        {
+            if (Txingresar.Text == "")
+            {
+                MessageBox.Show("Debe ingresar un nombre");
+            }
+            else
+            {
+                string nombre;
+                nombre = Txingresar.Text;  
+                //lbRes.Text = Txingresar.Text + "Hola " + nombre + " " + " Cómo estas hoy? ";
+                lbRes.Text = "Hola" + " " + nombre.ToString() + "," + " " + "cómo estás hoy?";
+            }
+        }
     }
 }

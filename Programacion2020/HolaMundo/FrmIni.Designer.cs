@@ -32,6 +32,9 @@
             btini = new Button();
             lbnombre = new Label();
             btreestablecer = new Button();
+            btClick = new Button();
+            Txingresar = new TextBox();
+            lbRes = new Label();
             SuspendLayout();
             // 
             // btsalir
@@ -48,7 +51,7 @@
             // btini
             // 
             btini.Cursor = Cursors.Hand;
-            btini.Location = new Point(296, 279);
+            btini.Location = new Point(95, 145);
             btini.Name = "btini";
             btini.Size = new Size(227, 40);
             btini.TabIndex = 1;
@@ -60,7 +63,7 @@
             // 
             lbnombre.AutoSize = true;
             lbnombre.Font = new Font("Segoe UI", 18F);
-            lbnombre.Location = new Point(206, 131);
+            lbnombre.Location = new Point(27, 71);
             lbnombre.Name = "lbnombre";
             lbnombre.Size = new Size(401, 41);
             lbnombre.TabIndex = 2;
@@ -69,7 +72,7 @@
             // btreestablecer
             // 
             btreestablecer.Cursor = Cursors.Hand;
-            btreestablecer.Location = new Point(296, 325);
+            btreestablecer.Location = new Point(95, 191);
             btreestablecer.Name = "btreestablecer";
             btreestablecer.Size = new Size(227, 40);
             btreestablecer.TabIndex = 3;
@@ -77,12 +80,42 @@
             btreestablecer.UseVisualStyleBackColor = true;
             btreestablecer.Click += btreestablecer_Click;
             // 
+            // btClick
+            // 
+            btClick.Location = new Point(480, 145);
+            btClick.Name = "btClick";
+            btClick.Size = new Size(227, 40);
+            btClick.TabIndex = 4;
+            btClick.Text = ">>> Click <<<";
+            btClick.UseVisualStyleBackColor = true;
+            btClick.Click += btClick_Click;
+            // 
+            // Txingresar
+            // 
+            Txingresar.Location = new Point(516, 204);
+            Txingresar.Name = "Txingresar";
+            Txingresar.Size = new Size(151, 27);
+            Txingresar.TabIndex = 5;
+            // 
+            // lbRes
+            // 
+            lbRes.AutoSize = true;
+            lbRes.Font = new Font("Segoe UI", 18F);
+            lbRes.Location = new Point(293, 295);
+            lbRes.Name = "lbRes";
+            lbRes.Size = new Size(291, 41);
+            lbRes.TabIndex = 6;
+            lbRes.Text = ">>> Resultado <<<";
+            // 
             // FrmIni
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PaleGreen;
             ClientSize = new Size(800, 450);
+            Controls.Add(lbRes);
+            Controls.Add(Txingresar);
+            Controls.Add(btClick);
             Controls.Add(btreestablecer);
             Controls.Add(lbnombre);
             Controls.Add(btini);
@@ -100,5 +133,8 @@
         private Button btini;
         private Label lbnombre;
         private Button btreestablecer;
+        private Button btClick;
+        private TextBox Txingresar;
+        private Label lbRes;
     }
 }
