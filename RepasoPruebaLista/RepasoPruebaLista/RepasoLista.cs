@@ -50,13 +50,13 @@ namespace RepasoPruebaLista
             {
                 MessageBox.Show("Error");
             }
-            //else if (txcnombreCarga.Text == "")
-            //{
-            //    labellista.Visible = true;
-            //    labellista.Text = "Lista de personas:" + "\r\n" + "\r\n" + nombre + ": " + persona.Nombre + "\r\n" + "\r\n" + "Para cargar, presione el botón!!";
-            //    //labellista.Text = persona.Nombre;
-            //    labellista.BackColor = Color.Black;
-            //}
+            else if (txcnombreCarga.Text == txcnombreCarga.Text)
+            {
+                labellista.Visible = true;
+                labellista.Text = "Lista de personas:" + "\r\n" + "\r\n" + nombre + ": " + persona.Nombre + "\r\n" + "\r\n" + "Para cargar, presione el botón!!";
+                //labellista.Text = persona.Nombre;
+                labellista.BackColor = Color.Black;
+            }
             else
             {
                 labellista.Visible = true;
