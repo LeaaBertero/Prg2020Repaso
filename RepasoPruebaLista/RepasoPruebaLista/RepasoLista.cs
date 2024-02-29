@@ -13,8 +13,8 @@ namespace RepasoPruebaLista
 {
     public partial class RepasoLista : Form
     {
-
-        Persona persona = new Persona();
+        //instanciar, creas el objeto persona
+        Clases.Persona persona = new Clases.Persona();
         string nombre = "Nombre";
 
         public RepasoLista()
@@ -53,14 +53,25 @@ namespace RepasoPruebaLista
             else if (txcnombreCarga.Text == txcnombreCarga.Text)
             {
                 labellista.Visible = true;
-                labellista.Text = "Lista de personas:" + "\r\n" + "\r\n" + nombre + ": " + persona.Nombre + "\r\n" + "\r\n" + "Para cargar, presione el botón!!";
+                labellista.Text = "Lista de personas:" 
+                    + "\r\n" 
+                    + "\r\n" + nombre + ": " 
+                    + persona.Nombre 
+                    + "\r\n" 
+                    + "\r\n" + "Para cargar, presione el botón!!";
                 //labellista.Text = persona.Nombre;
                 labellista.BackColor = Color.Black;
             }
             else
             {
                 labellista.Visible = true;
-                labellista.Text = "Lista de personas:" + "\r\n" + "\r\n" + nombre + ": " + persona.Nombre + "\r\n" + "\r\n" + "Operación realizada con éxito";
+                labellista.Text = "Lista de personas:" 
+                    + "\r\n" 
+                    + "\r\n" 
+                    + nombre + ": " 
+                    + persona.Nombre 
+                    + "\r\n" + "\r\n" 
+                    + "Operación realizada con éxito";
                 //labellista.Text = persona.Nombre;
                 labellista.BackColor = Color.Black;
             }

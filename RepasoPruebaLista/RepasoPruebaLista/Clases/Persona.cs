@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RepasoPruebaLista
+namespace RepasoPruebaLista.Clases
 {
     public class Persona
     {
-        public string? Nombre { get; set; } 
+        //get: se puede leer --- set: se puede modificar
+        public string? Nombre { get; set; }
         //public string Apellido { get; set;}
 
     }
