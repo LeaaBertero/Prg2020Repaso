@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -49,13 +50,23 @@ namespace RepasoPruebaLista
             {
                 MessageBox.Show("Error");
             }
+            //else if (txcnombreCarga.Text == "")
+            //{
+            //    labellista.Visible = true;
+            //    labellista.Text = "Lista de personas:" + "\r\n" + "\r\n" + nombre + ": " + persona.Nombre + "\r\n" + "\r\n" + "Para cargar, presione el botón!!";
+            //    //labellista.Text = persona.Nombre;
+            //    labellista.BackColor = Color.Black;
+            //}
             else
             {
                 labellista.Visible = true;
-                labellista.Text = "Lista de personas:" + "\r\n" + "\r\n" + nombre + ": " + persona.Nombre;
+                labellista.Text = "Lista de personas:" + "\r\n" + "\r\n" + nombre + ": " + persona.Nombre + "\r\n" + "\r\n" + "Operación realizada con éxito";
                 //labellista.Text = persona.Nombre;
                 labellista.BackColor = Color.Black;
             }
+
+
+
         }
 
         private void btlimpiar_Click(object sender, EventArgs e)
