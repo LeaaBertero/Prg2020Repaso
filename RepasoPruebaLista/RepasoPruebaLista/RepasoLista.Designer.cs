@@ -68,7 +68,9 @@
             // 
             // txcnombreCarga
             // 
+            txcnombreCarga.BackColor = Color.Black;
             txcnombreCarga.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            txcnombreCarga.ForeColor = Color.Transparent;
             txcnombreCarga.Location = new Point(299, 116);
             txcnombreCarga.Name = "txcnombreCarga";
             txcnombreCarga.Size = new Size(125, 27);
