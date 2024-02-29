@@ -14,7 +14,7 @@ namespace RepasoPruebaLista
     {
 
         Persona persona = new Persona();
-        string nombre = "nombre";
+        string nombre = "Nombre";
 
         public RepasoLista()
         {
@@ -51,11 +51,11 @@ namespace RepasoPruebaLista
             }
             else
             {
-                labellista.Text = "Lista de personas:" + "\r\n" + "\r\n" + nombre + " :" + persona.Nombre;
+                labellista.Visible = true;
+                labellista.Text = "Lista de personas:" + "\r\n" + "\r\n" + nombre + ": " + persona.Nombre;
                 //labellista.Text = persona.Nombre;
+                labellista.BackColor = Color.Black;
             }
-
-           
         }
 
         private void btlimpiar_Click(object sender, EventArgs e)

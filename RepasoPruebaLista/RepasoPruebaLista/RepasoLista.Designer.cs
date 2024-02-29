@@ -34,6 +34,8 @@
             labellista = new Label();
             btmostrar = new Button();
             btlimpiar = new Button();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // btsalir
@@ -42,10 +44,10 @@
             btsalir.Cursor = Cursors.Hand;
             btsalir.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btsalir.ForeColor = SystemColors.Control;
-            btsalir.Location = new Point(917, 12);
+            btsalir.Location = new Point(641, 417);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(94, 29);
-            btsalir.TabIndex = 0;
+            btsalir.TabIndex = 4;
             btsalir.Text = "Salir";
             btsalir.UseVisualStyleBackColor = false;
             btsalir.Click += btsalir_Click;
@@ -67,21 +69,22 @@
             // txcnombreCarga
             // 
             txcnombreCarga.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            txcnombreCarga.Location = new Point(258, 121);
+            txcnombreCarga.Location = new Point(299, 116);
             txcnombreCarga.Name = "txcnombreCarga";
             txcnombreCarga.Size = new Size(125, 27);
-            txcnombreCarga.TabIndex = 2;
+            txcnombreCarga.TabIndex = 1;
             // 
             // labellista
             // 
             labellista.AutoSize = true;
             labellista.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             labellista.ForeColor = SystemColors.Control;
-            labellista.Location = new Point(541, 128);
+            labellista.Location = new Point(515, 119);
             labellista.Name = "labellista";
             labellista.Size = new Size(51, 20);
             labellista.TabIndex = 3;
             labellista.Text = "label1";
+            labellista.Visible = false;
             // 
             // btmostrar
             // 
@@ -92,7 +95,7 @@
             btmostrar.Location = new Point(133, 154);
             btmostrar.Name = "btmostrar";
             btmostrar.Size = new Size(94, 29);
-            btmostrar.TabIndex = 4;
+            btmostrar.TabIndex = 2;
             btmostrar.Text = "Mostrar";
             btmostrar.UseVisualStyleBackColor = false;
             btmostrar.Click += btmostrar_Click;
@@ -106,23 +109,49 @@
             btlimpiar.Location = new Point(133, 189);
             btlimpiar.Name = "btlimpiar";
             btlimpiar.Size = new Size(94, 29);
-            btlimpiar.TabIndex = 5;
+            btlimpiar.TabIndex = 3;
             btlimpiar.Text = "Limpiar";
             btlimpiar.UseVisualStyleBackColor = false;
             btlimpiar.Click += btlimpiar_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(212, 28);
+            label1.Name = "label1";
+            label1.Size = new Size(354, 28);
+            label1.TabIndex = 6;
+            label1.Text = "PROYECTO DE CARGA DE NOMBRES";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(299, 93);
+            label2.Name = "label2";
+            label2.Size = new Size(67, 20);
+            label2.TabIndex = 7;
+            label2.Text = "Nombre";
+            // 
             // RepasoLista
             // 
+            AcceptButton = btcargar;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.SaddleBrown;
-            ClientSize = new Size(1023, 458);
+            ClientSize = new Size(747, 458);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(btlimpiar);
             Controls.Add(btmostrar);
             Controls.Add(labellista);
             Controls.Add(txcnombreCarga);
             Controls.Add(btcargar);
             Controls.Add(btsalir);
+            MaximizeBox = false;
             Name = "RepasoLista";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "RepasoLista";
@@ -138,5 +167,7 @@
         private Label labellista;
         private Button btmostrar;
         private Button btlimpiar;
+        private Label label1;
+        private Label label2;
     }
 }
