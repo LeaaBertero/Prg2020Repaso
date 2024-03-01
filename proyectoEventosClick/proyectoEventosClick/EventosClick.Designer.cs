@@ -61,6 +61,7 @@
             btbajar.TabIndex = 1;
             btbajar.Text = "Arriba - Abajo";
             btbajar.UseVisualStyleBackColor = false;
+           
             btbajar.MouseMove += button1_MouseMove;
             // 
             // btsalir

@@ -18,7 +18,6 @@ namespace proyectoEventosClick
         }
 
 
-
         private void btIniciar_MouseMove(object sender, MouseEventArgs e)
         {
             btIniciar.Left = btIniciar.Left + 5;
@@ -30,10 +29,6 @@ namespace proyectoEventosClick
             btbajar.Top = btbajar.Top + 5;
         }
 
-        private void btsalir_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
 
         private void btsubir_MouseMove(object sender, MouseEventArgs e)
         {
@@ -44,5 +39,11 @@ namespace proyectoEventosClick
         {
             btizquierda.Left = btizquierda.Left - 5;
         }
+
+        private void btsalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
     }
 }
