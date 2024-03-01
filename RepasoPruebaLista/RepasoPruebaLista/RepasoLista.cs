@@ -29,8 +29,8 @@ namespace RepasoPruebaLista
 
         private void btcargar_Click(object sender, EventArgs e)
         {
-          
-           
+
+
             if (txcnombreCarga.Text == "")
             {
                 MessageBox.Show("No puede dejar campos vacios");
@@ -53,11 +53,11 @@ namespace RepasoPruebaLista
             else if (txcnombreCarga.Text == txcnombreCarga.Text)
             {
                 labellista.Visible = true;
-                labellista.Text = "Lista de personas:" 
-                    + "\r\n" 
-                    + "\r\n" + nombre + ": " 
-                    + persona.Nombre 
-                    + "\r\n" 
+                labellista.Text = "Lista de personas:"
+                    + "\r\n"
+                    + "\r\n" + nombre + ": "
+                    + persona.Nombre
+                    + "\r\n"
                     + "\r\n" + "Para cargar, presione el botón!!";
                 //labellista.Text = persona.Nombre;
                 labellista.BackColor = Color.Black;
@@ -65,12 +65,12 @@ namespace RepasoPruebaLista
             else
             {
                 labellista.Visible = true;
-                labellista.Text = "Lista de personas:" 
-                    + "\r\n" 
-                    + "\r\n" 
-                    + nombre + ": " 
-                    + persona.Nombre 
-                    + "\r\n" + "\r\n" 
+                labellista.Text = "Lista de personas:"
+                    + "\r\n"
+                    + "\r\n"
+                    + nombre + ": "
+                    + persona.Nombre
+                    + "\r\n" + "\r\n"
                     + "Operación realizada con éxito";
                 //labellista.Text = persona.Nombre;
                 labellista.BackColor = Color.Black;
@@ -92,7 +92,9 @@ namespace RepasoPruebaLista
                 labellista.Text = "";
             }
 
-           
+
         }
+
+       
     }
 }
