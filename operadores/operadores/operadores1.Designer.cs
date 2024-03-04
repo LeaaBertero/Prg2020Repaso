@@ -41,6 +41,13 @@
             lbincremento = new Label();
             label5 = new Label();
             btDecrementar = new Button();
+            label6 = new Label();
+            label7 = new Label();
+            label8 = new Label();
+            Txres2 = new TextBox();
+            Txres1 = new TextBox();
+            LbresResta = new Label();
+            btcalcResta = new Button();
             SuspendLayout();
             // 
             // btcalcular
@@ -131,7 +138,7 @@
             // 
             // btincremento
             // 
-            btincremento.Location = new Point(312, 400);
+            btincremento.Location = new Point(296, 562);
             btincremento.Name = "btincremento";
             btincremento.Size = new Size(106, 29);
             btincremento.TabIndex = 9;
@@ -143,7 +150,7 @@
             // 
             lbincremento.Font = new Font("Segoe UI", 10F);
             lbincremento.ForeColor = Color.Black;
-            lbincremento.Location = new Point(540, 402);
+            lbincremento.Location = new Point(524, 564);
             lbincremento.Name = "lbincremento";
             lbincremento.Size = new Size(55, 23);
             lbincremento.TabIndex = 10;
@@ -154,7 +161,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label5.Location = new Point(312, 289);
+            label5.Location = new Point(296, 507);
             label5.Name = "label5";
             label5.Size = new Size(283, 32);
             label5.TabIndex = 11;
@@ -162,7 +169,7 @@
             // 
             // btDecrementar
             // 
-            btDecrementar.Location = new Point(312, 473);
+            btDecrementar.Location = new Point(296, 635);
             btDecrementar.Name = "btDecrementar";
             btDecrementar.Size = new Size(106, 29);
             btDecrementar.TabIndex = 12;
@@ -170,13 +177,85 @@
             btDecrementar.UseVisualStyleBackColor = true;
             btDecrementar.Click += btDecrementar_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label6.Location = new Point(394, 280);
+            label6.Name = "label6";
+            label6.Size = new Size(125, 32);
+            label6.TabIndex = 19;
+            label6.Text = "numero 2";
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label7.Location = new Point(202, 280);
+            label7.Name = "label7";
+            label7.Size = new Size(125, 32);
+            label7.TabIndex = 18;
+            label7.Text = "numero 1";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            label8.Location = new Point(345, 329);
+            label8.Name = "label8";
+            label8.Size = new Size(24, 32);
+            label8.TabIndex = 17;
+            label8.Text = "-";
+            // 
+            // Txres2
+            // 
+            Txres2.Location = new Point(394, 332);
+            Txres2.Name = "Txres2";
+            Txres2.Size = new Size(125, 27);
+            Txres2.TabIndex = 15;
+            // 
+            // Txres1
+            // 
+            Txres1.Location = new Point(202, 332);
+            Txres1.Name = "Txres1";
+            Txres1.Size = new Size(125, 27);
+            Txres1.TabIndex = 13;
+            // 
+            // LbresResta
+            // 
+            LbresResta.AutoSize = true;
+            LbresResta.Location = new Point(727, 338);
+            LbresResta.Name = "LbresResta";
+            LbresResta.Size = new Size(50, 20);
+            LbresResta.TabIndex = 14;
+            LbresResta.Text = "label1";
+            LbresResta.Visible = false;
+            // 
+            // btcalcResta
+            // 
+            btcalcResta.Cursor = Cursors.Hand;
+            btcalcResta.Location = new Point(571, 334);
+            btcalcResta.Name = "btcalcResta";
+            btcalcResta.Size = new Size(94, 29);
+            btcalcResta.TabIndex = 16;
+            btcalcResta.Text = "calcular";
+            btcalcResta.UseVisualStyleBackColor = true;
+            btcalcResta.Click += btcalcResta_Click;
+            // 
             // operadores1
             // 
             AcceptButton = btcalcular;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Chartreuse;
-            ClientSize = new Size(974, 608);
+            ClientSize = new Size(974, 707);
+            Controls.Add(label6);
+            Controls.Add(label7);
+            Controls.Add(label8);
+            Controls.Add(Txres2);
+            Controls.Add(Txres1);
+            Controls.Add(LbresResta);
+            Controls.Add(btcalcResta);
             Controls.Add(btDecrementar);
             Controls.Add(label5);
             Controls.Add(lbincremento);
@@ -212,5 +291,12 @@
         private Label lbincremento;
         private Label label5;
         private Button btDecrementar;
+        private Label label6;
+        private Label label7;
+        private Label label8;
+        private TextBox Txres2;
+        private TextBox Txres1;
+        private Label LbresResta;
+        private Button btcalcResta;
     }
 }

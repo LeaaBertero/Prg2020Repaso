@@ -124,5 +124,40 @@ namespace operadores
 
             lbincremento.Text = Convert.ToString(numero);
         }
+
+        private void btcalcResta_Click(object sender, EventArgs e)
+        {
+
+            //int numero1;
+            //int numero2;
+
+            //int resultado;
+
+            //numero1 = Convert.ToInt32(txnum1.Text);
+            //numero2 = Convert.ToInt32(txnum2.Text);
+
+            //resultado = numero1 + numero2;
+
+            LbresResta.Text = "El resultado es:" + " " + Convert.ToString(Resta());
+            LbresResta.Visible = true;
+        }
+
+        private int Resta()
+        {
+            int numeroRes1;
+            int numeroRes2;
+
+            int resultadoResta;
+
+            numeroRes1 = Convert.ToInt32(Txres1.Text);
+            numeroRes2 = Convert.ToInt32(Txres2.Text);
+
+            resultadoResta = numeroRes1 - numeroRes2;
+
+            return resultadoResta;
+
+        }
+
+
     }
 }
