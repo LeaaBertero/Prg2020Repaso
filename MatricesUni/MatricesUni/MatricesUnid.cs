@@ -43,9 +43,9 @@ namespace MatricesUni
         private void btlistar_Click(object sender, EventArgs e)
         {
             
-            for (int i = 0; i < lista.Length; i++)
+            for (int contador = 0; contador < lista.Length; contador++)
             {
-                lblista.Text = lblista.Text + TxNombre.Text + lista[i] + " " + "\r\n";
+                lblista.Text = lblista.Text + TxNombre.Text + lista[contador] + " " + "\r\n";
             }
 
             lblista.Visible = true;
