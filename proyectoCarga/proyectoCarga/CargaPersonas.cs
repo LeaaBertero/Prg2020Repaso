@@ -14,7 +14,7 @@ namespace proyectoCarga
     public partial class CargaPersonas : Form
     {
         //inicializando el objeto
-        Cls.Persona persona = new Cls.Persona();
+        proyectoCarga.Cls.Persona personas = new proyectoCarga.Cls.Persona();
 
         public CargaPersonas()
         {
@@ -23,18 +23,22 @@ namespace proyectoCarga
 
         private void btcargar_Click(object sender, EventArgs e)
         {
-            persona.Nombre = txCargar.Text;
+            personas.Nombre = txNombre.Text;
+            personas.AñoNacimiento = txañoNacimiento.Text;
         }
 
 
-        private void btmostrar_Click(object sender, EventArgs e)
+        public void btmostrar_Click(object sender, EventArgs e)
         {
-            lbres.Text = persona.Nombre;
+            lbres.Text = " \r\n " + " Nombre: " + personas.Nombre + " \r\n " + " Año: " + personas.AñoNacimiento;
+            
         }
 
         private void btsalir_Click(object sender, EventArgs e)
         {
             Close();
         }
+
+       
     }
 }

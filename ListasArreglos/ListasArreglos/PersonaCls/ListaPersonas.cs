@@ -15,7 +15,7 @@ namespace ListasArreglos.PersonaCls
         //propiedad traida de front(comunicación con el formulario), hacia el backend(regela de negicios
         //(como comunmente se llama..)), por que justamente tiene relacion con las propiedades de la persona en la clase
         //Persona , creada inicialmente.
-        public PersonaCls.Persona[] Personas { get; set; } = new Persona[1];
+        public ListasArreglos.PersonaCls.Persona[] Personas { get; set; } = new ListasArreglos.PersonaCls.Persona[1];
 
         public void Redimensionar()
         {

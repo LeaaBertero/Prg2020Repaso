@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             btsalir = new Button();
-            txCargar = new TextBox();
+            txNombre = new TextBox();
             btcargar = new Button();
             btmostrar = new Button();
             lbres = new Label();
+            txañoNacimiento = new TextBox();
             SuspendLayout();
             // 
             // btsalir
             // 
+            btsalir.Cursor = Cursors.Hand;
             btsalir.Location = new Point(694, 12);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(94, 29);
@@ -45,15 +47,16 @@
             btsalir.UseVisualStyleBackColor = true;
             btsalir.Click += btsalir_Click;
             // 
-            // txCargar
+            // txNombre
             // 
-            txCargar.Location = new Point(177, 99);
-            txCargar.Name = "txCargar";
-            txCargar.Size = new Size(125, 27);
-            txCargar.TabIndex = 1;
+            txNombre.Location = new Point(177, 99);
+            txNombre.Name = "txNombre";
+            txNombre.Size = new Size(125, 27);
+            txNombre.TabIndex = 1;
             // 
             // btcargar
             // 
+            btcargar.Cursor = Cursors.Hand;
             btcargar.Location = new Point(33, 99);
             btcargar.Name = "btcargar";
             btcargar.Size = new Size(94, 29);
@@ -64,6 +67,7 @@
             // 
             // btmostrar
             // 
+            btmostrar.Cursor = Cursors.Hand;
             btmostrar.Location = new Point(33, 154);
             btmostrar.Name = "btmostrar";
             btmostrar.Size = new Size(94, 29);
@@ -81,18 +85,27 @@
             lbres.TabIndex = 4;
             lbres.Text = "label1";
             // 
+            // txañoNacimiento
+            // 
+            txañoNacimiento.Location = new Point(361, 99);
+            txañoNacimiento.Name = "txañoNacimiento";
+            txañoNacimiento.Size = new Size(125, 27);
+            txañoNacimiento.TabIndex = 5;
+            // 
             // CargaPersonas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkGray;
             ClientSize = new Size(800, 450);
+            Controls.Add(txañoNacimiento);
             Controls.Add(lbres);
             Controls.Add(btmostrar);
             Controls.Add(btcargar);
-            Controls.Add(txCargar);
+            Controls.Add(txNombre);
             Controls.Add(btsalir);
             Name = "CargaPersonas";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "CargaPersonas";
             ResumeLayout(false);
             PerformLayout();
@@ -101,9 +114,10 @@
         #endregion
 
         private Button btsalir;
-        private TextBox txCargar;
+        private TextBox txNombre;
         private Button btcargar;
         private Button btmostrar;
         private Label lbres;
+        private TextBox txañoNacimiento;
     }
 }
