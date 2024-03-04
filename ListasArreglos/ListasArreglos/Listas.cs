@@ -33,7 +33,7 @@ namespace ListasArreglos
         {
 
         }
-
+        
         //método para cargar una lista de nombres
         public void btcargar_Click(object sender, EventArgs e)
         {
