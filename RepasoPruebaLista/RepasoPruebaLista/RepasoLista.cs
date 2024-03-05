@@ -14,7 +14,7 @@ namespace RepasoPruebaLista
     public partial class RepasoLista : Form
     {
         //instanciar, creas el objeto persona
-        Clases.Persona persona = new Clases.Persona();
+        RepasoPruebaLista.Clases.Persona persona = new RepasoPruebaLista.Clases.Persona();
         string nombre = "Nombre";
 
         public RepasoLista()
