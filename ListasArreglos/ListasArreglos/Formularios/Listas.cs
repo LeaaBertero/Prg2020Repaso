@@ -29,8 +29,8 @@ namespace ListasArreglos
         }
 
         //método para dimensionar la cantidad de nombres
-       
-        
+
+
         //método para cargar una lista de nombres
         public void btcargar_Click(object sender, EventArgs e)
         {
@@ -48,11 +48,11 @@ namespace ListasArreglos
             //persona.Documento = Convert.ToInt32(txDocumento.Text);
 
             lbLista.Text = "";
-            if (!Lista.AddPersona(txNombre.Text, txAñoNacimiento.Text, txDocumento.Text)) 
+            if (!Lista.AddPersona(txNombre.Text, txAñoNacimiento.Text, txDocumento.Text))
             {
                 lbLista.Text = "Persona no válida";
             }
-            
+
 
         }
 
@@ -98,5 +98,7 @@ namespace ListasArreglos
         {
             Close();
         }
+
+        
     }
 }
