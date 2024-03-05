@@ -1,5 +1,4 @@
-﻿using ListasArreglos.PersonaCls;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ListasArreglos.Cls;
 
 
 namespace ListasArreglos
@@ -18,7 +18,7 @@ namespace ListasArreglos
         //no genera error si no está
 
         //public PersonaCls.Persona[] Personas { get; set; } 
-        private PersonaCls.ListaPersonas Lista { get; set; } = new PersonaCls.ListaPersonas();
+        private ListasArreglos.Cls.ListaPersonas Lista { get; set; } = new ListasArreglos.Cls.ListaPersonas();
         //int posicion = -1;
 
 
@@ -29,10 +29,7 @@ namespace ListasArreglos
         }
 
         //método para dimensionar la cantidad de nombres
-        private void btDimension_Click(object sender, EventArgs e)
-        {
-
-        }
+       
         
         //método para cargar una lista de nombres
         public void btcargar_Click(object sender, EventArgs e)

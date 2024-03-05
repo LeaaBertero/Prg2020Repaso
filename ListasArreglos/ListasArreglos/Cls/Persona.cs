@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ListasArreglos.PersonaCls
+namespace ListasArreglos.Cls
 {
     public class Persona
-    { 
+    {
         public string? Nombre { get; set; } //get: set (se puede leer y se puede modificar) 
         public int añoNacimiento { get; set; }
 
