@@ -66,7 +66,7 @@
             // lbLista
             // 
             lbLista.AutoSize = true;
-            lbLista.Location = new Point(726, 232);
+            lbLista.Location = new Point(726, 222);
             lbLista.Name = "lbLista";
             lbLista.Size = new Size(50, 20);
             lbLista.TabIndex = 2;
@@ -76,7 +76,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label2.Location = new Point(726, 129);
+            label2.Location = new Point(726, 112);
             label2.Name = "label2";
             label2.Size = new Size(259, 41);
             label2.TabIndex = 3;
@@ -91,7 +91,6 @@
             btDimension.TabIndex = 0;
             btDimension.Text = "Dimensionar";
             btDimension.UseVisualStyleBackColor = true;
-           
             // 
             // btsalir
             // 
@@ -170,7 +169,7 @@
             // 
             // txDocumento
             // 
-            txDocumento.Location = new Point(425, 159);
+            txDocumento.Location = new Point(423, 159);
             txDocumento.Name = "txDocumento";
             txDocumento.Size = new Size(94, 27);
             txDocumento.TabIndex = 4;
