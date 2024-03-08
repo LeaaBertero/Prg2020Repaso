@@ -44,11 +44,11 @@
             // btdias
             // 
             btdias.Cursor = Cursors.Hand;
-            btdias.Location = new Point(239, 42);
+            btdias.Location = new Point(227, 42);
             btdias.Name = "btdias";
-            btdias.Size = new Size(147, 29);
+            btdias.Size = new Size(181, 29);
             btdias.TabIndex = 0;
-            btdias.Text = "dias semana";
+            btdias.Text = "Ver dias de la semana";
             btdias.UseVisualStyleBackColor = true;
             btdias.Click += btdias_Click;
             // 
@@ -139,9 +139,9 @@
             // btLimpiar
             // 
             btLimpiar.Cursor = Cursors.Hand;
-            btLimpiar.Location = new Point(535, 42);
+            btLimpiar.Location = new Point(511, 42);
             btLimpiar.Name = "btLimpiar";
-            btLimpiar.Size = new Size(147, 29);
+            btLimpiar.Size = new Size(181, 29);
             btLimpiar.TabIndex = 8;
             btLimpiar.Text = "dias semana";
             btLimpiar.UseVisualStyleBackColor = true;
