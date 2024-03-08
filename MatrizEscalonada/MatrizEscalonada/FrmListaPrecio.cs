@@ -17,6 +17,7 @@ namespace MatrizEscalonada
                                 
         private string[,] Producto = new string[3, 2];
         private decimal[] Precio = new decimal[3];
+        private int[,] codigo = new int[3,2];
 
         private int fila;
 
@@ -34,14 +35,17 @@ namespace MatrizEscalonada
 
         private void btaceptar_Click(object sender, EventArgs e)
         {
-            if (fila > 2)
+            if (fila >= 2)
             {
                 MessageBox.Show("no se pueden ingresar mas productos");
             }
             else
             {
-                Producto[fila, 0] = txcodigo.Text;
-                Producto[fila, 1] = txproducto.Text;
+                Producto [fila, 0] = txproducto.Text;
+                Producto [fila, 1] = txproducto.Text;
+
+                Producto [fila, 0] = (txcodigo.Text);
+                Producto[fila, 1] = (txcodigo.Text);
 
                 Precio[fila] = Convert.ToDecimal(txprecio.Text);
 
@@ -58,8 +62,8 @@ namespace MatrizEscalonada
 
             for (int incremento = 0; incremento < Producto.Length; incremento++)
             {
-                lblListaPrecio.Text = lblListaPrecio.Text +
-                    Producto[incremento, 0] + " " + Producto[incremento, 1] +
+                lblListaPrecio.Text =
+                    Producto[incremento, 0] + " " + Producto[incremento, 1] + codigo[incremento, 0] + codigo[incremento,1] + " " +
                     " - " + Convert.ToString(Precio[incremento]) + "\r\n";
             }
         }
