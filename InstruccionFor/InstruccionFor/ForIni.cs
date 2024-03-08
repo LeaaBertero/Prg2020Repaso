@@ -34,16 +34,19 @@ namespace InstruccionFor
         {
             //Convert.ToInt32(TXDesde.Text);
 
-            for (Convert.ToInt32(TXDesde.Text); 
-                contador <= Convert.ToInt32(TxHasta.Text); 
-                contador = contador + Convert.ToInt32(TxPaso.Text))
+            for (Convert.ToInt32(TXDesde.Text);
+                    contador <= Convert.ToInt32(TxHasta.Text);
+                    contador = contador + Convert.ToInt32(TxPaso.Text))
             {
                 //MessageBox.Show("Contando") = contador.ToString();
                 LbResultado.Visible = true; ;
-                LbResultado.Text = contador.ToString(); 
+                LbResultado.Text = contador.ToString();
                 this.Refresh();
 
             }
+
+
+           
         }
     }
 }
