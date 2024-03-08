@@ -24,7 +24,7 @@ namespace InstruccionFor
             Close();
         }
 
-        private void btNuevoForm_Click(object sender, EventArgs e)
+        private void btNuevoForm_Click(object sender, EventArgs e)  
         {
             Form nuevoFrm = new nuevoform();
             nuevoFrm.ShowDialog();
