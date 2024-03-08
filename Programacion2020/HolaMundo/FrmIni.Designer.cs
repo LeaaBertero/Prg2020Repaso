@@ -35,6 +35,7 @@
             btClick = new Button();
             Txingresar = new TextBox();
             lbRes = new Label();
+            btlimpiar = new Button();
             SuspendLayout();
             // 
             // btsalir
@@ -107,12 +108,24 @@
             lbRes.TabIndex = 6;
             lbRes.Text = ">>> Resultado <<<";
             // 
+            // btlimpiar
+            // 
+            btlimpiar.Cursor = Cursors.Hand;
+            btlimpiar.Location = new Point(480, 237);
+            btlimpiar.Name = "btlimpiar";
+            btlimpiar.Size = new Size(227, 40);
+            btlimpiar.TabIndex = 7;
+            btlimpiar.Text = "Limpiar campo";
+            btlimpiar.UseVisualStyleBackColor = true;
+            btlimpiar.Click += btlimpiar_Click;
+            // 
             // FrmIni
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PaleGreen;
             ClientSize = new Size(800, 450);
+            Controls.Add(btlimpiar);
             Controls.Add(lbRes);
             Controls.Add(Txingresar);
             Controls.Add(btClick);
@@ -136,5 +149,6 @@
         private Button btClick;
         private TextBox Txingresar;
         private Label lbRes;
+        private Button btlimpiar;
     }
 }

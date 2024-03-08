@@ -41,10 +41,15 @@ namespace HolaMundo
             else
             {
                 string nombre;
-                nombre = Txingresar.Text;  
+                nombre = Txingresar.Text;
                 //lbRes.Text = Txingresar.Text + "Hola " + nombre + " " + " Cómo estas hoy? ";
                 lbRes.Text = "Hola" + " " + nombre.ToString() + "," + " " + "cómo estás hoy?";
             }
+        }
+
+        private void btlimpiar_Click(object sender, EventArgs e)
+        {
+            Txingresar.Text = "";
         }
     }
 }
