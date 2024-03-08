@@ -38,6 +38,7 @@
             // 
             // btsalir
             // 
+            btsalir.Cursor = Cursors.Hand;
             btsalir.Location = new Point(474, 12);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(94, 29);
@@ -48,6 +49,7 @@
             // 
             // btDivResultado
             // 
+            btDivResultado.Cursor = Cursors.Hand;
             btDivResultado.Location = new Point(411, 129);
             btDivResultado.Name = "btDivResultado";
             btDivResultado.Size = new Size(113, 33);

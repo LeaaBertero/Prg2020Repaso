@@ -38,6 +38,7 @@
             // 
             // btsalir
             // 
+            btsalir.Cursor = Cursors.Hand;
             btsalir.Location = new Point(605, 12);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(98, 31);
@@ -48,6 +49,7 @@
             // 
             // btres
             // 
+            btres.Cursor = Cursors.Hand;
             btres.Location = new Point(502, 149);
             btres.Name = "btres";
             btres.Size = new Size(110, 29);
@@ -88,7 +90,7 @@
             lbres.TabIndex = 5;
             lbres.Text = "label2";
             // 
-            // suma
+            // Suma
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -99,7 +101,7 @@
             Controls.Add(txnum1);
             Controls.Add(btres);
             Controls.Add(btsalir);
-            Name = "suma";
+            Name = "Suma";
             Text = "suma";
             ResumeLayout(false);
             PerformLayout();

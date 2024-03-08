@@ -38,6 +38,7 @@
             // 
             // btsalir
             // 
+            btsalir.Cursor = Cursors.Hand;
             btsalir.Location = new Point(499, 12);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(94, 29);
@@ -48,6 +49,7 @@
             // 
             // BtDivResultado
             // 
+            BtDivResultado.Cursor = Cursors.Hand;
             BtDivResultado.Location = new Point(393, 138);
             BtDivResultado.Name = "BtDivResultado";
             BtDivResultado.Size = new Size(123, 29);
@@ -88,7 +90,7 @@
             labelResultado.TabIndex = 5;
             labelResultado.Text = "label2";
             // 
-            // multiplicacion
+            // Multiplicacion
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -99,7 +101,7 @@
             Controls.Add(txnumDiv1);
             Controls.Add(BtDivResultado);
             Controls.Add(btsalir);
-            Name = "multiplicacion";
+            Name = "Multiplicacion";
             Text = "multiplicacion";
             ResumeLayout(false);
             PerformLayout();

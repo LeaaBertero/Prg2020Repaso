@@ -48,6 +48,7 @@
             // 
             // btsuma
             // 
+            btsuma.Cursor = Cursors.Hand;
             btsuma.Location = new Point(100, 160);
             btsuma.Name = "btsuma";
             btsuma.Size = new Size(94, 29);
@@ -58,6 +59,7 @@
             // 
             // btresta
             // 
+            btresta.Cursor = Cursors.Hand;
             btresta.Location = new Point(261, 160);
             btresta.Name = "btresta";
             btresta.Size = new Size(94, 29);
@@ -68,6 +70,7 @@
             // 
             // btmult
             // 
+            btmult.Cursor = Cursors.Hand;
             btmult.Location = new Point(418, 160);
             btmult.Name = "btmult";
             btmult.Size = new Size(129, 29);
@@ -78,6 +81,7 @@
             // 
             // btdivision
             // 
+            btdivision.Cursor = Cursors.Hand;
             btdivision.Location = new Point(611, 160);
             btdivision.Name = "btdivision";
             btdivision.Size = new Size(114, 29);

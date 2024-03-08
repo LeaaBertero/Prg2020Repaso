@@ -49,6 +49,7 @@
             // 
             // btrestar
             // 
+            btrestar.Cursor = Cursors.Hand;
             btrestar.Location = new Point(445, 132);
             btrestar.Name = "btrestar";
             btrestar.Size = new Size(94, 29);
@@ -89,7 +90,7 @@
             label1.TabIndex = 5;
             label1.Text = "-";
             // 
-            // resta
+            // Resta
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -100,7 +101,7 @@
             Controls.Add(txres1);
             Controls.Add(btrestar);
             Controls.Add(btsalir);
-            Name = "resta";
+            Name = "Resta";
             Text = "resta";
             ResumeLayout(false);
             PerformLayout();
