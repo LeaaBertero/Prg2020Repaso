@@ -119,6 +119,11 @@ namespace MatricesUni
                 //throw;
             }
         }
+
+        private void Prueba_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 
