@@ -39,6 +39,8 @@
             txdocumento = new TextBox();
             btmostrar = new Button();
             btlimpiar = new Button();
+            label4 = new Label();
+            txaltura = new TextBox();
             SuspendLayout();
             // 
             // btcargar
@@ -155,12 +157,31 @@
             btlimpiar.UseVisualStyleBackColor = false;
             btlimpiar.Click += btlimpiar_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = SystemColors.Control;
+            label4.Location = new Point(789, 87);
+            label4.Name = "label4";
+            label4.Size = new Size(49, 20);
+            label4.TabIndex = 11;
+            label4.Text = "Altura";
+            // 
+            // txaltura
+            // 
+            txaltura.Location = new Point(789, 138);
+            txaltura.Name = "txaltura";
+            txaltura.Size = new Size(125, 27);
+            txaltura.TabIndex = 4;
+            // 
             // HolaMundo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(0, 0, 64);
             ClientSize = new Size(999, 450);
+            Controls.Add(label4);
+            Controls.Add(txaltura);
             Controls.Add(btlimpiar);
             Controls.Add(btmostrar);
             Controls.Add(label1);
@@ -192,5 +213,7 @@
         private TextBox txdocumento;
         private Button btmostrar;
         private Button btlimpiar;
+        private Label label4;
+        private TextBox txaltura;
     }
 }

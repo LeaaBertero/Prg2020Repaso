@@ -13,5 +13,7 @@ namespace HolaMundo.Clases
         public int? documento { get; set; }
 
         public int? edad { get; set; }
+
+        public string? altura { get; set; }
     }
 }

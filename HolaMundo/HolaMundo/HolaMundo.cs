@@ -33,6 +33,7 @@ namespace HolaMundo
             personas.Nombre = txnombre.Text;
             personas.documento = Convert.ToInt32(txdocumento.Text);
             personas.edad = Convert.ToInt32(txedad.Text);
+            personas.altura = (txaltura.Text);
 
             txdocumento.Text = "";
             txnombre.Text = "";
@@ -51,7 +52,7 @@ namespace HolaMundo
             lbLista.Text = "\r\n" + "Lista de personas cargadas: " + "\r\n" + "\r\n" + "Nombre: "
                 + " " + personas.Nombre + " " + "\r\n"
                 + "Documento: " + personas.documento + "\r\n"
-                + "Edad:" + " " + personas.edad + " " + "Años";
+                + "Edad:" + " " + personas.edad + " " + "Años" + " " + "\r\n" + "Altura:" + " " + personas.altura;
 
             lbLista.Visible = true;
         }
