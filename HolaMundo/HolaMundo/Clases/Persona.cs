@@ -10,8 +10,8 @@ namespace HolaMundo.Clases
     {
         public string? Nombre { get; set; }
 
-        public int documento { get; set; }
+        public int? documento { get; set; }
 
-        public int edad { get; set; }
+        public int? edad { get; set; }
     }
 }
