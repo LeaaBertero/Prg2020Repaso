@@ -73,7 +73,7 @@
             // 
             lbresultado.AutoSize = true;
             lbresultado.Font = new Font("Segoe UI", 20F);
-            lbresultado.Location = new Point(218, 574);
+            lbresultado.Location = new Point(71, 575);
             lbresultado.Name = "lbresultado";
             lbresultado.Size = new Size(109, 46);
             lbresultado.TabIndex = 1;
@@ -350,7 +350,6 @@
             Name = "Calculadora";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "calculadora";
-            
             ResumeLayout(false);
             PerformLayout();
         }
