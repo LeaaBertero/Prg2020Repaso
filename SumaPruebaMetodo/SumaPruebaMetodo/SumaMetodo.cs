@@ -19,7 +19,7 @@ namespace SumaPruebaMetodo
 
         private void btcalcular_Click(object sender, EventArgs e)
         {
-            lbresultado.Text = Convert.ToString(Suma());
+            lbresultado.Text = "Restultado:" + " " + Convert.ToString(Suma());
             lbresultado.Visible = true;
         }
 

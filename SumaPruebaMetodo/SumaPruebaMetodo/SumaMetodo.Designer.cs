@@ -33,6 +33,8 @@
             txoper2 = new TextBox();
             label1 = new Label();
             lbresultado = new Label();
+            label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // btcalcular
@@ -78,11 +80,31 @@
             lbresultado.Text = "label2";
             lbresultado.Visible = false;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(207, 45);
+            label2.Name = "label2";
+            label2.Size = new Size(85, 20);
+            label2.TabIndex = 5;
+            label2.Text = "Operador 1";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(412, 45);
+            label3.Name = "label3";
+            label3.Size = new Size(85, 20);
+            label3.TabIndex = 6;
+            label3.Text = "Operador 2";
+            // 
             // SumaMetodo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(659, 194);
+            Controls.Add(label3);
+            Controls.Add(label2);
             Controls.Add(lbresultado);
             Controls.Add(label1);
             Controls.Add(txoper2);
@@ -101,5 +123,7 @@
         private TextBox txoper2;
         private Label label1;
         private Label lbresultado;
+        private Label label2;
+        private Label label3;
     }
 }
