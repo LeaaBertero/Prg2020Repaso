@@ -48,7 +48,7 @@ namespace prueba02
             }
             catch (Exception)
             {
-                MessageBox.Show("No se admten espacios vacios");
+                MessageBox.Show("No se admiten espacios vacios");
                 throw;
             }
 
