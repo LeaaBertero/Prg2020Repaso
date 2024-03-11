@@ -63,6 +63,7 @@
             picBox1 = new PictureBox();
             picBox2 = new PictureBox();
             btRestablecer = new Button();
+            btAparecer = new Button();
             ((System.ComponentModel.ISupportInitialize)picBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picBox2).BeginInit();
             SuspendLayout();
@@ -79,6 +80,7 @@
             btarranque.TabIndex = 0;
             btarranque.Text = "Contar";
             btarranque.UseVisualStyleBackColor = false;
+            btarranque.Visible = false;
             btarranque.Click += btarranque_Click;
             // 
             // lbVerde
@@ -100,7 +102,7 @@
             btsalir.Cursor = Cursors.Hand;
             btsalir.Font = new Font("Jokerman", 12F, FontStyle.Bold);
             btsalir.ForeColor = Color.Black;
-            btsalir.Location = new Point(666, 600);
+            btsalir.Location = new Point(666, 575);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(135, 39);
             btsalir.TabIndex = 3;
@@ -120,6 +122,7 @@
             btiniciar.TabIndex = 4;
             btiniciar.Text = "iniciar";
             btiniciar.UseVisualStyleBackColor = false;
+            btiniciar.Visible = false;
             btiniciar.Click += btiniciar_Click;
             // 
             // btvolver
@@ -134,6 +137,7 @@
             btvolver.TabIndex = 5;
             btvolver.Text = "Volver";
             btvolver.UseVisualStyleBackColor = false;
+            btvolver.Visible = false;
             btvolver.Click += btvolver_Click;
             // 
             // label1
@@ -403,7 +407,22 @@
             btRestablecer.TabIndex = 34;
             btRestablecer.Text = "Reiniciar";
             btRestablecer.UseVisualStyleBackColor = false;
+            btRestablecer.Visible = false;
             btRestablecer.Click += btRestablecer_Click;
+            // 
+            // btAparecer
+            // 
+            btAparecer.BackColor = Color.White;
+            btAparecer.Cursor = Cursors.Hand;
+            btAparecer.Font = new Font("Jokerman", 12F, FontStyle.Bold);
+            btAparecer.ForeColor = Color.Black;
+            btAparecer.Location = new Point(610, 629);
+            btAparecer.Name = "btAparecer";
+            btAparecer.Size = new Size(246, 39);
+            btAparecer.TabIndex = 35;
+            btAparecer.Text = "Aparecer controles";
+            btAparecer.UseVisualStyleBackColor = false;
+            btAparecer.Click += btAparecer_Click;
             // 
             // pruebaFor
             // 
@@ -411,7 +430,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.Black;
-            ClientSize = new Size(1453, 665);
+            ClientSize = new Size(1453, 725);
+            Controls.Add(btAparecer);
             Controls.Add(btRestablecer);
             Controls.Add(picBox2);
             Controls.Add(picBox1);
@@ -492,5 +512,6 @@
         private PictureBox picBox1;
         private PictureBox picBox2;
         private Button btRestablecer;
+        private Button btAparecer;
     }
 }

@@ -8,8 +8,8 @@ namespace ProyectoPOO
 {
     public class Persona
     {
-        public string Nombre { get; set; }
-        public string Apellido { get; set; }
+        public string? Nombre { get; set; }
+        public string? Apellido { get; set; }
 
         //llamando a la clase materia por ser una propiedad de la persona
         public Materia MateriaCursando { get; set; }

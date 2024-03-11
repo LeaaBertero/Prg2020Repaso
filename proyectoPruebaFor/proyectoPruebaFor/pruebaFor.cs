@@ -90,16 +90,31 @@ namespace proyectoPruebaFor
 
             lbVerde.Visible = false;
 
-            lbVerde.Text = string.Empty;
+            btiniciar.Visible = false;
+            btarranque.Visible = false;
+            btvolver.Visible = false;
+            lbVerde.Visible = false;
+
+
+            //lbVerde.Text = string.Empty;
 
             //for (int contador = 10; contador >= 0; contador--)
             //{
-               
+
 
             //    lbVerde.ToString();
             //    this.Refresh();
             //}
 
+        }
+
+        private void btAparecer_Click(object sender, EventArgs e)
+        {
+            btRestablecer.Visible = true;
+            btiniciar.Visible = true;
+            btarranque.Visible = true;
+            btvolver.Visible = true;
+            lbVerde.Visible=true;
         }
     }
 }

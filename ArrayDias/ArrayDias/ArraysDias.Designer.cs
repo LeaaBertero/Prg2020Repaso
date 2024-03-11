@@ -141,9 +141,9 @@
             btLimpiar.Cursor = Cursors.Hand;
             btLimpiar.Location = new Point(511, 42);
             btLimpiar.Name = "btLimpiar";
-            btLimpiar.Size = new Size(181, 29);
+            btLimpiar.Size = new Size(212, 29);
             btLimpiar.TabIndex = 8;
-            btLimpiar.Text = "dias semana";
+            btLimpiar.Text = "Boorar dias de la semana";
             btLimpiar.UseVisualStyleBackColor = true;
             btLimpiar.Click += btLimpiar_Click;
             // 
