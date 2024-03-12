@@ -36,6 +36,7 @@
             label1 = new Label();
             label2 = new Label();
             btOperaciones = new Button();
+            btcerrar = new Button();
             SuspendLayout();
             // 
             // btcargar
@@ -107,12 +108,24 @@
             btOperaciones.TabIndex = 7;
             btOperaciones.Text = "Calculadora";
             btOperaciones.UseVisualStyleBackColor = true;
+            btOperaciones.Click += btOperaciones_Click;
+            // 
+            // btcerrar
+            // 
+            btcerrar.Location = new Point(743, 12);
+            btcerrar.Name = "btcerrar";
+            btcerrar.Size = new Size(94, 29);
+            btcerrar.TabIndex = 8;
+            btcerrar.Text = "Cerrar";
+            btcerrar.UseVisualStyleBackColor = true;
+            btcerrar.Click += btcerrar_Click;
             // 
             // ArregloPersonas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(849, 357);
+            Controls.Add(btcerrar);
             Controls.Add(btOperaciones);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -138,5 +151,6 @@
         private Label label1;
         private Label label2;
         private Button btOperaciones;
+        private Button btcerrar;
     }
 }
