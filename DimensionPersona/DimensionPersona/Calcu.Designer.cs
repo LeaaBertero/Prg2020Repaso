@@ -50,20 +50,28 @@
             txDiv1 = new TextBox();
             btDividir = new Button();
             label2 = new Label();
+            btlimpSuma = new Button();
+            btLimpiarRes = new Button();
+            BtLimpiarMult = new Button();
+            BtLimpiarDiv = new Button();
             SuspendLayout();
             // 
             // btsalir
             // 
-            btsalir.Location = new Point(694, 12);
+            btsalir.BackColor = Color.Black;
+            btsalir.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btsalir.ForeColor = SystemColors.Control;
+            btsalir.Location = new Point(789, 465);
             btsalir.Name = "btsalir";
-            btsalir.Size = new Size(94, 29);
+            btsalir.Size = new Size(94, 42);
             btsalir.TabIndex = 0;
             btsalir.Text = "Salir";
-            btsalir.UseVisualStyleBackColor = true;
+            btsalir.UseVisualStyleBackColor = false;
             btsalir.Click += btsalir_Click;
             // 
             // btsuma
             // 
+            btsuma.Cursor = Cursors.Hand;
             btsuma.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btsuma.Location = new Point(69, 97);
             btsuma.Name = "btsuma";
@@ -112,6 +120,7 @@
             lbresSuma.Size = new Size(59, 23);
             lbresSuma.TabIndex = 4;
             lbresSuma.Text = "label2";
+            lbresSuma.Visible = false;
             // 
             // lbResResta
             // 
@@ -124,6 +133,7 @@
             lbResResta.Size = new Size(59, 23);
             lbResResta.TabIndex = 8;
             lbResResta.Text = "label2";
+            lbResResta.Visible = false;
             // 
             // label3
             // 
@@ -155,6 +165,7 @@
             // 
             // btResta
             // 
+            btResta.Cursor = Cursors.Hand;
             btResta.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btResta.Location = new Point(69, 194);
             btResta.Name = "btResta";
@@ -175,6 +186,7 @@
             lbResMult.Size = new Size(59, 23);
             lbResMult.TabIndex = 12;
             lbResMult.Text = "label2";
+            lbResMult.Visible = false;
             // 
             // label4
             // 
@@ -206,6 +218,7 @@
             // 
             // btMult
             // 
+            btMult.Cursor = Cursors.Hand;
             btMult.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btMult.Location = new Point(69, 287);
             btMult.Name = "btMult";
@@ -226,6 +239,7 @@
             LbResDiv.Size = new Size(59, 23);
             LbResDiv.TabIndex = 16;
             LbResDiv.Text = "label2";
+            LbResDiv.Visible = false;
             // 
             // label5
             // 
@@ -257,6 +271,7 @@
             // 
             // btDividir
             // 
+            btDividir.Cursor = Cursors.Hand;
             btDividir.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btDividir.Location = new Point(69, 369);
             btDividir.Name = "btDividir";
@@ -278,12 +293,60 @@
             label2.TabIndex = 21;
             label2.Text = "CALCULADORA CON MÉTODOS";
             // 
+            // btlimpSuma
+            // 
+            btlimpSuma.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btlimpSuma.Location = new Point(789, 97);
+            btlimpSuma.Name = "btlimpSuma";
+            btlimpSuma.Size = new Size(94, 29);
+            btlimpSuma.TabIndex = 22;
+            btlimpSuma.Text = "Limpiar";
+            btlimpSuma.UseVisualStyleBackColor = true;
+            btlimpSuma.Click += btlimpSuma_Click;
+            // 
+            // btLimpiarRes
+            // 
+            btLimpiarRes.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btLimpiarRes.Location = new Point(789, 200);
+            btLimpiarRes.Name = "btLimpiarRes";
+            btLimpiarRes.Size = new Size(94, 29);
+            btLimpiarRes.TabIndex = 23;
+            btLimpiarRes.Text = "Limpiar";
+            btLimpiarRes.UseVisualStyleBackColor = true;
+            btLimpiarRes.Click += btLimpiarRes_Click;
+            // 
+            // BtLimpiarMult
+            // 
+            BtLimpiarMult.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            BtLimpiarMult.Location = new Point(789, 292);
+            BtLimpiarMult.Name = "BtLimpiarMult";
+            BtLimpiarMult.Size = new Size(94, 29);
+            BtLimpiarMult.TabIndex = 24;
+            BtLimpiarMult.Text = "Limpiar";
+            BtLimpiarMult.UseVisualStyleBackColor = true;
+            BtLimpiarMult.Click += BtLimpiarMult_Click;
+            // 
+            // BtLimpiarDiv
+            // 
+            BtLimpiarDiv.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            BtLimpiarDiv.Location = new Point(789, 374);
+            BtLimpiarDiv.Name = "BtLimpiarDiv";
+            BtLimpiarDiv.Size = new Size(94, 29);
+            BtLimpiarDiv.TabIndex = 25;
+            BtLimpiarDiv.Text = "Limpiar";
+            BtLimpiarDiv.UseVisualStyleBackColor = true;
+            BtLimpiarDiv.Click += BtLimpiarDiv_Click;
+            // 
             // Calcu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(930, 519);
+            Controls.Add(BtLimpiarDiv);
+            Controls.Add(BtLimpiarMult);
+            Controls.Add(btLimpiarRes);
+            Controls.Add(btlimpSuma);
             Controls.Add(label2);
             Controls.Add(LbResDiv);
             Controls.Add(label5);
@@ -337,5 +400,9 @@
         private TextBox txDiv1;
         private Button btDividir;
         private Label label2;
+        private Button btlimpSuma;
+        private Button btLimpiarRes;
+        private Button BtLimpiarMult;
+        private Button BtLimpiarDiv;
     }
 }

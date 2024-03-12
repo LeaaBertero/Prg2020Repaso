@@ -24,7 +24,17 @@ namespace DimensionPersona
 
         private void btsuma_Click(object sender, EventArgs e)
         {
-            lbresSuma.Text = Convert.ToString(Suma());
+            try
+            {
+                lbresSuma.Text = Convert.ToString(Suma());
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Complete todos los campos");
+            }
+
+            lbresSuma.Visible = true;
         }
 
         public int Suma()
@@ -44,7 +54,17 @@ namespace DimensionPersona
 
         private void btResta_Click(object sender, EventArgs e)
         {
-            lbResResta.Text = Resta().ToString();
+            try
+            {
+                lbResResta.Text = Resta().ToString();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Complete todos los campos");
+            }
+
+            lbResResta.Visible = true;
         }
 
         private int Resta()
@@ -63,8 +83,18 @@ namespace DimensionPersona
 
         private void btMult_Click(object sender, EventArgs e)
         {
-            lbResMult.Text = Convert.ToString(Multiplicacion());
+            try
+            {
+                lbResMult.Text = Convert.ToString(Multiplicacion());
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Complete todos los campos");
+            }
+
+            lbResMult.Visible = true;
         }
+
 
         private int Multiplicacion()
         {
@@ -82,11 +112,21 @@ namespace DimensionPersona
 
         private void btDividir_Click(object sender, EventArgs e)
         {
-            //LbResDiv.Text = Convert.ToString(Division());
-            LbResDiv.Text = Division().ToString();
+            try
+            {
+                //LbResDiv.Text = Convert.ToString(Division());
+                LbResDiv.Text = Division().ToString();
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Complete todos los campos");
+            }
+
+            LbResDiv.Visible = true;
         }
 
-        private int Division() 
+        private int Division()
         {
             int numDiv1;
             int numDiv2;
@@ -98,6 +138,34 @@ namespace DimensionPersona
             resultadoDiv = numDiv1 / numDiv2;
 
             return resultadoDiv;
+        }
+
+        private void btlimpSuma_Click(object sender, EventArgs e)
+        {
+            txSuma1.Text = "";
+            txSuma2.Text = "";
+            lbresSuma.Text = "";
+        }
+
+        private void btLimpiarRes_Click(object sender, EventArgs e)
+        {
+            txResta1.Text = "";
+            txResta2.Text = "";
+            lbResResta.Text = "";
+        }
+
+        private void BtLimpiarMult_Click(object sender, EventArgs e)
+        {
+            txMult1.Text = "";
+            txMult2.Text = "";
+            lbResMult.Text = "";
+        }
+
+        private void BtLimpiarDiv_Click(object sender, EventArgs e)
+        {
+            txDiv1.Text = "";
+            txDiv2.Text = "";
+            LbResDiv.Text = "";
         }
     }
 
