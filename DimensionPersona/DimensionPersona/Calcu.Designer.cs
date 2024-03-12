@@ -59,6 +59,7 @@
             // btsalir
             // 
             btsalir.BackColor = Color.Black;
+            btsalir.Cursor = Cursors.Hand;
             btsalir.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btsalir.ForeColor = SystemColors.Control;
             btsalir.Location = new Point(789, 465);
@@ -295,6 +296,7 @@
             // 
             // btlimpSuma
             // 
+            btlimpSuma.Cursor = Cursors.Hand;
             btlimpSuma.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btlimpSuma.Location = new Point(789, 97);
             btlimpSuma.Name = "btlimpSuma";
@@ -306,6 +308,7 @@
             // 
             // btLimpiarRes
             // 
+            btLimpiarRes.Cursor = Cursors.Hand;
             btLimpiarRes.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             btLimpiarRes.Location = new Point(789, 200);
             btLimpiarRes.Name = "btLimpiarRes";
@@ -317,6 +320,7 @@
             // 
             // BtLimpiarMult
             // 
+            BtLimpiarMult.Cursor = Cursors.Hand;
             BtLimpiarMult.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             BtLimpiarMult.Location = new Point(789, 292);
             BtLimpiarMult.Name = "BtLimpiarMult";
@@ -328,6 +332,7 @@
             // 
             // BtLimpiarDiv
             // 
+            BtLimpiarDiv.Cursor = Cursors.Hand;
             BtLimpiarDiv.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             BtLimpiarDiv.Location = new Point(789, 374);
             BtLimpiarDiv.Name = "BtLimpiarDiv";
