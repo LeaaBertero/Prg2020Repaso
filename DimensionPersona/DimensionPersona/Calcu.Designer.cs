@@ -374,6 +374,7 @@
             Controls.Add(txSuma1);
             Controls.Add(btsuma);
             Controls.Add(btsalir);
+            MaximizeBox = false;
             Name = "Calcu";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Calcu";
