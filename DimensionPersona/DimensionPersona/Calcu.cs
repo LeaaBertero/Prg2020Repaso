@@ -82,7 +82,8 @@ namespace DimensionPersona
 
         private void btDividir_Click(object sender, EventArgs e)
         {
-            LbResDiv.Text = Suma().ToString();
+            //LbResDiv.Text = Convert.ToString(Division());
+            LbResDiv.Text = Division().ToString();
         }
 
         private int Division() 
