@@ -24,33 +24,82 @@ namespace DimensionPersona
 
         private void btsuma_Click(object sender, EventArgs e)
         {
-            //int numero1;
-            //int numero2;
-            //int resultado;
-
-
-            //numero1 = Convert.ToInt32(txoper1.Text);
-            //numero2 = Convert.ToInt32(txoper2.Text);
-
-            //resultado = numero1 + numero2;
-
-            lbresultado.Text = Convert.ToString(Suma());
-            
+            lbresSuma.Text = Convert.ToString(Suma());
         }
 
         public int Suma()
         {
             int numero1;
             int numero2;
-            int resultado;
+            int resultadoSuma;
 
 
-            numero1 = Convert.ToInt32(txoper1.Text);
-            numero2 = Convert.ToInt32(txoper2.Text);
+            numero1 = Convert.ToInt32(txSuma1.Text);
+            numero2 = Convert.ToInt32(txSuma2.Text);
 
-            resultado = numero1 + numero2;
+            resultadoSuma = numero1 + numero2;
 
-            return resultado;
+            return resultadoSuma;
+        }
+
+        private void btResta_Click(object sender, EventArgs e)
+        {
+            lbResResta.Text = Resta().ToString();
+        }
+
+        private int Resta()
+        {
+            int numeroResta1;
+            int numeroResta2;
+            int resultadoResta;
+
+            numeroResta1 = Convert.ToInt32(txResta1.Text);
+            numeroResta2 = Convert.ToInt32(txResta2.Text);
+
+            resultadoResta = numeroResta1 - numeroResta2;
+
+            return resultadoResta;
+        }
+
+        private void btMult_Click(object sender, EventArgs e)
+        {
+            lbResMult.Text = Convert.ToString(Multiplicacion());
+        }
+
+        private int Multiplicacion()
+        {
+            int numMut1;
+            int numMut2;
+            int resultadoMut;
+
+            numMut1 = Convert.ToInt32(txMult1.Text);
+            numMut2 = Convert.ToInt32(txMult2.Text);
+
+            resultadoMut = numMut1 * numMut2;
+
+            return resultadoMut;
+        }
+
+        private void btDividir_Click(object sender, EventArgs e)
+        {
+            LbResDiv.Text = Suma().ToString();
+        }
+
+        private int Division() 
+        {
+            int numDiv1;
+            int numDiv2;
+            int resultadoDiv;
+
+            numDiv1 = Convert.ToInt32(txDiv1.Text);
+            numDiv2 = Convert.ToInt32(txDiv2.Text);
+
+            resultadoDiv = numDiv1 / numDiv2;
+
+            return resultadoDiv;
         }
     }
+
+
+
 }
