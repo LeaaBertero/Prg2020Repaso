@@ -4,8 +4,8 @@ namespace DimensionPersona
 {
     public partial class ArregloPersonas : Form
     {
-        public DimensionPersona.Persona[] personas { get; set; } = new DimensionPersona.Persona[3];
-        public int posicion = -1;
+        public DimensionPersona.Persona[] personas { get; set; } 
+        
 
 
         public ArregloPersonas()
@@ -17,8 +17,8 @@ namespace DimensionPersona
         {
             Persona persona = new Persona();
             persona.Nombre = txnombre.Text;
-            posicion = posicion + 1;
-            personas[posicion] = persona;
+            Redimensionar();
+            personas[personas.Length -1] = persona;
         }
 
         private void btmostrar_Click(object sender, EventArgs e)
@@ -27,6 +27,25 @@ namespace DimensionPersona
             foreach (Persona item in personas)
             {
                 lblista.Text = "Lista de personas cargadas" + "\r\n" + "\r\n" + "Nombre:" + " " + item.Nombre;
+            }
+        }
+
+        private void Redimensionar()
+        {
+            if (personas == null) 
+            {
+                personas = new Persona[0];
+            }
+            else 
+            {
+                Persona[] arregloAuxiliar = new Persona[personas.Length +1];
+
+                for (int incremneto = 0; incremneto < personas.Length; incremneto++)
+                {
+                    arregloAuxiliar[incremneto] = personas[incremneto];
+                }
+
+                personas = arregloAuxiliar;
             }
         }
     }

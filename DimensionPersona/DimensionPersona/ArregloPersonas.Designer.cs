@@ -35,6 +35,7 @@
             txaño = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            btOperaciones = new Button();
             SuspendLayout();
             // 
             // btcargar
@@ -98,11 +99,21 @@
             label2.TabIndex = 6;
             label2.Text = "Año";
             // 
+            // btOperaciones
+            // 
+            btOperaciones.Location = new Point(716, 306);
+            btOperaciones.Name = "btOperaciones";
+            btOperaciones.Size = new Size(121, 39);
+            btOperaciones.TabIndex = 7;
+            btOperaciones.Text = "Calculadora";
+            btOperaciones.UseVisualStyleBackColor = true;
+            // 
             // ArregloPersonas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(849, 357);
+            Controls.Add(btOperaciones);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txaño);
@@ -126,5 +137,6 @@
         private TextBox txaño;
         private Label label1;
         private Label label2;
+        private Button btOperaciones;
     }
 }
