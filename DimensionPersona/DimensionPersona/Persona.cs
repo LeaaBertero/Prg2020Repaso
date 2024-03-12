@@ -8,8 +8,8 @@ namespace DimensionPersona
 {
     public class Persona
     {
-        public string Nombre { get; set; }
+       public string Nombre { get; set; }
 
-        public string Año_nacimiento { get; set; }
+        public int AñoNacimiento { get; set; }
     }
 }

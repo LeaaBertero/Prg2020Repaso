@@ -32,11 +32,14 @@
             txnombre = new TextBox();
             lblista = new Label();
             btmostrar = new Button();
+            txaño = new TextBox();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // btcargar
             // 
-            btcargar.Location = new Point(120, 118);
+            btcargar.Location = new Point(24, 71);
             btcargar.Name = "btcargar";
             btcargar.Size = new Size(94, 29);
             btcargar.TabIndex = 0;
@@ -46,7 +49,7 @@
             // 
             // txnombre
             // 
-            txnombre.Location = new Point(292, 120);
+            txnombre.Location = new Point(196, 73);
             txnombre.Name = "txnombre";
             txnombre.Size = new Size(125, 27);
             txnombre.TabIndex = 1;
@@ -54,7 +57,7 @@
             // lblista
             // 
             lblista.AutoSize = true;
-            lblista.Location = new Point(519, 123);
+            lblista.Location = new Point(520, 76);
             lblista.Name = "lblista";
             lblista.Size = new Size(50, 20);
             lblista.TabIndex = 2;
@@ -62,7 +65,7 @@
             // 
             // btmostrar
             // 
-            btmostrar.Location = new Point(120, 153);
+            btmostrar.Location = new Point(24, 106);
             btmostrar.Name = "btmostrar";
             btmostrar.Size = new Size(94, 29);
             btmostrar.TabIndex = 3;
@@ -70,11 +73,39 @@
             btmostrar.UseVisualStyleBackColor = true;
             btmostrar.Click += btmostrar_Click;
             // 
+            // txaño
+            // 
+            txaño.Location = new Point(336, 73);
+            txaño.Name = "txaño";
+            txaño.Size = new Size(89, 27);
+            txaño.TabIndex = 4;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(196, 36);
+            label1.Name = "label1";
+            label1.Size = new Size(64, 20);
+            label1.TabIndex = 5;
+            label1.Text = "Nombre";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(336, 36);
+            label2.Name = "label2";
+            label2.Size = new Size(36, 20);
+            label2.TabIndex = 6;
+            label2.Text = "Año";
+            // 
             // ArregloPersonas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(849, 357);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(txaño);
             Controls.Add(btmostrar);
             Controls.Add(lblista);
             Controls.Add(txnombre);
@@ -92,5 +123,8 @@
         private TextBox txnombre;
         private Label lblista;
         private Button btmostrar;
+        private TextBox txaño;
+        private Label label1;
+        private Label label2;
     }
 }
