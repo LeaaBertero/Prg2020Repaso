@@ -40,10 +40,12 @@
             txDimensionar = new TextBox();
             label3 = new Label();
             BtDimensionar = new Button();
+            btborrar = new Button();
             SuspendLayout();
             // 
             // btcargar
             // 
+            btcargar.Cursor = Cursors.Hand;
             btcargar.Location = new Point(250, 130);
             btcargar.Name = "btcargar";
             btcargar.Size = new Size(94, 27);
@@ -70,6 +72,7 @@
             // 
             // btmostrar
             // 
+            btmostrar.Cursor = Cursors.Hand;
             btmostrar.Location = new Point(350, 130);
             btmostrar.Name = "btmostrar";
             btmostrar.Size = new Size(94, 27);
@@ -105,6 +108,7 @@
             // 
             // btOperaciones
             // 
+            btOperaciones.Cursor = Cursors.Hand;
             btOperaciones.Location = new Point(808, 306);
             btOperaciones.Name = "btOperaciones";
             btOperaciones.Size = new Size(121, 39);
@@ -115,6 +119,7 @@
             // 
             // btcerrar
             // 
+            btcerrar.Cursor = Cursors.Hand;
             btcerrar.Location = new Point(835, 12);
             btcerrar.Name = "btcerrar";
             btcerrar.Size = new Size(94, 29);
@@ -141,6 +146,7 @@
             // 
             // BtDimensionar
             // 
+            BtDimensionar.Cursor = Cursors.Hand;
             BtDimensionar.Location = new Point(155, 77);
             BtDimensionar.Name = "BtDimensionar";
             BtDimensionar.Size = new Size(111, 27);
@@ -148,12 +154,23 @@
             BtDimensionar.Text = "Dimensionar";
             BtDimensionar.UseVisualStyleBackColor = true;
             // 
+            // btborrar
+            // 
+            btborrar.Cursor = Cursors.Hand;
+            btborrar.Location = new Point(250, 163);
+            btborrar.Name = "btborrar";
+            btborrar.Size = new Size(94, 27);
+            btborrar.TabIndex = 13;
+            btborrar.Text = "Borrar";
+            btborrar.UseVisualStyleBackColor = true;
+            // 
             // ArregloPersonas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Wheat;
             ClientSize = new Size(941, 357);
+            Controls.Add(btborrar);
             Controls.Add(BtDimensionar);
             Controls.Add(label3);
             Controls.Add(txDimensionar);
@@ -188,5 +205,6 @@
         private TextBox txDimensionar;
         private Label label3;
         private Button BtDimensionar;
+        private Button btborrar;
     }
 }

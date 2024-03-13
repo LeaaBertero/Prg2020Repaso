@@ -30,13 +30,22 @@ namespace DimensionPersona
             }
         }
 
-        public void AddPersona(string nombre, string año)
+        public bool AddPersona(string nombre, string año)
         {
             Persona persona = new Persona();
             persona.Nombre = nombre;
             persona.AñoNacimiento = Convert.ToInt32(año);
-            Redimensionar();
-            Personas[Personas.Length - 1] = persona;
+            bool respuesta = persona.Validar();
+
+            if (respuesta)
+            {
+                Redimensionar();
+                Personas[Personas.Length - 1] = persona;
+            }
+
+            return respuesta;
+
+          
         }
 
         public override string ToString() 
@@ -45,7 +54,7 @@ namespace DimensionPersona
 
             foreach (Persona item in Personas)
             {
-               Resp = "Lista de personas cargadas"
+               Resp = "Lista de personas cargadas:"
                     + "\r\n"
                     + "\r\n"
                     + "Nombre:" + " "

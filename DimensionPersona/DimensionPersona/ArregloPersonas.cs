@@ -21,7 +21,15 @@ namespace DimensionPersona
             //persona.AñoNacimiento = Convert.ToInt32(txaño.Text);
             //Lista.Redimensionar();
             //Lista.Personas[Lista.Personas.Length - 1] = persona;
-            Lista.AddPersona(txnombre.Text, txaño.Text);
+            if (!Lista.AddPersona(txnombre.Text, txaño.Text))
+            {
+                //lblista.Text = "Persona no valida";
+                MessageBox.Show("Persona no valida");
+            }
+            else
+            {
+                MessageBox.Show("Carga correcta");
+            }
         }
 
         private void btmostrar_Click(object sender, EventArgs e)
