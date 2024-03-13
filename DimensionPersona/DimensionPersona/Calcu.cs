@@ -125,7 +125,7 @@ namespace DimensionPersona
             {
                 //LbResDiv.Text = Convert.ToString(Division());
                 //LbResDiv.Text = "Resultado:" + " " + Division().ToString();
-                LbResDiv.Text = "Resultado" + " " + Convert.ToString(Division());
+                LbResDiv.Text = "Resultado" + " " + Convert.ToDecimal(Division());
                 LbResDiv.Visible = true;
             }
             catch (Exception)
