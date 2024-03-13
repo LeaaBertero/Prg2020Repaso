@@ -29,7 +29,7 @@ namespace DimensionPersona
 
             //resultadoSuma = primerNumero + segundoNumero;
 
-            resultado.Text = Convert.ToString(CacularSuma());
+            resultado.Text = "Resultado:" + " " + Convert.ToString(CacularSuma());
         }
 
         public int CacularSuma()
