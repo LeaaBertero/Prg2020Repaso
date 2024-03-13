@@ -4,8 +4,9 @@ namespace DimensionPersona
 {
     public partial class ArregloPersonas : Form
     {
-        public DimensionPersona.Persona[] personas { get; set; }
+        //public DimensionPersona.Persona[] Personas { get; set; }
 
+        private ListaPersonas Lista { get; set; } = new ListaPersonas();
 
 
         public ArregloPersonas()
@@ -15,17 +16,18 @@ namespace DimensionPersona
 
         private void btcargar_Click(object sender, EventArgs e)
         {
-            Persona persona = new Persona();
-            persona.Nombre = txnombre.Text;
-            persona.AñoNacimiento = Convert.ToInt32(txaño.Text);
-            Redimensionar();
-            personas[personas.Length - 1] = persona;
+            //Persona persona = new Persona();
+            //persona.Nombre = txnombre.Text;
+            //persona.AñoNacimiento = Convert.ToInt32(txaño.Text);
+            //Lista.Redimensionar();
+            //Lista.Personas[Lista.Personas.Length - 1] = persona;
+            Lista.AddPersona(txnombre.Text, txaño.Text);
         }
 
         private void btmostrar_Click(object sender, EventArgs e)
         {
             //lblista.Text = "Lista:\\r\\n\\";
-            foreach (Persona item in personas)
+            foreach (Persona item in Lista.Personas)
             {
                 lblista.Text = "Lista de personas cargadas" 
                     + "\r\n" 
@@ -36,24 +38,24 @@ namespace DimensionPersona
             }
         }
 
-        private void Redimensionar()
-        {
-            if (personas == null)
-            {
-                personas = new Persona[0];
-            }
-            else
-            {
-                Persona[] arregloAuxiliar = new Persona[personas.Length + 1];
+        //private void Redimensionar()
+        //{
+        //    if (Personas == null)
+        //    {
+        //        Personas = new Persona[0];
+        //    }
+        //    else
+        //    {
+        //        Persona[] arregloAuxiliar = new Persona[Personas.Length + 1];
 
-                for (int incremneto = 0; incremneto < personas.Length; incremneto++)
-                {
-                    arregloAuxiliar[incremneto] = personas[incremneto];
-                }
+        //        for (int incremneto = 0; incremneto < Personas.Length; incremneto++)
+        //        {
+        //            arregloAuxiliar[incremneto] = Personas[incremneto];
+        //        }
 
-                personas = arregloAuxiliar;
-            }
-        }
+        //        Personas = arregloAuxiliar;
+        //    }
+        //}
 
         private void btOperaciones_Click(object sender, EventArgs e)
         {
