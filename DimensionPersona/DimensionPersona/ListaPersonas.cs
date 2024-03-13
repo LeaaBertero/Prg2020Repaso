@@ -48,18 +48,23 @@ namespace DimensionPersona
           
         }
 
-        public override string ToString() 
+        public string ToStringFiltrado(int añoMinimo) 
         {
             string Resp = "";
 
             foreach (Persona item in Personas)
             {
-               Resp = "Lista de personas cargadas:"
-                    + "\r\n"
-                    + "\r\n"
-                    + "Nombre:" + " "
-                    + item.Nombre + "\r\n"
-                    + "Año:" + " " + item.AñoNacimiento.ToString();
+                if (item.AñoNacimiento >= añoMinimo)
+                {
+
+                    Resp = "Lista de personas cargadas:"
+                         + "\r\n"
+                         + "\r\n"
+                         + "Nombre:" + " "
+                         + item.Nombre + "\r\n"
+                         + "Año:" + " " + item.AñoNacimiento.ToString();
+                }
+
 
             }
 
