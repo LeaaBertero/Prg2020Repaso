@@ -38,5 +38,24 @@ namespace DimensionPersona
             Redimensionar();
             Personas[Personas.Length - 1] = persona;
         }
+
+        public override string ToString() 
+        {
+            string Resp = "";
+
+            foreach (Persona item in Personas)
+            {
+               Resp = "Lista de personas cargadas"
+                    + "\r\n"
+                    + "\r\n"
+                    + "Nombre:" + " "
+                    + item.Nombre + "\r\n"
+                    + "Año:" + " " + item.AñoNacimiento.ToString();
+
+            }
+
+            return Resp;
+           
+        }
     }
 }

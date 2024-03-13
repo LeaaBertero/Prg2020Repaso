@@ -27,15 +27,16 @@ namespace DimensionPersona
         private void btmostrar_Click(object sender, EventArgs e)
         {
             //lblista.Text = "Lista:\\r\\n\\";
-            foreach (Persona item in Lista.Personas)
-            {
-                lblista.Text = "Lista de personas cargadas" 
-                    + "\r\n" 
-                    + "\r\n" 
-                    + "Nombre:" + " " 
-                    + item.Nombre + "\r\n" 
-                    + "Año:" + " " + item.AñoNacimiento.ToString();
-            }
+            //foreach (Persona item in Lista.Personas)
+            //{
+            //    lblista.Text = "Lista de personas cargadas" 
+            //        + "\r\n" 
+            //        + "\r\n" 
+            //        + "Nombre:" + " " 
+            //        + item.Nombre + "\r\n" 
+            //        + "Año:" + " " + item.AñoNacimiento.ToString();
+            //}
+           lblista.Text = Lista.ToString();
         }
 
         //private void Redimensionar()
