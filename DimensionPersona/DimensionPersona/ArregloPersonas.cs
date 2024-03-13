@@ -17,6 +17,7 @@ namespace DimensionPersona
         {
             Persona persona = new Persona();
             persona.Nombre = txnombre.Text;
+            persona.AñoNacimiento = Convert.ToInt32(txaño.Text);
             Redimensionar();
             personas[personas.Length - 1] = persona;
         }
@@ -26,7 +27,12 @@ namespace DimensionPersona
             //lblista.Text = "Lista:\\r\\n\\";
             foreach (Persona item in personas)
             {
-                lblista.Text = "Lista de personas cargadas" + "\r\n" + "\r\n" + "Nombre:" + " " + item.Nombre;
+                lblista.Text = "Lista de personas cargadas" 
+                    + "\r\n" 
+                    + "\r\n" 
+                    + "Nombre:" + " " 
+                    + item.Nombre + "\r\n" 
+                    + "Año:" + " " + item.AñoNacimiento.ToString();
             }
         }
 

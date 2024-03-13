@@ -22,11 +22,12 @@ namespace DimensionPersona
             Close();
         }
 
+        //Evento click
         private void btsuma_Click(object sender, EventArgs e)
         {
             try
             {
-                lbresSuma.Text = Convert.ToString(Suma());
+                lbresSuma.Text = "Resultado:" + " " + Convert.ToString(Suma());
             }
             catch (Exception)
             {
@@ -37,6 +38,7 @@ namespace DimensionPersona
             lbresSuma.Visible = true;
         }
 
+        //Método
         public int Suma()
         {
             int numero1;
@@ -52,11 +54,12 @@ namespace DimensionPersona
             return resultadoSuma;
         }
 
+        //Evento Click
         private void btResta_Click(object sender, EventArgs e)
         {
             try
             {
-                lbResResta.Text = Resta().ToString();
+                lbResResta.Text = "Resultado:" + " " + Resta().ToString();
             }
             catch (Exception)
             {
@@ -67,6 +70,7 @@ namespace DimensionPersona
             lbResResta.Visible = true;
         }
 
+        //Método
         private int Resta()
         {
             int numeroResta1;
@@ -81,11 +85,12 @@ namespace DimensionPersona
             return resultadoResta;
         }
 
+        //Evento Click
         private void btMult_Click(object sender, EventArgs e)
         {
             try
             {
-                lbResMult.Text = Convert.ToString(Multiplicacion());
+                lbResMult.Text = "Resultado:" + " " + Convert.ToString(Multiplicacion());
             }
             catch (Exception)
             {
@@ -95,7 +100,7 @@ namespace DimensionPersona
             lbResMult.Visible = true;
         }
 
-
+        //Método
         private int Multiplicacion()
         {
             int numMut1;
@@ -110,12 +115,13 @@ namespace DimensionPersona
             return resultadoMut;
         }
 
+        //Evento Click
         private void btDividir_Click(object sender, EventArgs e)
         {
             try
             {
                 //LbResDiv.Text = Convert.ToString(Division());
-                LbResDiv.Text = Division().ToString();
+                LbResDiv.Text = "Resultado:" + " " + Division().ToString();
             }
             catch (Exception)
             {
@@ -126,13 +132,14 @@ namespace DimensionPersona
             LbResDiv.Visible = true;
         }
 
-        private int Division()
+        //Método
+        private decimal Division()
         {
             int numDiv1;
             int numDiv2;
             int resultadoDiv;
 
-            numDiv1 = Convert.ToInt32(txDiv1.Text);
+            numDiv1 = Convert.ToInt32(txDiv1.Text);   
             numDiv2 = Convert.ToInt32(txDiv2.Text);
 
             resultadoDiv = numDiv1 / numDiv2;

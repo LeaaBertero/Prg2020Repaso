@@ -84,8 +84,9 @@
             // 
             // txSuma1
             // 
+            txSuma1.BackColor = Color.Black;
             txSuma1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            txSuma1.ForeColor = Color.Black;
+            txSuma1.ForeColor = SystemColors.Control;
             txSuma1.Location = new Point(236, 101);
             txSuma1.Name = "txSuma1";
             txSuma1.Size = new Size(125, 30);
@@ -93,7 +94,9 @@
             // 
             // txSuma2
             // 
+            txSuma2.BackColor = Color.Black;
             txSuma2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            txSuma2.ForeColor = SystemColors.Control;
             txSuma2.Location = new Point(443, 101);
             txSuma2.Name = "txSuma2";
             txSuma2.Size = new Size(125, 30);
@@ -116,7 +119,7 @@
             lbresSuma.BackColor = Color.Black;
             lbresSuma.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             lbresSuma.ForeColor = Color.White;
-            lbresSuma.Location = new Point(626, 104);
+            lbresSuma.Location = new Point(600, 105);
             lbresSuma.Name = "lbresSuma";
             lbresSuma.Size = new Size(59, 23);
             lbresSuma.TabIndex = 4;
@@ -129,7 +132,7 @@
             lbResResta.BackColor = Color.Black;
             lbResResta.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             lbResResta.ForeColor = Color.White;
-            lbResResta.Location = new Point(626, 197);
+            lbResResta.Location = new Point(600, 198);
             lbResResta.Name = "lbResResta";
             lbResResta.Size = new Size(59, 23);
             lbResResta.TabIndex = 8;
@@ -149,7 +152,9 @@
             // 
             // txResta2
             // 
+            txResta2.BackColor = Color.Black;
             txResta2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            txResta2.ForeColor = SystemColors.Control;
             txResta2.Location = new Point(443, 195);
             txResta2.Name = "txResta2";
             txResta2.Size = new Size(125, 30);
@@ -157,8 +162,9 @@
             // 
             // txResta1
             // 
+            txResta1.BackColor = Color.Black;
             txResta1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            txResta1.ForeColor = Color.Black;
+            txResta1.ForeColor = SystemColors.Control;
             txResta1.Location = new Point(236, 197);
             txResta1.Name = "txResta1";
             txResta1.Size = new Size(125, 30);
@@ -182,7 +188,7 @@
             lbResMult.BackColor = Color.Black;
             lbResMult.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             lbResMult.ForeColor = Color.White;
-            lbResMult.Location = new Point(626, 293);
+            lbResMult.Location = new Point(600, 294);
             lbResMult.Name = "lbResMult";
             lbResMult.Size = new Size(59, 23);
             lbResMult.TabIndex = 12;
@@ -202,7 +208,9 @@
             // 
             // txMult2
             // 
+            txMult2.BackColor = Color.Black;
             txMult2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            txMult2.ForeColor = SystemColors.Control;
             txMult2.Location = new Point(443, 291);
             txMult2.Name = "txMult2";
             txMult2.Size = new Size(125, 30);
@@ -210,8 +218,9 @@
             // 
             // txMult1
             // 
+            txMult1.BackColor = Color.Black;
             txMult1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            txMult1.ForeColor = Color.Black;
+            txMult1.ForeColor = SystemColors.Control;
             txMult1.Location = new Point(236, 291);
             txMult1.Name = "txMult1";
             txMult1.Size = new Size(125, 30);
@@ -235,7 +244,7 @@
             LbResDiv.BackColor = Color.Black;
             LbResDiv.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             LbResDiv.ForeColor = Color.White;
-            LbResDiv.Location = new Point(626, 375);
+            LbResDiv.Location = new Point(600, 376);
             LbResDiv.Name = "LbResDiv";
             LbResDiv.Size = new Size(59, 23);
             LbResDiv.TabIndex = 16;
@@ -255,7 +264,9 @@
             // 
             // txDiv2
             // 
+            txDiv2.BackColor = Color.Black;
             txDiv2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            txDiv2.ForeColor = SystemColors.Control;
             txDiv2.Location = new Point(443, 373);
             txDiv2.Name = "txDiv2";
             txDiv2.Size = new Size(125, 30);
@@ -263,8 +274,9 @@
             // 
             // txDiv1
             // 
+            txDiv1.BackColor = Color.Black;
             txDiv1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            txDiv1.ForeColor = Color.Black;
+            txDiv1.ForeColor = SystemColors.Control;
             txDiv1.Location = new Point(236, 373);
             txDiv1.Name = "txDiv1";
             txDiv1.Size = new Size(125, 30);

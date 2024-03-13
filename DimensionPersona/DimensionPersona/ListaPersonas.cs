@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace DimensionPersona
 {
-    public class Persona
+    public class ListaPersonas
     {
-       public string? Nombre { get; set; }
 
-        public int AñoNacimiento { get; set; }
+
     }
 }
