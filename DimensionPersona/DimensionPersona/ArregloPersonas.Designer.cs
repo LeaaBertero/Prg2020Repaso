@@ -41,6 +41,7 @@
             label3 = new Label();
             BtDimensionar = new Button();
             btborrar = new Button();
+            btFiltrar = new Button();
             SuspendLayout();
             // 
             // btcargar
@@ -64,7 +65,7 @@
             // lblista
             // 
             lblista.AutoSize = true;
-            lblista.Location = new Point(578, 133);
+            lblista.Location = new Point(155, 245);
             lblista.Name = "lblista";
             lblista.Size = new Size(50, 20);
             lblista.TabIndex = 2;
@@ -164,12 +165,24 @@
             btborrar.Text = "Borrar";
             btborrar.UseVisualStyleBackColor = true;
             // 
+            // btFiltrar
+            // 
+            btFiltrar.Cursor = Cursors.Hand;
+            btFiltrar.Location = new Point(350, 163);
+            btFiltrar.Name = "btFiltrar";
+            btFiltrar.Size = new Size(94, 27);
+            btFiltrar.TabIndex = 14;
+            btFiltrar.Text = "Filtrar";
+            btFiltrar.UseVisualStyleBackColor = true;
+            btFiltrar.Click += btFiltrar_Click;
+            // 
             // ArregloPersonas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Wheat;
             ClientSize = new Size(941, 357);
+            Controls.Add(btFiltrar);
             Controls.Add(btborrar);
             Controls.Add(BtDimensionar);
             Controls.Add(label3);
@@ -206,5 +219,6 @@
         private Label label3;
         private Button BtDimensionar;
         private Button btborrar;
+        private Button btFiltrar;
     }
 }

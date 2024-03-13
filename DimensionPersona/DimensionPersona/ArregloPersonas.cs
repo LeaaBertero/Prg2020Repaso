@@ -44,7 +44,7 @@ namespace DimensionPersona
             //        + item.Nombre + "\r\n" 
             //        + "Año:" + " " + item.AñoNacimiento.ToString();
             //}
-            lblista.Text = Lista.ToStringFiltrado(2000);
+            lblista.Text = Lista.ToString();
         }
 
         //private void Redimensionar()
@@ -77,6 +77,9 @@ namespace DimensionPersona
             Close();
         }
 
-        
+        private void btFiltrar_Click(object sender, EventArgs e)
+        {
+            lblista.Text = Lista.ToStringFiltrado(2000);
+        }
     }
 }
