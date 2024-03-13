@@ -69,10 +69,6 @@ namespace DimensionPersona
             Close();
         }
 
-        private void btpruebaMetodos_Click(object sender, EventArgs e)
-        {
-            Form operaciones = new operaciones_ejemplo();
-            operaciones.Show();
-        }
+        
     }
 }

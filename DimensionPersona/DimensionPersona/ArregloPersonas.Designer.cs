@@ -37,22 +37,24 @@
             label2 = new Label();
             btOperaciones = new Button();
             btcerrar = new Button();
-            btpruebaMetodos = new Button();
+            txDimensionar = new TextBox();
+            label3 = new Label();
+            BtDimensionar = new Button();
             SuspendLayout();
             // 
             // btcargar
             // 
-            btcargar.Location = new Point(24, 71);
+            btcargar.Location = new Point(250, 130);
             btcargar.Name = "btcargar";
-            btcargar.Size = new Size(94, 29);
+            btcargar.Size = new Size(94, 27);
             btcargar.TabIndex = 0;
-            btcargar.Text = "cargar";
+            btcargar.Text = "Cargar";
             btcargar.UseVisualStyleBackColor = true;
             btcargar.Click += btcargar_Click;
             // 
             // txnombre
             // 
-            txnombre.Location = new Point(196, 73);
+            txnombre.Location = new Point(24, 130);
             txnombre.Name = "txnombre";
             txnombre.Size = new Size(125, 27);
             txnombre.TabIndex = 1;
@@ -60,7 +62,7 @@
             // lblista
             // 
             lblista.AutoSize = true;
-            lblista.Location = new Point(520, 76);
+            lblista.Location = new Point(578, 133);
             lblista.Name = "lblista";
             lblista.Size = new Size(50, 20);
             lblista.TabIndex = 2;
@@ -68,9 +70,9 @@
             // 
             // btmostrar
             // 
-            btmostrar.Location = new Point(24, 106);
+            btmostrar.Location = new Point(350, 130);
             btmostrar.Name = "btmostrar";
-            btmostrar.Size = new Size(94, 29);
+            btmostrar.Size = new Size(94, 27);
             btmostrar.TabIndex = 3;
             btmostrar.Text = "Mostrar";
             btmostrar.UseVisualStyleBackColor = true;
@@ -78,7 +80,7 @@
             // 
             // txaño
             // 
-            txaño.Location = new Point(336, 73);
+            txaño.Location = new Point(155, 130);
             txaño.Name = "txaño";
             txaño.Size = new Size(89, 27);
             txaño.TabIndex = 4;
@@ -86,7 +88,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(196, 36);
+            label1.Location = new Point(24, 107);
             label1.Name = "label1";
             label1.Size = new Size(64, 20);
             label1.TabIndex = 5;
@@ -95,7 +97,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(336, 36);
+            label2.Location = new Point(155, 107);
             label2.Name = "label2";
             label2.Size = new Size(36, 20);
             label2.TabIndex = 6;
@@ -103,7 +105,7 @@
             // 
             // btOperaciones
             // 
-            btOperaciones.Location = new Point(716, 306);
+            btOperaciones.Location = new Point(808, 306);
             btOperaciones.Name = "btOperaciones";
             btOperaciones.Size = new Size(121, 39);
             btOperaciones.TabIndex = 7;
@@ -113,7 +115,7 @@
             // 
             // btcerrar
             // 
-            btcerrar.Location = new Point(743, 12);
+            btcerrar.Location = new Point(835, 12);
             btcerrar.Name = "btcerrar";
             btcerrar.Size = new Size(94, 29);
             btcerrar.TabIndex = 8;
@@ -121,22 +123,40 @@
             btcerrar.UseVisualStyleBackColor = true;
             btcerrar.Click += btcerrar_Click;
             // 
-            // btpruebaMetodos
+            // txDimensionar
             // 
-            btpruebaMetodos.Location = new Point(24, 306);
-            btpruebaMetodos.Name = "btpruebaMetodos";
-            btpruebaMetodos.Size = new Size(173, 29);
-            btpruebaMetodos.TabIndex = 9;
-            btpruebaMetodos.Text = "Prueba de métodos";
-            btpruebaMetodos.UseVisualStyleBackColor = true;
-            btpruebaMetodos.Click += btpruebaMetodos_Click;
+            txDimensionar.Location = new Point(24, 77);
+            txDimensionar.Name = "txDimensionar";
+            txDimensionar.Size = new Size(125, 27);
+            txDimensionar.TabIndex = 10;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(24, 54);
+            label3.Name = "label3";
+            label3.Size = new Size(93, 20);
+            label3.TabIndex = 11;
+            label3.Text = "Dimensionar";
+            // 
+            // BtDimensionar
+            // 
+            BtDimensionar.Location = new Point(155, 77);
+            BtDimensionar.Name = "BtDimensionar";
+            BtDimensionar.Size = new Size(111, 27);
+            BtDimensionar.TabIndex = 12;
+            BtDimensionar.Text = "Dimensionar";
+            BtDimensionar.UseVisualStyleBackColor = true;
             // 
             // ArregloPersonas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(849, 357);
-            Controls.Add(btpruebaMetodos);
+            BackColor = Color.Wheat;
+            ClientSize = new Size(941, 357);
+            Controls.Add(BtDimensionar);
+            Controls.Add(label3);
+            Controls.Add(txDimensionar);
             Controls.Add(btcerrar);
             Controls.Add(btOperaciones);
             Controls.Add(label2);
@@ -148,7 +168,8 @@
             Controls.Add(btcargar);
             Name = "ArregloPersonas";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Tag = "";
+            Text = "Lista de personas";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -164,6 +185,8 @@
         private Label label2;
         private Button btOperaciones;
         private Button btcerrar;
-        private Button btpruebaMetodos;
+        private TextBox txDimensionar;
+        private Label label3;
+        private Button BtDimensionar;
     }
 }

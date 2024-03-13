@@ -28,6 +28,7 @@ namespace DimensionPersona
             try
             {
                 lbresSuma.Text = "Resultado:" + " " + Convert.ToString(Suma());
+                lbresSuma.Visible = true;
             }
             catch (Exception)
             {
@@ -35,7 +36,7 @@ namespace DimensionPersona
                 MessageBox.Show("Complete todos los campos");
             }
 
-            lbresSuma.Visible = true;
+           
         }
 
         //Método
@@ -60,6 +61,7 @@ namespace DimensionPersona
             try
             {
                 lbResResta.Text = "Resultado:" + " " + Resta().ToString();
+                lbResResta.Visible = true;
             }
             catch (Exception)
             {
@@ -67,7 +69,7 @@ namespace DimensionPersona
                 MessageBox.Show("Complete todos los campos");
             }
 
-            lbResResta.Visible = true;
+            
         }
 
         //Método
@@ -91,13 +93,14 @@ namespace DimensionPersona
             try
             {
                 lbResMult.Text = "Resultado:" + " " + Convert.ToString(Multiplicacion());
+                lbResMult.Visible = true;
             }
             catch (Exception)
             {
                 MessageBox.Show("Complete todos los campos");
             }
 
-            lbResMult.Visible = true;
+            
         }
 
         //Método
@@ -123,6 +126,7 @@ namespace DimensionPersona
                 //LbResDiv.Text = Convert.ToString(Division());
                 //LbResDiv.Text = "Resultado:" + " " + Division().ToString();
                 LbResDiv.Text = "Resultado" + " " + Convert.ToString(Division());
+                LbResDiv.Visible = true;
             }
             catch (Exception)
             {
@@ -130,7 +134,7 @@ namespace DimensionPersona
                 MessageBox.Show("Complete todos los campos");
             }
 
-            LbResDiv.Visible = true;
+           
         }
 
         //Método
