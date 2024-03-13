@@ -37,6 +37,7 @@
             label2 = new Label();
             btOperaciones = new Button();
             btcerrar = new Button();
+            btpruebaMetodos = new Button();
             SuspendLayout();
             // 
             // btcargar
@@ -120,11 +121,22 @@
             btcerrar.UseVisualStyleBackColor = true;
             btcerrar.Click += btcerrar_Click;
             // 
+            // btpruebaMetodos
+            // 
+            btpruebaMetodos.Location = new Point(24, 306);
+            btpruebaMetodos.Name = "btpruebaMetodos";
+            btpruebaMetodos.Size = new Size(173, 29);
+            btpruebaMetodos.TabIndex = 9;
+            btpruebaMetodos.Text = "Prueba de métodos";
+            btpruebaMetodos.UseVisualStyleBackColor = true;
+            btpruebaMetodos.Click += btpruebaMetodos_Click;
+            // 
             // ArregloPersonas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(849, 357);
+            Controls.Add(btpruebaMetodos);
             Controls.Add(btcerrar);
             Controls.Add(btOperaciones);
             Controls.Add(label2);
@@ -152,5 +164,6 @@
         private Label label2;
         private Button btOperaciones;
         private Button btcerrar;
+        private Button btpruebaMetodos;
     }
 }

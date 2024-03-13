@@ -36,7 +36,7 @@ namespace DimensionPersona
             //        + item.Nombre + "\r\n" 
             //        + "Año:" + " " + item.AñoNacimiento.ToString();
             //}
-           lblista.Text = Lista.ToString();
+            lblista.Text = Lista.ToString();
         }
 
         //private void Redimensionar()
@@ -67,6 +67,12 @@ namespace DimensionPersona
         private void btcerrar_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btpruebaMetodos_Click(object sender, EventArgs e)
+        {
+            Form operaciones = new operaciones_ejemplo();
+            operaciones.Show();
         }
     }
 }
