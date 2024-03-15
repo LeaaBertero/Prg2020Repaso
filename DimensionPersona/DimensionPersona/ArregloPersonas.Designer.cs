@@ -134,7 +134,6 @@
             // 
             // txDimensionar
             // 
-            txDimensionar.Enabled = false;
             txDimensionar.Location = new Point(334, 43);
             txDimensionar.Name = "txDimensionar";
             txDimensionar.Size = new Size(125, 27);
@@ -143,7 +142,6 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Enabled = false;
             label3.Location = new Point(334, 20);
             label3.Name = "label3";
             label3.Size = new Size(93, 20);
@@ -153,13 +151,13 @@
             // BtDimensionar
             // 
             BtDimensionar.Cursor = Cursors.Hand;
-            BtDimensionar.Enabled = false;
             BtDimensionar.Location = new Point(471, 43);
             BtDimensionar.Name = "BtDimensionar";
             BtDimensionar.Size = new Size(111, 27);
             BtDimensionar.TabIndex = 12;
             BtDimensionar.Text = "Dimensionar";
             BtDimensionar.UseVisualStyleBackColor = true;
+           
             // 
             // btborrar
             // 
@@ -180,7 +178,7 @@
             btFiltrar.TabIndex = 14;
             btFiltrar.Text = "Filtrar";
             btFiltrar.UseVisualStyleBackColor = true;
-            btFiltrar.Click += btFiltrar_Click;
+            
             // 
             // Btbuscar
             // 
@@ -191,7 +189,7 @@
             Btbuscar.TabIndex = 15;
             Btbuscar.Text = "Buscar";
             Btbuscar.UseVisualStyleBackColor = true;
-            Btbuscar.Click += Btbuscar_Click;
+            
             // 
             // txCodigo
             // 
