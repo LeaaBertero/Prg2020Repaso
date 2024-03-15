@@ -26,7 +26,7 @@ namespace DimensionPersona
             
             if (!Lista.AddPersona(txnombre.Text, txaño.Text))
             {
-                txaño.Text = "";    
+                 
                 txaño.Focus();
                 txaño.SelectAll();
                 //lblista.Text = "Persona no valida";
