@@ -56,14 +56,18 @@ namespace DimensionPersona
         {
             string Resp = "";
 
-            Resp = "Lista \r\n";
-
+            Resp = "Lista: \r\n";
             foreach (Persona item in Personas)
             {
-                 Resp = Resp + item.AñoNacimiento.ToString() + " " + item.Nombre + "\r\n";
+                Resp =  Resp + "Lista de personas cargadas"
+                    + "\r\n"
+                    + "\r\n"
+                    + "Nombre:" + " "
+                    + item.Nombre + "\r\n"
+                    + "Año:" + " " + item.AñoNacimiento.ToString();
             }
 
-           return Resp;
+            return Resp;
 
 
         }
