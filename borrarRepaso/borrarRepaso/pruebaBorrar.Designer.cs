@@ -93,12 +93,13 @@
             // 
             // btsalir
             // 
-            btsalir.Location = new Point(740, 148);
+            btsalir.Location = new Point(776, 419);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(100, 29);
             btsalir.TabIndex = 6;
             btsalir.Text = "salir";
             btsalir.UseVisualStyleBackColor = true;
+            btsalir.Click += btsalir_Click;
             // 
             // btmostrar
             // 

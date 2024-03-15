@@ -39,8 +39,15 @@ namespace borrarRepaso
         {
             foreach (string contador in nombres)
             {
-                lbresultado.Text = lbresultado.Text + contador + "\r\n" + "\r\n";
+                lbresultado.Text = lbresultado.Text + contador + "\r\n";
             }
+
+
+        }
+
+        private void btsalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
