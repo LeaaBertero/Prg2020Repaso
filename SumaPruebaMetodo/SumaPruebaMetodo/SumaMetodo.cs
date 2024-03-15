@@ -19,6 +19,15 @@ namespace SumaPruebaMetodo
 
         private void btcalcular_Click(object sender, EventArgs e)
         {
+            //int numero1;
+            //int numero2;
+            //int resultado;
+
+            //numero1 = Convert.ToInt32(txoper1.Text);
+            //numero2 = Convert.ToInt32(txoper2.Text);
+
+            //resultado = numero1 + numero2;
+
             lbresultado.Text = "Restultado:" + " " + Convert.ToString(Suma());
             lbresultado.Visible = true;
         }
