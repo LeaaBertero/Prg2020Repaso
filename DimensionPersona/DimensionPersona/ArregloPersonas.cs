@@ -24,14 +24,23 @@ namespace DimensionPersona
             //Lista.Personas[Lista.Personas.Length - 1] = persona;
             if (!Lista.AddPersona(txnombre.Text, txaño.Text))
             {
+                txaño.Text = "";    
+                txaño.Focus();
+                txaño.SelectAll();
                 //lblista.Text = "Persona no valida";
                 MessageBox.Show("Persona no valida");
             }
             else
             {
+                txaño.Text = "";
+                txnombre.Text = "";
+                txnombre.Focus();
                 //lblista.Text = "Carga correcta";
                 MessageBox.Show("Carga correcta");
+
             }
+
+           
         }
 
         private void btmostrar_Click(object sender, EventArgs e)
@@ -79,10 +88,9 @@ namespace DimensionPersona
             Close();
         }
 
-       
-
-       
-
-       
+        private void btFiltrar_Click(object sender, EventArgs e)
+        {
+            lblista.Text = Lista.ToStringFiltrado(2000);
+        }
     }
 }

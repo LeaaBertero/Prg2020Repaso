@@ -50,7 +50,7 @@
             // btcargar
             // 
             btcargar.Cursor = Cursors.Hand;
-            btcargar.Location = new Point(467, 149);
+            btcargar.Location = new Point(288, 145);
             btcargar.Name = "btcargar";
             btcargar.Size = new Size(94, 27);
             btcargar.TabIndex = 0;
@@ -60,7 +60,7 @@
             // 
             // txnombre
             // 
-            txnombre.Location = new Point(241, 149);
+            txnombre.Location = new Point(146, 182);
             txnombre.Name = "txnombre";
             txnombre.Size = new Size(125, 27);
             txnombre.TabIndex = 1;
@@ -68,7 +68,7 @@
             // lblista
             // 
             lblista.AutoSize = true;
-            lblista.Location = new Point(821, 149);
+            lblista.Location = new Point(694, 145);
             lblista.Name = "lblista";
             lblista.Size = new Size(50, 20);
             lblista.TabIndex = 2;
@@ -77,7 +77,7 @@
             // btmostrar
             // 
             btmostrar.Cursor = Cursors.Hand;
-            btmostrar.Location = new Point(567, 149);
+            btmostrar.Location = new Point(388, 145);
             btmostrar.Name = "btmostrar";
             btmostrar.Size = new Size(94, 27);
             btmostrar.TabIndex = 3;
@@ -87,7 +87,7 @@
             // 
             // txaño
             // 
-            txaño.Location = new Point(372, 149);
+            txaño.Location = new Point(146, 218);
             txaño.Name = "txaño";
             txaño.Size = new Size(89, 27);
             txaño.TabIndex = 4;
@@ -95,7 +95,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(241, 126);
+            label1.Location = new Point(76, 185);
             label1.Name = "label1";
             label1.Size = new Size(64, 20);
             label1.TabIndex = 5;
@@ -104,7 +104,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(372, 126);
+            label2.Location = new Point(82, 221);
             label2.Name = "label2";
             label2.Size = new Size(36, 20);
             label2.TabIndex = 6;
@@ -161,7 +161,7 @@
             // btborrar
             // 
             btborrar.Cursor = Cursors.Hand;
-            btborrar.Location = new Point(467, 182);
+            btborrar.Location = new Point(288, 178);
             btborrar.Name = "btborrar";
             btborrar.Size = new Size(94, 27);
             btborrar.TabIndex = 13;
@@ -171,17 +171,18 @@
             // btFiltrar
             // 
             btFiltrar.Cursor = Cursors.Hand;
-            btFiltrar.Location = new Point(567, 182);
+            btFiltrar.Location = new Point(388, 178);
             btFiltrar.Name = "btFiltrar";
             btFiltrar.Size = new Size(94, 27);
             btFiltrar.TabIndex = 14;
             btFiltrar.Text = "Filtrar";
             btFiltrar.UseVisualStyleBackColor = true;
+            btFiltrar.Click += btFiltrar_Click;
             // 
             // Btbuscar
             // 
             Btbuscar.Cursor = Cursors.Hand;
-            Btbuscar.Location = new Point(667, 149);
+            Btbuscar.Location = new Point(488, 145);
             Btbuscar.Name = "Btbuscar";
             Btbuscar.Size = new Size(94, 27);
             Btbuscar.TabIndex = 15;
@@ -199,7 +200,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(146, 126);
+            label4.Location = new Point(82, 152);
             label4.Name = "label4";
             label4.Size = new Size(58, 20);
             label4.TabIndex = 17;

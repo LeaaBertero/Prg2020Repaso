@@ -72,7 +72,30 @@ namespace DimensionPersona
 
         }
 
-       
-      
+        public string ToStringFiltrado(int añoMinimo)
+        {
+            string Resp = "";
+
+            //Resp = "Lista: \r\n";
+            foreach (Persona item in Personas)
+            {
+                if (item.AñoNacimiento >= añoMinimo)
+                {
+                    Resp = Resp
+                        + "\r\n"
+                        + "\r\n"
+                        + "Nombre:" + " "
+                        + item.Nombre + "\r\n"
+                        + "Año:" + " " + item.AñoNacimiento.ToString();
+                }
+            }
+
+            return Resp;
+
+
+        }
+
+
+
     }
 }
