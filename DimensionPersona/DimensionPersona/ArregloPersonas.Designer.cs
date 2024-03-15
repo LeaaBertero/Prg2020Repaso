@@ -42,12 +42,15 @@
             BtDimensionar = new Button();
             btborrar = new Button();
             btFiltrar = new Button();
+            Btbuscar = new Button();
+            txCodigo = new TextBox();
+            label4 = new Label();
             SuspendLayout();
             // 
             // btcargar
             // 
             btcargar.Cursor = Cursors.Hand;
-            btcargar.Location = new Point(250, 130);
+            btcargar.Location = new Point(467, 149);
             btcargar.Name = "btcargar";
             btcargar.Size = new Size(94, 27);
             btcargar.TabIndex = 0;
@@ -57,7 +60,7 @@
             // 
             // txnombre
             // 
-            txnombre.Location = new Point(24, 130);
+            txnombre.Location = new Point(241, 149);
             txnombre.Name = "txnombre";
             txnombre.Size = new Size(125, 27);
             txnombre.TabIndex = 1;
@@ -65,7 +68,7 @@
             // lblista
             // 
             lblista.AutoSize = true;
-            lblista.Location = new Point(155, 245);
+            lblista.Location = new Point(241, 266);
             lblista.Name = "lblista";
             lblista.Size = new Size(50, 20);
             lblista.TabIndex = 2;
@@ -74,7 +77,7 @@
             // btmostrar
             // 
             btmostrar.Cursor = Cursors.Hand;
-            btmostrar.Location = new Point(350, 130);
+            btmostrar.Location = new Point(567, 149);
             btmostrar.Name = "btmostrar";
             btmostrar.Size = new Size(94, 27);
             btmostrar.TabIndex = 3;
@@ -84,7 +87,7 @@
             // 
             // txaño
             // 
-            txaño.Location = new Point(155, 130);
+            txaño.Location = new Point(372, 149);
             txaño.Name = "txaño";
             txaño.Size = new Size(89, 27);
             txaño.TabIndex = 4;
@@ -92,7 +95,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(24, 107);
+            label1.Location = new Point(241, 126);
             label1.Name = "label1";
             label1.Size = new Size(64, 20);
             label1.TabIndex = 5;
@@ -101,7 +104,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(155, 107);
+            label2.Location = new Point(372, 126);
             label2.Name = "label2";
             label2.Size = new Size(36, 20);
             label2.TabIndex = 6;
@@ -110,9 +113,9 @@
             // btOperaciones
             // 
             btOperaciones.Cursor = Cursors.Hand;
-            btOperaciones.Location = new Point(808, 306);
+            btOperaciones.Location = new Point(10, 6);
             btOperaciones.Name = "btOperaciones";
-            btOperaciones.Size = new Size(121, 39);
+            btOperaciones.Size = new Size(108, 35);
             btOperaciones.TabIndex = 7;
             btOperaciones.Text = "Calculadora";
             btOperaciones.UseVisualStyleBackColor = true;
@@ -131,7 +134,8 @@
             // 
             // txDimensionar
             // 
-            txDimensionar.Location = new Point(24, 77);
+            txDimensionar.Enabled = false;
+            txDimensionar.Location = new Point(334, 43);
             txDimensionar.Name = "txDimensionar";
             txDimensionar.Size = new Size(125, 27);
             txDimensionar.TabIndex = 10;
@@ -139,7 +143,8 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(24, 54);
+            label3.Enabled = false;
+            label3.Location = new Point(334, 20);
             label3.Name = "label3";
             label3.Size = new Size(93, 20);
             label3.TabIndex = 11;
@@ -148,7 +153,8 @@
             // BtDimensionar
             // 
             BtDimensionar.Cursor = Cursors.Hand;
-            BtDimensionar.Location = new Point(155, 77);
+            BtDimensionar.Enabled = false;
+            BtDimensionar.Location = new Point(471, 43);
             BtDimensionar.Name = "BtDimensionar";
             BtDimensionar.Size = new Size(111, 27);
             BtDimensionar.TabIndex = 12;
@@ -158,7 +164,7 @@
             // btborrar
             // 
             btborrar.Cursor = Cursors.Hand;
-            btborrar.Location = new Point(250, 163);
+            btborrar.Location = new Point(467, 182);
             btborrar.Name = "btborrar";
             btborrar.Size = new Size(94, 27);
             btborrar.TabIndex = 13;
@@ -168,7 +174,7 @@
             // btFiltrar
             // 
             btFiltrar.Cursor = Cursors.Hand;
-            btFiltrar.Location = new Point(350, 163);
+            btFiltrar.Location = new Point(567, 182);
             btFiltrar.Name = "btFiltrar";
             btFiltrar.Size = new Size(94, 27);
             btFiltrar.TabIndex = 14;
@@ -176,12 +182,43 @@
             btFiltrar.UseVisualStyleBackColor = true;
             btFiltrar.Click += btFiltrar_Click;
             // 
+            // Btbuscar
+            // 
+            Btbuscar.Cursor = Cursors.Hand;
+            Btbuscar.Location = new Point(667, 149);
+            Btbuscar.Name = "Btbuscar";
+            Btbuscar.Size = new Size(94, 27);
+            Btbuscar.TabIndex = 15;
+            Btbuscar.Text = "Buscar";
+            Btbuscar.UseVisualStyleBackColor = true;
+            Btbuscar.Click += Btbuscar_Click;
+            // 
+            // txCodigo
+            // 
+            txCodigo.Enabled = false;
+            txCodigo.Location = new Point(146, 149);
+            txCodigo.Name = "txCodigo";
+            txCodigo.Size = new Size(89, 27);
+            txCodigo.TabIndex = 16;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(146, 126);
+            label4.Name = "label4";
+            label4.Size = new Size(58, 20);
+            label4.TabIndex = 17;
+            label4.Text = "Código";
+            // 
             // ArregloPersonas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Wheat;
-            ClientSize = new Size(941, 357);
+            ClientSize = new Size(941, 464);
+            Controls.Add(label4);
+            Controls.Add(txCodigo);
+            Controls.Add(Btbuscar);
             Controls.Add(btFiltrar);
             Controls.Add(btborrar);
             Controls.Add(BtDimensionar);
@@ -196,6 +233,7 @@
             Controls.Add(lblista);
             Controls.Add(txnombre);
             Controls.Add(btcargar);
+            MaximizeBox = false;
             Name = "ArregloPersonas";
             StartPosition = FormStartPosition.CenterScreen;
             Tag = "";
@@ -220,5 +258,8 @@
         private Button BtDimensionar;
         private Button btborrar;
         private Button btFiltrar;
+        private Button Btbuscar;
+        private TextBox txCodigo;
+        private Label label4;
     }
 }

@@ -6,7 +6,8 @@ namespace DimensionPersona
     {
         //public DimensionPersona.Persona[] Personas { get; set; }
 
-        private ListaPersonas Lista { get; set; } = new ListaPersonas();
+        //Clase ListaPersonas ---> inicializada 
+        public ListaPersonas Lista { get; set; } = new ListaPersonas();
 
 
         public ArregloPersonas()
@@ -21,13 +22,14 @@ namespace DimensionPersona
             //persona.AñoNacimiento = Convert.ToInt32(txaño.Text);
             //Lista.Redimensionar();
             //Lista.Personas[Lista.Personas.Length - 1] = persona;
-            if (!Lista.AddPersona(txnombre.Text, txaño.Text))
+            if (!Lista.AddPersona(txnombre.Text, txaño.Text)) 
             {
                 //lblista.Text = "Persona no valida";
                 MessageBox.Show("Persona no valida");
             }
             else
             {
+                //lblista.Text = "Carga correcta";
                 MessageBox.Show("Carga correcta");
             }
         }
@@ -79,7 +81,14 @@ namespace DimensionPersona
 
         private void btFiltrar_Click(object sender, EventArgs e)
         {
-            lblista.Text = Lista.ToStringFiltrado(2000);
+            
         }
+
+        private void Btbuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

@@ -9,67 +9,66 @@ namespace DimensionPersona
 {
     public class ListaPersonas
     {
-        public Persona[] Personas { get; set; }
+        //arreglo de personas
+        public  Persona[] Personas { get; set; }
 
+        //Método Redimensionar
         public void Redimensionar()
         {
             if (Personas == null)
             {
-                Personas = new Persona[0];
+               Personas = new Persona[0];
             }
             else
             {
                 Persona[] arregloAuxiliar = new Persona[Personas.Length + 1];
 
-                for (int incremneto = 0; incremneto < Personas.Length; incremneto++)
+                for (int i = 0; i < Personas.Length; i++)
                 {
-                    arregloAuxiliar[incremneto] = Personas[incremneto];
+                    arregloAuxiliar[i] = Personas[i];
                 }
 
                 Personas = arregloAuxiliar;
             }
         }
 
+        //Método AddPersona
         public bool AddPersona(string nombre, string año)
         {
             Persona persona = new Persona();
             persona.Nombre = nombre;
             persona.AñoNacimiento = Convert.ToInt32(año);
-            bool respuesta = persona.Validar();
+            bool resp = persona.Validar();
 
-            if (respuesta)
+            if (resp)
             {
                 Redimensionar();
                 Personas[Personas.Length - 1] = persona;
             }
 
-            return respuesta;
+            return resp;
 
-          
+
         }
 
-        public string ToStringFiltrado(int añoMinimo) 
+        //Método ToString
+        public override string ToString()
         {
             string Resp = "";
 
+            Resp = "Lista \r\n";
+
             foreach (Persona item in Personas)
             {
-                if (item.AñoNacimiento >= añoMinimo)
-                {
-
-                    Resp = "Lista de personas cargadas:"
-                         + "\r\n"
-                         + "\r\n"
-                         + "Nombre:" + " "
-                         + item.Nombre + "\r\n"
-                         + "Año:" + " " + item.AñoNacimiento.ToString();
-                }
-
-
+                 Resp = Resp + item.AñoNacimiento.ToString() + " " + item.Nombre + "\r\n";
             }
 
-            return Resp;
-           
+           return Resp;
+
+
         }
+
+        
+      
     }
 }
