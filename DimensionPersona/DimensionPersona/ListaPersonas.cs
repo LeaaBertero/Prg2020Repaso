@@ -56,10 +56,10 @@ namespace DimensionPersona
         {
             string Resp = "";
 
-            Resp = "Lista: \r\n";
+            //Resp = "Lista: \r\n";
             foreach (Persona item in Personas)
             {
-                Resp =  Resp + "Lista de personas cargadas"
+                Resp =  Resp 
                     + "\r\n"
                     + "\r\n"
                     + "Nombre:" + " "

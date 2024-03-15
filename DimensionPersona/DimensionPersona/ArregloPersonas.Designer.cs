@@ -68,7 +68,7 @@
             // lblista
             // 
             lblista.AutoSize = true;
-            lblista.Location = new Point(241, 266);
+            lblista.Location = new Point(821, 149);
             lblista.Name = "lblista";
             lblista.Size = new Size(50, 20);
             lblista.TabIndex = 2;
@@ -157,7 +157,6 @@
             BtDimensionar.TabIndex = 12;
             BtDimensionar.Text = "Dimensionar";
             BtDimensionar.UseVisualStyleBackColor = true;
-           
             // 
             // btborrar
             // 
@@ -178,7 +177,6 @@
             btFiltrar.TabIndex = 14;
             btFiltrar.Text = "Filtrar";
             btFiltrar.UseVisualStyleBackColor = true;
-            
             // 
             // Btbuscar
             // 
@@ -189,7 +187,6 @@
             Btbuscar.TabIndex = 15;
             Btbuscar.Text = "Buscar";
             Btbuscar.UseVisualStyleBackColor = true;
-            
             // 
             // txCodigo
             // 
