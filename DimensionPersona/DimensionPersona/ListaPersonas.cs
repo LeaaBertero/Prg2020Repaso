@@ -12,6 +12,8 @@ namespace DimensionPersona
         //arreglo de personas
         public  Persona[] Personas { get; set; }
 
+        public int ultimoCodigo { get; set; } = 0;
+
         //Método Redimensionar
         public void Redimensionar()
         {
@@ -40,6 +42,11 @@ namespace DimensionPersona
             persona.AñoNacimiento = Convert.ToInt32(año);
             bool resp = persona.Validar();
 
+            //variable persona creada e inicializada
+            persona.Codigo = ultimoCodigo;
+            ultimoCodigo = ultimoCodigo + 1;
+
+
             if (resp)
             {
                 Redimensionar();
@@ -61,7 +68,7 @@ namespace DimensionPersona
             {
                 Resp =  Resp 
                     + "\r\n"
-                    + "\r\n"
+                    + "\r\n" + "Código" + " " + item.Codigo.ToString() + " "
                     + "Nombre:" + " "
                     + item.Nombre + "\r\n"
                     + "Año:" + " " + item.AñoNacimiento.ToString();
@@ -82,11 +89,11 @@ namespace DimensionPersona
                 if (item.AñoNacimiento >= añoMinimo)
                 {
                     Resp = Resp
-                        + "\r\n"
-                        + "\r\n"
-                        + "Nombre:" + " "
-                        + item.Nombre + "\r\n"
-                        + "Año:" + " " + item.AñoNacimiento.ToString();
+                    + "\r\n"
+                    + "\r\n" + "Código" + " " + item.Codigo.ToString()
+                    + "Nombre:" + " "
+                    + item.Nombre + "\r\n"
+                    + "Año:" + " " + item.AñoNacimiento.ToString();
                 }
             }
 

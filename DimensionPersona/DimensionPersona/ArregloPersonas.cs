@@ -22,11 +22,11 @@ namespace DimensionPersona
             //persona.AñoNacimiento = Convert.ToInt32(txaño.Text);
             //Lista.Redimensionar();
             //Lista.Personas[Lista.Personas.Length - 1] = persona;
-            
-            
+
+
             if (!Lista.AddPersona(txnombre.Text, txaño.Text))
             {
-                 
+
                 txaño.Focus();
                 txaño.SelectAll();
                 //lblista.Text = "Persona no valida";
@@ -34,15 +34,16 @@ namespace DimensionPersona
             }
             else
             {
+                btmostrar_Click(null, null);
                 txaño.Text = "";
                 txnombre.Text = "";
                 txnombre.Focus();
                 //lblista.Text = "Carga correcta";
-                MessageBox.Show("Carga correcta");
+                //MessageBox.Show("Carga correcta");
 
             }
 
-           
+
         }
 
         private void btmostrar_Click(object sender, EventArgs e)
@@ -94,5 +95,7 @@ namespace DimensionPersona
         {
             lblista.Text = Lista.ToStringFiltrado(2000);
         }
+
+        
     }
 }

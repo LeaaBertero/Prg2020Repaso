@@ -37,14 +37,9 @@
             label2 = new Label();
             btOperaciones = new Button();
             btcerrar = new Button();
-            txDimensionar = new TextBox();
-            label3 = new Label();
-            BtDimensionar = new Button();
             btborrar = new Button();
             btFiltrar = new Button();
             Btbuscar = new Button();
-            txCodigo = new TextBox();
-            label4 = new Label();
             SuspendLayout();
             // 
             // btcargar
@@ -60,7 +55,7 @@
             // 
             // txnombre
             // 
-            txnombre.Location = new Point(146, 182);
+            txnombre.Location = new Point(146, 145);
             txnombre.Name = "txnombre";
             txnombre.Size = new Size(125, 27);
             txnombre.TabIndex = 1;
@@ -87,15 +82,15 @@
             // 
             // txaño
             // 
-            txaño.Location = new Point(146, 218);
+            txaño.Location = new Point(146, 178);
             txaño.Name = "txaño";
-            txaño.Size = new Size(89, 27);
+            txaño.Size = new Size(125, 27);
             txaño.TabIndex = 4;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(76, 185);
+            label1.Location = new Point(54, 148);
             label1.Name = "label1";
             label1.Size = new Size(64, 20);
             label1.TabIndex = 5;
@@ -104,7 +99,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(82, 221);
+            label2.Location = new Point(54, 181);
             label2.Name = "label2";
             label2.Size = new Size(36, 20);
             label2.TabIndex = 6;
@@ -131,32 +126,6 @@
             btcerrar.Text = "Cerrar";
             btcerrar.UseVisualStyleBackColor = true;
             btcerrar.Click += btcerrar_Click;
-            // 
-            // txDimensionar
-            // 
-            txDimensionar.Location = new Point(334, 43);
-            txDimensionar.Name = "txDimensionar";
-            txDimensionar.Size = new Size(125, 27);
-            txDimensionar.TabIndex = 10;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(334, 20);
-            label3.Name = "label3";
-            label3.Size = new Size(93, 20);
-            label3.TabIndex = 11;
-            label3.Text = "Dimensionar";
-            // 
-            // BtDimensionar
-            // 
-            BtDimensionar.Cursor = Cursors.Hand;
-            BtDimensionar.Location = new Point(471, 43);
-            BtDimensionar.Name = "BtDimensionar";
-            BtDimensionar.Size = new Size(111, 27);
-            BtDimensionar.TabIndex = 12;
-            BtDimensionar.Text = "Dimensionar";
-            BtDimensionar.UseVisualStyleBackColor = true;
             // 
             // btborrar
             // 
@@ -189,37 +158,15 @@
             Btbuscar.Text = "Buscar";
             Btbuscar.UseVisualStyleBackColor = true;
             // 
-            // txCodigo
-            // 
-            txCodigo.Enabled = false;
-            txCodigo.Location = new Point(146, 149);
-            txCodigo.Name = "txCodigo";
-            txCodigo.Size = new Size(89, 27);
-            txCodigo.TabIndex = 16;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(82, 152);
-            label4.Name = "label4";
-            label4.Size = new Size(58, 20);
-            label4.TabIndex = 17;
-            label4.Text = "Código";
-            // 
             // ArregloPersonas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Wheat;
             ClientSize = new Size(941, 464);
-            Controls.Add(label4);
-            Controls.Add(txCodigo);
             Controls.Add(Btbuscar);
             Controls.Add(btFiltrar);
             Controls.Add(btborrar);
-            Controls.Add(BtDimensionar);
-            Controls.Add(label3);
-            Controls.Add(txDimensionar);
             Controls.Add(btcerrar);
             Controls.Add(btOperaciones);
             Controls.Add(label2);
@@ -249,13 +196,8 @@
         private Label label2;
         private Button btOperaciones;
         private Button btcerrar;
-        private TextBox txDimensionar;
-        private Label label3;
-        private Button BtDimensionar;
         private Button btborrar;
         private Button btFiltrar;
         private Button Btbuscar;
-        private TextBox txCodigo;
-        private Label label4;
     }
 }
