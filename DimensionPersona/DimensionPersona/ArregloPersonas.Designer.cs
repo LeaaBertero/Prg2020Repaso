@@ -37,9 +37,11 @@
             label2 = new Label();
             btOperaciones = new Button();
             btcerrar = new Button();
-            btborrar = new Button();
             btFiltrar = new Button();
-            Btbuscar = new Button();
+            btbuscar = new Button();
+            textBox1 = new TextBox();
+            label3 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // btcargar
@@ -63,15 +65,20 @@
             // lblista
             // 
             lblista.AutoSize = true;
-            lblista.Location = new Point(694, 145);
+            lblista.BackColor = Color.DarkGray;
+            lblista.Font = new Font("Segoe UI", 10F);
+            lblista.ForeColor = SystemColors.Control;
+            lblista.Location = new Point(733, 141);
             lblista.Name = "lblista";
-            lblista.Size = new Size(50, 20);
+            lblista.Padding = new Padding(10);
+            lblista.Size = new Size(20, 43);
             lblista.TabIndex = 2;
-            lblista.Text = "label1";
+            lblista.Visible = false;
             // 
             // btmostrar
             // 
             btmostrar.Cursor = Cursors.Hand;
+            btmostrar.Enabled = false;
             btmostrar.Location = new Point(388, 145);
             btmostrar.Name = "btmostrar";
             btmostrar.Size = new Size(94, 27);
@@ -84,7 +91,7 @@
             // 
             txaño.Location = new Point(146, 178);
             txaño.Name = "txaño";
-            txaño.Size = new Size(125, 27);
+            txaño.Size = new Size(70, 27);
             txaño.TabIndex = 4;
             // 
             // label1
@@ -119,7 +126,7 @@
             // btcerrar
             // 
             btcerrar.Cursor = Cursors.Hand;
-            btcerrar.Location = new Point(835, 12);
+            btcerrar.Location = new Point(946, 6);
             btcerrar.Name = "btcerrar";
             btcerrar.Size = new Size(94, 29);
             btcerrar.TabIndex = 8;
@@ -127,20 +134,10 @@
             btcerrar.UseVisualStyleBackColor = true;
             btcerrar.Click += btcerrar_Click;
             // 
-            // btborrar
-            // 
-            btborrar.Cursor = Cursors.Hand;
-            btborrar.Location = new Point(288, 178);
-            btborrar.Name = "btborrar";
-            btborrar.Size = new Size(94, 27);
-            btborrar.TabIndex = 13;
-            btborrar.Text = "Borrar";
-            btborrar.UseVisualStyleBackColor = true;
-            // 
             // btFiltrar
             // 
             btFiltrar.Cursor = Cursors.Hand;
-            btFiltrar.Location = new Point(388, 178);
+            btFiltrar.Location = new Point(488, 145);
             btFiltrar.Name = "btFiltrar";
             btFiltrar.Size = new Size(94, 27);
             btFiltrar.TabIndex = 14;
@@ -148,25 +145,58 @@
             btFiltrar.UseVisualStyleBackColor = true;
             btFiltrar.Click += btFiltrar_Click;
             // 
-            // Btbuscar
+            // btbuscar
             // 
-            Btbuscar.Cursor = Cursors.Hand;
-            Btbuscar.Location = new Point(488, 145);
-            Btbuscar.Name = "Btbuscar";
-            Btbuscar.Size = new Size(94, 27);
-            Btbuscar.TabIndex = 15;
-            Btbuscar.Text = "Buscar";
-            Btbuscar.UseVisualStyleBackColor = true;
+            btbuscar.Cursor = Cursors.Hand;
+            btbuscar.Location = new Point(196, 258);
+            btbuscar.Name = "btbuscar";
+            btbuscar.Size = new Size(94, 27);
+            btbuscar.TabIndex = 15;
+            btbuscar.Text = "Buscar";
+            btbuscar.UseVisualStyleBackColor = true;
+            btbuscar.Click += btbuscar_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(54, 258);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(125, 27);
+            textBox1.TabIndex = 16;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(54, 235);
+            label3.Name = "label3";
+            label3.Size = new Size(198, 20);
+            label3.TabIndex = 17;
+            label3.Text = "Ingrese código de búsqueda";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.BackColor = Color.DarkOrange;
+            label4.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            label4.ForeColor = SystemColors.Control;
+            label4.Location = new Point(282, 33);
+            label4.Margin = new Padding(5);
+            label4.Name = "label4";
+            label4.Padding = new Padding(10);
+            label4.Size = new Size(492, 57);
+            label4.TabIndex = 18;
+            label4.Text = "Proyecto --> Carga de personas <--";
             // 
             // ArregloPersonas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Wheat;
-            ClientSize = new Size(941, 464);
-            Controls.Add(Btbuscar);
+            ClientSize = new Size(1052, 464);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(textBox1);
+            Controls.Add(btbuscar);
             Controls.Add(btFiltrar);
-            Controls.Add(btborrar);
             Controls.Add(btcerrar);
             Controls.Add(btOperaciones);
             Controls.Add(label2);
@@ -196,8 +226,10 @@
         private Label label2;
         private Button btOperaciones;
         private Button btcerrar;
-        private Button btborrar;
         private Button btFiltrar;
-        private Button Btbuscar;
+        private Button btbuscar;
+        private TextBox textBox1;
+        private Label label3;
+        private Label label4;
     }
 }

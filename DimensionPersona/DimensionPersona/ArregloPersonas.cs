@@ -23,7 +23,7 @@ namespace DimensionPersona
             //Lista.Redimensionar();
             //Lista.Personas[Lista.Personas.Length - 1] = persona;
 
-
+            lblista.Visible = true;
             if (!Lista.AddPersona(txnombre.Text, txaño.Text))
             {
 
@@ -96,6 +96,9 @@ namespace DimensionPersona
             lblista.Text = Lista.ToStringFiltrado(2000);
         }
 
-        
+        private void btbuscar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
