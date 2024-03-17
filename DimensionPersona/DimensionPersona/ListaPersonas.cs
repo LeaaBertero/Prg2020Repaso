@@ -132,8 +132,23 @@ namespace DimensionPersona
  
             return res;
         }
+
+        public bool updatePersona (Persona persona) 
+        {
+            return false;
+        }
+        public bool deletePersona(Persona persona)
+        {
+            return false;
+        }
     }
 }
+
+
+
+
+
+
 
             
 

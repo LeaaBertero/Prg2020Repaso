@@ -100,6 +100,8 @@ namespace DimensionPersona
         {
             Persona per = Lista.BuscarPersonas(Convert.ToInt32(txCodigo.Text));
 
+            //Lista.deletePersona(per);
+
             if (per.Codigo > 0)
             {
                 txnombre.Text = per.Nombre;
