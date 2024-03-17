@@ -39,7 +39,7 @@
             btcerrar = new Button();
             btFiltrar = new Button();
             btbuscar = new Button();
-            txBuscar = new TextBox();
+            txCodigo = new TextBox();
             label3 = new Label();
             label4 = new Label();
             btBorrar = new Button();
@@ -157,12 +157,12 @@
             btbuscar.UseVisualStyleBackColor = true;
             btbuscar.Click += btbuscar_Click;
             // 
-            // txBuscar
+            // txCodigo
             // 
-            txBuscar.Location = new Point(54, 258);
-            txBuscar.Name = "txBuscar";
-            txBuscar.Size = new Size(125, 27);
-            txBuscar.TabIndex = 16;
+            txCodigo.Location = new Point(54, 258);
+            txCodigo.Name = "txCodigo";
+            txCodigo.Size = new Size(125, 27);
+            txCodigo.TabIndex = 16;
             // 
             // label3
             // 
@@ -206,7 +206,7 @@
             Controls.Add(btBorrar);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(txBuscar);
+            Controls.Add(txCodigo);
             Controls.Add(btbuscar);
             Controls.Add(btFiltrar);
             Controls.Add(btcerrar);
@@ -240,7 +240,7 @@
         private Button btcerrar;
         private Button btFiltrar;
         private Button btbuscar;
-        private TextBox txBuscar;
+        private TextBox txCodigo;
         private Label label3;
         private Label label4;
         private Button btBorrar;

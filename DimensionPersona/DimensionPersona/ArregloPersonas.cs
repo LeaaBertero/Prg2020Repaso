@@ -98,7 +98,11 @@ namespace DimensionPersona
 
         private void btbuscar_Click(object sender, EventArgs e)
         {
+            Persona per = Lista.BuscarPersonas(Convert.ToInt32(txCodigo.Text));
+            txnombre.Text = per.Nombre;
+            txaño.Text =  per.AñoNacimiento.ToString();
 
+            txnombre.Focus();
         }
     }
 }
