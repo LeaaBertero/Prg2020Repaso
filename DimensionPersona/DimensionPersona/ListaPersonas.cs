@@ -12,6 +12,7 @@ namespace DimensionPersona
         //arreglo de personas
         public  Persona[] Personas { get; set; }
 
+        //variable publica inicilmente en cero
         public int ultimoCodigo { get; set; } = 0;
 
         //Método Redimensionar
@@ -102,7 +103,38 @@ namespace DimensionPersona
 
         }
 
+        public Persona BuscarPersonas(int codigo)
+        {
+            Persona res = new Persona();
 
+            //for (int incremento = 0; incremento < Personas.Length; incremento++)
+            //{
+            //    if (Personas[incremento].Codigo == codigo)
+            //    {
+            //        return Personas[incremento];
+            //        break;
+            //    }
+            //}
 
+            //res.Codigo = codigo;
+            //return res;
+
+            
+            foreach (var item in Personas)
+            {
+                if (Personas[item.Codigo].Codigo == codigo)
+                {
+                    res = item;
+                    break;
+                }
+            }
+ 
+            return res;
+        }
     }
 }
+
+            
+
+
+

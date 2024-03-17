@@ -39,9 +39,10 @@
             btcerrar = new Button();
             btFiltrar = new Button();
             btbuscar = new Button();
-            textBox1 = new TextBox();
+            txBuscar = new TextBox();
             label3 = new Label();
             label4 = new Label();
+            btBorrar = new Button();
             SuspendLayout();
             // 
             // btcargar
@@ -130,7 +131,7 @@
             btcerrar.Name = "btcerrar";
             btcerrar.Size = new Size(94, 29);
             btcerrar.TabIndex = 8;
-            btcerrar.Text = "Cerrar";
+            btcerrar.Text = "Salir";
             btcerrar.UseVisualStyleBackColor = true;
             btcerrar.Click += btcerrar_Click;
             // 
@@ -156,12 +157,12 @@
             btbuscar.UseVisualStyleBackColor = true;
             btbuscar.Click += btbuscar_Click;
             // 
-            // textBox1
+            // txBuscar
             // 
-            textBox1.Location = new Point(54, 258);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 16;
+            txBuscar.Location = new Point(54, 258);
+            txBuscar.Name = "txBuscar";
+            txBuscar.Size = new Size(125, 27);
+            txBuscar.TabIndex = 16;
             // 
             // label3
             // 
@@ -186,15 +187,26 @@
             label4.TabIndex = 18;
             label4.Text = "Proyecto --> Carga de personas <--";
             // 
+            // btBorrar
+            // 
+            btBorrar.Cursor = Cursors.Hand;
+            btBorrar.Location = new Point(288, 181);
+            btBorrar.Name = "btBorrar";
+            btBorrar.Size = new Size(94, 27);
+            btBorrar.TabIndex = 19;
+            btBorrar.Text = "Borrar";
+            btBorrar.UseVisualStyleBackColor = true;
+            // 
             // ArregloPersonas
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Wheat;
             ClientSize = new Size(1052, 464);
+            Controls.Add(btBorrar);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(textBox1);
+            Controls.Add(txBuscar);
             Controls.Add(btbuscar);
             Controls.Add(btFiltrar);
             Controls.Add(btcerrar);
@@ -228,8 +240,9 @@
         private Button btcerrar;
         private Button btFiltrar;
         private Button btbuscar;
-        private TextBox textBox1;
+        private TextBox txBuscar;
         private Label label3;
         private Label label4;
+        private Button btBorrar;
     }
 }
