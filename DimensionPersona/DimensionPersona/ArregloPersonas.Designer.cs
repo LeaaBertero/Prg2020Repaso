@@ -196,6 +196,7 @@
             btBorrar.TabIndex = 19;
             btBorrar.Text = "Borrar";
             btBorrar.UseVisualStyleBackColor = true;
+            btBorrar.Click += btBorrar_Click;
             // 
             // ArregloPersonas
             // 

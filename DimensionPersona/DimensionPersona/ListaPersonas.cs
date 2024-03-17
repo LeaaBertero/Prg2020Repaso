@@ -44,20 +44,21 @@ namespace DimensionPersona
             bool resp = persona.Validar();
 
             //variable persona creada e inicializada
-            persona.Codigo = ultimoCodigo;
-            ultimoCodigo = ultimoCodigo + 1;
+            
 
 
             if (resp)
             {
+                ultimoCodigo = ultimoCodigo + 1;
+                persona.Codigo = ultimoCodigo;
                 Redimensionar();
                 Personas[Personas.Length - 1] = persona;
             }
 
             return resp;
 
-
         }
+
 
         //Método ToString
         public override string ToString()

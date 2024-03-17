@@ -99,10 +99,24 @@ namespace DimensionPersona
         private void btbuscar_Click(object sender, EventArgs e)
         {
             Persona per = Lista.BuscarPersonas(Convert.ToInt32(txCodigo.Text));
-            txnombre.Text = per.Nombre;
-            txaño.Text =  per.AñoNacimiento.ToString();
 
-            txnombre.Focus();
+            if (per.Codigo > 0)
+            {
+                txnombre.Text = per.Nombre;
+                txaño.Text = per.AñoNacimiento.ToString();
+
+                txnombre.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Código inexistente");
+            }
+
+        }
+
+        private void btBorrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
