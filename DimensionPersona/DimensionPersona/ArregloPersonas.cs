@@ -27,21 +27,19 @@ namespace DimensionPersona
             lblista.Visible = true;
             if (!Lista.AddPersona(txnombre.Text, txaño.Text))
             {
-
                 txaño.Focus();
                 txaño.SelectAll();
                 //lblista.Text = "Persona no valida";
                 MessageBox.Show("Persona no valida");
             }
             else
-            {
+            {   
                 btmostrar_Click(null, null);
                 txaño.Text = "";
                 txnombre.Text = "";
                 txnombre.Focus();
                 //lblista.Text = "Carga correcta";
                 //MessageBox.Show("Carga correcta");
-
             }
 
 
