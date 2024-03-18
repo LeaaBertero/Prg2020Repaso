@@ -50,7 +50,7 @@ namespace DimensionPersona
             if (resp)
             {
                 ultimoCodigo = ultimoCodigo + 1;
-                persona.Codigo = ultimoCodigo;
+                persona.Id = ultimoCodigo;
                 Redimensionar();
                 Personas[Personas.Length - 1] = persona;
             }
@@ -70,7 +70,7 @@ namespace DimensionPersona
             {
                 Resp =  Resp 
                     + "\r\n"
-                    + "\r\n" + "Código" + " " + item.Codigo.ToString() + " "
+                    + "\r\n" + "Código" + " " + item.Id.ToString() + " "
                     + "Nombre:" + " "
                     + item.Nombre + "\r\n"
                     + "Año:" + " " + item.AñoNacimiento.ToString();
@@ -92,7 +92,7 @@ namespace DimensionPersona
                 {
                     Resp = Resp
                     + "\r\n"
-                    + "\r\n" + "Código" + " " + item.Codigo.ToString()
+                    + "\r\n" + "Código" + " " + item.Id.ToString()
                     + "Nombre:" + " "
                     + item.Nombre + "\r\n"
                     + "Año:" + " " + item.AñoNacimiento.ToString();
@@ -123,7 +123,7 @@ namespace DimensionPersona
             
             foreach (var item in Personas)
             {
-                if (Personas[item.Codigo].Codigo == codigo)
+                if (Personas[item.Id].Id == codigo)
                 {
                     res = item;
                     break;

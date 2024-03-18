@@ -102,7 +102,7 @@ namespace DimensionPersona
 
             //Lista.deletePersona(per);
 
-            if (per.Codigo > 0)
+            if (per.Id > 0)
             {
                 txnombre.Text = per.Nombre;
                 txaño.Text = per.AñoNacimiento.ToString();
