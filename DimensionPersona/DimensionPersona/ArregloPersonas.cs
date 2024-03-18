@@ -15,6 +15,7 @@ namespace DimensionPersona
             InitializeComponent();
         }
 
+        //Método boton cargar
         private void btcargar_Click(object sender, EventArgs e)
         {
             //Persona persona = new Persona();
@@ -46,6 +47,7 @@ namespace DimensionPersona
 
         }
 
+        //Método boton mostrar
         private void btmostrar_Click(object sender, EventArgs e)
         {
             //lblista.Text = "Lista:\\r\\n\\";

@@ -13,7 +13,7 @@ namespace DimensionPersona
         public  Persona[] Personas { get; set; }
 
         //variable publica inicilmente en cero
-        public int ultimoCodigo { get; set; } = 0;
+        public int ContadorUltimoCodigo { get; set; } = 0;
 
         //Método Redimensionar
         public void Redimensionar()
@@ -49,8 +49,8 @@ namespace DimensionPersona
 
             if (resp)
             {
-                ultimoCodigo = ultimoCodigo + 1;
-                persona.Id = ultimoCodigo;
+                persona.Id = ContadorUltimoCodigo;
+                ContadorUltimoCodigo = ContadorUltimoCodigo + 1;
                 Redimensionar();
                 Personas[Personas.Length - 1] = persona;
             }
@@ -106,6 +106,7 @@ namespace DimensionPersona
 
         public Persona BuscarPersonas(int codigo)
         {
+            //inicializa el objeto persona 
             Persona res = new Persona();
 
             //for (int incremento = 0; incremento < Personas.Length; incremento++)
@@ -121,7 +122,7 @@ namespace DimensionPersona
             //return res;
 
             
-            foreach (var item in Personas)
+            foreach (Persona item in Personas)
             {
                 if (Personas[item.Id].Id == codigo)
                 {
