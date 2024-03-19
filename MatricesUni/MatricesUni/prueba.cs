@@ -120,10 +120,7 @@ namespace MatricesUni
             }
         }
 
-        private void Prueba_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
 

@@ -14,6 +14,10 @@ namespace Prube003
     {
 
         public Persona persona = new Persona();
+        //public Persona[] persona = new Persona[2];
+
+        //int posicion = 0;
+        
 
         public PruebaCarga()
         {
@@ -22,10 +26,13 @@ namespace Prube003
 
         private void btcargar_Click(object sender, EventArgs e)
         {
-
+            //posicion = posicion + 1;
 
             persona.Nombre = txNombre.Text;
+            txNombre.Focus();
+            txNombre.SelectAll();
             txNombre.Text = "";
+            
 
             persona.Apellido = txApellido.Text;
             txApellido.Text = "";
