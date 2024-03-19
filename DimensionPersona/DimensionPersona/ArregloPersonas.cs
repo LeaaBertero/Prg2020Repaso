@@ -111,9 +111,11 @@ namespace DimensionPersona
             }
             else
             {
-                MessageBox.Show("Código inexistente");
+                txCodigo.Text = "Código inexistente";
+                txCodigo.Focus();
+                txCodigo.SelectAll();
             }
-
+           
         }
 
         private void btBorrar_Click(object sender, EventArgs e)

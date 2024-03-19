@@ -48,7 +48,7 @@
             // btcargar
             // 
             btcargar.Cursor = Cursors.Hand;
-            btcargar.Location = new Point(265, 170);
+            btcargar.Location = new Point(439, 157);
             btcargar.Name = "btcargar";
             btcargar.Size = new Size(94, 27);
             btcargar.TabIndex = 0;
@@ -58,7 +58,7 @@
             // 
             // txnombre
             // 
-            txnombre.Location = new Point(123, 170);
+            txnombre.Location = new Point(297, 157);
             txnombre.Name = "txnombre";
             txnombre.Size = new Size(125, 27);
             txnombre.TabIndex = 1;
@@ -69,7 +69,7 @@
             lblista.BackColor = Color.DarkGray;
             lblista.Font = new Font("Segoe UI", 10F);
             lblista.ForeColor = SystemColors.Control;
-            lblista.Location = new Point(779, 170);
+            lblista.Location = new Point(953, 157);
             lblista.Name = "lblista";
             lblista.Padding = new Padding(10);
             lblista.Size = new Size(20, 43);
@@ -80,7 +80,7 @@
             // 
             btmostrar.Cursor = Cursors.Hand;
             btmostrar.Enabled = false;
-            btmostrar.Location = new Point(365, 170);
+            btmostrar.Location = new Point(539, 157);
             btmostrar.Name = "btmostrar";
             btmostrar.Size = new Size(94, 27);
             btmostrar.TabIndex = 3;
@@ -90,7 +90,7 @@
             // 
             // txaño
             // 
-            txaño.Location = new Point(123, 203);
+            txaño.Location = new Point(297, 190);
             txaño.Name = "txaño";
             txaño.Size = new Size(70, 27);
             txaño.TabIndex = 4;
@@ -98,7 +98,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(31, 173);
+            label1.Location = new Point(205, 160);
             label1.Name = "label1";
             label1.Size = new Size(64, 20);
             label1.TabIndex = 5;
@@ -107,7 +107,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(31, 206);
+            label2.Location = new Point(205, 193);
             label2.Name = "label2";
             label2.Size = new Size(36, 20);
             label2.TabIndex = 6;
@@ -115,30 +115,36 @@
             // 
             // btOperaciones
             // 
+            btOperaciones.BackColor = Color.DarkOrange;
             btOperaciones.Cursor = Cursors.Hand;
-            btOperaciones.Location = new Point(10, 6);
+            btOperaciones.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            btOperaciones.ForeColor = Color.Black;
+            btOperaciones.Location = new Point(558, 390);
             btOperaciones.Name = "btOperaciones";
-            btOperaciones.Size = new Size(108, 35);
+            btOperaciones.Size = new Size(225, 59);
             btOperaciones.TabIndex = 7;
             btOperaciones.Text = "Calculadora";
-            btOperaciones.UseVisualStyleBackColor = true;
+            btOperaciones.UseVisualStyleBackColor = false;
             btOperaciones.Click += btOperaciones_Click;
             // 
             // btcerrar
             // 
+            btcerrar.BackColor = Color.DarkOrange;
             btcerrar.Cursor = Cursors.Hand;
-            btcerrar.Location = new Point(1226, 6);
+            btcerrar.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            btcerrar.ForeColor = Color.White;
+            btcerrar.Location = new Point(1150, 538);
             btcerrar.Name = "btcerrar";
-            btcerrar.Size = new Size(94, 29);
+            btcerrar.Size = new Size(170, 48);
             btcerrar.TabIndex = 8;
             btcerrar.Text = "Salir";
-            btcerrar.UseVisualStyleBackColor = true;
+            btcerrar.UseVisualStyleBackColor = false;
             btcerrar.Click += btcerrar_Click;
             // 
             // btFiltrar
             // 
             btFiltrar.Cursor = Cursors.Hand;
-            btFiltrar.Location = new Point(465, 170);
+            btFiltrar.Location = new Point(639, 157);
             btFiltrar.Name = "btFiltrar";
             btFiltrar.Size = new Size(94, 27);
             btFiltrar.TabIndex = 14;
@@ -149,7 +155,7 @@
             // btbuscar
             // 
             btbuscar.Cursor = Cursors.Hand;
-            btbuscar.Location = new Point(173, 283);
+            btbuscar.Location = new Point(347, 270);
             btbuscar.Name = "btbuscar";
             btbuscar.Size = new Size(94, 27);
             btbuscar.TabIndex = 15;
@@ -159,7 +165,7 @@
             // 
             // txCodigo
             // 
-            txCodigo.Location = new Point(31, 283);
+            txCodigo.Location = new Point(205, 270);
             txCodigo.Name = "txCodigo";
             txCodigo.Size = new Size(125, 27);
             txCodigo.TabIndex = 16;
@@ -167,7 +173,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(31, 260);
+            label3.Location = new Point(205, 247);
             label3.Name = "label3";
             label3.Size = new Size(198, 20);
             label3.TabIndex = 17;
@@ -179,7 +185,7 @@
             label4.BackColor = Color.DarkOrange;
             label4.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             label4.ForeColor = SystemColors.Control;
-            label4.Location = new Point(307, 38);
+            label4.Location = new Point(439, 14);
             label4.Margin = new Padding(5);
             label4.Name = "label4";
             label4.Padding = new Padding(10);
@@ -190,7 +196,7 @@
             // btBorrar
             // 
             btBorrar.Cursor = Cursors.Hand;
-            btBorrar.Location = new Point(265, 206);
+            btBorrar.Location = new Point(439, 193);
             btBorrar.Name = "btBorrar";
             btBorrar.Size = new Size(94, 27);
             btBorrar.TabIndex = 19;
