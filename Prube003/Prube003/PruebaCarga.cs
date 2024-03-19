@@ -27,7 +27,7 @@ namespace Prube003
             persona.Nombre = txNombre.Text;
             txNombre.Text = "";
 
-            persona.Apellido = txApellido.Text; 
+            persona.Apellido = txApellido.Text;
             txApellido.Text = "";
 
             persona.Documento = Convert.ToInt32(txDocumento.Text);
@@ -37,11 +37,15 @@ namespace Prube003
         private void txMostrar_Click(object sender, EventArgs e)
         {
             lbLista.Text = "Lista de personas cargadas: " + "\r\n" + "\r\n"
-                + "Nombre: " + persona.Nombre + "\r\n" 
-                + "Apellido: " + persona.Apellido + "\r\n" 
+                + "Nombre: " + persona.Nombre + "\r\n"
+                + "Apellido: " + persona.Apellido + "\r\n"
                 + "Documento: " + persona.Documento.ToString();
         }
 
+        private void btsalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
 

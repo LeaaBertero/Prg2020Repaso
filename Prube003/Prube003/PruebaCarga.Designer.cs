@@ -37,6 +37,7 @@
             label3 = new Label();
             txDocumento = new TextBox();
             txMostrar = new Button();
+            btsalir = new Button();
             SuspendLayout();
             // 
             // btcargar
@@ -116,11 +117,22 @@
             txMostrar.UseVisualStyleBackColor = true;
             txMostrar.Click += txMostrar_Click;
             // 
+            // btsalir
+            // 
+            btsalir.Location = new Point(694, 12);
+            btsalir.Name = "btsalir";
+            btsalir.Size = new Size(94, 29);
+            btsalir.TabIndex = 9;
+            btsalir.Text = "Salir";
+            btsalir.UseVisualStyleBackColor = true;
+            btsalir.Click += btsalir_Click;
+            // 
             // PruebaCarga
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btsalir);
             Controls.Add(txMostrar);
             Controls.Add(label3);
             Controls.Add(txDocumento);
@@ -149,5 +161,6 @@
         private Label label3;
         private TextBox txDocumento;
         private Button txMostrar;
+        private Button btsalir;
     }
 }
