@@ -42,6 +42,7 @@
             // 
             // btcargar
             // 
+            btcargar.Cursor = Cursors.Hand;
             btcargar.Location = new Point(25, 132);
             btcargar.Name = "btcargar";
             btcargar.Size = new Size(94, 29);
@@ -90,6 +91,7 @@
             lbLista.Size = new Size(50, 20);
             lbLista.TabIndex = 5;
             lbLista.Text = "label3";
+            lbLista.Visible = false;
             // 
             // label3
             // 
@@ -109,6 +111,7 @@
             // 
             // txMostrar
             // 
+            txMostrar.Cursor = Cursors.Hand;
             txMostrar.Location = new Point(25, 189);
             txMostrar.Name = "txMostrar";
             txMostrar.Size = new Size(94, 29);
@@ -119,6 +122,7 @@
             // 
             // btsalir
             // 
+            btsalir.Cursor = Cursors.Hand;
             btsalir.Location = new Point(694, 12);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(94, 29);

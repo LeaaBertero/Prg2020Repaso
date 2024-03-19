@@ -17,7 +17,7 @@ namespace Prube003
         //public Persona[] persona = new Persona[2];
 
         //int posicion = 0;
-        
+
 
         public PruebaCarga()
         {
@@ -32,7 +32,7 @@ namespace Prube003
             txNombre.Focus();
             txNombre.SelectAll();
             txNombre.Text = "";
-            
+
 
             persona.Apellido = txApellido.Text;
             txApellido.Text = "";
@@ -43,6 +43,7 @@ namespace Prube003
         }
         private void txMostrar_Click(object sender, EventArgs e)
         {
+            lbLista.Visible = true;
             lbLista.Text = "Lista de personas cargadas: " + "\r\n" + "\r\n"
                 + "Nombre: " + persona.Nombre + "\r\n"
                 + "Apellido: " + persona.Apellido + "\r\n"
@@ -53,6 +54,8 @@ namespace Prube003
         {
             Close();
         }
+
+       
     }
 }
 
