@@ -33,7 +33,7 @@ namespace DimensionPersona
                 MessageBox.Show("Persona no valida");
             }
             else
-            {   
+            {
                 btmostrar_Click(null, null);
                 txaño.Text = "";
                 txnombre.Text = "";
@@ -115,12 +115,18 @@ namespace DimensionPersona
                 txCodigo.Focus();
                 txCodigo.SelectAll();
             }
-           
+
         }
 
         private void btBorrar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btprueba03_Click(object sender, EventArgs e)
+        {
+            Form  formPrueba03 = new prueba03();
+            formPrueba03.Show();
         }
     }
 }
