@@ -33,7 +33,7 @@ namespace HolaMundo
             personas.Nombre = txnombre.Text;
             personas.documento = Convert.ToInt32(txdocumento.Text);
             personas.edad = Convert.ToInt32(txedad.Text);
-            personas.altura = (txaltura.Text);
+            personas.altura = Convert.ToDecimal(txaltura.Text);
 
             txdocumento.Text = "";
             txnombre.Text = "";
