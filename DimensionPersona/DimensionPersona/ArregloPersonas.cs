@@ -123,10 +123,6 @@ namespace DimensionPersona
 
         }
 
-        private void btprueba03_Click(object sender, EventArgs e)
-        {
-            Form  formPrueba03 = new prueba03();
-            formPrueba03.Show();
-        }
+      
     }
 }
