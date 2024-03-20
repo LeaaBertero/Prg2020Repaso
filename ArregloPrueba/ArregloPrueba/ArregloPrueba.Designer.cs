@@ -176,7 +176,6 @@
             label4.Size = new Size(650, 28);
             label4.TabIndex = 11;
             label4.Text = "Programa que utiliza una carga de solamente tres personas";
-            label4.Visible = false;
             // 
             // label5
             // 
