@@ -44,6 +44,7 @@
             // 
             // btCargar
             // 
+            btCargar.Cursor = Cursors.Hand;
             btCargar.Location = new Point(85, 234);
             btCargar.Name = "btCargar";
             btCargar.Size = new Size(94, 29);
@@ -103,7 +104,7 @@
             // lbLista
             // 
             lbLista.AutoSize = true;
-            lbLista.Location = new Point(495, 135);
+            lbLista.Location = new Point(478, 133);
             lbLista.Name = "lbLista";
             lbLista.Size = new Size(50, 20);
             lbLista.TabIndex = 7;
@@ -112,6 +113,7 @@
             // 
             // btMostrar
             // 
+            btMostrar.Cursor = Cursors.Hand;
             btMostrar.Location = new Point(229, 234);
             btMostrar.Name = "btMostrar";
             btMostrar.Size = new Size(94, 29);
