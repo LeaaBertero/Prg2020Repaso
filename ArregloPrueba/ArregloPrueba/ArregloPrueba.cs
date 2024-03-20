@@ -37,6 +37,7 @@ namespace ArregloPrueba
                 //persona.Edad = Convert.ToInt32(txedad.Text);
 
                 txnombre.Text = "";
+                txnombre.Focus();
                 txbarrio.Text = "";
                 txlocalidad.Text = "";
                 //txedad.Text = "";
