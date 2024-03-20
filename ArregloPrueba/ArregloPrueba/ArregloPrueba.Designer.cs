@@ -40,6 +40,8 @@
             txedad = new Label();
             textBox1 = new TextBox();
             btsalir = new Button();
+            label4 = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // btCargar
@@ -104,7 +106,7 @@
             // lbLista
             // 
             lbLista.AutoSize = true;
-            lbLista.Location = new Point(478, 133);
+            lbLista.Location = new Point(456, 189);
             lbLista.Name = "lbLista";
             lbLista.Size = new Size(50, 20);
             lbLista.TabIndex = 7;
@@ -143,7 +145,7 @@
             // btsalir
             // 
             btsalir.Cursor = Cursors.Hand;
-            btsalir.Location = new Point(593, 12);
+            btsalir.Location = new Point(708, 12);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(94, 29);
             btsalir.TabIndex = 7;
@@ -151,11 +153,36 @@
             btsalir.UseVisualStyleBackColor = true;
             btsalir.Click += btsalir_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Trebuchet MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(85, 54);
+            label4.Name = "label4";
+            label4.Size = new Size(650, 28);
+            label4.TabIndex = 11;
+            label4.Text = "Programa que utiliza una carga de solamente tres personas";
+            label4.Visible = false;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Trebuchet MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(456, 128);
+            label5.Name = "label5";
+            label5.Size = new Size(222, 28);
+            label5.TabIndex = 12;
+            label5.Text = "LISTA DE PERSONAS";
+            label5.Visible = false;
+            // 
             // ArregloPrueba
             // 
+            AcceptButton = btCargar;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(699, 463);
+            ClientSize = new Size(814, 463);
+            Controls.Add(label5);
+            Controls.Add(label4);
             Controls.Add(btsalir);
             Controls.Add(txedad);
             Controls.Add(textBox1);
@@ -189,5 +216,7 @@
         private Label txedad;
         private TextBox textBox1;
         private Button btsalir;
+        private Label label4;
+        private Label label5;
     }
 }
