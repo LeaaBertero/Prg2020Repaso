@@ -140,12 +140,12 @@ namespace DimensionPersona
         //Método
         private decimal Division()
         {
-            int numDiv1;
-            int numDiv2;
-            int resultadoDiv;
+            decimal numDiv1;
+            decimal numDiv2;
+            decimal resultadoDiv;
 
-            numDiv1 = Convert.ToInt32(txDiv1.Text);   
-            numDiv2 = Convert.ToInt32(txDiv2.Text);
+            numDiv1 = Convert.ToDecimal(txDiv1.Text);   
+            numDiv2 = Convert.ToDecimal(txDiv2.Text);
 
             resultadoDiv = numDiv1 / numDiv2;
 
