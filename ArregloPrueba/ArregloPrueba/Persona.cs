@@ -13,7 +13,7 @@ namespace ArregloPrueba
 
         public string? Barrio { get; set;}
 
-        public string? Localidad { get; set; }
+        public string? Localigdad { get; set; }
 
         //public int? Edad { get; set; }
     }

@@ -27,19 +27,27 @@ namespace ArregloPrueba
 
         private void btCargar_Click(object sender, EventArgs e)
         {
-            Persona persona = new Persona();
+            try
+            {
+                Persona persona = new Persona();
 
-            persona.Nombre = txnombre.Text;
-            persona.Barrio = txbarrio.Text;
-            persona.Localidad = txlocalidad.Text;
-            //persona.Edad = Convert.ToInt32(txedad.Text);
+                persona.Nombre = txnombre.Text;
+                persona.Barrio = txbarrio.Text;
+                persona.Localidad = txlocalidad.Text;
+                //persona.Edad = Convert.ToInt32(txedad.Text);
 
-            txnombre.Text = "";
-            txbarrio.Text = "";
-            txlocalidad.Text = "";
-            //txedad.Text = "";
-            pos = pos + 1;
-            personas[pos -1] = persona;
+                txnombre.Text = "";
+                txbarrio.Text = "";
+                txlocalidad.Text = "";
+                //txedad.Text = "";
+                pos = pos + 1;
+                personas[pos - 1] = persona;
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Límite completo");
+            }
         }
 
 

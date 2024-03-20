@@ -44,39 +44,39 @@
             // 
             // btCargar
             // 
-            btCargar.Location = new Point(81, 158);
+            btCargar.Location = new Point(85, 234);
             btCargar.Name = "btCargar";
             btCargar.Size = new Size(94, 29);
-            btCargar.TabIndex = 0;
+            btCargar.TabIndex = 5;
             btCargar.Text = "Cargar";
             btCargar.UseVisualStyleBackColor = true;
             btCargar.Click += btCargar_Click;
             // 
             // txnombre
             // 
-            txnombre.Location = new Point(254, 158);
+            txnombre.Location = new Point(85, 126);
             txnombre.Name = "txnombre";
             txnombre.Size = new Size(125, 27);
             txnombre.TabIndex = 1;
             // 
             // txbarrio
             // 
-            txbarrio.Location = new Point(394, 160);
+            txbarrio.Location = new Point(85, 189);
             txbarrio.Name = "txbarrio";
             txbarrio.Size = new Size(125, 27);
-            txbarrio.TabIndex = 2;
+            txbarrio.TabIndex = 3;
             // 
             // txlocalidad
             // 
-            txlocalidad.Location = new Point(536, 160);
+            txlocalidad.Location = new Point(229, 128);
             txlocalidad.Name = "txlocalidad";
             txlocalidad.Size = new Size(125, 27);
-            txlocalidad.TabIndex = 3;
+            txlocalidad.TabIndex = 2;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(536, 135);
+            label1.Location = new Point(229, 103);
             label1.Name = "label1";
             label1.Size = new Size(74, 20);
             label1.TabIndex = 4;
@@ -85,7 +85,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(394, 135);
+            label2.Location = new Point(85, 164);
             label2.Name = "label2";
             label2.Size = new Size(49, 20);
             label2.TabIndex = 5;
@@ -94,7 +94,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(254, 135);
+            label3.Location = new Point(85, 103);
             label3.Name = "label3";
             label3.Size = new Size(64, 20);
             label3.TabIndex = 6;
@@ -103,7 +103,7 @@
             // lbLista
             // 
             lbLista.AutoSize = true;
-            lbLista.Location = new Point(254, 269);
+            lbLista.Location = new Point(495, 135);
             lbLista.Name = "lbLista";
             lbLista.Size = new Size(50, 20);
             lbLista.TabIndex = 7;
@@ -112,10 +112,10 @@
             // 
             // btMostrar
             // 
-            btMostrar.Location = new Point(81, 202);
+            btMostrar.Location = new Point(229, 234);
             btMostrar.Name = "btMostrar";
             btMostrar.Size = new Size(94, 29);
-            btMostrar.TabIndex = 8;
+            btMostrar.TabIndex = 6;
             btMostrar.Text = "Mostrar";
             btMostrar.UseVisualStyleBackColor = true;
             btMostrar.Click += btMostrar_Click;
@@ -124,7 +124,7 @@
             // 
             txedad.AutoSize = true;
             txedad.Enabled = false;
-            txedad.Location = new Point(678, 135);
+            txedad.Location = new Point(229, 167);
             txedad.Name = "txedad";
             txedad.Size = new Size(43, 20);
             txedad.TabIndex = 10;
@@ -133,18 +133,18 @@
             // textBox1
             // 
             textBox1.Enabled = false;
-            textBox1.Location = new Point(678, 160);
+            textBox1.Location = new Point(229, 192);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 9;
+            textBox1.TabIndex = 4;
             // 
             // btsalir
             // 
             btsalir.Cursor = Cursors.Hand;
-            btsalir.Location = new Point(851, 12);
+            btsalir.Location = new Point(593, 12);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(94, 29);
-            btsalir.TabIndex = 11;
+            btsalir.TabIndex = 7;
             btsalir.Text = "Salir";
             btsalir.UseVisualStyleBackColor = true;
             btsalir.Click += btsalir_Click;
@@ -153,7 +153,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(957, 450);
+            ClientSize = new Size(699, 463);
             Controls.Add(btsalir);
             Controls.Add(txedad);
             Controls.Add(textBox1);
@@ -167,6 +167,7 @@
             Controls.Add(txnombre);
             Controls.Add(btCargar);
             Name = "ArregloPrueba";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ArregloPrueba";
             ResumeLayout(false);
             PerformLayout();
