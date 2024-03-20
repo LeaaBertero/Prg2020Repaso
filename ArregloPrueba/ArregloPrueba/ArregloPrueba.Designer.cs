@@ -47,7 +47,7 @@
             // btCargar
             // 
             btCargar.Cursor = Cursors.Hand;
-            btCargar.Location = new Point(85, 234);
+            btCargar.Location = new Point(85, 255);
             btCargar.Name = "btCargar";
             btCargar.Size = new Size(94, 29);
             btCargar.TabIndex = 5;
@@ -57,21 +57,21 @@
             // 
             // txnombre
             // 
-            txnombre.Location = new Point(85, 126);
+            txnombre.Location = new Point(85, 147);
             txnombre.Name = "txnombre";
             txnombre.Size = new Size(125, 27);
             txnombre.TabIndex = 1;
             // 
             // txbarrio
             // 
-            txbarrio.Location = new Point(85, 189);
+            txbarrio.Location = new Point(85, 210);
             txbarrio.Name = "txbarrio";
             txbarrio.Size = new Size(125, 27);
             txbarrio.TabIndex = 3;
             // 
             // txlocalidad
             // 
-            txlocalidad.Location = new Point(229, 128);
+            txlocalidad.Location = new Point(229, 149);
             txlocalidad.Name = "txlocalidad";
             txlocalidad.Size = new Size(125, 27);
             txlocalidad.TabIndex = 2;
@@ -79,36 +79,47 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(229, 103);
+            label1.BackColor = Color.Purple;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(229, 124);
             label1.Name = "label1";
-            label1.Size = new Size(74, 20);
+            label1.Size = new Size(75, 20);
             label1.TabIndex = 4;
             label1.Text = "Localidad";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(85, 164);
+            label2.BackColor = Color.Purple;
+            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label2.ForeColor = SystemColors.Control;
+            label2.Location = new Point(85, 185);
             label2.Name = "label2";
-            label2.Size = new Size(49, 20);
+            label2.Size = new Size(52, 20);
             label2.TabIndex = 5;
             label2.Text = "Barrio";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(85, 103);
+            label3.BackColor = Color.Purple;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            label3.ForeColor = SystemColors.Control;
+            label3.Location = new Point(85, 124);
             label3.Name = "label3";
-            label3.Size = new Size(64, 20);
+            label3.Size = new Size(67, 20);
             label3.TabIndex = 6;
             label3.Text = "Nombre";
             // 
             // lbLista
             // 
             lbLista.AutoSize = true;
-            lbLista.Location = new Point(456, 189);
+            lbLista.BackColor = Color.Violet;
+            lbLista.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lbLista.Location = new Point(456, 167);
             lbLista.Name = "lbLista";
-            lbLista.Size = new Size(50, 20);
+            lbLista.Size = new Size(51, 20);
             lbLista.TabIndex = 7;
             lbLista.Text = "label4";
             lbLista.Visible = false;
@@ -116,7 +127,7 @@
             // btMostrar
             // 
             btMostrar.Cursor = Cursors.Hand;
-            btMostrar.Location = new Point(229, 234);
+            btMostrar.Location = new Point(229, 255);
             btMostrar.Name = "btMostrar";
             btMostrar.Size = new Size(94, 29);
             btMostrar.TabIndex = 6;
@@ -127,8 +138,11 @@
             // txedad
             // 
             txedad.AutoSize = true;
+            txedad.BackColor = Color.Purple;
             txedad.Enabled = false;
-            txedad.Location = new Point(229, 167);
+            txedad.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            txedad.ForeColor = SystemColors.Control;
+            txedad.Location = new Point(229, 188);
             txedad.Name = "txedad";
             txedad.Size = new Size(43, 20);
             txedad.TabIndex = 10;
@@ -137,7 +151,7 @@
             // textBox1
             // 
             textBox1.Enabled = false;
-            textBox1.Location = new Point(229, 192);
+            textBox1.Location = new Point(229, 213);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(125, 27);
             textBox1.TabIndex = 4;
@@ -157,7 +171,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Trebuchet MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(85, 54);
+            label4.Location = new Point(85, 75);
             label4.Name = "label4";
             label4.Size = new Size(650, 28);
             label4.TabIndex = 11;
@@ -168,18 +182,18 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Trebuchet MS", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(456, 128);
+            label5.Location = new Point(456, 116);
             label5.Name = "label5";
             label5.Size = new Size(222, 28);
             label5.TabIndex = 12;
             label5.Text = "LISTA DE PERSONAS";
-            label5.Visible = false;
             // 
             // ArregloPrueba
             // 
             AcceptButton = btCargar;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Fuchsia;
             ClientSize = new Size(814, 463);
             Controls.Add(label5);
             Controls.Add(label4);
