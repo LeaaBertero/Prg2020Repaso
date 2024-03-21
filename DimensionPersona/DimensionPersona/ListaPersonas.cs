@@ -59,6 +59,43 @@ namespace DimensionPersona
 
         }
 
+        public bool AddPersona(Persona persona)
+        {
+            //Persona persona = new Persona();
+            //persona.Nombre = nombre;
+            //persona.AñoNacimiento = Convert.ToInt32(año);
+            bool resp = persona.Validar(); 
+
+            //variable persona creada e inicializada
+
+            if (resp)
+            {
+                if (persona.Id == 0)
+                {
+                    ContadorUltimoCodigo = ContadorUltimoCodigo + 1;
+                    persona.Id = ContadorUltimoCodigo;
+                    Redimensionar();
+                    Personas[Personas.Length - 1] = persona;
+                }
+                else
+                {
+                    for (int incremento = 0; incremento < Personas.Length; incremento++)
+                    {
+                        if (Personas[incremento].Id == persona.Id)
+                        {
+                            Personas[incremento] = persona;
+                            break;
+                        }
+                    }
+                }
+
+                
+            }
+
+            return resp;
+
+        }
+
 
         //Método ToString
         public override string ToString()
@@ -77,8 +114,6 @@ namespace DimensionPersona
             }
 
             return Resp;
-
-
         }
 
         public string ToStringFiltrado(int añoMinimo)
@@ -100,11 +135,11 @@ namespace DimensionPersona
             }
 
             return Resp;
-
-
         }
 
-        public Persona BuscarPersonas(int codigo)
+
+
+        public Persona BuscarPersonas(int Id)
         {
             //inicializa el objeto persona 
             Persona res = new Persona();
@@ -124,7 +159,7 @@ namespace DimensionPersona
             
             foreach (Persona item in Personas)
             {
-                if (Personas[item.Id].Id == codigo)
+                if (Personas[item.Id].Id == Id)
                 {
                     res = item;
                     break;

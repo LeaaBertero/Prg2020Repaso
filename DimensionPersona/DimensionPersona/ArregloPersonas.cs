@@ -6,6 +6,9 @@ namespace DimensionPersona
     {
         //public DimensionPersona.Persona[] Personas { get; set; }
 
+        //se instancia y se inicializa nuevamente el objeto persona (Front End)
+        public Persona per = new Persona();
+
         //Clase ListaPersonas ---> inicializada 
         public ListaPersonas Lista { get; set; } = new ListaPersonas();
 
@@ -24,8 +27,14 @@ namespace DimensionPersona
             //Lista.Redimensionar();
             //Lista.Personas[Lista.Personas.Length - 1] = persona;
 
+            if (per.Id == 0) { }
+            {
+                per.Nombre = txnombre.Text;
+                per.AñoNacimiento = Convert.ToInt32(txaño.Text);
+            }
+
             lblista.Visible = true;
-            if (!Lista.AddPersona(txnombre.Text, txaño.Text))
+            if (!Lista.AddPersona(per))
             {
                 txaño.Focus();
                 txaño.SelectAll();
@@ -98,7 +107,7 @@ namespace DimensionPersona
 
         private void btbuscar_Click(object sender, EventArgs e)
         {
-            Persona per = Lista.BuscarPersonas(Convert.ToInt32(txCodigo.Text));
+            per = Lista.BuscarPersonas(Convert.ToInt32(txCodigo.Text));
 
             //Lista.deletePersona(per);
 
