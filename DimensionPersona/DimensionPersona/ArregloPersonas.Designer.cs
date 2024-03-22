@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ArregloPersonas));
             btcargar = new Button();
             txnombre = new TextBox();
             lblista = new Label();
@@ -225,6 +226,7 @@
             Controls.Add(lblista);
             Controls.Add(txnombre);
             Controls.Add(btcargar);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "ArregloPersonas";
             StartPosition = FormStartPosition.CenterScreen;
