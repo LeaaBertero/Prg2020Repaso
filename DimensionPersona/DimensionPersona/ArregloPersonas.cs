@@ -51,6 +51,7 @@ namespace DimensionPersona
                 //MessageBox.Show("Carga correcta");
             }
 
+            per = new Persona();
 
         }
 
