@@ -40,15 +40,15 @@ namespace DimensionPersona
         }
 
         //Método
-        public int Suma()
+        public decimal Suma()
         {
-            int numero1;
-            int numero2;
-            int resultadoSuma;
+            decimal numero1;
+            decimal numero2;
+            decimal resultadoSuma;
 
 
-            numero1 = Convert.ToInt32(txSuma1.Text);
-            numero2 = Convert.ToInt32(txSuma2.Text);
+            numero1 = Convert.ToDecimal(txSuma1.Text);
+            numero2 = Convert.ToDecimal(txSuma2.Text);
 
             resultadoSuma = numero1 + numero2;
 
@@ -73,14 +73,14 @@ namespace DimensionPersona
         }
 
         //Método
-        private int Resta()
+        private decimal Resta()
         {
-            int numeroResta1;
-            int numeroResta2;
-            int resultadoResta;
+            decimal numeroResta1;
+            decimal numeroResta2;
+            decimal resultadoResta;
 
-            numeroResta1 = Convert.ToInt32(txResta1.Text);
-            numeroResta2 = Convert.ToInt32(txResta2.Text);
+            numeroResta1 = Convert.ToDecimal(txResta1.Text);
+            numeroResta2 = Convert.ToDecimal(txResta2.Text);
 
             resultadoResta = numeroResta1 - numeroResta2;
 
@@ -104,14 +104,14 @@ namespace DimensionPersona
         }
 
         //Método
-        private int Multiplicacion()
+        private decimal Multiplicacion()
         {
-            int numMut1;
-            int numMut2;
-            int resultadoMut;
+            decimal numMut1;
+            decimal numMut2;
+            decimal resultadoMut;
 
-            numMut1 = Convert.ToInt32(txMult1.Text);
-            numMut2 = Convert.ToInt32(txMult2.Text);
+            numMut1 = Convert.ToDecimal(txMult1.Text);
+            numMut2 = Convert.ToDecimal(txMult2.Text);
 
             resultadoMut = numMut1 * numMut2;
 
