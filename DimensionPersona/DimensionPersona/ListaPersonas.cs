@@ -81,19 +81,18 @@ namespace DimensionPersona
                 {
                     for (int incremento = 0; incremento < Personas.Length; incremento++)
                     {
+                        
                         if (Personas[incremento].Id == persona.Id)
                         {
                             Personas[incremento] = persona;
+
                             break;
                         }
                     }
                 }
-
-                
             }
 
             return resp;
-
         }
 
 

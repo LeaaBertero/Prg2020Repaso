@@ -27,7 +27,7 @@ namespace DimensionPersona
             //Lista.Redimensionar();
             //Lista.Personas[Lista.Personas.Length - 1] = persona;
 
-            if (per.Id == 0) { }
+            if (per.Id == 0) 
             {
                 per.Nombre = txnombre.Text;
                 per.AñoNacimiento = Convert.ToInt32(txaño.Text);
