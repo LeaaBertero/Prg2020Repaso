@@ -12,10 +12,7 @@ namespace TryCatch
 {
     public partial class TryCatch : Form
     {
-        int numero1;
-        int numero2;
-
-        int resultado;
+        
         public TryCatch()
         {
             InitializeComponent();
@@ -25,8 +22,13 @@ namespace TryCatch
         {
             try
             {
-                numero1 = Convert.ToInt32(txnum1.Text);
-                numero2 = Convert.ToInt32(txnum2.Text);
+                decimal numero1;
+                decimal numero2;
+
+                decimal resultado;
+
+                numero1 = Convert.ToDecimal(txnum1.Text);
+                numero2 = Convert.ToDecimal(txnum2.Text);
 
                 resultado = numero1 + numero2;
 
