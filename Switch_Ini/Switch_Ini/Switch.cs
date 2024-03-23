@@ -30,49 +30,64 @@ namespace Switch_Ini
 
         private void btAceptar_Click(object sender, EventArgs e)
         {
-            int nota;
-
-            nota = Convert.ToInt32(txIngresar.Text);
-
-            switch (nota)
             {
-                case 0:
-                    MessageBox.Show("Nota no válida");
-                    break;
-                case 1:
-                    MessageBox.Show("Aplazado");
-                    break;
-                case 2:
-                    MessageBox.Show("Aplazado");
-                    break;
-                case 3:
-                    MessageBox.Show("Aplazado");
-                    break;
-                case 4:
-                    MessageBox.Show("Regular");
-                    break;
-                case 5:
-                    MessageBox.Show("Regular");
-                    break;
-                case 6:
-                    MessageBox.Show("Aprobado");
-                    break;
-                case 7:
-                    MessageBox.Show("Promocionado");
-                    break;
-                case 8:
-                    MessageBox.Show("Aprobado");
-                    break;
-                case 9:
-                    MessageBox.Show("Aprobado");
-                    break;
-                case 10:
-                    MessageBox.Show("Felicitaciones !!");
-                    break;
 
+                try
+                {
+                    int nota;
 
+                    nota = Convert.ToInt32(txIngresar.Text);
+
+                    switch (nota)
+                    {
+                        case 0:
+                            MessageBox.Show("Nota no válida");
+                            break;
+                        case 1:
+                            MessageBox.Show("Aplazado");
+                            break;
+                        case 2:
+                            MessageBox.Show("Aplazado");
+                            break;
+                        case 3:
+                            MessageBox.Show("Aplazado");
+                            break;
+                        case 4:
+                            MessageBox.Show("Regular");
+                            break;
+                        case 5:
+                            MessageBox.Show("Regular");
+                            break;
+                        case 6:
+                            MessageBox.Show("Aprobado");
+                            break;
+                        case 7:
+                            MessageBox.Show("Promocionado");
+                            break;
+                        case 8:
+                            MessageBox.Show("Aprobado");
+                            break;
+                        case 9:
+                            MessageBox.Show("Aprobado");
+                            break;
+                        case 10:
+                            MessageBox.Show("Felicitaciones !!");
+                            break;
+                    }
+                }
+                catch (Exception)
+                {
+
+                    MessageBox.Show("No puede dejar el campo vacio");
+                }
+
+                   
             }   
-
         }
     }
 }
+
+
+
+                   
+

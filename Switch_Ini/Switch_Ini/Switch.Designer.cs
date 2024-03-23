@@ -37,7 +37,7 @@
             // 
             // bt_nuevo
             // 
-            bt_nuevo.Location = new Point(620, 30);
+            bt_nuevo.Location = new Point(399, 12);
             bt_nuevo.Name = "bt_nuevo";
             bt_nuevo.Size = new Size(158, 36);
             bt_nuevo.TabIndex = 0;
@@ -47,7 +47,7 @@
             // 
             // btsalir
             // 
-            btsalir.Location = new Point(684, 409);
+            btsalir.Location = new Point(12, 12);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(94, 29);
             btsalir.TabIndex = 1;
@@ -57,7 +57,7 @@
             // 
             // btAceptar
             // 
-            btAceptar.Location = new Point(247, 101);
+            btAceptar.Location = new Point(25, 120);
             btAceptar.Name = "btAceptar";
             btAceptar.Size = new Size(138, 42);
             btAceptar.TabIndex = 2;
@@ -67,7 +67,7 @@
             // 
             // txIngresar
             // 
-            txIngresar.Location = new Point(445, 109);
+            txIngresar.Location = new Point(179, 135);
             txIngresar.Name = "txIngresar";
             txIngresar.Size = new Size(125, 27);
             txIngresar.TabIndex = 3;
@@ -75,10 +75,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            label1.Location = new Point(247, 25);
+            label1.Font = new Font("Segoe UI", 12F);
+            label1.Location = new Point(179, 104);
             label1.Name = "label1";
-            label1.Size = new Size(202, 41);
+            label1.Size = new Size(124, 28);
             label1.TabIndex = 4;
             label1.Text = "Ingrese nota:";
             // 
@@ -88,7 +88,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Orange;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(569, 193);
             Controls.Add(label1);
             Controls.Add(txIngresar);
             Controls.Add(btAceptar);
