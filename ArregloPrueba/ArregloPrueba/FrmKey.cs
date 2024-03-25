@@ -35,9 +35,6 @@ namespace ArregloPrueba
             else
             {
                 MessageBox.Show("Clave incorrecta");
-                
-                //lbMensajeError.Text = "Clave incorrecta";
-                //lbMensajeError.Visible = true;
             }
         }
 
