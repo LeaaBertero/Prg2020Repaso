@@ -75,6 +75,7 @@ namespace ArregloPrueba
         private void btsalir_Click(object sender, EventArgs e)
         {
             Close();
+            
         }
     }
 }

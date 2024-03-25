@@ -159,7 +159,7 @@
             // btsalir
             // 
             btsalir.Cursor = Cursors.Hand;
-            btsalir.Location = new Point(708, 12);
+            btsalir.Location = new Point(708, 422);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(94, 29);
             btsalir.TabIndex = 7;
@@ -208,6 +208,7 @@
             Controls.Add(txbarrio);
             Controls.Add(txnombre);
             Controls.Add(btCargar);
+            MaximizeBox = false;
             Name = "ArregloPrueba";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "ArregloPrueba";

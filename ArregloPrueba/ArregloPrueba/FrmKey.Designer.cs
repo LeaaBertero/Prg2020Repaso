@@ -33,13 +33,15 @@
             txClave = new TextBox();
             lbMensajeError = new Label();
             btsalir = new Button();
+            btLimpiar = new Button();
             SuspendLayout();
             // 
             // btClave
             // 
-            btClave.Location = new Point(317, 105);
+            btClave.Cursor = Cursors.Hand;
+            btClave.Location = new Point(273, 108);
             btClave.Name = "btClave";
-            btClave.Size = new Size(94, 29);
+            btClave.Size = new Size(94, 31);
             btClave.TabIndex = 0;
             btClave.Text = "Ingresar";
             btClave.UseVisualStyleBackColor = true;
@@ -51,7 +53,7 @@
             label1.BackColor = Color.Purple;
             label1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             label1.ForeColor = SystemColors.Control;
-            label1.Location = new Point(126, 50);
+            label1.Location = new Point(138, 61);
             label1.Name = "label1";
             label1.Size = new Size(326, 23);
             label1.TabIndex = 5;
@@ -59,7 +61,7 @@
             // 
             // txClave
             // 
-            txClave.Location = new Point(157, 105);
+            txClave.Location = new Point(113, 110);
             txClave.Name = "txClave";
             txClave.PasswordChar = '*';
             txClave.PlaceholderText = "Contraseña";
@@ -70,7 +72,7 @@
             // 
             lbMensajeError.AutoSize = true;
             lbMensajeError.ForeColor = SystemColors.Control;
-            lbMensajeError.Location = new Point(157, 203);
+            lbMensajeError.Location = new Point(113, 191);
             lbMensajeError.Name = "lbMensajeError";
             lbMensajeError.Size = new Size(50, 20);
             lbMensajeError.TabIndex = 7;
@@ -80,13 +82,24 @@
             // btsalir
             // 
             btsalir.Cursor = Cursors.Hand;
-            btsalir.Location = new Point(12, 12);
+            btsalir.Location = new Point(496, 213);
             btsalir.Name = "btsalir";
-            btsalir.Size = new Size(94, 29);
+            btsalir.Size = new Size(81, 29);
             btsalir.TabIndex = 8;
             btsalir.Text = "Salir";
             btsalir.UseVisualStyleBackColor = true;
             btsalir.Click += btsalir_Click;
+            // 
+            // btLimpiar
+            // 
+            btLimpiar.Cursor = Cursors.Hand;
+            btLimpiar.Location = new Point(373, 108);
+            btLimpiar.Name = "btLimpiar";
+            btLimpiar.Size = new Size(127, 31);
+            btLimpiar.TabIndex = 9;
+            btLimpiar.Text = "Limpiar campo";
+            btLimpiar.UseVisualStyleBackColor = true;
+            btLimpiar.Click += btLimpiar_Click;
             // 
             // FrmKey
             // 
@@ -94,12 +107,14 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Fuchsia;
-            ClientSize = new Size(568, 254);
+            ClientSize = new Size(589, 254);
+            Controls.Add(btLimpiar);
             Controls.Add(btsalir);
             Controls.Add(lbMensajeError);
             Controls.Add(txClave);
             Controls.Add(label1);
             Controls.Add(btClave);
+            MaximizeBox = false;
             Name = "FrmKey";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmKey";
@@ -114,5 +129,6 @@
         private TextBox txClave;
         private Label lbMensajeError;
         private Button btsalir;
+        private Button btLimpiar;
     }
 }

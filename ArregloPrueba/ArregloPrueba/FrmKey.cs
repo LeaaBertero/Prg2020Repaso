@@ -20,35 +20,37 @@ namespace ArregloPrueba
 
         private void btClave_Click(object sender, EventArgs e)
         {
-
-           
-
-
-
             if (txClave.Text == "entrar")
             {
+                txClave.Text = "";
                 Form arregloPrueba = new ArregloPrueba();
                 arregloPrueba.Show();
             }
-            else if (txClave.Text == null)
+            else if (txClave.Text == "")
             {
-                lbMensajeError.Text = "Debe completar el campo que solicitado";
-                lbMensajeError.Visible = true;
+                MessageBox.Show("Debe completar el campo solicitado");
+                //lbMensajeError.Text = "Debe completar el campo solicitado";
+                //lbMensajeError.Visible = true;
             }
             else
             {
-                lbMensajeError.Text = "Clave incorrecta";
-                lbMensajeError.Visible = true;
+                MessageBox.Show("Clave incorrecta");
+                
+                //lbMensajeError.Text = "Clave incorrecta";
+                //lbMensajeError.Visible = true;
             }
-
-
-
-
         }
+
+
 
         private void btsalir_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btLimpiar_Click(object sender, EventArgs e)
+        {
+            txClave.Text = "";
         }
     }
 }
