@@ -20,10 +20,10 @@ namespace ArregloPrueba
             InitializeComponent();
         }
 
-        private Label GetTxedad()
-        {
-            return txedad;
-        }
+        //private Label GetTxedad()
+        //{
+        //    return txedad;
+        //}
 
         private void btCargar_Click(object sender, EventArgs e)
         {
