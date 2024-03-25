@@ -49,5 +49,7 @@ namespace ArregloPrueba
         {
             txClave.Text = "";
         }
+
+      
     }
 }

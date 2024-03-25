@@ -118,6 +118,7 @@
             Name = "FrmKey";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "FrmKey";
+            
             ResumeLayout(false);
             PerformLayout();
         }

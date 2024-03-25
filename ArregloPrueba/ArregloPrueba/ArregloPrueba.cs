@@ -40,7 +40,7 @@ namespace ArregloPrueba
                 txnombre.Focus();
                 txbarrio.Text = "";
                 txlocalidad.Text = "";
-                //txedad.Text = "";
+                txedad.Text = "";
                 pos = pos + 1;
                 personas[pos - 1] = persona;
             }
