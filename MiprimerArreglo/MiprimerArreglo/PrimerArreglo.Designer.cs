@@ -38,6 +38,11 @@
             btMostrar = new Button();
             btCerrar = new Button();
             label2 = new Label();
+            label3 = new Label();
+            txDocumento = new TextBox();
+            label4 = new Label();
+            txCiudad = new TextBox();
+            btBorrar = new Button();
             SuspendLayout();
             // 
             // btCargar
@@ -132,6 +137,51 @@
             label2.TabIndex = 8;
             label2.Text = "Cargue aquí los datos personales";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(22, 195);
+            label3.Name = "label3";
+            label3.Size = new Size(87, 20);
+            label3.TabIndex = 10;
+            label3.Text = "Documento";
+            // 
+            // txDocumento
+            // 
+            txDocumento.Location = new Point(22, 218);
+            txDocumento.Name = "txDocumento";
+            txDocumento.Size = new Size(125, 27);
+            txDocumento.TabIndex = 9;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(153, 195);
+            label4.Name = "label4";
+            label4.Size = new Size(56, 20);
+            label4.TabIndex = 12;
+            label4.Text = "Ciudad";
+            // 
+            // txCiudad
+            // 
+            txCiudad.Location = new Point(153, 218);
+            txCiudad.Name = "txCiudad";
+            txCiudad.Size = new Size(125, 27);
+            txCiudad.TabIndex = 11;
+            // 
+            // btBorrar
+            // 
+            btBorrar.BackColor = Color.Gold;
+            btBorrar.Cursor = Cursors.Hand;
+            btBorrar.Font = new Font("Kristen ITC", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btBorrar.Location = new Point(307, 122);
+            btBorrar.Name = "btBorrar";
+            btBorrar.Size = new Size(94, 29);
+            btBorrar.TabIndex = 13;
+            btBorrar.Text = "Borrar";
+            btBorrar.UseVisualStyleBackColor = false;
+            btBorrar.Click += btBorrar_Click;
+            // 
             // PrimerArreglo
             // 
             AcceptButton = btCargar;
@@ -139,6 +189,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.PaleGoldenrod;
             ClientSize = new Size(800, 450);
+            Controls.Add(btBorrar);
+            Controls.Add(label4);
+            Controls.Add(txCiudad);
+            Controls.Add(label3);
+            Controls.Add(txDocumento);
             Controls.Add(label2);
             Controls.Add(btCerrar);
             Controls.Add(btMostrar);
@@ -167,5 +222,10 @@
         private Button btMostrar;
         private Button btCerrar;
         private Label label2;
+        private Label label3;
+        private TextBox txDocumento;
+        private Label label4;
+        private TextBox txCiudad;
+        private Button btBorrar;
     }
 }

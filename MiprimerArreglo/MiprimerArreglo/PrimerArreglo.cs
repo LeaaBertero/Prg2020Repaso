@@ -22,43 +22,66 @@ namespace MiprimerArreglo
 
         private void btCargar_Click(object sender, EventArgs e)
         {
+          
             try
             {
                 Persona persona = new Persona();
 
                 persona.Nombre = txNombre.Text;
                 persona.Edad = Convert.ToInt32(txEdad.Text);
+                persona.Documento = Convert.ToInt32(txDocumento.Text);
+                persona.Ciudad = txCiudad.Text;
+
 
                 txNombre.Text = "";
                 txEdad.Text = "";
+                txDocumento.Text = "";
+                txCiudad.Text = "";
 
                 pos = pos + 1;
                 personas[pos - 1] = persona;
             }
             catch (Exception)
             {
-                MessageBox.Show("No puede dejar los campos solicitados vacios");
+                MessageBox.Show("Límite completo");
                 //throw;
             }
-
         }
-
         private void btCerrar_Click(object sender, EventArgs e)
         {
             Close();
         }
-
         private void btMostrar_Click(object sender, EventArgs e)
         {
             lbLista.Visible = true;
             lbLista.Text = "Lista de personas: "
                 + "\r\n" + "\r\n"
-                
+
                 + "Nombre: " + " "
                 + personas[0].Nombre + "\r\n"
-                
+
                 + "Edad: " + " "
-                + personas[0].Edad + " " + "Años";
+                + personas[0].Edad + " " + "Años" + "\r\n"
+
+                + "Documento: " + " "
+                + personas[0].Documento + "\r\n"
+
+                + "Ciudad: " + " "
+                + personas[0].Ciudad; ;
+        }
+        private void btBorrar_Click(object sender, EventArgs e)
+        {
+            txNombre.Text = "";
+            txEdad.Text = "";
+            txDocumento.Text = "";
+            txCiudad.Text = "";
+
+            lbLista.Text = "";
         }
     }
 }
+
+
+
+
+
