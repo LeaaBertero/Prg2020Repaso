@@ -12,7 +12,7 @@ namespace Ejercicio
 {
     public partial class EjercicioArreglo : Form
     {
-        public Persona[] personas = new Persona[1];
+        public Persona[] personas = new Persona[];
         int pos = 0;
         public EjercicioArreglo()
         {
@@ -21,18 +21,26 @@ namespace Ejercicio
 
         private void btCargar_Click(object sender, EventArgs e)
         {
-            Persona persona = new Persona();
+            try
+            {
+                Persona persona = new Persona();
 
-            persona.Nombre = txNombre.Text;
-            persona.Materia = txMateria.Text;
-            persona.Año = Convert.ToInt32(txAño.Text);
+                persona.Nombre = txNombre.Text;
+                persona.Materia = txMateria.Text;
+                persona.Año = Convert.ToInt32(txAño.Text);
 
-            txNombre.Text = "";
-            txMateria.Text = "";
-            txAño.Text = "";
+                txNombre.Text = "";
+                txMateria.Text = "";
+                txAño.Text = "";
 
-            pos = pos + 1;
-            personas[pos - 1] = persona;
+                pos = pos + 1;
+                personas[pos - 1] = persona;
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("no puede dejar los campos vacios");
+            }
         }
 
         private void btMostrar_Click(object sender, EventArgs e)
