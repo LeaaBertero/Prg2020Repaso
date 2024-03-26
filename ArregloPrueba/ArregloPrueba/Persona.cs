@@ -15,6 +15,6 @@ namespace ArregloPrueba
 
         public string? Localidad { get; set; }
 
-        public int? Edad { get; set; }
+        //public int? Edad { get; set; }
     }
 }

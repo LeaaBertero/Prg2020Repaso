@@ -55,15 +55,21 @@ namespace ArregloPrueba
         private void btMostrar_Click(object sender, EventArgs e)
         {
 
-            foreach (Persona item in personas)
+            foreach (Persona persona in personas)
             {
-                lbLista.Text = "Lista de personas: " + "\r\n" + "\r\n" +
+                lbLista.Text = "Lista de personas: " 
+                    + "\r\n" + "\r\n" +
+
               "Nombre: " + " " + personas[0].Nombre + "\r\n" +
               "Barrio: " + " " + personas[0].Barrio + "\r\n" +
               "Localidad: " + " " + personas[0].Localidad + "\r\n" + "\r\n" +
+
+
               "Nombre: " + " " + personas[1].Nombre + "\r\n" +
               "Barrio: " + " " + personas[1].Barrio + "\r\n" +
               "Localidad: " + " " + personas[1].Localidad + "\r\n" + "\r\n" +
+
+
               "Nombre: " + " " + personas[2].Nombre + "\r\n" +
               "Barrio: " + " " + personas[2].Barrio + "\r\n" +
               "Localidad: " + " " + personas[2].Localidad;
