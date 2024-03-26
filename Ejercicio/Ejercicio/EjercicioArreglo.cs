@@ -12,7 +12,7 @@ namespace Ejercicio
 {
     public partial class EjercicioArreglo : Form
     {
-        public Persona[] personas = new Persona[];
+        public Persona[] personas = new Persona[1];
         int pos = 0;
         public EjercicioArreglo()
         {
