@@ -99,6 +99,9 @@ namespace ListasArreglos
             Close();
         }
 
-      
+        private void btDimension_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
