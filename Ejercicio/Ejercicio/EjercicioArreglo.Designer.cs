@@ -45,7 +45,7 @@
             btCargar.BackColor = Color.Orange;
             btCargar.Cursor = Cursors.Hand;
             btCargar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btCargar.Location = new Point(429, 102);
+            btCargar.Location = new Point(409, 104);
             btCargar.Name = "btCargar";
             btCargar.Size = new Size(94, 29);
             btCargar.TabIndex = 3;
@@ -94,7 +94,7 @@
             lbLista.AutoSize = true;
             lbLista.BackColor = Color.Orange;
             lbLista.Font = new Font("Lucida Sans", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbLista.Location = new Point(657, 112);
+            lbLista.Location = new Point(278, 188);
             lbLista.Name = "lbLista";
             lbLista.Size = new Size(62, 19);
             lbLista.TabIndex = 5;
@@ -106,7 +106,7 @@
             btMostrar.BackColor = Color.Orange;
             btMostrar.Cursor = Cursors.Hand;
             btMostrar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btMostrar.Location = new Point(529, 102);
+            btMostrar.Location = new Point(509, 104);
             btMostrar.Name = "btMostrar";
             btMostrar.Size = new Size(94, 29);
             btMostrar.TabIndex = 4;
@@ -137,7 +137,7 @@
             btSalir.BackColor = Color.Orange;
             btSalir.Cursor = Cursors.Hand;
             btSalir.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            btSalir.Location = new Point(890, 12);
+            btSalir.Location = new Point(676, 12);
             btSalir.Name = "btSalir";
             btSalir.Size = new Size(94, 29);
             btSalir.TabIndex = 5;
@@ -151,7 +151,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkOrange;
-            ClientSize = new Size(996, 450);
+            ClientSize = new Size(782, 405);
             Controls.Add(btSalir);
             Controls.Add(label3);
             Controls.Add(txAño);
