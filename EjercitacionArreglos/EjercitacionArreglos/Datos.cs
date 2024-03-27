@@ -42,10 +42,6 @@ namespace EjercitacionArreglos
             posicion = posicion + 1;
             personas[posicion - 1] = persona;
         }
-        private void btSalir_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
 
         private void btMostrar_Click(object sender, EventArgs e)
         {
@@ -56,6 +52,12 @@ namespace EjercitacionArreglos
                 + "Cuil: " + personas[0].Cuil + "\r\n"
                 + "Teléfono: " + personas[0].Telefono + "\r\n"
                 + "Dirección: " + personas[0].Direccion;
+
+            lbLista.Visible = true;
+        }
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
