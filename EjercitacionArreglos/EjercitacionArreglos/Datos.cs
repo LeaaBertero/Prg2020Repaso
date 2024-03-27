@@ -28,7 +28,7 @@ namespace EjercitacionArreglos
             persona.Nombre = txNombre.Text;
             persona.Apellido = txApellido.Text;
             persona.Documento = Convert.ToInt32(txDocumento.Text);
-            persona.Cuil = Convert.ToInt32(txCuil.Text);
+            //persona.Cuil = Convert.ToInt32(txCuil.Text);
             persona.Telefono = Convert.ToInt32(txTelefono.Text);
             persona.Direccion = txDireccion.Text;
 
@@ -39,8 +39,8 @@ namespace EjercitacionArreglos
             txTelefono.Text = "";
             txDireccion.Text = "";
 
-            personas[posicion - 1] = persona;
             posicion = posicion + 1;
+            personas[posicion - 1] = persona;
         }
         private void btSalir_Click(object sender, EventArgs e)
         {
@@ -52,7 +52,7 @@ namespace EjercitacionArreglos
             lbLista.Text = "Lista de personas cargadas: " + "\r\n" + "\r\n"
                 + "Nombre: " + personas[0].Nombre + "\r\n"
                 + "Apellido: " + personas[0].Apellido + "\r\n"
-                + "Documento: " + personas[0].Cuil + "\r\n"
+                + "Documento: " + personas[0].Documento + "\r\n"
                 + "Cuil: " + personas[0].Cuil + "\r\n"
                 + "Teléfono: " + personas[0].Telefono + "\r\n"
                 + "Dirección: " + personas[0].Direccion;

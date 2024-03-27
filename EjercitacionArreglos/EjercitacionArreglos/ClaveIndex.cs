@@ -34,6 +34,9 @@ namespace EjercitacionArreglos
                 Form form_Datos = new Datos();
                 form_Datos.Show();
 
+                txUsuario.Text = "";
+                txContraseña.Text = "";
+
             }
             else if (txUsuario.Text == "" || txContraseña.Text == "")
             {
