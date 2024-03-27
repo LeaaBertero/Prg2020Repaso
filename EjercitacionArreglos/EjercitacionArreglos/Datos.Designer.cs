@@ -223,7 +223,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkOrange;
-            ClientSize = new Size(1042, 464);
+            ClientSize = new Size(1042, 591);
             Controls.Add(lbLista);
             Controls.Add(label7);
             Controls.Add(txDireccion);
