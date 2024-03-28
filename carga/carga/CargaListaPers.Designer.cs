@@ -40,51 +40,52 @@
             lbLista = new Label();
             label4 = new Label();
             txCuil = new TextBox();
+            label5 = new Label();
             SuspendLayout();
             // 
             // btsalir
             // 
-            btsalir.BackColor = Color.Orange;
+            btsalir.BackColor = Color.Black;
             btsalir.Cursor = Cursors.Hand;
             btsalir.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btsalir.ForeColor = SystemColors.Control;
-            btsalir.Location = new Point(817, 12);
+            btsalir.Location = new Point(995, 12);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(107, 33);
-            btsalir.TabIndex = 0;
+            btsalir.TabIndex = 6;
             btsalir.Text = "Salir";
             btsalir.UseVisualStyleBackColor = false;
             btsalir.Click += btsalir_Click;
             // 
             // btCargar
             // 
-            btCargar.BackColor = Color.Orange;
+            btCargar.BackColor = Color.Black;
             btCargar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btCargar.ForeColor = SystemColors.Control;
-            btCargar.Location = new Point(272, 215);
+            btCargar.Location = new Point(384, 206);
             btCargar.Name = "btCargar";
             btCargar.Size = new Size(107, 33);
-            btCargar.TabIndex = 1;
+            btCargar.TabIndex = 4;
             btCargar.Text = "Cargar";
             btCargar.UseVisualStyleBackColor = false;
             btCargar.Click += btCargar_Click;
             // 
             // txNombre
             // 
-            txNombre.Location = new Point(135, 131);
+            txNombre.Location = new Point(218, 140);
             txNombre.Name = "txNombre";
             txNombre.Size = new Size(125, 27);
-            txNombre.TabIndex = 2;
+            txNombre.TabIndex = 0;
             // 
             // btMostrar
             // 
-            btMostrar.BackColor = Color.Orange;
+            btMostrar.BackColor = Color.Black;
             btMostrar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btMostrar.ForeColor = SystemColors.Control;
-            btMostrar.Location = new Point(501, 215);
+            btMostrar.Location = new Point(565, 206);
             btMostrar.Name = "btMostrar";
             btMostrar.Size = new Size(107, 33);
-            btMostrar.TabIndex = 3;
+            btMostrar.TabIndex = 5;
             btMostrar.Text = "Mostrar";
             btMostrar.UseVisualStyleBackColor = false;
             btMostrar.Click += btMostrar_Click;
@@ -93,7 +94,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label1.Location = new Point(135, 105);
+            label1.Location = new Point(218, 114);
             label1.Name = "label1";
             label1.Size = new Size(76, 23);
             label1.TabIndex = 4;
@@ -103,7 +104,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label2.Location = new Point(301, 105);
+            label2.Location = new Point(384, 114);
             label2.Name = "label2";
             label2.Size = new Size(78, 23);
             label2.TabIndex = 6;
@@ -111,16 +112,16 @@
             // 
             // txApellido
             // 
-            txApellido.Location = new Point(301, 131);
+            txApellido.Location = new Point(384, 140);
             txApellido.Name = "txApellido";
             txApellido.Size = new Size(125, 27);
-            txApellido.TabIndex = 5;
+            txApellido.TabIndex = 1;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label3.Location = new Point(464, 105);
+            label3.Location = new Point(547, 114);
             label3.Name = "label3";
             label3.Size = new Size(103, 23);
             label3.TabIndex = 8;
@@ -128,17 +129,20 @@
             // 
             // txDocumento
             // 
-            txDocumento.Location = new Point(464, 131);
+            txDocumento.Location = new Point(547, 140);
             txDocumento.Name = "txDocumento";
             txDocumento.Size = new Size(125, 27);
-            txDocumento.TabIndex = 7;
+            txDocumento.TabIndex = 2;
             // 
             // lbLista
             // 
             lbLista.AutoSize = true;
-            lbLista.Location = new Point(729, 255);
+            lbLista.BackColor = Color.LightSeaGreen;
+            lbLista.Font = new Font("Kristen ITC", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbLista.ForeColor = Color.White;
+            lbLista.Location = new Point(790, 206);
             lbLista.Name = "lbLista";
-            lbLista.Size = new Size(50, 20);
+            lbLista.Size = new Size(63, 24);
             lbLista.TabIndex = 9;
             lbLista.Text = "label4";
             lbLista.Visible = false;
@@ -147,7 +151,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            label4.Location = new Point(630, 105);
+            label4.Location = new Point(713, 114);
             label4.Name = "label4";
             label4.Size = new Size(140, 23);
             label4.TabIndex = 11;
@@ -155,18 +159,29 @@
             // 
             // txCuil
             // 
-            txCuil.Location = new Point(630, 131);
+            txCuil.Location = new Point(713, 140);
             txCuil.Name = "txCuil";
             txCuil.Size = new Size(125, 27);
-            txCuil.TabIndex = 10;
+            txCuil.TabIndex = 3;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            label5.Location = new Point(238, 46);
+            label5.Name = "label5";
+            label5.Size = new Size(555, 37);
+            label5.TabIndex = 12;
+            label5.Text = "Cargue todos los datos en este formulario";
             // 
             // CargaListaPers
             // 
             AcceptButton = btCargar;
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkOrange;
-            ClientSize = new Size(936, 450);
+            BackColor = Color.LimeGreen;
+            ClientSize = new Size(1114, 450);
+            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(txCuil);
             Controls.Add(lbLista);
@@ -179,9 +194,10 @@
             Controls.Add(txNombre);
             Controls.Add(btCargar);
             Controls.Add(btsalir);
+            Cursor = Cursors.Hand;
             Name = "CargaListaPers";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Carga2";
+            Text = "Carga de personas con arreglos";
             ResumeLayout(false);
             PerformLayout();
         }
@@ -200,5 +216,6 @@
         private Label lbLista;
         private Label label4;
         private TextBox txCuil;
+        private Label label5;
     }
 }

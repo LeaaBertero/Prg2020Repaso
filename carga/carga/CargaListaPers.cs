@@ -23,35 +23,53 @@ namespace carga
 
         private void btCargar_Click(object sender, EventArgs e)
         {
-            Persona persona = new Persona();
+            try
+            {
+                Persona persona = new Persona();
 
 
-            persona.Nombre = txNombre.Text;
-            persona.Apellido = txApellido.Text;
-            persona.Documento = Convert.ToInt64(txDocumento.Text);
-            persona.Cuil = Convert.ToInt64(txCuil.Text);
+                persona.Nombre = txNombre.Text;
+                persona.Apellido = txApellido.Text;
+                persona.Documento = Convert.ToInt64(txDocumento.Text);
+                persona.Cuil = Convert.ToInt64(txCuil.Text);
 
-            txNombre.Focus();
-            txNombre.SelectAll();
+                txNombre.Focus();
+                txNombre.SelectAll();
 
-            txNombre.Text = "";
-            txApellido.Text = "";
-            txDocumento.Text = "";
-            txCuil.Text = "";
+                txNombre.Text = "";
+                txApellido.Text = "";
+                txDocumento.Text = "";
+                txCuil.Text = "";
 
-            pos = pos + 1;
-            Personas[pos - 1] = persona;
+                pos = pos + 1;
+                Personas[pos - 1] = persona;
+
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("No puede dejar campos vacios, complete los campos requeridos");
+            }
         }
 
         private void btMostrar_Click(object sender, EventArgs e)
         {
-            lbLista.Visible = true;
+            try
+            {
+                lbLista.Visible = true;
 
-            lbLista.Text = "Lista de personas cargadas: " + "\r\n" + "\r\n"
-                + "Nombre: " + Personas[0].Nombre + "\r\n"
-                + "Apellido: " + Personas[0].Apellido + "\r\n"
-                + "Documento: " + Personas[0].Documento + "\r\n"
-                + "Cuil: " + Personas[0].Cuil;
+                lbLista.Text = "Lista de personas cargadas: " + "\r\n" + "\r\n"
+                    + "Nombre: " + Personas[0].Nombre + "\r\n"
+                    + "Apellido: " + Personas[0].Apellido + "\r\n"
+                    + "Documento: " + Personas[0].Documento + "\r\n"
+                    + "Cuil: " + Personas[0].Cuil;
+            }
+            catch (Exception)
+            {
+                lbLista.Visible = false;
+                MessageBox.Show("No hay nada que mostrar, complete los campos solicitados");
+            }
 
         }
         private void btsalir_Click(object sender, EventArgs e)
