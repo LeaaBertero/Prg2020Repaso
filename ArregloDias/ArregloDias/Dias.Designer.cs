@@ -39,7 +39,7 @@
             lbDias.AutoSize = true;
             lbDias.BackColor = Color.Lime;
             lbDias.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            lbDias.Location = new Point(499, 94);
+            lbDias.Location = new Point(458, 97);
             lbDias.Name = "lbDias";
             lbDias.Size = new Size(65, 25);
             lbDias.TabIndex = 0;
@@ -71,13 +71,15 @@
             // 
             // btsalir
             // 
+            btsalir.BackColor = Color.Turquoise;
             btsalir.Cursor = Cursors.Hand;
-            btsalir.Location = new Point(694, 313);
+            btsalir.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btsalir.Location = new Point(675, 304);
             btsalir.Name = "btsalir";
-            btsalir.Size = new Size(94, 29);
+            btsalir.Size = new Size(113, 38);
             btsalir.TabIndex = 3;
             btsalir.Text = "Salir";
-            btsalir.UseVisualStyleBackColor = true;
+            btsalir.UseVisualStyleBackColor = false;
             btsalir.Click += btsalir_Click;
             // 
             // Dias
