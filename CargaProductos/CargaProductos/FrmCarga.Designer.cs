@@ -110,9 +110,9 @@
             btCargar.Cursor = Cursors.Hand;
             btCargar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btCargar.ForeColor = SystemColors.Control;
-            btCargar.Location = new Point(141, 173);
+            btCargar.Location = new Point(131, 173);
             btCargar.Name = "btCargar";
-            btCargar.Size = new Size(138, 40);
+            btCargar.Size = new Size(161, 40);
             btCargar.TabIndex = 4;
             btCargar.Text = "Mostrar Lista";
             btCargar.UseVisualStyleBackColor = false;
