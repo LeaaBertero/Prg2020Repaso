@@ -12,7 +12,7 @@ namespace MiprimerArreglo
 
         public int? Edad { get; set; }
 
-        public int? Documento { get; set; }
+        public long? Documento { get; set; }
 
         public string? Ciudad { get; set; }
     }

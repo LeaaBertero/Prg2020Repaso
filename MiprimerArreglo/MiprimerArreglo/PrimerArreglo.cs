@@ -29,7 +29,7 @@ namespace MiprimerArreglo
 
                 persona.Nombre = txNombre.Text;
                 persona.Edad = Convert.ToInt32(txEdad.Text);
-                persona.Documento = Convert.ToInt32(txDocumento.Text);
+                persona.Documento = Convert.ToInt64(txDocumento.Text);
                 persona.Ciudad = txCiudad.Text;
 
 
@@ -47,10 +47,12 @@ namespace MiprimerArreglo
                 //throw;
             }
         }
+        
         private void btCerrar_Click(object sender, EventArgs e)
         {
             Close();
         }
+
         private void btMostrar_Click(object sender, EventArgs e)
         {
             lbLista.Visible = true;
