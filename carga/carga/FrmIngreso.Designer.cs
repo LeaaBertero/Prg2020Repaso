@@ -36,6 +36,7 @@
             label3 = new Label();
             btCancelar = new Button();
             txLimpiar = new Button();
+            btSalir = new Button();
             SuspendLayout();
             // 
             // btIngresar
@@ -61,6 +62,7 @@
             txUsuario.Name = "txUsuario";
             txUsuario.Size = new Size(125, 27);
             txUsuario.TabIndex = 1;
+            txUsuario.TextChanged += txUsuario_TextChanged;
             // 
             // label1
             // 
@@ -131,6 +133,20 @@
             txLimpiar.UseVisualStyleBackColor = false;
             txLimpiar.Click += txLimpiar_Click;
             // 
+            // btSalir
+            // 
+            btSalir.BackColor = Color.Black;
+            btSalir.Cursor = Cursors.Hand;
+            btSalir.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btSalir.ForeColor = Color.White;
+            btSalir.Location = new Point(555, 243);
+            btSalir.Name = "btSalir";
+            btSalir.Size = new Size(94, 36);
+            btSalir.TabIndex = 8;
+            btSalir.Text = "Salir";
+            btSalir.UseVisualStyleBackColor = false;
+            btSalir.Click += btSalir_Click;
+            // 
             // FrmIngreso
             // 
             AcceptButton = btIngresar;
@@ -138,6 +154,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LimeGreen;
             ClientSize = new Size(661, 291);
+            Controls.Add(btSalir);
             Controls.Add(txLimpiar);
             Controls.Add(btCancelar);
             Controls.Add(label3);
@@ -163,5 +180,6 @@
         private Label label3;
         private Button btCancelar;
         private Button txLimpiar;
+        private Button btSalir;
     }
 }

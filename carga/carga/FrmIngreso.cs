@@ -33,6 +33,8 @@ namespace carga
                 txUsuario.Text = "";
                 txContraseña.Text = "";
 
+                //MessageBox.Show("Usuario correcto, felicitaciones!!" + "\r\n" + "Ingresando..." ) ;
+
             }
             else if (txUsuario.Text == "" || txContraseña.Text == "")
             {
@@ -50,6 +52,80 @@ namespace carga
         {
             txUsuario.Text = "";
             txContraseña.Text = "";
+        }
+
+        private void btSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void txUsuario_TextChanged(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Ingreso correcto");
+            if (txUsuario.Text == "1")
+            {
+                MessageBox.Show("No se adminten números");
+            }
+
+            if (txUsuario.Text == "2")
+            {
+                MessageBox.Show("No se adminten números");
+            }
+
+            if (txUsuario.Text == "3")
+            {
+                MessageBox.Show("No se adminten números");
+            }
+
+            if (txUsuario.Text == "4")
+            {
+                MessageBox.Show("No se adminten números");
+            }
+
+            if (txUsuario.Text == "5")
+            {
+                MessageBox.Show("No se adminten números");
+            }
+
+            if (txUsuario.Text == "6")
+            {
+                MessageBox.Show("No se adminten números");
+            }
+
+            if (txUsuario.Text == "7")
+            {
+                MessageBox.Show("No se adminten números");
+            }
+
+            if (txUsuario.Text == "8")
+            {
+                MessageBox.Show("No se adminten números");
+            }
+
+            if (txUsuario.Text == "9")
+            {
+                MessageBox.Show("No se adminten números");
+            }
+
+            if (txUsuario.Text == "0")
+            {
+                MessageBox.Show("No se adminten números");
+            }
+
+            if (txUsuario.Text == "?")
+            {
+                MessageBox.Show("No se adminten caracteres especiales");
+            }
+
+            if (txUsuario.Text == "'")
+            {
+                MessageBox.Show("No se adminten caraceres especiales");
+            }
+
+            if (txUsuario.Text == "¿")
+            {
+                MessageBox.Show("No se admiten caracteres especiales");
+            }
         }
     }
 }

@@ -75,6 +75,15 @@ namespace carga
         private void btsalir_Click(object sender, EventArgs e)
         {
             Close();
+
         }
+
+        private void btBorrar_Click(object sender, EventArgs e)
+        {
+            lbLista.Text = "";
+            MessageBox.Show("Programa finalizado");
+        }
+
+       
     }
 }

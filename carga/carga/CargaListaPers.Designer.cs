@@ -41,6 +41,7 @@
             label4 = new Label();
             txCuil = new TextBox();
             label5 = new Label();
+            btBorrar = new Button();
             SuspendLayout();
             // 
             // btsalir
@@ -78,6 +79,7 @@
             txNombre.Name = "txNombre";
             txNombre.Size = new Size(125, 27);
             txNombre.TabIndex = 0;
+            
             // 
             // btMostrar
             // 
@@ -182,6 +184,19 @@
             label5.TabIndex = 12;
             label5.Text = "Cargue todos los datos en este formulario";
             // 
+            // btBorrar
+            // 
+            btBorrar.BackColor = Color.Black;
+            btBorrar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btBorrar.ForeColor = SystemColors.Control;
+            btBorrar.Location = new Point(384, 245);
+            btBorrar.Name = "btBorrar";
+            btBorrar.Size = new Size(288, 33);
+            btBorrar.TabIndex = 13;
+            btBorrar.Text = "Borrar lista";
+            btBorrar.UseVisualStyleBackColor = false;
+            btBorrar.Click += btBorrar_Click;
+            // 
             // CargaListaPers
             // 
             AcceptButton = btCargar;
@@ -189,6 +204,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LimeGreen;
             ClientSize = new Size(1114, 450);
+            Controls.Add(btBorrar);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(txCuil);
@@ -224,5 +240,6 @@
         private Label label4;
         private TextBox txCuil;
         private Label label5;
+        private Button btBorrar;
     }
 }
