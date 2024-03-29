@@ -135,7 +135,7 @@
             // 
             // btSalir
             // 
-            btSalir.BackColor = Color.Black;
+            btSalir.BackColor = Color.LawnGreen;
             btSalir.Cursor = Cursors.Hand;
             btSalir.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btSalir.ForeColor = Color.White;

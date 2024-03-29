@@ -46,7 +46,7 @@
             // 
             // btsalir
             // 
-            btsalir.BackColor = Color.Black;
+            btsalir.BackColor = Color.LawnGreen;
             btsalir.Cursor = Cursors.Hand;
             btsalir.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btsalir.ForeColor = SystemColors.Control;
@@ -57,6 +57,7 @@
             btsalir.Text = "Salir";
             btsalir.UseVisualStyleBackColor = false;
             btsalir.Click += btsalir_Click;
+           
             // 
             // btCargar
             // 
@@ -79,7 +80,6 @@
             txNombre.Name = "txNombre";
             txNombre.Size = new Size(125, 27);
             txNombre.TabIndex = 0;
-            
             // 
             // btMostrar
             // 
