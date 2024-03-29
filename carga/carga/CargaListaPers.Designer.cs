@@ -72,6 +72,8 @@
             // 
             // txNombre
             // 
+            txNombre.BackColor = Color.LawnGreen;
+            txNombre.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             txNombre.Location = new Point(218, 140);
             txNombre.Name = "txNombre";
             txNombre.Size = new Size(125, 27);
@@ -112,6 +114,8 @@
             // 
             // txApellido
             // 
+            txApellido.BackColor = Color.LawnGreen;
+            txApellido.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             txApellido.Location = new Point(384, 140);
             txApellido.Name = "txApellido";
             txApellido.Size = new Size(125, 27);
@@ -129,6 +133,8 @@
             // 
             // txDocumento
             // 
+            txDocumento.BackColor = Color.LawnGreen;
+            txDocumento.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             txDocumento.Location = new Point(547, 140);
             txDocumento.Name = "txDocumento";
             txDocumento.Size = new Size(125, 27);
@@ -137,12 +143,12 @@
             // lbLista
             // 
             lbLista.AutoSize = true;
-            lbLista.BackColor = Color.LightSeaGreen;
-            lbLista.Font = new Font("Kristen ITC", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbLista.ForeColor = Color.White;
+            lbLista.BackColor = Color.LawnGreen;
+            lbLista.Font = new Font("Kristen ITC", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbLista.ForeColor = Color.Black;
             lbLista.Location = new Point(790, 206);
             lbLista.Name = "lbLista";
-            lbLista.Size = new Size(63, 24);
+            lbLista.Size = new Size(57, 24);
             lbLista.TabIndex = 9;
             lbLista.Text = "label4";
             lbLista.Visible = false;
@@ -159,6 +165,8 @@
             // 
             // txCuil
             // 
+            txCuil.BackColor = Color.LawnGreen;
+            txCuil.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             txCuil.Location = new Point(713, 140);
             txCuil.Name = "txCuil";
             txCuil.Size = new Size(125, 27);
@@ -194,7 +202,6 @@
             Controls.Add(txNombre);
             Controls.Add(btCargar);
             Controls.Add(btsalir);
-            Cursor = Cursors.Hand;
             Name = "CargaListaPers";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Carga de personas con arreglos";

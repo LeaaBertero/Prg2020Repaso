@@ -28,7 +28,7 @@ namespace carga
             if (txUsuario.Text == "usuario" && txContraseña.Text == "1234")
             {
                 Form CargaLista = new CargaListaPers();
-                CargaLista.Show();
+                CargaLista.ShowDialog();
 
                 txUsuario.Text = "";
                 txContraseña.Text = "";

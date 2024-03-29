@@ -39,17 +39,23 @@
             // 
             // btIngresar
             // 
+            btIngresar.BackColor = Color.Black;
             btIngresar.Cursor = Cursors.Hand;
+            btIngresar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btIngresar.ForeColor = Color.White;
             btIngresar.Location = new Point(182, 193);
             btIngresar.Name = "btIngresar";
-            btIngresar.Size = new Size(94, 29);
+            btIngresar.Size = new Size(94, 36);
             btIngresar.TabIndex = 0;
             btIngresar.Text = "Ingresar";
-            btIngresar.UseVisualStyleBackColor = true;
+            btIngresar.UseVisualStyleBackColor = false;
             btIngresar.Click += btIngresar_Click;
             // 
             // txUsuario
             // 
+            txUsuario.BackColor = Color.LawnGreen;
+            txUsuario.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            txUsuario.ForeColor = Color.Black;
             txUsuario.Location = new Point(182, 127);
             txUsuario.Name = "txUsuario";
             txUsuario.Size = new Size(125, 27);
@@ -66,6 +72,9 @@
             // 
             // txContraseña
             // 
+            txContraseña.BackColor = Color.LawnGreen;
+            txContraseña.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            txContraseña.ForeColor = Color.Black;
             txContraseña.Location = new Point(346, 127);
             txContraseña.Name = "txContraseña";
             txContraseña.PasswordChar = '*';
@@ -92,13 +101,16 @@
             // 
             // btCancelar
             // 
+            btCancelar.BackColor = Color.Black;
             btCancelar.Cursor = Cursors.Hand;
+            btCancelar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btCancelar.ForeColor = Color.White;
             btCancelar.Location = new Point(377, 193);
             btCancelar.Name = "btCancelar";
-            btCancelar.Size = new Size(94, 29);
+            btCancelar.Size = new Size(94, 36);
             btCancelar.TabIndex = 6;
             btCancelar.Text = "Cancelar";
-            btCancelar.UseVisualStyleBackColor = true;
+            btCancelar.UseVisualStyleBackColor = false;
             btCancelar.Click += btCancelar_Click;
             // 
             // FrmIngreso
