@@ -14,6 +14,7 @@ namespace carga
     {
         Persona[] Personas = new Persona[1];
         int pos = 0;
+        int filaDgv = 0;
 
         public CargaListaPers()
         {
@@ -27,6 +28,7 @@ namespace carga
             {
                 Persona persona = new Persona();
 
+               
 
                 persona.Nombre = txNombre.Text;
                 persona.Apellido = txApellido.Text;
@@ -36,6 +38,9 @@ namespace carga
                 txNombre.Focus();
                 txNombre.SelectAll();
 
+
+
+
                 txNombre.Text = "";
                 txApellido.Text = "";
                 txDocumento.Text = "";
@@ -43,6 +48,7 @@ namespace carga
 
                 pos = pos + 1;
                 Personas[pos - 1] = persona;
+
 
 
             }
@@ -57,6 +63,7 @@ namespace carga
         {
             try
             {
+                
                 lbLista.Visible = true;
 
                 lbLista.Text = "Lista de personas cargadas: " + "\r\n" + "\r\n"
@@ -81,9 +88,14 @@ namespace carga
         private void btBorrar_Click(object sender, EventArgs e)
         {
             lbLista.Text = "";
-            MessageBox.Show("Programa finalizado");
+            MessageBox.Show("Lista borrada exitosamente");
         }
 
        
+
+       
+
+       
+        
     }
 }

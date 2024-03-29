@@ -45,7 +45,7 @@
             btIngresar.Cursor = Cursors.Hand;
             btIngresar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btIngresar.ForeColor = Color.White;
-            btIngresar.Location = new Point(182, 193);
+            btIngresar.Location = new Point(211, 162);
             btIngresar.Name = "btIngresar";
             btIngresar.Size = new Size(94, 36);
             btIngresar.TabIndex = 0;
@@ -58,7 +58,7 @@
             txUsuario.BackColor = Color.LawnGreen;
             txUsuario.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             txUsuario.ForeColor = Color.Black;
-            txUsuario.Location = new Point(182, 127);
+            txUsuario.Location = new Point(323, 80);
             txUsuario.Name = "txUsuario";
             txUsuario.Size = new Size(125, 27);
             txUsuario.TabIndex = 1;
@@ -79,7 +79,7 @@
             txContraseña.BackColor = Color.LawnGreen;
             txContraseña.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             txContraseña.ForeColor = Color.Black;
-            txContraseña.Location = new Point(346, 127);
+            txContraseña.Location = new Point(323, 113);
             txContraseña.Name = "txContraseña";
             txContraseña.PasswordChar = '*';
             txContraseña.Size = new Size(125, 27);
@@ -89,7 +89,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label2.Location = new Point(211, 92);
+            label2.Location = new Point(226, 87);
             label2.Name = "label2";
             label2.Size = new Size(63, 20);
             label2.TabIndex = 4;
@@ -99,7 +99,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label3.Location = new Point(369, 92);
+            label3.Location = new Point(214, 116);
             label3.Name = "label3";
             label3.Size = new Size(88, 20);
             label3.TabIndex = 5;
@@ -111,7 +111,7 @@
             btCancelar.Cursor = Cursors.Hand;
             btCancelar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btCancelar.ForeColor = Color.White;
-            btCancelar.Location = new Point(377, 193);
+            btCancelar.Location = new Point(371, 162);
             btCancelar.Name = "btCancelar";
             btCancelar.Size = new Size(94, 36);
             btCancelar.TabIndex = 6;
@@ -125,9 +125,9 @@
             txLimpiar.Cursor = Cursors.Hand;
             txLimpiar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             txLimpiar.ForeColor = Color.White;
-            txLimpiar.Location = new Point(182, 235);
+            txLimpiar.Location = new Point(211, 215);
             txLimpiar.Name = "txLimpiar";
-            txLimpiar.Size = new Size(283, 36);
+            txLimpiar.Size = new Size(254, 36);
             txLimpiar.TabIndex = 7;
             txLimpiar.Text = "Limpiar campos";
             txLimpiar.UseVisualStyleBackColor = false;
@@ -139,7 +139,7 @@
             btSalir.Cursor = Cursors.Hand;
             btSalir.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             btSalir.ForeColor = Color.White;
-            btSalir.Location = new Point(555, 243);
+            btSalir.Location = new Point(555, 12);
             btSalir.Name = "btSalir";
             btSalir.Size = new Size(94, 36);
             btSalir.TabIndex = 8;
