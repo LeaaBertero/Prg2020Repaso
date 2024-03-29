@@ -45,5 +45,11 @@ namespace carga
 
 
         }
+
+        private void txLimpiar_Click(object sender, EventArgs e)
+        {
+            txUsuario.Text = "";
+            txContraseña.Text = "";
+        }
     }
 }

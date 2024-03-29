@@ -35,6 +35,7 @@
             label2 = new Label();
             label3 = new Label();
             btCancelar = new Button();
+            txLimpiar = new Button();
             SuspendLayout();
             // 
             // btIngresar
@@ -116,6 +117,20 @@
             btCancelar.UseVisualStyleBackColor = false;
             btCancelar.Click += btCancelar_Click;
             // 
+            // txLimpiar
+            // 
+            txLimpiar.BackColor = Color.Black;
+            txLimpiar.Cursor = Cursors.Hand;
+            txLimpiar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            txLimpiar.ForeColor = Color.White;
+            txLimpiar.Location = new Point(182, 235);
+            txLimpiar.Name = "txLimpiar";
+            txLimpiar.Size = new Size(283, 36);
+            txLimpiar.TabIndex = 7;
+            txLimpiar.Text = "Limpiar campos";
+            txLimpiar.UseVisualStyleBackColor = false;
+            txLimpiar.Click += txLimpiar_Click;
+            // 
             // FrmIngreso
             // 
             AcceptButton = btIngresar;
@@ -123,6 +138,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LimeGreen;
             ClientSize = new Size(661, 291);
+            Controls.Add(txLimpiar);
             Controls.Add(btCancelar);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -146,5 +162,6 @@
         private Label label2;
         private Label label3;
         private Button btCancelar;
+        private Button txLimpiar;
     }
 }
