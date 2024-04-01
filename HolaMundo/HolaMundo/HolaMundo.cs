@@ -40,7 +40,7 @@ namespace HolaMundo
             txedad.Text = "";
             txnombre.Focus();
             txnombre.SelectAll();
-            dksfmfmskdfsdfms.dfm.sdmf.s
+            
 
             
 
