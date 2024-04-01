@@ -53,6 +53,8 @@ namespace DiasDimension
                 MessageBox.Show("Complete el campo requerido");
             }
 
+           
+
 
             lbListaSemana.Visible = true;
         }
