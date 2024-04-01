@@ -12,6 +12,9 @@ namespace DiasDimension
 {
     public partial class ArregloNombres : Form
     {
+        public Persona[] Persona = new Persona[2];
+        int pos = 0;
+
         public ArregloNombres()
         {
             InitializeComponent();
@@ -24,12 +27,20 @@ namespace DiasDimension
 
         private void btCargar_Click(object sender, EventArgs e)
         {
+            Persona personas = new Persona();
 
+            personas.Nombre = txNombre.Text;
+
+            txNombre.Text = "";
+
+
+            pos = pos + 1;
+            Persona[pos - 1] = personas; 
         }
 
         private void btMostrar_Click(object sender, EventArgs e)
         {
-
+            LbLista.Text = "Lista de personas " + "\r\n" + "\r\n" + "Nombre: " + Persona[0].Nombre;
         }
     }
 }
