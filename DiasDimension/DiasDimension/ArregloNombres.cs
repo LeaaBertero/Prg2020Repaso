@@ -12,7 +12,7 @@ namespace DiasDimension
 {
     public partial class ArregloNombres : Form
     {
-        public Persona[] Persona = new Persona[2];
+        public Persona[] Persona = new Persona[1];
         int pos = 0;
 
         public ArregloNombres()
