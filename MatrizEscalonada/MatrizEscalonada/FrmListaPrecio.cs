@@ -15,11 +15,11 @@ namespace MatrizEscalonada
         //[,] = quiere decir que tiene dos dimensiones
         //tres filas, dos columnas -- filas (precio // producto)
                                 
-        private string[,] Producto = new string[3, 2];
-        private decimal[] Precio = new decimal[3];
-        private int[,] codigo = new int[3,2];
+        public string[,] Producto = new string[3, 2];
+        public decimal[] Precio = new decimal[3];
+        public int[,] codigo = new int[3,2];
 
-        private int fila;
+        public int fila;
 
 
 
