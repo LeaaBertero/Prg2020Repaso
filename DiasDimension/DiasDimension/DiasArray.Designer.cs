@@ -61,7 +61,7 @@
             // 
             // btsalir
             // 
-            btsalir.Location = new Point(441, 468);
+            btsalir.Location = new Point(441, 443);
             btsalir.Name = "btsalir";
             btsalir.Size = new Size(94, 29);
             btsalir.TabIndex = 2;
@@ -101,7 +101,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.GreenYellow;
-            ClientSize = new Size(547, 509);
+            ClientSize = new Size(547, 481);
             Controls.Add(btLimpiar);
             Controls.Add(label1);
             Controls.Add(txMostrar);
