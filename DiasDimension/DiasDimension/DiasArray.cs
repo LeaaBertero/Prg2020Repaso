@@ -53,7 +53,7 @@ namespace DiasDimension
                 MessageBox.Show("Complete el campo requerido");
             }
 
-           
+
 
 
             lbListaSemana.Visible = true;
@@ -68,6 +68,12 @@ namespace DiasDimension
         {
             txMostrar.Text = "";
             lbListaSemana.Text = "";
+        }
+
+        private void btArregloName_Click(object sender, EventArgs e)
+        {
+            Form arregloNombres = new ArregloNombres();
+            arregloNombres.ShowDialog();
         }
     }
 }

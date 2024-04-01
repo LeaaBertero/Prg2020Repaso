@@ -34,6 +34,7 @@
             txMostrar = new TextBox();
             label1 = new Label();
             btLimpiar = new Button();
+            btArregloName = new Button();
             SuspendLayout();
             // 
             // btSemana
@@ -95,6 +96,17 @@
             btLimpiar.UseVisualStyleBackColor = true;
             btLimpiar.Click += btLimpiar_Click;
             // 
+            // btArregloName
+            // 
+            btArregloName.Cursor = Cursors.Hand;
+            btArregloName.Location = new Point(189, 21);
+            btArregloName.Name = "btArregloName";
+            btArregloName.Size = new Size(207, 36);
+            btArregloName.TabIndex = 6;
+            btArregloName.Text = "Frm Arreglo Nombres";
+            btArregloName.UseVisualStyleBackColor = true;
+            btArregloName.Click += btArregloName_Click;
+            // 
             // DiasArray
             // 
             AcceptButton = btSemana;
@@ -102,6 +114,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.GreenYellow;
             ClientSize = new Size(547, 481);
+            Controls.Add(btArregloName);
             Controls.Add(btLimpiar);
             Controls.Add(label1);
             Controls.Add(txMostrar);
@@ -123,5 +136,6 @@
         private TextBox txMostrar;
         private Label label1;
         private Button btLimpiar;
+        private Button btArregloName;
     }
 }
