@@ -40,25 +40,30 @@
             // 
             // btcerrar
             // 
+            btcerrar.BackColor = Color.DodgerBlue;
             btcerrar.Cursor = Cursors.Hand;
-            btcerrar.Location = new Point(992, 12);
+            btcerrar.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            btcerrar.ForeColor = SystemColors.Control;
+            btcerrar.Location = new Point(690, 256);
             btcerrar.Name = "btcerrar";
-            btcerrar.Size = new Size(110, 40);
+            btcerrar.Size = new Size(78, 40);
             btcerrar.TabIndex = 0;
             btcerrar.Text = "salir";
-            btcerrar.UseVisualStyleBackColor = true;
+            btcerrar.UseVisualStyleBackColor = false;
             btcerrar.Click += btcerrar_Click;
             // 
             // btiniciar
             // 
+            btiniciar.BackColor = Color.DodgerBlue;
             btiniciar.Cursor = Cursors.Hand;
-            btiniciar.Font = new Font("Segoe UI", 9F);
+            btiniciar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btiniciar.ForeColor = SystemColors.Control;
             btiniciar.Location = new Point(79, 96);
             btiniciar.Name = "btiniciar";
-            btiniciar.Size = new Size(110, 37);
+            btiniciar.Size = new Size(73, 37);
             btiniciar.TabIndex = 3;
             btiniciar.Text = "Cargar";
-            btiniciar.UseVisualStyleBackColor = true;
+            btiniciar.UseVisualStyleBackColor = false;
             btiniciar.Click += btiniciar_Click;
             // 
             // TxNombre
@@ -72,36 +77,41 @@
             // lblista
             // 
             lblista.AutoSize = true;
-            lblista.Font = new Font("Segoe UI", 16F);
-            lblista.Location = new Point(592, 53);
+            lblista.Font = new Font("Segoe UI", 12F);
+            lblista.Location = new Point(514, 53);
             lblista.Name = "lblista";
-            lblista.Size = new Size(0, 37);
+            lblista.Size = new Size(51, 28);
             lblista.TabIndex = 2;
+            lblista.Text = "Lista";
             lblista.TextAlign = ContentAlignment.MiddleCenter;
             lblista.Visible = false;
             // 
             // btlistar
             // 
+            btlistar.BackColor = Color.DodgerBlue;
             btlistar.Cursor = Cursors.Hand;
-            btlistar.Font = new Font("Segoe UI", 9F);
+            btlistar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btlistar.ForeColor = SystemColors.Control;
             btlistar.Location = new Point(79, 139);
             btlistar.Name = "btlistar";
-            btlistar.Size = new Size(110, 39);
+            btlistar.Size = new Size(73, 39);
             btlistar.TabIndex = 5;
-            btlistar.Text = "listar";
-            btlistar.UseVisualStyleBackColor = true;
+            btlistar.Text = "Mostrar";
+            btlistar.UseVisualStyleBackColor = false;
             btlistar.Click += btlistar_Click;
             // 
             // btDimensionar
             // 
+            btDimensionar.BackColor = Color.DodgerBlue;
             btDimensionar.Cursor = Cursors.Hand;
-            btDimensionar.Font = new Font("Segoe UI", 9F);
+            btDimensionar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btDimensionar.ForeColor = SystemColors.Control;
             btDimensionar.Location = new Point(79, 53);
             btDimensionar.Name = "btDimensionar";
             btDimensionar.Size = new Size(110, 37);
             btDimensionar.TabIndex = 1;
             btDimensionar.Text = "Dimensionar";
-            btDimensionar.UseVisualStyleBackColor = true;
+            btDimensionar.UseVisualStyleBackColor = false;
             btDimensionar.Click += btDimensionar_Click;
             // 
             // TxCantidad
@@ -114,12 +124,16 @@
             // 
             // btprueba
             // 
-            btprueba.Location = new Point(428, 417);
+            btprueba.BackColor = Color.DodgerBlue;
+            btprueba.Cursor = Cursors.Hand;
+            btprueba.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btprueba.ForeColor = SystemColors.Control;
+            btprueba.Location = new Point(79, 242);
             btprueba.Name = "btprueba";
-            btprueba.Size = new Size(274, 38);
+            btprueba.Size = new Size(174, 38);
             btprueba.TabIndex = 6;
-            btprueba.Text = "abrir formulario de prueba";
-            btprueba.UseVisualStyleBackColor = true;
+            btprueba.Text = "Formulario de prueba";
+            btprueba.UseVisualStyleBackColor = false;
             btprueba.Click += btprueba_Click;
             // 
             // MatricesUnid
@@ -128,7 +142,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DeepSkyBlue;
-            ClientSize = new Size(1114, 510);
+            ClientSize = new Size(780, 308);
             Controls.Add(btprueba);
             Controls.Add(TxCantidad);
             Controls.Add(btDimensionar);

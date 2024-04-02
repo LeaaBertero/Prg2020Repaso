@@ -24,10 +24,13 @@ namespace MatricesUni
             btlistar.Enabled = false;
         }
 
-        //botón cerrar
-        private void btcerrar_Click(object sender, EventArgs e)
+       
+        private void btDimensionar_Click(object sender, EventArgs e)
         {
-            Close();
+            lista = new string[Convert.ToUInt32(TxCantidad.Text)];
+            posicion = 0;
+            btiniciar.Enabled = true;
+            btlistar.Enabled = true;
         }
 
         //botón para cargar lista
@@ -45,25 +48,24 @@ namespace MatricesUni
             
             for (int contador = 0; contador < lista.Length; contador++)
             {
-                lblista.Text = lblista.Text + TxNombre.Text + lista[contador] + " " + "\r\n";
+                lblista.Text = "Lista de personas: " + "\r\n" + TxNombre.Text + lista[contador];
             }
 
             lblista.Visible = true;
         }
 
 
-        private void btDimensionar_Click(object sender, EventArgs e)
-        {
-            lista = new string[Convert.ToUInt32(TxCantidad.Text)];
-            posicion = 0;
-            btiniciar.Enabled = true;
-            btlistar.Enabled = true;
-        }
 
         private void btprueba_Click(object sender, EventArgs e)
         {
             Form prueba = new Prueba();
             prueba.Show();
+        }
+
+        //botón cerrar
+        private void btcerrar_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }
