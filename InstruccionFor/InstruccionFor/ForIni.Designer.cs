@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             btSalir = new Button();
-            btNuevoForm = new Button();
             btIniciar = new Button();
             TXDesde = new TextBox();
             TxPaso = new TextBox();
@@ -44,29 +43,19 @@
             // btSalir
             // 
             btSalir.Cursor = Cursors.Hand;
-            btSalir.Location = new Point(883, 12);
+            btSalir.Location = new Point(909, 12);
             btSalir.Name = "btSalir";
-            btSalir.Size = new Size(131, 39);
+            btSalir.Size = new Size(105, 31);
             btSalir.TabIndex = 0;
             btSalir.Text = "salir";
             btSalir.UseVisualStyleBackColor = true;
             btSalir.Click += btSalir_Click;
             // 
-            // btNuevoForm
-            // 
-            btNuevoForm.Location = new Point(821, 391);
-            btNuevoForm.Name = "btNuevoForm";
-            btNuevoForm.Size = new Size(193, 47);
-            btNuevoForm.TabIndex = 1;
-            btNuevoForm.Text = "nuevo formulario";
-            btNuevoForm.UseVisualStyleBackColor = true;
-            btNuevoForm.Click += btNuevoForm_Click;
-            // 
             // btIniciar
             // 
-            btIniciar.Location = new Point(709, 205);
+            btIniciar.Location = new Point(709, 212);
             btIniciar.Name = "btIniciar";
-            btIniciar.Size = new Size(131, 40);
+            btIniciar.Size = new Size(86, 27);
             btIniciar.TabIndex = 2;
             btIniciar.Text = "comenzar";
             btIniciar.UseVisualStyleBackColor = true;
@@ -89,7 +78,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(212, 158);
+            label1.Location = new Point(212, 189);
             label1.Name = "label1";
             label1.Size = new Size(51, 20);
             label1.TabIndex = 5;
@@ -98,7 +87,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(530, 158);
+            label2.Location = new Point(530, 189);
             label2.Name = "label2";
             label2.Size = new Size(39, 20);
             label2.TabIndex = 6;
@@ -115,16 +104,16 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 28F);
-            label3.Location = new Point(244, 21);
+            label3.Location = new Point(93, 73);
             label3.Name = "label3";
-            label3.Size = new Size(523, 62);
+            label3.Size = new Size(871, 62);
             label3.TabIndex = 8;
-            label3.Text = "Práctica de For (Repetir)";
+            label3.Text = "Práctica de For (Estructura de repetición)";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(366, 158);
+            label4.Location = new Point(366, 189);
             label4.Name = "label4";
             label4.Size = new Size(47, 20);
             label4.TabIndex = 9;
@@ -156,7 +145,6 @@
             Controls.Add(TxPaso);
             Controls.Add(TXDesde);
             Controls.Add(btIniciar);
-            Controls.Add(btNuevoForm);
             Controls.Add(btSalir);
             Name = "ForIni";
             StartPosition = FormStartPosition.CenterScreen;
@@ -168,7 +156,6 @@
         #endregion
 
         private Button btSalir;
-        private Button btNuevoForm;
         private Button btIniciar;
         private TextBox TXDesde;
         private TextBox TxPaso;
