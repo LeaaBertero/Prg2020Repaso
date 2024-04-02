@@ -10,11 +10,11 @@ namespace EjercitacionArreglos
     {
         public string? Nombre { get; set; }
         public string? Apellido { get; set; }
-        public int? Documento { get; set; }
+        public long? Documento { get; set; }
 
-        public int? Cuil { get; set; }
+        public long? Cuil { get; set; }
 
-        public int? Telefono { get; set; }
+        public long? Telefono { get; set; }
 
         public string? Direccion { get; set; }
 

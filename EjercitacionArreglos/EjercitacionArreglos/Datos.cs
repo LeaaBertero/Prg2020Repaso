@@ -27,9 +27,9 @@ namespace EjercitacionArreglos
 
             persona.Nombre = txNombre.Text;
             persona.Apellido = txApellido.Text;
-            persona.Documento = Convert.ToInt32(txDocumento.Text);
-            persona.Cuil = Convert.ToInt32(txCuil.Text);
-            persona.Telefono = Convert.ToInt32(txTelefono.Text);
+            persona.Documento = Convert.ToInt64(txDocumento.Text);
+            persona.Cuil = Convert.ToInt64(txCuil.Text);
+            persona.Telefono = Convert.ToInt64(txTelefono.Text);
             persona.Direccion = txDireccion.Text;
 
             txNombre.Text = "";
