@@ -106,7 +106,7 @@
             // 
             // txSum2
             // 
-            txSum2.BackColor = Color.Black;
+            txSum2.BackColor = Color.DarkOrange;
             txSum2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             txSum2.ForeColor = SystemColors.Control;
             txSum2.Location = new Point(424, 162);
@@ -116,7 +116,7 @@
             // 
             // TxRes2
             // 
-            TxRes2.BackColor = Color.Black;
+            TxRes2.BackColor = Color.DarkOrange;
             TxRes2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             TxRes2.ForeColor = SystemColors.Control;
             TxRes2.Location = new Point(424, 232);
@@ -126,7 +126,7 @@
             // 
             // TxMult2
             // 
-            TxMult2.BackColor = Color.Black;
+            TxMult2.BackColor = Color.DarkOrange;
             TxMult2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             TxMult2.ForeColor = SystemColors.Control;
             TxMult2.Location = new Point(424, 308);
@@ -136,7 +136,7 @@
             // 
             // TxDiv2
             // 
-            TxDiv2.BackColor = Color.Black;
+            TxDiv2.BackColor = Color.DarkOrange;
             TxDiv2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             TxDiv2.ForeColor = SystemColors.Control;
             TxDiv2.Location = new Point(424, 397);
@@ -146,7 +146,7 @@
             // 
             // txSum1
             // 
-            txSum1.BackColor = Color.Black;
+            txSum1.BackColor = Color.DarkOrange;
             txSum1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             txSum1.ForeColor = SystemColors.Control;
             txSum1.Location = new Point(180, 162);
@@ -156,7 +156,7 @@
             // 
             // TxRes1
             // 
-            TxRes1.BackColor = Color.Black;
+            TxRes1.BackColor = Color.DarkOrange;
             TxRes1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             TxRes1.ForeColor = SystemColors.Control;
             TxRes1.Location = new Point(180, 235);
@@ -166,7 +166,7 @@
             // 
             // TxMult1
             // 
-            TxMult1.BackColor = Color.Black;
+            TxMult1.BackColor = Color.DarkOrange;
             TxMult1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             TxMult1.ForeColor = SystemColors.Control;
             TxMult1.Location = new Point(180, 310);
@@ -176,7 +176,7 @@
             // 
             // TxDiv1
             // 
-            TxDiv1.BackColor = Color.Black;
+            TxDiv1.BackColor = Color.DarkOrange;
             TxDiv1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
             TxDiv1.ForeColor = SystemColors.Control;
             TxDiv1.Location = new Point(180, 399);

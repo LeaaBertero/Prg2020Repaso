@@ -72,6 +72,7 @@
             LbLista.Size = new Size(50, 20);
             LbLista.TabIndex = 3;
             LbLista.Text = "label1";
+            LbLista.Visible = false;
             // 
             // label1
             // 

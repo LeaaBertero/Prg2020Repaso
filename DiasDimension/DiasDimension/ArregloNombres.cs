@@ -40,6 +40,7 @@ namespace DiasDimension
 
         private void btMostrar_Click(object sender, EventArgs e)
         {
+            LbLista.Visible = true;
             LbLista.Text = "Lista de personas " + "\r\n" + "\r\n" + "Nombre: " + Persona[0].Nombre;
         }
     }
