@@ -91,7 +91,7 @@
             btDimension.TabIndex = 0;
             btDimension.Text = "Dimensionar";
             btDimension.UseVisualStyleBackColor = true;
-            btDimension.Click += btDimension_Click;
+            
             // 
             // btsalir
             // 
