@@ -401,7 +401,6 @@
             Name = "Prueba";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "prueba";
-            
             ResumeLayout(false);
             PerformLayout();
         }
