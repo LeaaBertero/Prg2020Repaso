@@ -48,7 +48,7 @@ namespace MatricesUni
             
             for (int contador = 0; contador < lista.Length; contador++)
             {
-                lblista.Text = "Lista de personas: " + "\r\n" + TxNombre.Text + lista[contador];
+                lblista.Text = lblista.Text + "Lista de personas: " + "\r\n" + TxNombre.Text + lista[contador];
             }
 
             lblista.Visible = true;
